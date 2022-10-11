@@ -34,6 +34,10 @@
   </style>
   <div class="link-buttons">
     <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
+      <a href="https://libreboot.org">
+        <img src="/static/images/link-buttons/libreboot.gif"></a>
       <a href="https://sadgrl.online">
         <img src="/static/images/link-buttons/sadgrl.gif"></a>
       <a href="https://creativecommons.org/licenses/by-sa/4.0/">
