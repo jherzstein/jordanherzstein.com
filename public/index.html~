@@ -17,9 +17,9 @@
   <style>
     .header{text-align: center;}
   </style>
-  <div class="menu">
+  <div class="menu-container">
     <span class="menu">
-      <a href="/index.html">HOME</a>
+      <a href="/">HOME</a>
     </span>
     <span class="menu">
       <a href="/blog">BLOG</a>
@@ -45,22 +45,24 @@ Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Cana
   <style>
     .footer{text-align: center;}
   </style>
-  <div class="link-buttons">
+  <div class="link-buttons-group">
     <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
+      <a href="https://libreboot.org">
+        <img src="/static/images/link-buttons/libreboot.gif"></a>
       <a href="https://sadgrl.online">
         <img src="/static/images/link-buttons/sadgrl.gif"></a>
       <a href="https://creativecommons.org/licenses/by-sa/4.0/">
         <img src="/static/images/link-buttons/by-sa.png"></a>
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
-      <a href="https://neocities.org">
-        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
     </span>
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
-    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
-    Code is licensed under GPLv3 and can be found on my git repository.<br>
+    This webpage is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0.</a> <br>
+    Code is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPlv3</a> and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
   </div>
 </div>
 </div>
