@@ -18,14 +18,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8aca1af">Header</a></li>
-<li><a href="#orgeb8fdb6">Footer</a></li>
+<li><a href="#orgd122a9f">Header</a></li>
+<li><a href="#org41dba87">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8aca1af" class="outline-2">
-<h2 id="org8aca1af">Header</h2>
-<div class="outline-text-2" id="text-org8aca1af">
+<div id="outline-container-orgd122a9f" class="outline-2">
+<h2 id="orgd122a9f">Header</h2>
+<div class="outline-text-2" id="text-orgd122a9f">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -50,9 +50,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgeb8fdb6" class="outline-2">
-<h2 id="orgeb8fdb6">Footer</h2>
-<div class="outline-text-2" id="text-orgeb8fdb6">
+<div id="outline-container-org41dba87" class="outline-2">
+<h2 id="org41dba87">Footer</h2>
+<div class="outline-text-2" id="text-org41dba87">
 <div class="footer">
   <hr>
   <style>
@@ -66,12 +66,15 @@
         <img src="/static/images/link-buttons/by-sa.png"></a>
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
+      <a href="https://neocities.org">
+        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
     </span>
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
     This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
     Code is licensed under GPLv3 and can be found on my git repository.<br>
+  </div>
 </div>
 </div>
 </div>
