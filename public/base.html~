@@ -18,14 +18,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org605aa15">Header</a></li>
-<li><a href="#orgf71423f">Footer</a></li>
+<li><a href="#org1db0e37">Header</a></li>
+<li><a href="#orgcd25ff7">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org605aa15" class="outline-2">
-<h2 id="org605aa15">Header</h2>
-<div class="outline-text-2" id="text-org605aa15">
+<div id="outline-container-org1db0e37" class="outline-2">
+<h2 id="org1db0e37">Header</h2>
+<div class="outline-text-2" id="text-org1db0e37">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -50,9 +50,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgf71423f" class="outline-2">
-<h2 id="orgf71423f">Footer</h2>
-<div class="outline-text-2" id="text-orgf71423f">
+<div id="outline-container-orgcd25ff7" class="outline-2">
+<h2 id="orgcd25ff7">Footer</h2>
+<div class="outline-text-2" id="text-orgcd25ff7">
 <div class="footer">
   <hr>
   <style>
@@ -64,11 +64,13 @@
         <img src="/static/images/link-buttons/sadgrl.gif"></a>
       <a href="https://creativecommons.org/licenses/by-sa/4.0/">
         <img src="/static/images/link-buttons/by-sa.png"></a>
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
     </span>
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
-    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 Unported License. (CC BY-SA 4.0).<br>
+    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
     All source code can be found on my git repository (soonish).<br>
 </div>
 </div>
