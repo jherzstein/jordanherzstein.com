@@ -35,18 +35,18 @@
     </span>
   </div>
 </div>
-<div id="outline-container-orgeee53c0" class="outline-2">
-<h2 id="orgeee53c0">Personal Computer / Hardware</h2>
-<div class="outline-text-2" id="text-orgeee53c0">
+<div id="outline-container-org401b5bd" class="outline-2">
+<h2 id="org401b5bd">Personal Computer / Hardware</h2>
+<div class="outline-text-2" id="text-org401b5bd">
 <p>
 I currently mainly use a librebooted ThinkPad T400, specially modded with a quad core CPU. It runs Debian 11 as the base operating system, and I have the non-free and contrib repositories disabled such that I can avoid non-free software on my machine. I also have a ThinkPad P15s that dual boots Arch Linux and Windows 10. I generally use this machine a lot less due to freedom issues with Windows and to a lesser extent Arch, but still sees some use for when I need a virtual machine for malware such as proctortrack.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org374a5ac" class="outline-2">
-<h2 id="org374a5ac">Software</h2>
-<div class="outline-text-2" id="text-org374a5ac">
+<div id="outline-container-org3c09c5f" class="outline-2">
+<h2 id="org3c09c5f">Software</h2>
+<div class="outline-text-2" id="text-org3c09c5f">
 <p>
 In terms of software, Emacs is a huge part of my productivity environment, and acts as my IDE, document writer, RSS feed, and I even made this site with it! I of course use evil mode due to the extramarital affair I have with Vim. For browsing I use Librewolf, a fork of Firefox with more privacy protections by default, with ublock origin and librejs. 
 </p>
@@ -65,7 +65,7 @@ In terms of software, Emacs is a huge part of my productivity environment, and a
     </span>
   </div>
   <div class= "copyright">
-    Copyright © 2022 <a href="/">Jordan Herzstein<a><br>
+    Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
     This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 Unported License. (CC BY-SA 4.0).<br>
     All source code can be found on my git repository (soonish).<br>
 </div>
