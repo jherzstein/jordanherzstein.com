@@ -18,21 +18,21 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd122a9f">Header</a></li>
-<li><a href="#org41dba87">Footer</a></li>
+<li><a href="#orgd373550">Header</a></li>
+<li><a href="#org9cb633d">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd122a9f" class="outline-2">
-<h2 id="orgd122a9f">Header</h2>
-<div class="outline-text-2" id="text-orgd122a9f">
+<div id="outline-container-orgd373550" class="outline-2">
+<h2 id="orgd373550">Header</h2>
+<div class="outline-text-2" id="text-orgd373550">
 <div class="header">
   <style>
     .header{text-align: center;}
   </style>
-  <div class="menu">
+  <div class="menu-container">
     <span class="menu">
-      <a href="/index.html">HOME</a>
+      <a href="/">HOME</a>
     </span>
     <span class="menu">
       <a href="/blog">BLOG</a>
@@ -50,30 +50,32 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org41dba87" class="outline-2">
-<h2 id="org41dba87">Footer</h2>
-<div class="outline-text-2" id="text-org41dba87">
+<div id="outline-container-org9cb633d" class="outline-2">
+<h2 id="org9cb633d">Footer</h2>
+<div class="outline-text-2" id="text-org9cb633d">
 <div class="footer">
   <hr>
   <style>
     .footer{text-align: center;}
   </style>
-  <div class="link-buttons">
+  <div class="link-buttons-group">
     <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
+      <a href="https://libreboot.org">
+        <img src="/static/images/link-buttons/libreboot.gif"></a>
       <a href="https://sadgrl.online">
         <img src="/static/images/link-buttons/sadgrl.gif"></a>
       <a href="https://creativecommons.org/licenses/by-sa/4.0/">
         <img src="/static/images/link-buttons/by-sa.png"></a>
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
-      <a href="https://neocities.org">
-        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
     </span>
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
-    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
-    Code is licensed under GPLv3 and can be found on my git repository.<br>
+    This webpage is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0.</a> <br>
+    Code is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPlv3</a> and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
   </div>
 </div>
 </div>
