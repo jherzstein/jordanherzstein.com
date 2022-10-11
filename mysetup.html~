@@ -35,18 +35,18 @@
     </span>
   </div>
 </div>
-<div id="outline-container-org560f174" class="outline-2">
-<h2 id="org560f174">Personal Computer / Hardware</h2>
-<div class="outline-text-2" id="text-org560f174">
+<div id="outline-container-org4ca0ce2" class="outline-2">
+<h2 id="org4ca0ce2">Personal Computer / Hardware</h2>
+<div class="outline-text-2" id="text-org4ca0ce2">
 <p>
 I currently mainly use a librebooted ThinkPad T400, specially modded with a quad core CPU. It runs Debian 11 as the base operating system, and I have the non-free and contrib repositories disabled such that I can avoid non-free software on my machine. I also have a ThinkPad P15s that dual boots Arch Linux and Windows 10. I generally use this machine a lot less due to freedom issues with Windows and to a lesser extent Arch, but still sees some use for when I need a virtual machine for malware such as proctortrack.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3e827ec" class="outline-2">
-<h2 id="org3e827ec">Software</h2>
-<div class="outline-text-2" id="text-org3e827ec">
+<div id="outline-container-orgd28b9fd" class="outline-2">
+<h2 id="orgd28b9fd">Software</h2>
+<div class="outline-text-2" id="text-orgd28b9fd">
 <p>
 In terms of software, Emacs is a huge part of my productivity environment, and acts as my IDE, document writer, RSS feed, and I even made this site with it! I of course use evil mode due to the extramarital affair I have with Vim. For browsing I use Librewolf, a fork of Firefox with more privacy protections by default, with ublock origin and librejs. 
 </p>
@@ -66,7 +66,7 @@ In terms of software, Emacs is a huge part of my productivity environment, and a
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
-    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 Unported License. (CC BY-SA 4.0).<br>
+    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
     All source code can be found on my git repository (soonish).<br>
 </div>
 </div>
