@@ -18,14 +18,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1db0e37">Header</a></li>
-<li><a href="#orgcd25ff7">Footer</a></li>
+<li><a href="#org8aca1af">Header</a></li>
+<li><a href="#orgeb8fdb6">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org1db0e37" class="outline-2">
-<h2 id="org1db0e37">Header</h2>
-<div class="outline-text-2" id="text-org1db0e37">
+<div id="outline-container-org8aca1af" class="outline-2">
+<h2 id="org8aca1af">Header</h2>
+<div class="outline-text-2" id="text-org8aca1af">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -50,9 +50,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgcd25ff7" class="outline-2">
-<h2 id="orgcd25ff7">Footer</h2>
-<div class="outline-text-2" id="text-orgcd25ff7">
+<div id="outline-container-orgeb8fdb6" class="outline-2">
+<h2 id="orgeb8fdb6">Footer</h2>
+<div class="outline-text-2" id="text-orgeb8fdb6">
 <div class="footer">
   <hr>
   <style>
@@ -71,7 +71,7 @@
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
     This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
-    All source code can be found on my git repository (soonish).<br>
+    Code is licensed under GPLv3 and can be found on my git repository.<br>
 </div>
 </div>
 </div>
