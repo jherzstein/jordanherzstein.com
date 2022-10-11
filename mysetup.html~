@@ -35,18 +35,18 @@
     </span>
   </div>
 </div>
-<div id="outline-container-orgef1dd4d" class="outline-2">
-<h2 id="orgef1dd4d">Personal Computer / Hardware</h2>
-<div class="outline-text-2" id="text-orgef1dd4d">
+<div id="outline-container-org8655684" class="outline-2">
+<h2 id="org8655684">Personal Computer / Hardware</h2>
+<div class="outline-text-2" id="text-org8655684">
 <p>
 I currently mainly use a librebooted ThinkPad T400, specially modded with a quad core CPU. It runs Debian 11 as the base operating system, and I have the non-free and contrib repositories disabled such that I can avoid non-free software on my machine. I also have a ThinkPad P15s that dual boots Arch Linux and Windows 10. I generally use this machine a lot less due to freedom issues with Windows and to a lesser extent Arch, but still sees some use for when I need a virtual machine for malware such as proctortrack.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org5306516" class="outline-2">
-<h2 id="org5306516">Software</h2>
-<div class="outline-text-2" id="text-org5306516">
+<div id="outline-container-org6a8f1ab" class="outline-2">
+<h2 id="org6a8f1ab">Software</h2>
+<div class="outline-text-2" id="text-org6a8f1ab">
 <p>
 In terms of software, Emacs is a huge part of my productivity environment, and acts as my IDE, document writer, RSS feed, and I even made this site with it! I of course use evil mode due to the extramarital affair I have with Vim. For browsing I use Librewolf, a fork of Firefox with more privacy protections by default, with ublock origin and librejs. 
 </p>
@@ -64,12 +64,15 @@ In terms of software, Emacs is a huge part of my productivity environment, and a
         <img src="/static/images/link-buttons/by-sa.png"></a>
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
+      <a href="https://neocities.org">
+        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
     </span>
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
     This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License. (CC BY-SA 4.0).<br>
     Code is licensed under GPLv3 and can be found on my git repository.<br>
+  </div>
 </div>
 </div>
 </div>
