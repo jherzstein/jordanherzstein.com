@@ -18,14 +18,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd373550">Header</a></li>
-<li><a href="#org9cb633d">Footer</a></li>
+<li><a href="#org931570b">Header</a></li>
+<li><a href="#org44c9c18">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd373550" class="outline-2">
-<h2 id="orgd373550">Header</h2>
-<div class="outline-text-2" id="text-orgd373550">
+<div id="outline-container-org931570b" class="outline-2">
+<h2 id="org931570b">Header</h2>
+<div class="outline-text-2" id="text-org931570b">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -50,9 +50,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org9cb633d" class="outline-2">
-<h2 id="org9cb633d">Footer</h2>
-<div class="outline-text-2" id="text-org9cb633d">
+<div id="outline-container-org44c9c18" class="outline-2">
+<h2 id="org44c9c18">Footer</h2>
+<div class="outline-text-2" id="text-org44c9c18">
 <div class="footer">
   <hr>
   <style>
@@ -74,8 +74,8 @@
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
-    This webpage is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0.</a> <br>
-    Code is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPlv3</a> and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
+    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).<br>
+    Code is licensed under GPlv3 and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
   </div>
 </div>
 </div>
