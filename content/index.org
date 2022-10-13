@@ -1,10 +1,17 @@
 #+TITLE: Jordan Herzstein
 #+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css" />
-#+OPTIONS: num:nil
+#+OPTIONS: num:nil toc:nil
 # #+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:http://thomasf.github.io/solarized-css/org-info.min.js
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" />
 # #+HTML_HEAD_EXTRA: <style> .figure p {width="200";}</style>
 Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Canada, a huge free software enthusiest, and I care about how technology effects human beings. This is my website, it's not ugly - [[https://motherfuckingwebsite.com][it's minimal.]]
 
+* What am I up to?
++ Studying full time.
++ Working with [[https://qset.ca][QSET]] as a member of the ECE rover design team.
++ Messing around with linux servers, I would like to eventually move this site to one of my VPS's when I have the time as I have greater ambitions for this site that full control over the webserver will proide me.
++ Playing with my roommate's cat.
++ "Revising" my resume.
++ Waiting for the winter break so I can start self hosting on my rockpro64. I would like to host my own [[https://xmpp.org][XMPP]] with [[https://jmp.chat][JMP]], and seed all my Linx ISOs full time.
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
