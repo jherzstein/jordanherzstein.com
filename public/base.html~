@@ -18,14 +18,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org931570b">Header</a></li>
-<li><a href="#org44c9c18">Footer</a></li>
+<li><a href="#org0b22806">Header</a></li>
+<li><a href="#org3cbf53b">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org931570b" class="outline-2">
-<h2 id="org931570b">Header</h2>
-<div class="outline-text-2" id="text-org931570b">
+<div id="outline-container-org0b22806" class="outline-2">
+<h2 id="org0b22806">Header</h2>
+<div class="outline-text-2" id="text-org0b22806">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -44,15 +44,18 @@
       <a href="https://github.com/jherzstein">GIT</a>
     </span>
     <span class="menu">
+      <a href="/misc">MISC</a>
+    </span>
+    <span class="menu">
       <a href="/contact.html">CONTACT</a>
     </span>
   </div>
 </div>
 </div>
 </div>
-<div id="outline-container-org44c9c18" class="outline-2">
-<h2 id="org44c9c18">Footer</h2>
-<div class="outline-text-2" id="text-org44c9c18">
+<div id="outline-container-org3cbf53b" class="outline-2">
+<h2 id="org3cbf53b">Footer</h2>
+<div class="outline-text-2" id="text-org3cbf53b">
 <div class="footer">
   <hr>
   <style>
