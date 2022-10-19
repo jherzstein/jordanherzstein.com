@@ -38,13 +38,13 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org3f62510" class="outline-2">
-<h2 id="org3f62510">Posts</h2>
-<div class="outline-text-2" id="text-org3f62510">
+<div id="outline-container-orgc1ae4fc" class="outline-2">
+<h2 id="orgc1ae4fc">Posts</h2>
+<div class="outline-text-2" id="text-orgc1ae4fc">
 </div>
-<div id="outline-container-org17418ed" class="outline-4">
-<h4 id="org17418ed"><span class="timestamp-wrapper"><span class="timestamp">[2022-10-18 Tue] </span></span> <a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></h4>
-<div class="outline-text-4" id="text-org17418ed">
+<div id="outline-container-org552c744" class="outline-4">
+<h4 id="org552c744"><span class="timestamp-wrapper"><span class="timestamp">[2022-10-18 Tue] </span></span> <a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></h4>
+<div class="outline-text-4" id="text-org552c744">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
