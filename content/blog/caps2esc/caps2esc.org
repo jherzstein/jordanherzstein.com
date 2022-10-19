@@ -45,9 +45,9 @@ To run this automatically at the start of your xorg session, go into your ~.xini
 
 #+BIBLIOGRAPHY: references unsrt limit:t option:-nobibsource
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
+* Bibliography :noexport:
 bibliographystyle:unsrt
 bibliography:references.bib
-* Bibliography :noexport:
 
 * Abstract :noexport:
 Guide on switching keymaps using xkb in Xorg 
