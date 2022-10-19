@@ -16,7 +16,6 @@
 ;; Install dependencies
 (package-install 'htmlize)
 (package-install 'org-ref)
-;;(package-install 'org-plus-contrib)
 ;;(use-package simple-httpd
 ;;  :ensure t)
 ;; Load publishing system
