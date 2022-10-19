@@ -18,14 +18,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org77d6157">Header</a></li>
-<li><a href="#org6826e3d">Footer</a></li>
+<li><a href="#orgfc577cc">Header</a></li>
+<li><a href="#orgcaa045c">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org77d6157" class="outline-2">
-<h2 id="org77d6157">Header</h2>
-<div class="outline-text-2" id="text-org77d6157">
+<div id="outline-container-orgfc577cc" class="outline-2">
+<h2 id="orgfc577cc">Header</h2>
+<div class="outline-text-2" id="text-orgfc577cc">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -35,7 +35,7 @@
       <a href="/">HOME</a>
     </span>
     <span class="menu">
-      <a href="/blog">BLOG</a>
+      <a href="/blog/blog.html">BLOG</a>
     </span>
     <span class="menu">
       <a href="/mysetup.html">MY TECHNOLOGY</a>
@@ -50,11 +50,11 @@
 </div>
 </div>
 </div>
-<div id="outline-container-org6826e3d" class="outline-2">
-<h2 id="org6826e3d">Footer</h2>
-<div class="outline-text-2" id="text-org6826e3d">
+<div id="outline-container-orgcaa045c" class="outline-2">
+<h2 id="orgcaa045c">Footer</h2>
+<div class="outline-text-2" id="text-orgcaa045c">
 <div class="footer">
-  <hr>
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
   <style>
     .footer{text-align: center;}
   </style>
