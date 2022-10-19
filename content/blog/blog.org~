@@ -1,0 +1,8 @@
+#+TITLE: Jordan Herzstein
+#+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
+#+OPTIONS: toc:nil
+Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
+* Posts
+*** [2022-10-18] [[file:caps2esc/caps2esc.org][Mapping Caps Lock to Esc and CTRL in Xorg]]       :Tutorial:
+#+INCLUDE: ./caps2esc/caps2esc.org::abstract :only-contents t 
+#+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t

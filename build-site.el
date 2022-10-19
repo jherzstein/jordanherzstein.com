@@ -1,22 +1,33 @@
 ;; Set the package installation directory so that packages aren't stored in the
 ;; ~/.emacs.d/elpa path.
 (require 'package)
+(require 'cl)
 (setq package-user-dir (expand-file-name "./.packages"))
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
-
+			 ("org" . "https://orgmode.org/elpa/")
+			 ("gnu-elpa" . "https://elpa.gnu.org/packages/")))
+(add-to-list 'load-path "./.packages/org-mode/contrib/lisp/")
+(add-to-list 'exec-path "/usr/bin/bibtex2html")
 ;; Initialize the package system
 (package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
 
 ;; Install dependencies
-;;(package-install 'htmlize)
-
+(package-install 'htmlize)
+(package-install 'org-ref)
+;;(package-install 'org-plus-contrib)
 ;;(use-package simple-httpd
 ;;  :ensure t)
 ;; Load publishing system
 (require 'ox-publish)
+
+;; basic requirements for org-ref usage
+(require 'org-ref)
+(require 'org-ref-url-utils)
+
+;; export citations (bibtex2html must be installed)
+(require 'ox-bibtex)
 
 ;; Customize HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link
