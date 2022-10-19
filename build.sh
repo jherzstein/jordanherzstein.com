@@ -5,6 +5,7 @@ emacs -Q --script ~/Website/build-site.el
  then
      neocities push ~/Website/public/
      git add .
+     git remove .packages/
      git commit -m "auto updating site"
      git push origin master
  else

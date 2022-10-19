@@ -5,7 +5,7 @@
 # #+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:http://thomasf.github.io/solarized-css/org-info.min.js
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" />
 # #+HTML_HEAD_EXTRA: <style> .figure p {width="200";}</style>
-Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Canada, a huge free software enthusiest, and I care about how technology effects human beings. This is my website, it's not ugly - [[https://motherfuckingwebsite.com][it's minimal.]]
+Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Canada, a huge free software enthusiast, and I care about how technology effects human beings. This is my website, it's not ugly - [[https://motherfuckingwebsite.com][it's minimal.]]
 
 * What am I up to?
 + Studying full time.
