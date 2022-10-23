@@ -1,5 +1,5 @@
 #+TITLE: Mapping Caps Lock to Esc and CTRL in Xorg
-#+CATEGORY: Tutorial
+#+CATEGORY: Tutorial Technology
 The Emacs editor was designed in the 1980's in the era of old unix keyboards when the control key was next to the "A" key, a lot of functionality in Emacs was designed around CTRL keybindings. While there are hobbyist keyboards for that kind of layout, no real usable laptop these days would oblige without some serious changes. This has had the undesireable outcome of exasterbating repetitive strain injury (RSI) in some pretty famous programmers[[cite:famous_progr_repet_strain_injur]].
 
 
