@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>(Jordan Herzstein's Blog RSS Feed)</title>
+  <atom:link href="https://jordanherzstein.neocities.org/blog/feed.xml" rel="self" type="application/rss+xml" />
+  <link>https://jordanherzstein.neocities.org/blog/</link>
+  <description><![CDATA[My Posts]]></description>
+  <language>en</language>
+  <pubDate>Sun, 23 Oct 2022 14:35:33 -0400</pubDate>
+  <lastBuildDate>Sun, 23 Oct 2022 14:35:33 -0400</lastBuildDate>
+  <generator>Emacs 27.1 Org-mode 9.3</generator>
+  <webMaster>jordanh@debian (Jordan Herzstein)</webMaster>
+  <image>
+    <url>http://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>(Jordan Herzstein's Blog RSS Feed)</title>
+    <link>https://jordanherzstein.neocities.org/blog/</link>
+  </image>
+
+  <item>
+    <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
+    <link>https://jordanherzstein.neocities.org/blog/caps2esc/caps2esc.html</link>
+    <author>Jordan Herzstein</author>
+    <guid isPermaLink="false">https://jordanherzstein.neocities.org/blog/caps2esc/caps2esc.html</guid>
+    <pubDate>Sat, 22 Oct 2022 23:47:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    Guide on switching keymaps using xkb in Xorg 
+    </p>
+    ]]></description>
+  </item>
+</channel>
+</rss>
