@@ -2,7 +2,7 @@
 #+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
 #+OPTIONS: toc:nil
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
-* Posts @@html:<a href=https://jordanherzstein.netocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a>@@ 
+* Posts @@html:<a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a>@@ 
   :PROPERTIES:
   :ID:       4ee354f1-fcc4-430a-87f9-5aa5c34da643
   :PUBDATE:  <2022-10-23 Sun 00:02>
