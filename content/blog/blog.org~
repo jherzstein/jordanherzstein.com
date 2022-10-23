@@ -2,7 +2,16 @@
 #+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
 #+OPTIONS: toc:nil
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
-* Posts
-*** [2022-10-18] [[file:caps2esc/caps2esc.org][Mapping Caps Lock to Esc and CTRL in Xorg]]       :Tutorial:
+# * Posts
+#   :PROPERTIES:
+#   :ID:       4ee354f1-fcc4-430a-87f9-5aa5c34da643
+#   :PUBDATE:  <2022-10-23 Sun 00:02>
+#   :END:
+* [2022-10-19] [[file:caps2esc/caps2esc.org][Mapping Caps Lock to Esc and CTRL in Xorg]]       :Tutorial::Technology:
+   :PROPERTIES:
+   :ID:       df45ee02-2e0f-444d-a5e1-d893da5b3a43
+   :PUBDATE: <2022-10-19 Wed 00:00>
+   :END:
 #+INCLUDE: ./caps2esc/caps2esc.org::abstract :only-contents t 
+
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t

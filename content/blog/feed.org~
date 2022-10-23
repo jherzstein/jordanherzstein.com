@@ -1,0 +1,9 @@
+#+TITLE: Jordan Herzstein's Blog RSS Feed
+#+DESCRIPTION: My Posts
+* Mapping Caps Lock to Esc and CTRL in Xorg
+  :PROPERTIES:
+  :RSS_PERMALINK: caps2esc/caps2esc.html
+  :ID:       7d0973d8-cadc-47e0-a4f4-b0d167072fe9
+  :PUBDATE:  <2022-10-22 Sat 23:47>
+  :END:
+#+INCLUDE: caps2esc/caps2esc.org::abstract :only-contents t 
