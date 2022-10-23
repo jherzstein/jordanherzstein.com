@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jordan Herzstein</title>
 <meta name="generator" content="Org mode" />
-<link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css"/>
+<link rel="stylesheet" type="text/css" href="/style2.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 </head>
 <body>
@@ -21,30 +21,34 @@
     <span class="menu">
       <a href="/">HOME</a>
     </span>
+      -
     <span class="menu">
       <a href="/blog/blog.html">BLOG</a>
     </span>
+      -
     <span class="menu">
       <a href="/mysetup.html">MY TECHNOLOGY</a>
     </span>
+      -
     <span class="menu">
       <a href="https://github.com/jherzstein">GIT</a>
     </span>
+      -
     <span class="menu">
       <a href="/contact.html">CONTACT</a>
     </span>
   </div>
-</div>
+</div> 
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org35fcd28" class="outline-2">
-<h2 id="org35fcd28">Posts</h2>
-<div class="outline-text-2" id="text-org35fcd28">
+<div id="outline-container-org5cb9c3c" class="outline-2">
+<h2 id="org5cb9c3c">Posts <a href=https://jordanherzstein.netocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-org5cb9c3c">
 </div>
-<div id="outline-container-org5d3b7be" class="outline-4">
-<h4 id="org5d3b7be"><span class="timestamp-wrapper"><span class="timestamp">[2022-10-19 Wed] </span></span> <a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span></span></h4>
-<div class="outline-text-4" id="text-org5d3b7be">
+<div id="outline-container-org8e4ad61" class="outline-4">
+<h4 id="org8e4ad61"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org8e4ad61">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
@@ -58,19 +62,27 @@ Guide on switching keymaps using xkb in Xorg
     <span class="link-buttons">
       <a href="https://neocities.org">
         <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
       <a href="https://libreboot.org">
         <img src="/static/images/link-buttons/libreboot.gif"></a>
+    </span>
+    <span class="link-buttons">
       <a href="https://sadgrl.online">
         <img src="/static/images/link-buttons/sadgrl.gif"></a>
+    </span>
+    <span class="link-buttons">
       <a href="https://creativecommons.org/licenses/by-sa/4.0/">
         <img src="/static/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
     </span>
   </div>
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
-    This webpage is licensed under Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).<br>
+    The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
     Code is licensed under GPlv3 and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
   </div>
 </div>
