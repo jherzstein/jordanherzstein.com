@@ -33,7 +33,7 @@
     <span class="menu">
       <a href="https://github.com/jherzstein">GIT</a>
     </span>
-      -
+    -
     <span class="menu">
       <a href="/contact.html">CONTACT</a>
     </span>
@@ -42,13 +42,13 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org54a56ab" class="outline-2">
-<h2 id="org54a56ab">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org54a56ab">
+<div id="outline-container-org3700da2" class="outline-2">
+<h2 id="org3700da2">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-org3700da2">
 </div>
-<div id="outline-container-org1856af5" class="outline-4">
-<h4 id="org1856af5"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org1856af5">
+<div id="outline-container-orgb6fbd20" class="outline-4">
+<h4 id="orgb6fbd20"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-orgb6fbd20">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>

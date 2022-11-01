@@ -33,7 +33,7 @@
     <span class="menu">
       <a href="https://github.com/jherzstein">GIT</a>
     </span>
-      -
+    -
     <span class="menu">
       <a href="/contact.html">CONTACT</a>
     </span>
@@ -43,9 +43,13 @@
 Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Canada, a huge free software enthusiast, and I care about how technology effects human beings. This is my website, it's not ugly - it's minimal.
 </p>
 
-<div id="outline-container-orgbb604ea" class="outline-2">
-<h2 id="orgbb604ea">What am I up to?</h2>
-<div class="outline-text-2" id="text-orgbb604ea">
+<p>
+Go ahead and sign my <a href="https://jordanherzstein.123guestbook.com">guestbook</a>!
+</p>
+
+<div id="outline-container-orge8d0009" class="outline-2">
+<h2 id="orge8d0009">What am I up to?</h2>
+<div class="outline-text-2" id="text-orge8d0009">
 <ul class="org-ul">
 <li>Studying full time.</li>
 <li>Working with <a href="https://qset.ca">QSET</a> as a member of the ECE rover design team.</li>
