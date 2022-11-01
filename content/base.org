@@ -22,7 +22,7 @@
     <span class="menu">
       <a href="https://github.com/jherzstein">GIT</a>
     </span>
-      -
+    -
     <span class="menu">
       <a href="/contact.html">CONTACT</a>
     </span>
