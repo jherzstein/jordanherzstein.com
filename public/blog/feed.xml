@@ -14,8 +14,8 @@
   <link>https://jordanherzstein.neocities.org/blog/</link>
   <description><![CDATA[My Posts]]></description>
   <language>en</language>
-  <pubDate>Tue, 01 Nov 2022 01:00:20 -0400</pubDate>
-  <lastBuildDate>Tue, 01 Nov 2022 01:00:20 -0400</lastBuildDate>
+  <pubDate>Thu, 03 Nov 2022 09:38:49 -0400</pubDate>
+  <lastBuildDate>Thu, 03 Nov 2022 09:38:49 -0400</lastBuildDate>
   <generator>Emacs 27.1 Org-mode 9.3</generator>
   <webMaster>jordanh@debian (Jordan Herzstein)</webMaster>
   <image>
@@ -24,6 +24,18 @@
     <link>https://jordanherzstein.neocities.org/blog/</link>
   </image>
 
+  <item>
+    <title>Error Fix in First Blog</title>
+    <link>https://jordanherzstein.neocities.org/blog/blog.html</link>
+    <author>Jordan Herzstein</author>
+    <guid isPermaLink="false">https://jordanherzstein.neocities.org/blog/blog.html</guid>
+    <pubDate>Tue, 01 Nov 2022 10:41:00 -0400</pubDate>
+
+    <description><![CDATA[<p>
+    I mistyped the /etc/X11/xinit/xinitrc originally so I changed it.
+    </p>
+    ]]></description>
+  </item>
   <item>
     <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
     <link>https://jordanherzstein.neocities.org/blog/caps2esc/caps2esc.html</link>

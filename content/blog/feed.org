@@ -1,5 +1,12 @@
 #+TITLE: Jordan Herzstein's Blog RSS Feed
 #+DESCRIPTION: My Posts
+* Error Fix in First Blog
+  :PROPERTIES:
+  :RSS_PERMALINK: blog.html
+  :PUBDATE:  <2022-11-01 Tue 10:41>
+  :ID:       7546b157-d3a7-4beb-8b4c-19bdc6a36365
+  :END:
+I mistyped the /etc/X11/xinit/xinitrc originally so I changed it.
 * Mapping Caps Lock to Esc and CTRL in Xorg
   :PROPERTIES:
   :RSS_PERMALINK: caps2esc/caps2esc.html
