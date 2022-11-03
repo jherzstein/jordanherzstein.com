@@ -40,18 +40,18 @@
   </div>
 </div> 
 
-<div id="outline-container-orgead3115" class="outline-2">
-<h2 id="orgead3115">Personal Computer / Hardware</h2>
-<div class="outline-text-2" id="text-orgead3115">
+<div id="outline-container-orgd732fbe" class="outline-2">
+<h2 id="orgd732fbe">Personal Computer / Hardware</h2>
+<div class="outline-text-2" id="text-orgd732fbe">
 <p>
 I currently mainly use a <a href="https://libreboot.org/">librebooted</a> ThinkPad T400, <a href="https://vid.puffyan.us/watch?v=Fs4GjDiOie8">specially modded</a> with a quad core CPU. It runs Debian 11 as the base operating system, and I have the non-free and contrib repositories disabled such that I can avoid non-free software on my machine. I also have a ThinkPad P15s that dual boots Arch Linux and Windows 10. I generally use this machine a lot less due to freedom issues with Windows and to a lesser extent Arch, but still sees some use for when I need a virtual machine for malware such as proctortrack. Sometimes I like listening to music while I study or run, for that I use an ipod nano 2g with <a href="https://www.rockbox.org/">RockBox</a>, a free firmware replacement for music players.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb7abe25" class="outline-2">
-<h2 id="orgb7abe25">Software</h2>
-<div class="outline-text-2" id="text-orgb7abe25">
+<div id="outline-container-org37d841f" class="outline-2">
+<h2 id="org37d841f">Software</h2>
+<div class="outline-text-2" id="text-org37d841f">
 <p>
 In terms of software, Emacs is a huge part of my productivity environment, and acts as my IDE, document writer, RSS feed, and I even made this site with it! I of course use evil mode due to the extramarital affair I have with Vim. Outside of Emacs I use dwm, which is the only real window manager I've used, though I may switch if there's an equally viable alternative for wayland or if I'm curious enough to try EXWM. My shell is bash, never really bothered to use anything else really. For browsing I use Librewolf, a fork of Firefox with more privacy protections by default, with ublock origin and librejs. 
 </p>
