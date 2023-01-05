@@ -6,12 +6,12 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jordan Herzstein</title>
-<meta name="generator" content="Org mode" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="/style2.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Jordan Herzstein</h1>
 <div class="header">
   <style>
@@ -31,7 +31,7 @@
     </span>
       -
     <span class="menu">
-      <a href="https://github.com/jherzstein">GIT</a>
+      <a href="https://git.jordanherzstein.xyz">GIT</a>
     </span>
     -
     <span class="menu">
@@ -42,13 +42,13 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org682553f" class="outline-2">
-<h2 id="org682553f">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org682553f">
+<div id="outline-container-org90f466e" class="outline-2">
+<h2 id="org90f466e">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-org90f466e">
 </div>
-<div id="outline-container-org3f79561" class="outline-4">
-<h4 id="org3f79561"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org3f79561">
+<div id="outline-container-orgcab314f" class="outline-4">
+<h4 id="orgcab314f"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-orgcab314f">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
@@ -83,7 +83,7 @@ Guide on switching keymaps using xkb in Xorg
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
-    Code is licensed under GPlv3 and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
   </div>
 </div>
 </div>
@@ -91,7 +91,7 @@ Guide on switching keymaps using xkb in Xorg
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
 </div>
 </body>
 </html>
