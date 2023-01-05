@@ -6,26 +6,25 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<meta name="description" content="Base"
- />
+<meta name="description" content="Base" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="/style2.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 </head>
 <body>
-<div id="content">
-<div id="table-of-contents">
+<div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgb79be41">Header</a></li>
-<li><a href="#org466351f">Footer</a></li>
+<li><a href="#orge4382cc">Header</a></li>
+<li><a href="#org64a101c">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb79be41" class="outline-2">
-<h2 id="orgb79be41">Header</h2>
-<div class="outline-text-2" id="text-orgb79be41">
+<div id="outline-container-orge4382cc" class="outline-2">
+<h2 id="orge4382cc">Header</h2>
+<div class="outline-text-2" id="text-orge4382cc">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -44,7 +43,7 @@
     </span>
       -
     <span class="menu">
-      <a href="https://github.com/jherzstein">GIT</a>
+      <a href="https://git.jordanherzstein.xyz">GIT</a>
     </span>
     -
     <span class="menu">
@@ -54,9 +53,9 @@
 </div> 
 </div>
 </div>
-<div id="outline-container-org466351f" class="outline-2">
-<h2 id="org466351f">Footer</h2>
-<div class="outline-text-2" id="text-org466351f">
+<div id="outline-container-org64a101c" class="outline-2">
+<h2 id="org64a101c">Footer</h2>
+<div class="outline-text-2" id="text-org64a101c">
 <div class="footer">
 <hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
   <style>
@@ -87,14 +86,14 @@
   <div class= "copyright">
     Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
-    Code is licensed under GPlv3 and can be found on my <a href="https://github.com/jherzstein/Website">git</a> repository.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
   </div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.1 (<a href="https://orgmode.org">Org</a> mode 9.3)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
 </div>
 </body>
 </html>
