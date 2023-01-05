@@ -42,13 +42,13 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org90f466e" class="outline-2">
-<h2 id="org90f466e">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org90f466e">
+<div id="outline-container-org54ade72" class="outline-2">
+<h2 id="org54ade72">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-org54ade72">
 </div>
-<div id="outline-container-orgcab314f" class="outline-4">
-<h4 id="orgcab314f"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-orgcab314f">
+<div id="outline-container-org469404b" class="outline-4">
+<h4 id="org469404b"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org469404b">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
