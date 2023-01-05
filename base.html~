@@ -17,14 +17,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge4382cc">Header</a></li>
-<li><a href="#org64a101c">Footer</a></li>
+<li><a href="#orgffcc8d3">Header</a></li>
+<li><a href="#org58f58d3">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge4382cc" class="outline-2">
-<h2 id="orge4382cc">Header</h2>
-<div class="outline-text-2" id="text-orge4382cc">
+<div id="outline-container-orgffcc8d3" class="outline-2">
+<h2 id="orgffcc8d3">Header</h2>
+<div class="outline-text-2" id="text-orgffcc8d3">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -53,9 +53,9 @@
 </div> 
 </div>
 </div>
-<div id="outline-container-org64a101c" class="outline-2">
-<h2 id="org64a101c">Footer</h2>
-<div class="outline-text-2" id="text-org64a101c">
+<div id="outline-container-org58f58d3" class="outline-2">
+<h2 id="org58f58d3">Footer</h2>
+<div class="outline-text-2" id="text-org58f58d3">
 <div class="footer">
 <hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
   <style>
