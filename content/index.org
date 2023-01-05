@@ -6,10 +6,8 @@ Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Cana
 Go ahead and sign my [[https://jordanherzstein.123guestbook.com][guestbook]]!
 
 * What am I up to?
-+ Studying full time.
-+ Working with [[https://qset.ca][QSET]] as a member of the ECE rover design team.
-+ Messing around with linux servers, I would like to eventually move this site to one of my VPS's when I have the time as I have greater ambitions for this site that full control over the webserver will provide me.
-+ Playing with my roommate's cat.
-+ "Revising" my resume.
-+ Waiting for the winter break so I can start self hosting on my rockpro64. I would like to host my own [[https://xmpp.org][XMPP]] with [[https://jmp.chat][JMP]], and seed all my Linx ISOs full time.
++ I'm a full time student on vacation.
++ During school working with [[https://qset.ca][QSET]] as a member of the ECE rover design team.
++ Setting up Webapps on my rockpro64, I just set up [[https://git.jordanherzstein.xyz][cgit]]!!!
++ I miss my roommates cat...
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
