@@ -2,8 +2,14 @@
 #+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
 #+OPTIONS: toc:nil
 
+* VPC Setup
+I'm currently using a ROCKpro64 with it's respective NAS case and PCI-e SSD interface card. It runs DietPi, which is a distrobution of Debian optimized for SBCs. I run port 80 and 443 traffic through a Wireguard vpn to bypass those pesky ISPs (learn how to do that [[https://wickedyoda.com/using-wireguard-and-a-vps-to-bypass-isp-port-blocking-and-hide-your-public-ip/][here]] and [[https://www.reddit.com/r/selfhosted/comments/kphfd3/nginx_reverse_proxy_via_vpn/][here]]).
+
 * Personal Computer / Hardware
 I currently mainly use a [[https://libreboot.org/][librebooted]] ThinkPad T400, [[https://vid.puffyan.us/watch?v=Fs4GjDiOie8][specially modded]] with a quad core CPU. It runs Debian 11 as the base operating system, and I have the non-free and contrib repositories disabled such that I can avoid non-free software on my machine. I also have a ThinkPad P15s that dual boots Arch Linux and Windows 10. I generally use this machine a lot less due to freedom issues with Windows and to a lesser extent Arch, but still sees some use for when I need a virtual machine for malware such as proctortrack. Sometimes I like listening to music while I study or run, for that I use an ipod nano 2g with [[https://www.rockbox.org/][RockBox]], a free firmware replacement for music players.
+
+* Cell Phone
+I use an *unlocked* pixel 7 specifically for running [[https://grapheneos.org][GrapheneOS]]. Smart phones, despite how necessary and useful they can be, is the greatest source of privacy leakage, this mobile operating system dedicated to the highest standards of privacy and security keeps me (mostly) at ease. The stuff that the GrapheneOS team are doing is very impressive, if you're interested in using it make sure you purchase a compatable pixel device that is *unlocked*.
 
 * Software
 In terms of software, Emacs is a huge part of my productivity environment, and acts as my IDE, document writer, RSS feed, and I even made this site with it! I of course use evil mode due to the extramarital affair I have with Vim. Outside of Emacs I use dwm, which is the only real window manager I've used, though I may switch if there's an equally viable alternative for wayland or if I'm curious enough to try EXWM. My shell is bash, never really bothered to use anything else really. For browsing I use Librewolf, a fork of Firefox with more privacy protections by default, with ublock origin and librejs. 
