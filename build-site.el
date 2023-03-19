@@ -34,10 +34,6 @@
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
       org-html-head-include-default-style nil ;; Use our own styles
-;;      org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://thomasf.github.io/solarized-css/solarized-dark.min.css\"/>"
-      ;;org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://pgaskin.net/style-new.css\"/>"
-      ;;org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://git.bugswriter.com/website/plain/static/css/style.css\"/>"
-;;      org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"https://raw.githubusercontent.com/Bugswriter/akash-raj/master/style.css\"/>"
       org-html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"/style2.css\" />"
       org-html-head-extra "<style type='text/css'>.title {text-align: center;}</style>") 
 
