@@ -9,7 +9,7 @@ Go ahead and sign my [[https://jordanherzstein.123guestbook.com][guestbook]]!
 + I'm a full time student. EXAM TIME SO CLOSE AAAAA!!!
 + learning about technology in ways that will help me be self sufficient. I may try for an eJPT certification this summer.
 + I wanna snag a cheap thinkpad T430 sometime in the near future. The thought of 16GB of RAM with a quad core i7 + coreboot + Qubes to satisfy my urge for distrohopping makes me SALIVATE.
-+ [[../static/images/hatedaylightsavings.png]]I HATE DAYLIGHT SAVINGS! I HATE DAYLIGHT SAVINGS!]]
++ [[../static/images/hatedaylightsavings.png][I HATE DAYLIGHT SAVINGS! I HATE DAYLIGHT SAVINGS!]]
 + Setting up Webapps on my rockpro64, +I just set up [[https://git.jordanherzstein.xyz][cgit]]+ I either need to create a proper firewall so I feel comfortable publicly hosting stuff since default ISP routers suck or I'll use a VPS or something.
 + I read lots of books and manga in my free time (I love Yotsuba&!, read Yotsuba&!).
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
