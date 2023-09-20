@@ -47,11 +47,11 @@ Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Cana
 Go ahead and sign my <a href="https://jordanherzstein.123guestbook.com">guestbook</a>!
 </p>
 
-<div id="outline-container-org5de16a0" class="outline-2">
-<h2 id="org5de16a0">What am I up to?</h2>
-<div class="outline-text-2" id="text-org5de16a0">
+<div id="outline-container-org0a4c26e" class="outline-2">
+<h2 id="org0a4c26e">What am I up to?</h2>
+<div class="outline-text-2" id="text-org0a4c26e">
 <ul class="org-ul">
-<li>I'm a full time student at.</li>
+<li>I'm a full time student.</li>
 <li>A guy kijiji.ca sold me a Thinkpad T430 for $100CAD. His loss for selling off such a golden device.</li>
 <li><a href="../static/images/hatedaylightsavings.png">I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!</a></li>
 <li>I like to swim and read books and manga in order to stay sane.</li>
@@ -87,9 +87,9 @@ Go ahead and sign my <a href="https://jordanherzstein.123guestbook.com">guestboo
     </span>
   </div>
   <div class= "copyright">
-    Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
+    Copyright © 2023 <a href="/">Jordan Herzstein</a><br>
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
-    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="github.com/jherzstein">git</a> repository.<br>
   </div>
 </div>
 </div>

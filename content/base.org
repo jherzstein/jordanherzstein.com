@@ -60,9 +60,9 @@
     </span>
   </div>
   <div class= "copyright">
-    Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
+    Copyright © 2023 <a href="/">Jordan Herzstein</a><br>
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
-    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="github.com/jherzstein">git</a> repository.<br>
   </div>
 </div>
 #+END_EXPORT

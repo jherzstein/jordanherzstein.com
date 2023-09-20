@@ -17,14 +17,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge11a051">Header</a></li>
-<li><a href="#org2aad33a">Footer</a></li>
+<li><a href="#org4aa5138">Header</a></li>
+<li><a href="#org33609d2">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge11a051" class="outline-2">
-<h2 id="orge11a051">Header</h2>
-<div class="outline-text-2" id="text-orge11a051">
+<div id="outline-container-org4aa5138" class="outline-2">
+<h2 id="org4aa5138">Header</h2>
+<div class="outline-text-2" id="text-org4aa5138">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -53,9 +53,9 @@
 </div> 
 </div>
 </div>
-<div id="outline-container-org2aad33a" class="outline-2">
-<h2 id="org2aad33a">Footer</h2>
-<div class="outline-text-2" id="text-org2aad33a">
+<div id="outline-container-org33609d2" class="outline-2">
+<h2 id="org33609d2">Footer</h2>
+<div class="outline-text-2" id="text-org33609d2">
 <div class="footer">
 <hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
   <style>
@@ -84,9 +84,9 @@
     </span>
   </div>
   <div class= "copyright">
-    Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
+    Copyright © 2023 <a href="/">Jordan Herzstein</a><br>
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
-    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="github.com/jherzstein">git</a> repository.<br>
   </div>
 </div>
 </div>
