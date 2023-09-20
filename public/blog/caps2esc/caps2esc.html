@@ -38,11 +38,11 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5012792">The Guide</a>
+<li><a href="#org49dda01">The Guide</a>
 <ul>
-<li><a href="#org16f2163">Requirements</a></li>
-<li><a href="#org2abc214">Creating user defined layout in xkb</a></li>
-<li><a href="#org7b612bc">Updating Keyboard layout</a></li>
+<li><a href="#org9f7c274">Requirements</a></li>
+<li><a href="#orga53b686">Creating user defined layout in xkb</a></li>
+<li><a href="#orge2cad1e">Updating Keyboard layout</a></li>
 </ul>
 </li>
 </ul>
@@ -57,25 +57,25 @@ The Emacs editor was designed in the 1980's in the era of old unix keyboards whe
 Now I'm regularly using evil mode to edit files with Emacs so it shouldn't be as big of an issue for someone like myself, however, I'm not interesting in running the risk having RSI on my pinky by the time I'm 50 because I used <code>C-x C-f</code> too many times. One solution would be switching to Doom or Spacemacs or otherwise changing my <code>init.el</code> file in emacs to use the control key much less. Many people use xmonad to change keyboard layouts as well. However, I feel like those solutions are a bit overkill, and I found a decent solution for my case without having to change very much about my system using xkb, which is how keyboard codes are handled in Xorg[<a href="#unknownil_x_archw">2</a>]. 
 </p>
 
-<div id="outline-container-org5012792" class="outline-2">
-<h2 id="org5012792">The Guide</h2>
-<div class="outline-text-2" id="text-org5012792">
+<div id="outline-container-org49dda01" class="outline-2">
+<h2 id="org49dda01">The Guide</h2>
+<div class="outline-text-2" id="text-org49dda01">
 <p>
 The main inspiration of this tutorial comes from Ben Davis on github who outlined a very similar guide but for making Capslock into an Esc and Mod4 key[<a href="#mapping_caps_lock_esc_super_mod4_github">3</a>].
 </p>
 </div>
 
-<div id="outline-container-org16f2163" class="outline-3">
-<h3 id="org16f2163">Requirements</h3>
-<div class="outline-text-3" id="text-org16f2163">
+<div id="outline-container-org9f7c274" class="outline-3">
+<h3 id="org9f7c274">Requirements</h3>
+<div class="outline-text-3" id="text-org9f7c274">
 <p>
 This guide assumes you're using GNU/Linux or a BSD distrobution that uses xkb for the keyboard layout. You will also need <code>setxkbmap</code> installed, though that should come with Xorg by default. I'm using dwm as my window manager though everything outlined here should work on any desktop environment (I hope, please correct me if I'm wrong), even if other DE's have different ways of updating keyboard layout options as is outlined in Ben Davis's guide[<a href="#mapping_caps_lock_esc_super_mod4_github">3</a>].
 </p>
 </div>
 </div>
-<div id="outline-container-org2abc214" class="outline-3">
-<h3 id="org2abc214">Creating user defined layout in xkb</h3>
-<div class="outline-text-3" id="text-org2abc214">
+<div id="outline-container-orga53b686" class="outline-3">
+<h3 id="orga53b686">Creating user defined layout in xkb</h3>
+<div class="outline-text-3" id="text-orga53b686">
 <p>
 First we define our custom layout by creating the file <code>/usr/share/X11/xkb/symbols/custom_opts</code>. We put in the following to map Capslock to escape, and make it act as a control key when in combination with other keys.
 </p>
@@ -106,9 +106,9 @@ custom:ctrl_esc  Make Caps Lock an additional ESC and CTRL
 </div>
 </div>
 
-<div id="outline-container-org7b612bc" class="outline-3">
-<h3 id="org7b612bc">Updating Keyboard layout</h3>
-<div class="outline-text-3" id="text-org7b612bc">
+<div id="outline-container-orge2cad1e" class="outline-3">
+<h3 id="orge2cad1e">Updating Keyboard layout</h3>
+<div class="outline-text-3" id="text-orge2cad1e">
 <p>
 We can apply these changes from the command line using <code>setxkbmap</code>. <code>setxkbmap</code> specifies the keyboard layout to be used based on the specified based on the components in <code>/usr/share/X11/xkb/</code> that we were just changing. Run the command with the <code>-option</code> flag and the name of our custom layout rules:
 </p>

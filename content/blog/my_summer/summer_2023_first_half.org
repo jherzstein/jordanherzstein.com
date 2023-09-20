@@ -50,3 +50,5 @@ Yes, I actually worked at a summer camp for most of the summer which I may write
 * Bibliography :noexport:
 bibliographystyle:unsrt
 bibliography:references.bib
+* Abstract :noexport:
+I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.
