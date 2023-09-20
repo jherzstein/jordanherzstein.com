@@ -6,7 +6,7 @@ Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Cana
 Go ahead and sign my [[https://jordanherzstein.123guestbook.com][guestbook]]!
 
 * What am I up to?
-+ I'm a full time student at. 
++ I'm a full time student. 
 + A guy kijiji.ca sold me a Thinkpad T430 for $100CAD. His loss for selling off such a golden device.
 + [[../static/images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
 + I like to swim and read books and manga in order to stay sane. 
