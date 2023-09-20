@@ -42,21 +42,21 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org5dc8647" class="outline-2">
-<h2 id="org5dc8647">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org5dc8647">
+<div id="outline-container-org1115a7a" class="outline-2">
+<h2 id="org1115a7a">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-org1115a7a">
 </div>
-<div id="outline-container-org3ae57e5" class="outline-4">
-<h4 id="org3ae57e5"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org3ae57e5">
+<div id="outline-container-org0c7109c" class="outline-4">
+<h4 id="org0c7109c"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org0c7109c">
 <p>
 I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.
 </p>
 </div>
 </div>
-<div id="outline-container-org24dbf78" class="outline-4">
-<h4 id="org24dbf78"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org24dbf78">
+<div id="outline-container-org1ab5cb4" class="outline-4">
+<h4 id="org1ab5cb4"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org1ab5cb4">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
@@ -88,9 +88,9 @@ Guide on switching keymaps using xkb in Xorg
     </span>
   </div>
   <div class= "copyright">
-    Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
+    Copyright © 2023 <a href="/">Jordan Herzstein</a><br>
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
-    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="github.com/jherzstein">git</a> repository.<br>
   </div>
 </div>
 </div>
