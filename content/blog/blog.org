@@ -11,7 +11,7 @@ Here is where I post my stupid thoughts, and some useful information. Obligatory
 :PROPERTIES:
 :PUBDATE: <2023-09-20>
 :END:
-#+INCLUDE: ./my_summer/summer_2023_first_half.org.org::abstract :only-contents t 
+#+INCLUDE: ./my_summer/summer_2023_first_half.org::abstract :only-contents t 
 *** [[file:caps2esc/caps2esc.org][Mapping Caps Lock to Esc and CTRL in Xorg]]         :Tutorial:Technology:
    :PROPERTIES:
    :ID:       df45ee02-2e0f-444d-a5e1-d893da5b3a43
