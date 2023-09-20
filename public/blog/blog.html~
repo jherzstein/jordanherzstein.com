@@ -42,18 +42,18 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org2ef501f" class="outline-2">
-<h2 id="org2ef501f">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org2ef501f">
+<div id="outline-container-orgb945a27" class="outline-2">
+<h2 id="orgb945a27">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-orgb945a27">
 </div>
-<div id="outline-container-org34bced3" class="outline-4">
-<h4 id="org34bced3"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org34bced3">
+<div id="outline-container-org4f247af" class="outline-4">
+<h4 id="org4f247af"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org4f247af">
 </div>
 </div>
-<div id="outline-container-orgf7eaeac" class="outline-4">
-<h4 id="orgf7eaeac"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-orgf7eaeac">
+<div id="outline-container-org9f8ab59" class="outline-4">
+<h4 id="org9f8ab59"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org9f8ab59">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
