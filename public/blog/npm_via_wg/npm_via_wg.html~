@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Running HTTP/HTTPS ports through a Wireguard docker container</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="/style2.css" />
+<style type='text/css'>.title {text-align: center;}</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Running HTTP/HTTPS ports through a Wireguard docker container</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org3e94406">The Guide</a>
+<ul>
+<li><a href="#org871a4da">Server</a></li>
+<li><a href="#orgd426516">Client Docker Container</a></li>
+<li><a href="#org0abd27d">Nginx Reverse Proxy</a></li>
+<li><a href="#orga0fb95e">IPTables</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+So, you want to host your own website and want to do so on your own hardware, but you've run into a few issues. Perhaps your current living situation doesn't allow you to open ports on your router (i.e. you're either travelling or your ISP doesn't allow port forwarding for 80, 443). Perhaps you're uncomfortable with port forwarding on a consumer-grade router or exposing your IP address with the potential security vulnerabilities that can lead to compromising your home network. The simplest way you may solve this issue is by using Cloudflare, but you're much more hands on and don't like the nature of black-box solutions.
+</p>
+
+<p>
+For our hands on approach, we will use a secure WireGuard tunnel between a VPS and our homelab to forward port 80/443 traffic. There are already other guides that acheive very similar things. In our particular case, we will route an nginx proxy manager container through a WireGuard docker container, then forward all of the traffic to a WireGuard VPS using IPtables.
+</p>
+
+<div id="outline-container-org3e94406" class="outline-2">
+<h2 id="org3e94406">The Guide</h2>
+<div class="outline-text-2" id="text-org3e94406">
+</div>
+<div id="outline-container-org871a4da" class="outline-3">
+<h3 id="org871a4da">Server</h3>
+</div>
+<div id="outline-container-orgd426516" class="outline-3">
+<h3 id="orgd426516">Client Docker Container</h3>
+</div>
+<div id="outline-container-org0abd27d" class="outline-3">
+<h3 id="org0abd27d">Nginx Reverse Proxy</h3>
+</div>
+<div id="outline-container-orga0fb95e" class="outline-3">
+<h3 id="orga0fb95e">IPTables</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
+</div>
+</body>
+</html>
