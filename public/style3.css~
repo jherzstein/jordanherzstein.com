@@ -61,7 +61,7 @@ a{
     font-size-adjust: 0.6; 
 }
 
-/*  #table-of-contents {
+  #table-of-contents {
     color: black;
     background: #FFF;
     font-size: 80%;
@@ -76,7 +76,7 @@ left:0;
 bottom:0;
 width:25%;
 background:#333;
-} */
+}
 /* .table-of-contents {
     display: table;
     width: 350px;
