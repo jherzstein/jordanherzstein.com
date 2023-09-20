@@ -1,0 +1,12 @@
+#+TITLE: Running HTTP/HTTPS ports through a Wireguard docker container
+#+CATEGORY: Tutorial Technology HomeLab
+So, you want to host your own website and want to do so on your own hardware, but you've run into a few issues. Perhaps your current living situation doesn't allow you to open ports on your router (i.e. you're either travelling or your ISP doesn't allow port forwarding for 80, 443). Perhaps you're uncomfortable with port forwarding on a consumer-grade router or exposing your IP address with the potential security vulnerabilities that can lead to compromising your home network. The simplest way you may solve this issue is by using Cloudflare, but you're much more hands on and don't like the nature of black-box solutions.
+
+For our hands on approach, we will use a secure WireGuard tunnel between a VPS and our homelab to forward port 80/443 traffic. There are already other guides that acheive very similar things. In our particular case, we will route an nginx proxy manager container through a WireGuard docker container, then forward all of the traffic to a WireGuard VPS using IPtables. 
+
+* The Guide
+** Server
+** Client Docker Container
+** Nginx Reverse Proxy
+** IPTables
+ 

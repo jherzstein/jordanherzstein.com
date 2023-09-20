@@ -1,0 +1,40 @@
+#+TITLE: My Little Techy Projects Summer 2023 
+#+CATEGORY: Technology Personal
+
+Not gonna lie I had an extremely baller summer and I'm sad that the 21st is coming soon to take it away from me. Regardless, here is a quick summary of what I was able to accomplish:
+
+#+BEGIN_EXPORT html
+<figure>
+    <img src="/static/images/blog/switch_hacks_and_skulls.jpg" width="50%" />
+    <figcaption>Switch? Hacked. Coreboot? Flashed. Hotel? Trivago.</figcaption>
+</figure>
+#+END_EXPORT
+
+
+* Switch hacks
+I hacked my day 1 Switch with a piece of literal tinfoil.
+
+** Some boring background info
+For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Of course, dozens of top players being outed as sexual predators and the ensuing aftermath was a further deterrent from ever wantig to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place.
+
+** Actual Switch hacks
+I know that the switch modding scene has had the past 6-7 years to mature but I did not expect it to be this easy. Of course, I reccommend following a written guide that's constantly updated (such as the [[https://rentry.co/SwitchHackingIsEasy][rentry]] guide) to avoid bricking your device, but it really wasn't that complicated. The basics of the hack are to short two pins in the right joycon rail, presing the + and power button to put the device in recovery mode (RCM), which I did using a literal peice of tinfoil, though there are RCM jig devices on amazon that are easier to use. Burned onto the Tegra bootROM on all early Switches has a buffer overflow vulnerability that allows hackers to slip by the bootloader signature check, allowing unsigned payloads to be pushed to the device[[cite:&Fusee]].
+
+So far I've installed Atmosphere and Android on the switch, and allowing some old nintendo DS emulation as well. By complete coincidence the new Zelda game leaked the next day. I also just so happened to beat the final boss day of launch which I also started to play day of launch. Hmmmm... curious.
+
+* Now daily driving Qubes on Thinkpad T430
+I found a listing on kijiji.ca for a Thinkpad T430 for $100CAD and jumped at the oppountunity to get it. One coreboot mod and an SSD later and I'm now running Qubes OS on it! I've been only daily driving it for a few months and I recently upgraded the RAM 8GB to 16GB, got a 9-cell battery, and replaced the i5 with an i7-3840QM. I might give my thoughts on it in a future post if daily driving it ends up being feasable.
+
+Honestly this experience made me realize how scammed for when I purchased my thinkpad T400 for about $200. The ebay sellers know too well the value of their products and you need the average Joe from Kijiji that just want to throw out their old laptop to get a great deal. Thanks Kijiji.
+
+* Openwrt
+ I've wanted to get around to replacing my ISP router for a while. The modern proprietary ISP "router" is really a router, modem, and firewall all made into one in a way that is cheapest, most convenient to reduce support calls, and is updated infrequently at the expense of security and user freedom. I bought a Lynksys EA8450 router, installed openwrt on it, and put my ISP router in bridge mode permanently. I configured my network into segmented VLANs to isolate creepy IoT devices around the house, create a guest network, and a regular LAN for everyday desktop, laptop, and cellular devices. I also changed my DNS servers to which support DoH, and installed a wireguard VPN to access my self-hosted services and do remote administration for when I'm away from home.
+
+* Do I do anything other than be a big autistic nerd?
+Yes, I actually worked at a summer camp for most of the summer which I may write about in the future but no promises. 
+
+#+BIBLIOGRAPHY: references unsrt limit:t option:-nobibsource
+#+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
+* Bibliography :noexport:
+bibliographystyle:unsrt
+bibliography:references.bib

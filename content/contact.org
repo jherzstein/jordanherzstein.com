@@ -3,6 +3,6 @@
 #+OPTIONS: toc:nil
 
 * Contact Info
-+ email: jordanherzstein@gmail.com (yeah, yeah, yeah, just wait til I'm self hosting my email)
++ email: website@jordanherzstein.xyz 
 
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t

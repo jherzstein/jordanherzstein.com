@@ -20,7 +20,7 @@
     </span>
       -
     <span class="menu">
-      <a href="https://git.jordanherzstein.xyz">GIT</a>
+      <a href="https://github.com/jherzstein">GIT</a>
     </span>
     -
     <span class="menu">
