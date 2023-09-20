@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Little Techy Projects Summer 2023</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="/style2.css" />
+<style type='text/css'>.title {text-align: center;}</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">My Little Techy Projects Summer 2023</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org0f277a7"><img src="/static/images/blog/Switch_Logo.png", width="10%" /> Switch hacks</a>
+<ul>
+<li><a href="#org7b252e7">Some boring skippable personal info</a></li>
+<li><a href="#orgac085ec"><img src="/static/images/blog/reentry_racoon.png", width="10%" />Actual Switch hacks</a></li>
+</ul>
+</li>
+<li><a href="#orgd0d60b1"><img src="/static/images/blog/Qubes_OS_Logo.png", width="10%" /> Now daily driving Qubes on Thinkpad T430</a></li>
+<li><a href="#orgfaad772"><img src="/static/images/blog/openwrt_icon.png", width="10%" /> Openwrt</a></li>
+<li><a href="#org22e18e1">Do I do anything other than be a big autistic nerd?</a></li>
+</ul>
+</div>
+</div>
+<p>
+Not gonna lie I had an extremely baller summer and I'm sad that the 21st is coming soon to take it away from me. Regardless, here is a quick summary of what I was able to accomplish:
+</p>
+
+<figure>
+    <center>
+       <img src="/static/images/blog/switch_hacks_and_skulls.jpg" width="30%" />
+       <figcaption>Switch? Hacked. Coreboot? Flashed. Hotel? Trivago.</figcaption>
+    </center>
+</figure>
+
+
+<div id="outline-container-org0f277a7" class="outline-2">
+<h2 id="org0f277a7"><img src="/static/images/blog/Switch_Logo.png", width="10%" /> Switch hacks</h2>
+<div class="outline-text-2" id="text-org0f277a7">
+<p>
+I hacked my day 1 Switch with a piece of literal tinfoil.
+</p>
+</div>
+
+<div id="outline-container-org7b252e7" class="outline-3">
+<h3 id="org7b252e7">Some boring skippable personal info</h3>
+<div class="outline-text-3" id="text-org7b252e7">
+<p>
+For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, many well known members of the community having been outed for sexual misconduct around this time and the ensuing aftermath was a further deterrent from ever wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgac085ec" class="outline-3">
+<h3 id="orgac085ec"><img src="/static/images/blog/reentry_racoon.png", width="10%" />Actual Switch hacks</h3>
+<div class="outline-text-3" id="text-orgac085ec">
+<p>
+I know that the switch modding scene has had the past 6-7 years to mature but I did not expect it to be this easy. Of course, I reccommend following a written guide that's constantly updated (such as the <a href="https://rentry.co/SwitchHackingIsEasy">rentry</a> guide) to avoid bricking your device, but it really wasn't that complicated [<a href="#Reentry">1</a>]. The basics of the hack are to short two pins in the right joycon rail and presing the + and power button to put the device in recovery mode (RCM), which I did using a literal peice of tinfoil, though there are RCM jig devices on amazon that are easier to use. Burned onto the Tegra bootROM on all early Switches has a buffer overflow vulnerability that allows hackers to slip by the bootloader signature check, allowing unsigned payloads to be pushed to the device [<a href="#Fusee">2</a>].
+</p>
+
+<p>
+So far I've installed Atmosphere and Android on the switch with the extra microSD storage that I added, and allowing some old nintendo DS emulation as well. As an aside, BW and B2W2 were the peak of the entire franchise, with HGSS being a close second, anyone who disagrees with me here is wrong by every objective measure. Also, by complete coincidence the new Zelda game leaked the next day. I also just so happened to beat the final boss day of launch which I also started to play day of launch. Hmmmm&#x2026; curious.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd0d60b1" class="outline-2">
+<h2 id="orgd0d60b1"><img src="/static/images/blog/Qubes_OS_Logo.png", width="10%" /> Now daily driving Qubes on Thinkpad T430</h2>
+<div class="outline-text-2" id="text-orgd0d60b1">
+<p>
+I found a listing on kijiji.ca for a Thinkpad T430 for $100CAD and jumped at the oppountunity to get it. One coreboot mod and an SSD later and I'm now running Qubes OS on it! Qubes OS is a reasonably secure operating systems that compartmentalizes your digital life into different virtual machines or "qubes"[<a href="#QubesOS">3</a>]. Qubes OS is mainly focused on security, and, to be honest, made for people with threat models much higher than mine. Regardless, given my computer God complex and years of linux knowledge, Qubes OS has been working quite nicely for me. I love how much control it has given me in the little time that I've used it, it just works so much more seamlessly than a regular host OS with virtualbox or virt-manager running multiple machines. I can run multiple different environments from school to work and personal activities without making a complete mess of my computer, still sharing the same applications, and still running only one desktop environment. VMs are colour coded to create a mental separation between activities. I can easily configure how each virtual environment connects to the internet, whether it does at all, uses a vpn, or tor. I can securely share files and text between qubes with a bit of overhead, but not hard to get used to. If I want to distrohop, test another OS and/or programs without messing with my regular configuration Qubes empowers me to do that. 
+</p>
+
+<p>
+The coreboot image I used this time around was Skulls which I flashed using my own RaspberryPi 3B+ [<a href="#Skulls">4</a>]. It was easy enough to install, certainly easier than having to build my own coreboot image. It's quick to boot up compared to the stock Lenovo BIOS and I have the peice of mind that I don't have a proprietary firmware subsystem running on my computer that has several known vulnerabilities [<a href="#Intel_ME_Wired">5</a>,<a href="#Intel_ME_FSF">6</a>].
+</p>
+
+<p>
+I got the T430 for multiple reasons: my current T400 would not be able to support Intel VT-x or VT-d to make Qubes work, it goes up to 16GB of RAM, and most Qubes certified laptops are from the Thinkpad xx30 generation [<a href="#QubesOS_System_Requirements">7</a>,<a href="#QubesOS_Certified_Hardware">8</a>]. It is also extremely modular [<a href="#T430_Modding">9</a>]. Of course this is no gaming machine, but Qubes isn't made for that use case anyways, and 98% of the time I don't feel I need that extra power. This is also the first Lenovo Thinkpad is that it doesn't officially come with the classic Thinkpad keyboards, but this is possible to mod this in the future. I recently upgraded the laptop RAM 8GB to 16GB, got a 9-cell battery, and replaced the i5 with an i7-3840QM. 
+</p>
+
+<p>
+Honestly this experience made me realize how scammed for when I purchased my thinkpad T400 for about $200. The ebay sellers know too well the value of their products and you need the average Joe from Kijiji that just wants to throw out their old laptop to get a great deal. Thanks Kijiji.
+</p>
+
+<small>This blog is (not) sponsored by <a href="https://kijiji.ca"><img src=/static/images/blog/Kijiji_Logo.png width="3%"/></a></small>
+</div>
+</div>
+<div id="outline-container-orgfaad772" class="outline-2">
+<h2 id="orgfaad772"><img src="/static/images/blog/openwrt_icon.png", width="10%" /> Openwrt</h2>
+<div class="outline-text-2" id="text-orgfaad772">
+<p>
+I've wanted to get around to replacing my ISP router for a while. Your average ISP "router" is really more of a router, modem, and firewall all baked into one. ISP companies want to make these devices cheaply, convenient to use to reduce support calls, and with infrequent updates, but this comes at the expense of security, additional features, and user control over the device and network. So, I bought a Lynksys EA8450 router, installed openwrt on it, and put my ISP router in bridge mode hopefully permanently.
+</p>
+
+<p>
+OpenWRT is a linux-based OS targeted for small embedded devices such as routers with a fully writable filesystem and a package management system that makes it easy to install additional software [<a href="#OpenWRT">10</a>]. So far, I've configured my network into segmented VLANs to isolate creepy IoT devices around the house, create a guest network, and a regular LAN for everyday desktop, laptop, and cellular devices. I also changed my DNS servers to which support DoH, and installed a wireguard VPN to access my self-hosted services and do remote administration for when I'm away from home.
+</p>
+
+<p>
+Overall, I don't have much else to say other than trying out OpenWRT has been a great learning experience and I'm enjoying the feturaes I've gotten out of it. I would encourage others to replace their ISP router with one running secure custom firmware. Of course, not everyone is used to the learning curve, nor have the knowledge or time to configure OpenWRT, and for those people there are many projects that come more ready out of the box such as DD-WRT.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org22e18e1" class="outline-2">
+<h2 id="org22e18e1">Do I do anything other than be a big autistic nerd?</h2>
+<div class="outline-text-2" id="text-org22e18e1">
+<p>
+Yes, I actually worked at a summer camp for most of the summer which I may write about in the future, but I make no promises to all 0 of my readers and my 3 imaginary ones.
+</p>
+
+<div id="bibliography">
+<h2>References</h2>
+
+</div>
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Reentry">1</a>]
+</td>
+<td class="bibtexitem">
+Unknown.
+ Switch hacking is easy, 2021.
+ Online; accessed 19 September 2023.
+[&nbsp;<a href="https://rentry.co/SwitchHackingIsEasy">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Fusee">2</a>]
+</td>
+<td class="bibtexitem">
+Qyriad.
+ Fusée gelée, 2018.
+ Online; accessed 17 September 2023.
+[&nbsp;<a href="https://github.com/Qyriad/fusee-launcher/blob/master/report/fusee_gelee.md">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="QubesOS">3</a>]
+</td>
+<td class="bibtexitem">
+Unknown.
+ Introduction | qubes os, nil.
+ Online; accessed 19 September 2023.
+[&nbsp;<a href="https://www.qubes-os.org/intro/">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Skulls">4</a>]
+</td>
+<td class="bibtexitem">
+Martin Kepplinger.
+ Skulls - thinkpad t430.
+ 
+  https://github.com/merge/skulls/blob/master/t430/README.md#first-time-installation,
+  2021.
+ Online; accessed 19 September 2023.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Intel_ME_Wired">5</a>]
+</td>
+<td class="bibtexitem">
+Lily&nbsp;Hay Newman.
+ Intel management engine flaws leave millions of pcs exposed | wired,
+  2017.
+ Online; accessed 20 September 2023.
+[&nbsp;<a href="https://www.wired.com/story/intel-management-engine-vulnerabilities-pcs-servers-iot/">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Intel_ME_FSF">6</a>]
+</td>
+<td class="bibtexitem">
+Molly de&nbsp;Blanc Denis&nbsp;Carikli.
+ The intel management engine: an attack on computer users' freedom,
+  2018.
+ Online; accessed 20 September 2023.
+[&nbsp;<a href="https://www.fsf.org/blogs/sysadmin/the-management-engine-an-attack-on-computer-users-freedom">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="QubesOS_System_Requirements">7</a>]
+</td>
+<td class="bibtexitem">
+Unknown.
+ System requirements | qubes os, nil.
+ Online; accessed 20 September 2023.
+[&nbsp;<a href="https://www.qubes-os.org/doc/system-requirements/">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="QubesOS_Certified_Hardware">8</a>]
+</td>
+<td class="bibtexitem">
+Unknown.
+ Certified hardware | qubes os, nil.
+ Online; accessed 20 September 2023.
+[&nbsp;<a href="https://www.qubes-os.org/doc/certified-hardware/">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="T430_Modding">9</a>]
+</td>
+<td class="bibtexitem">
+Gee.
+ The definitive t430 modding guide, 2018.
+ Online; accessed 20 September 2023.
+[&nbsp;<a href="https://medium.com/@n4ru/the-definitive-t430-modding-guide-3dff3f6a8e2e">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="OpenWRT">10</a>]
+</td>
+<td class="bibtexitem">
+Rich Brown.
+ [openwrt wiki] welcome to the openwrt project, nil.
+ Online; accessed 20 September 2023.
+[&nbsp;<a href="https://openwrt.org/">http</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+<div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/static/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/static/images/link-buttons/libreboot.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://sadgrl.online">
+        <img src="/static/images/link-buttons/sadgrl.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/static/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/static/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    Copyright © 2022 <a href="/">Jordan Herzstein</a><br>
+    The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
+    Code is licensed under GPlv3 and can be found on my <a href="git.jordanherzstein.xyz">git</a> repository.<br>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.2 (<a href="https://orgmode.org">Org</a> mode 9.5.5)</p>
+</div>
+</body>
+</html>
