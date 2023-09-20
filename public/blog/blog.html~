@@ -42,18 +42,21 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-orgb79ac8f" class="outline-2">
-<h2 id="orgb79ac8f">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-orgb79ac8f">
+<div id="outline-container-orgd95ff54" class="outline-2">
+<h2 id="orgd95ff54">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-orgd95ff54">
 </div>
-<div id="outline-container-org568d0c7" class="outline-4">
-<h4 id="org568d0c7"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org568d0c7">
+<div id="outline-container-org6c9f2ef" class="outline-4">
+<h4 id="org6c9f2ef"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org6c9f2ef">
+<p>
+I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.
+</p>
 </div>
 </div>
-<div id="outline-container-orgf14ab71" class="outline-4">
-<h4 id="orgf14ab71"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-orgf14ab71">
+<div id="outline-container-orgaaaf711" class="outline-4">
+<h4 id="orgaaaf711"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-orgaaaf711">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
