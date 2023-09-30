@@ -1,6 +1,6 @@
 html{
-    background-color: #2596be;
-    color:#829496;
+    background-color: rgb(36, 41, 51);
+    color:rgb(236, 239, 244);
     margin: auto;
     
 }
@@ -8,26 +8,26 @@ body{
     max-width: 900px;
     margin: 40px auto;
     border: 1px solid #586e75; 
-    background-color: #89B9FB;
+    background-color: #2e3440;
     padding: 15px;
     font:16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 h1 {
     line-height: 1.2;
-    color: #2596be;
+    color: #88c0d0;
     font-size-adjust: 0.6; 
 }
 h2, h3,
 h4 {
     line-height: 1.2;
-    color: #859900;
+    color: #8fbcbb;
     font-size-adjust: 0.6; 
 }
 
 
 .tag {
-    background-color: #074242;
-    color: #d33682;
+    background-color: rgb(59, 66, 82);
+    color: #88c0d0;
     border-radius: .35em;
     padding: .15em;
     float: right;
@@ -35,14 +35,14 @@ h4 {
 }
 pre {
      word-wrap: break-word;
-     border: 1pt solid #829496;
+     border: 1pt solid #;
      padding: 1em;
      white-space: pre-wrap;
-     box-shadow: 5px 10px #888888; 
+     box-shadow: 5px 10px rgb(36, 41, 51); 
      font-size: 80%;
 } 
 code {
-    background-color: #074242;
+    background-color: rgb(59, 66, 82);
     border-radius: .35em;
     padding: .075em;
     font-size: 90%;
