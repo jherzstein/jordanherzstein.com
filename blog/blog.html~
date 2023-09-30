@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Jordan Herzstein</title>
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="/style3.css" />
+<link rel="stylesheet" type="text/css" href="/style2.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 </head>
 <body>
@@ -42,21 +42,21 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org512bf8e" class="outline-2">
-<h2 id="org512bf8e">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org512bf8e">
+<div id="outline-container-orgbe41a31" class="outline-2">
+<h2 id="orgbe41a31">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-orgbe41a31">
 </div>
-<div id="outline-container-org74b4207" class="outline-4">
-<h4 id="org74b4207"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org74b4207">
+<div id="outline-container-org784c099" class="outline-4">
+<h4 id="org784c099"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org784c099">
 <p>
 I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.
 </p>
 </div>
 </div>
-<div id="outline-container-org21135ab" class="outline-4">
-<h4 id="org21135ab"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org21135ab">
+<div id="outline-container-org1f8064a" class="outline-4">
+<h4 id="org1f8064a"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org1f8064a">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
