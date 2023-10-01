@@ -1,7 +1,7 @@
 #+TITLE: Jordan Herzstein
 #+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
 #+OPTIONS: num:nil toc:nil
-Hello, my name is Jordan Herzstein, I'm a Computer Engineering student from Canada, I like free and open source software. I consider myself a thinkpad and computer security hobbiest. This is my website, it's not ugly - it's [[https://motherfuckingwebsite.com/][minimal]].
+Hello, my name is Jordan, I'm a Computer Engineering student from Canada, I like free and open source software. I consider myself a thinkpad and computer security hobbiest. This is my website, it's not ugly - it's [[https://motherfuckingwebsite.com/][minimal]].
 
 Go ahead and sign my [[https://jordanherzstein.123guestbook.com][guestbook]]!
 

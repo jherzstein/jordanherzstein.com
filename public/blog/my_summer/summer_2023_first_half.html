@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>My Little Techy Projects Summer 2023</title>
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="/style2.css" />
+<link rel="stylesheet" type="text/css" href="/style4.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -38,15 +38,15 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org8dc570d"><img src="/static/images/blog/Switch_Logo.png", width="10%" /> Switch hacks</a>
+<li><a href="#org9b7e2aa"><img src="/static/images/blog/Switch_Logo.png", width="10%" /> Switch hacks</a>
 <ul>
-<li><a href="#org8beecc5">Some boring skippable personal info</a></li>
-<li><a href="#org7631540"><img src="/static/images/blog/reentry_racoon.png", width="10%" />Actual Switch hacks</a></li>
+<li><a href="#orgd70b4fc">Some boring skippable personal info</a></li>
+<li><a href="#org9644072"><img src="/static/images/blog/reentry_racoon.png", width="10%" />Actual Switch hacks</a></li>
 </ul>
 </li>
-<li><a href="#orge981742"><img src="/static/images/blog/Qubes_OS_Logo.png", width="10%" /> Now daily driving Qubes on Thinkpad T430</a></li>
-<li><a href="#orgab03fa6"><img src="/static/images/blog/openwrt_icon.png", width="10%" /> Openwrt</a></li>
-<li><a href="#org290eb57">Do I do anything other than be a big autistic nerd?</a></li>
+<li><a href="#org7f8713e"><img src="/static/images/blog/Qubes_OS_Logo.png", width="10%" /> Now daily driving Qubes on Thinkpad T430</a></li>
+<li><a href="#orgdc49b05"><img src="/static/images/blog/openwrt_icon.png", width="10%" /> Openwrt</a></li>
+<li><a href="#orgdef5adb">Do I do anything other than be a big autistic nerd?</a></li>
 </ul>
 </div>
 </div>
@@ -62,26 +62,26 @@ Not gonna lie I had an extremely baller summer and I'm sad that the 21st is comi
 </figure>
 
 
-<div id="outline-container-org8dc570d" class="outline-2">
-<h2 id="org8dc570d"><img src="/static/images/blog/Switch_Logo.png", width="10%" /> Switch hacks</h2>
-<div class="outline-text-2" id="text-org8dc570d">
+<div id="outline-container-org9b7e2aa" class="outline-2">
+<h2 id="org9b7e2aa"><img src="/static/images/blog/Switch_Logo.png", width="10%" /> Switch hacks</h2>
+<div class="outline-text-2" id="text-org9b7e2aa">
 <p>
 I hacked my day 1 Switch with a piece of literal tinfoil.
 </p>
 </div>
 
-<div id="outline-container-org8beecc5" class="outline-3">
-<h3 id="org8beecc5">Some boring skippable personal info</h3>
-<div class="outline-text-3" id="text-org8beecc5">
+<div id="outline-container-orgd70b4fc" class="outline-3">
+<h3 id="orgd70b4fc">Some boring skippable personal info</h3>
+<div class="outline-text-3" id="text-orgd70b4fc">
 <p>
 For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, many well known members of the community having been outed for sexual misconduct around this time and the ensuing aftermath was a further deterrent from ever wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place. 
 </p>
 </div>
 </div>
 
-<div id="outline-container-org7631540" class="outline-3">
-<h3 id="org7631540"><img src="/static/images/blog/reentry_racoon.png", width="10%" />Actual Switch hacks</h3>
-<div class="outline-text-3" id="text-org7631540">
+<div id="outline-container-org9644072" class="outline-3">
+<h3 id="org9644072"><img src="/static/images/blog/reentry_racoon.png", width="10%" />Actual Switch hacks</h3>
+<div class="outline-text-3" id="text-org9644072">
 <p>
 I know that the switch modding scene has had the past 6-7 years to mature but I did not expect it to be this easy. Of course, I reccommend following a written guide that's constantly updated (such as the <a href="https://rentry.co/SwitchHackingIsEasy">rentry</a> guide) to avoid bricking your device, but it really wasn't that complicated [<a href="#Reentry">1</a>]. The basics of the hack are to short two pins in the right joycon rail and presing the + and power button to put the device in recovery mode (RCM), which I did using a literal peice of tinfoil, though there are RCM jig devices on amazon that are easier to use. Burned onto the Tegra bootROM on all early Switches has a buffer overflow vulnerability that allows hackers to slip by the bootloader signature check, allowing unsigned payloads to be pushed to the device [<a href="#Fusee">2</a>].
 </p>
@@ -92,9 +92,9 @@ So far I've installed Atmosphere and Android on the switch with the extra microS
 </div>
 </div>
 </div>
-<div id="outline-container-orge981742" class="outline-2">
-<h2 id="orge981742"><img src="/static/images/blog/Qubes_OS_Logo.png", width="10%" /> Now daily driving Qubes on Thinkpad T430</h2>
-<div class="outline-text-2" id="text-orge981742">
+<div id="outline-container-org7f8713e" class="outline-2">
+<h2 id="org7f8713e"><img src="/static/images/blog/Qubes_OS_Logo.png", width="10%" /> Now daily driving Qubes on Thinkpad T430</h2>
+<div class="outline-text-2" id="text-org7f8713e">
 <p>
 I found a listing on kijiji.ca for a Thinkpad T430 for $100CAD and jumped at the oppountunity to get it. One coreboot mod and an SSD later and I'm now running Qubes OS on it! Qubes OS is a reasonably secure operating systems that compartmentalizes your digital life into different virtual machines or "qubes"[<a href="#QubesOS">3</a>]. Qubes OS is mainly focused on security, and, to be honest, made for people with threat models much higher than mine. Regardless, given my computer God complex and years of linux knowledge, Qubes OS has been working quite nicely for me. I love how much control it has given me in the little time that I've used it, it just works so much more seamlessly than a regular host OS with virtualbox or virt-manager running multiple machines. I can run multiple different environments from school to work and personal activities without making a complete mess of my computer, still sharing the same applications, and still running only one desktop environment. VMs are colour coded to create a mental separation between activities. I can easily configure how each virtual environment connects to the internet, whether it does at all, uses a vpn, or tor. I can securely share files and text between qubes with a bit of overhead, but not hard to get used to. If I want to distrohop, test another OS and/or programs without messing with my regular configuration Qubes empowers me to do that. 
 </p>
@@ -114,9 +114,9 @@ Honestly this experience made me realize how scammed for when I purchased my thi
 <small>This blog is (not) sponsored by <a href="https://kijiji.ca"><img src=/static/images/blog/Kijiji_Logo.png width="3%"/></a></small>
 </div>
 </div>
-<div id="outline-container-orgab03fa6" class="outline-2">
-<h2 id="orgab03fa6"><img src="/static/images/blog/openwrt_icon.png", width="10%" /> Openwrt</h2>
-<div class="outline-text-2" id="text-orgab03fa6">
+<div id="outline-container-orgdc49b05" class="outline-2">
+<h2 id="orgdc49b05"><img src="/static/images/blog/openwrt_icon.png", width="10%" /> Openwrt</h2>
+<div class="outline-text-2" id="text-orgdc49b05">
 <p>
 I've wanted to get around to replacing my ISP router for a while. Your average ISP "router" is really more of a router, modem, and firewall all baked into one. ISP companies want to make these devices cheaply, convenient to use to reduce support calls, and with infrequent updates, but this comes at the expense of security, additional features, and user control over the device and network. So, I bought a Lynksys EA8450 router, installed openwrt on it, and put my ISP router in bridge mode hopefully permanently.
 </p>
@@ -131,9 +131,9 @@ Overall, I don't have much else to say other than trying out OpenWRT has been a 
 </div>
 </div>
 
-<div id="outline-container-org290eb57" class="outline-2">
-<h2 id="org290eb57">Do I do anything other than be a big autistic nerd?</h2>
-<div class="outline-text-2" id="text-org290eb57">
+<div id="outline-container-orgdef5adb" class="outline-2">
+<h2 id="orgdef5adb">Do I do anything other than be a big autistic nerd?</h2>
+<div class="outline-text-2" id="text-orgdef5adb">
 <p>
 Yes, I actually worked at a summer camp for most of the summer which I may write about in the future, but I make no promises to all 0 of my readers and my 3 imaginary ones.
 </p>

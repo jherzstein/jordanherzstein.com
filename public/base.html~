@@ -8,7 +8,7 @@
 <title>&lrm;</title>
 <meta name="description" content="Base" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="/style2.css" />
+<link rel="stylesheet" type="text/css" href="/style4.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 </head>
 <body>
@@ -17,14 +17,14 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf617b3b">Header</a></li>
-<li><a href="#orgb6d6b27">Footer</a></li>
+<li><a href="#org2252514">Header</a></li>
+<li><a href="#org7257191">Footer</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf617b3b" class="outline-2">
-<h2 id="orgf617b3b">Header</h2>
-<div class="outline-text-2" id="text-orgf617b3b">
+<div id="outline-container-org2252514" class="outline-2">
+<h2 id="org2252514">Header</h2>
+<div class="outline-text-2" id="text-org2252514">
 <div class="header">
   <style>
     .header{text-align: center;}
@@ -53,9 +53,9 @@
 </div> 
 </div>
 </div>
-<div id="outline-container-orgb6d6b27" class="outline-2">
-<h2 id="orgb6d6b27">Footer</h2>
-<div class="outline-text-2" id="text-orgb6d6b27">
+<div id="outline-container-org7257191" class="outline-2">
+<h2 id="org7257191">Footer</h2>
+<div class="outline-text-2" id="text-org7257191">
 <div class="footer">
 <hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
   <style>
