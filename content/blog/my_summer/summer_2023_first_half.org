@@ -1,5 +1,6 @@
 #+TITLE: My Little Techy Projects Summer 2023 
 #+CATEGORY: Technology Personal
+#+OPTIONS: toc:nil
 
 Not gonna lie I had an extremely baller summer and I'm sad that the 21st is coming soon to take it away from me. Regardless, here is a quick summary of what I was able to accomplish:
 

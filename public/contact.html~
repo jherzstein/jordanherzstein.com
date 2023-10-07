@@ -19,32 +19,32 @@
   </style>
   <div class="menu-container">
     <span class="menu">
-      <a href="/">HOME</a>
+      <a href="/">home</a>
     </span>
       -
     <span class="menu">
-      <a href="/blog/blog.html">BLOG</a>
+      <a href="/blog/blog.html">blog</a>
     </span>
       -
     <span class="menu">
-      <a href="/mysetup.html">MY TECHNOLOGY</a>
+      <a href="/mysetup.html">setup</a>
     </span>
       -
     <span class="menu">
-      <a href="https://github.com/jherzstein">GIT</a>
+      <a href="https://github.com/jherzstein">projects</a>
     </span>
     -
     <span class="menu">
-      <a href="/contact.html">CONTACT</a>
+      <a href="/contact.html">contact</a>
     </span>
   </div>
 </div> 
 
-<div id="outline-container-org42e3b6a" class="outline-2">
-<h2 id="org42e3b6a">Contact Info</h2>
-<div class="outline-text-2" id="text-org42e3b6a">
+<div id="outline-container-orgdb54ed3" class="outline-2">
+<h2 id="orgdb54ed3">Contact Info</h2>
+<div class="outline-text-2" id="text-orgdb54ed3">
 <ul class="org-ul">
-<li>email: website@jordanherzstein.xyz</li>
+<li>email: <a href="mailto:website@jordanherzstein.xyz">website@jordanherzstein.xyz</a> <a href="./pubkey.txt">PGP</a></li>
 </ul>
 
 <div class="footer">

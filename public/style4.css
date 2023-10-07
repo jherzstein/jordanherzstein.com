@@ -6,8 +6,8 @@ html{
 }
 body{
     display: block;
-    width: 90%;
-    max-width: 850px;
+    width: 80%;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
     align: center;
@@ -30,13 +30,30 @@ h1 {
     color: #61afef;
     font-size-adjust: 0.6; 
 }
-h2, h3,
+h2 {
+    line-height: 1.2;
+    color: #56b6c2;
+    font-size-adjust: 0.6; 
+}
+h3 {
+    line-height: 1.2;
+    color: #56b6c2;
+    font-size-adjust: 0.6; 
+}
 h4 {
+    font-size: 80%;
     line-height: 1.2;
     color: #56b6c2;
     font-size-adjust: 0.6; 
 }
 
+.header {
+    border: 0.5px solid; 
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    align: center;
+}
 
 .tag {
     background-color: #21252B;

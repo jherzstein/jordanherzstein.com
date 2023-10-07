@@ -3,6 +3,6 @@
 #+OPTIONS: toc:nil
 
 * Contact Info
-+ email: website@jordanherzstein.xyz 
++ email: [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.txt][PGP]] 
 
 #+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
