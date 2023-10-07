@@ -1,11 +1,19 @@
 #+TITLE: Jordan Herzstein's Blog RSS Feed
 #+DESCRIPTION: My Posts
+* nyaa_menu
+:PROPERTIES:
+:RSS_PERMALINK: nyaa_menu/nyaa_menu.html
+:PUBDATE: <2023-10-07 Sat>
+:ID:       4e1bc712-c200-49ca-8d1e-6656a0f26fb0
+:END:
+#+INCLUDE: nyaa_menu/nyaa_menu.org::abstract :only-contents t
 * My Little Techy Projects Summer 2023
 :PROPERTIES:
 :RSS_PERMALINK: my_summer/summer_2023_first_half.html
 :PUBDATE:  <2023-09-20 Wed>
 :ID:       6ffdd928-3b98-49cd-a1ca-7037030fcf9c
 :END:
+#+INCLUDE: my_summer/summer_2023_first_half.org::abstract :only-contents t 
 * Error Fix in First Blog
   :PROPERTIES:
   :RSS_PERMALINK: blog.html
