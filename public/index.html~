@@ -19,23 +19,23 @@
   </style>
   <div class="menu-container">
     <span class="menu">
-      <a href="/">HOME</a>
+      <a href="/">home</a>
     </span>
       -
     <span class="menu">
-      <a href="/blog/blog.html">BLOG</a>
+      <a href="/blog/blog.html">blog</a>
     </span>
       -
     <span class="menu">
-      <a href="/mysetup.html">MY TECHNOLOGY</a>
+      <a href="/mysetup.html">setup</a>
     </span>
       -
     <span class="menu">
-      <a href="https://github.com/jherzstein">GIT</a>
+      <a href="https://github.com/jherzstein">projects</a>
     </span>
     -
     <span class="menu">
-      <a href="/contact.html">CONTACT</a>
+      <a href="/contact.html">contact</a>
     </span>
   </div>
 </div> 
@@ -47,9 +47,9 @@ Hello, my name is Jordan, I'm a Computer Engineering student from Canada, I like
 Go ahead and sign my <a href="https://jordanherzstein.123guestbook.com">guestbook</a>!
 </p>
 
-<div id="outline-container-orgcd58ac2" class="outline-2">
-<h2 id="orgcd58ac2">What am I up to?</h2>
-<div class="outline-text-2" id="text-orgcd58ac2">
+<div id="outline-container-org2c54215" class="outline-2">
+<h2 id="org2c54215">What am I up to?</h2>
+<div class="outline-text-2" id="text-org2c54215">
 <ul class="org-ul">
 <li>I'm a full time student.</li>
 <li>A guy kijiji.ca sold me a Thinkpad T430 for $100CAD. His loss for selling off such a golden device.</li>

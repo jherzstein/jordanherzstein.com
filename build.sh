@@ -5,8 +5,6 @@ if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
     neocities push ~/Website/public/
     git add .
-    git rm -r ./draft/
-
     git commit -m "auto updating site"
     git push origin master
 else
