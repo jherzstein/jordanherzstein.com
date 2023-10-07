@@ -19,44 +19,44 @@
   </style>
   <div class="menu-container">
     <span class="menu">
-      <a href="/">HOME</a>
+      <a href="/">home</a>
     </span>
       -
     <span class="menu">
-      <a href="/blog/blog.html">BLOG</a>
+      <a href="/blog/blog.html">blog</a>
     </span>
       -
     <span class="menu">
-      <a href="/mysetup.html">MY TECHNOLOGY</a>
+      <a href="/mysetup.html">setup</a>
     </span>
       -
     <span class="menu">
-      <a href="https://github.com/jherzstein">GIT</a>
+      <a href="https://github.com/jherzstein">projects</a>
     </span>
     -
     <span class="menu">
-      <a href="/contact.html">CONTACT</a>
+      <a href="/contact.html">contact</a>
     </span>
   </div>
 </div> 
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-org389fa88" class="outline-2">
-<h2 id="org389fa88">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-org389fa88">
+<div id="outline-container-org31bc1da" class="outline-2">
+<h2 id="org31bc1da">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-org31bc1da">
 </div>
-<div id="outline-container-orgd335e57" class="outline-4">
-<h4 id="orgd335e57"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-orgd335e57">
+<div id="outline-container-org8a9f851" class="outline-4">
+<h4 id="org8a9f851"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org8a9f851">
 <p>
 I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.
 </p>
 </div>
 </div>
-<div id="outline-container-org304476e" class="outline-4">
-<h4 id="org304476e"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org304476e">
+<div id="outline-container-org2748f58" class="outline-4">
+<h4 id="org2748f58"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org2748f58">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
