@@ -1,6 +1,0 @@
-#+TITLE: nyaa_menu: A lazy web scraping tool for collecting anime and manga
-
-I got quite bored a few days ago, and instead of staring at my 24 inch lightbulb I channeled a bit of my creative juices into making something... while staring at my 24 inch lightbulb. So, I like south east asian media quite a bit, I also like dmenu, and I don't like using my brower if I can avoid it; there often is an easier way of doing things if you're creative enough. Somewhat inspired by Bugswriter's notflix project, I whipped up a shell script that scrapes anime and manga magnet links from nyaa.si based on user search terms and flags. By default, the magnet link gets copied to your clipboard, or if you have your own transmission server you can also send the magnet link there automatically. If this utility sounds interesting to you go check it out!
-
-* Abstract :noexport:
-I made a lil utility
