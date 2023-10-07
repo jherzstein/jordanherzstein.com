@@ -5,57 +5,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
-<meta name="description" content="Base" />
+<title>nyaa_menu</title>
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="/style4.css" />
 <style type='text/css'>.title {text-align: center;}</style>
 </head>
 <body>
 <div id="content" class="content">
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#org69b2def">Header</a></li>
-<li><a href="#org3f8af75">Footer</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org69b2def" class="outline-2">
-<h2 id="org69b2def">Header</h2>
-<div class="outline-text-2" id="text-org69b2def">
-<div class="header">
-  <style>
-    .header{text-align: center;}
-  </style>
-  <div class="menu-container">
-    <span class="menu">
-      <a href="/">home</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="/blog/blog.html">blog</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="/mysetup.html">setup</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="https://github.com/jherzstein">projects</a>
-    </span>
-    -
-    <span class="menu">
-      <a href="/contact.html">contact</a>
-    </span>
-  </div>
-</div> 
-</div>
-</div>
-<div id="outline-container-org3f8af75" class="outline-2">
-<h2 id="org3f8af75">Footer</h2>
-<div class="outline-text-2" id="text-org3f8af75">
+<h1 class="title">nyaa_menu</h1>
+<figure>
+    <center>
+       <img src="/static/images/blog/nyaa_menu_screenshot.png" width="100%" />
+       <figcaption>nyaa_menu scraping nyaa.si for "Chainsaw Man" english translaged manga from most to least seeded.</figcaption>
+    </center>
+</figure>
+
+<p>
+I got quite bored a few days ago, and instead of staring at my 24 inch lightbulb I channeled a bit of my creative juices into making something&#x2026; while staring at my 24 inch lightbulb. So, I enjoy south east asian media from time to time, I also like <a href="https://tools.suckless.org/dmenu">dmenu</a>, and I don't like using my brower if I can avoid it; there often is an easier way of doing things if you're creative enough. Somewhat inspired by Bugswriter's <a href="https://github.com/Bugswriter/notflix">notflix</a> project, I whipped up a shell script that scrapes anime and manga magnet links from <a href="https://www.nyaa.si">nyaa.si</a> based on user search terms and flags. By default, the magnet link gets copied to your clipboard, or if you have your own transmission server you can also send the magnet link there automatically. If this utility sounds interesting to you go <a href="https://github.com/jherzstein/nyaa_menu">check it out</a>!
+</p>
+
 <div class="footer">
 <hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
   <style>
@@ -88,8 +56,6 @@
     The content of this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> unless stated otherwise.<br>
     Code is licensed under GPlv3 and can be found on my <a href="github.com/jherzstein">git</a> repository.<br>
   </div>
-</div>
-</div>
 </div>
 </div>
 <div id="postamble" class="status">
