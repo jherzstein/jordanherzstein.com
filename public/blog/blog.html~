@@ -42,21 +42,29 @@
 <p>
 Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own".
 </p>
-<div id="outline-container-orgd6e3881" class="outline-2">
-<h2 id="orgd6e3881">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
-<div class="outline-text-2" id="text-orgd6e3881">
+<div id="outline-container-orged8a498" class="outline-2">
+<h2 id="orged8a498">Posts <a href=https://jordanherzstein.neocities.org/blog/feed.xml><img src="/static/images/blog/rss.png" width=25></a></h2>
+<div class="outline-text-2" id="text-orged8a498">
 </div>
-<div id="outline-container-org73dc15a" class="outline-4">
-<h4 id="org73dc15a"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org73dc15a">
+<div id="outline-container-orgabf4b6e" class="outline-4">
+<h4 id="orgabf4b6e"><a href="nyaa_menu/nyaa_menu.html">nyaa_menu</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Technology">Technology</span>&#xa0;<span class="Projects">Projects</span></span></h4>
+<div class="outline-text-4" id="text-orgabf4b6e">
+<p>
+I made a lazy web scraping tool for collecting anime and manga while I was bored.
+</p>
+</div>
+</div>
+<div id="outline-container-org2deb7d2" class="outline-4">
+<h4 id="org2deb7d2"><a href="my_summer/summer_2023_first_half.html">My Little Techy Projects Summer 2023</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Personal">Personal</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org2deb7d2">
 <p>
 I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.
 </p>
 </div>
 </div>
-<div id="outline-container-org0b2c25b" class="outline-4">
-<h4 id="org0b2c25b"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
-<div class="outline-text-4" id="text-org0b2c25b">
+<div id="outline-container-org7b7e801" class="outline-4">
+<h4 id="org7b7e801"><a href="caps2esc/caps2esc.html">Mapping Caps Lock to Esc and CTRL in Xorg</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="Tutorial">Tutorial</span>&#xa0;<span class="Technology">Technology</span></span></h4>
+<div class="outline-text-4" id="text-org7b7e801">
 <p>
 Guide on switching keymaps using xkb in Xorg 
 </p>
