@@ -7,7 +7,7 @@
           {{- if ge (len .) 1 -}}
               {{- range . -}}
 	          <span class ="tags">
-                      <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
+                      <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
 	          </span>
               {{ end -}}
           {{- end -}}
