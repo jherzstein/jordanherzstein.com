@@ -7,7 +7,7 @@ draft = false
     identifier = "contact"
 +++
 
-## <img src="/images/contact/simplex.png" width="34" /> Simplex [QR Code](/) {#img-src-images-contact-simplex-dot-png-width-34-simplex-qr-code}
+## <img src="/images/contact/simplex.png" width="34" /> Simplex [QR Code](/images/contact/simplex-qr.png) {#img-src-images-contact-simplex-dot-png-width-34-simplex-qr-code}
 
 
 ## <img src="/images/contact/skiff.png" width="34" /> Email [website@jordanherzstein.xyz](mailto:website@jordanherzstein.xyz) [PGP](./pubkey.txt) {#img-src-images-contact-skiff-dot-png-width-34-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-txt}

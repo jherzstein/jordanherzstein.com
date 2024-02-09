@@ -1,4 +1,4 @@
-theme = 'strm'
+theme = 'jugo'
 title = 'Jordan Herzstein'
 sectionPagesMenu = 'main'
 [markup.goldmark.renderer]
