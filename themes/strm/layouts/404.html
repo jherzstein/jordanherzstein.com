@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <style>
+    p {text-align: center;}
+  </style>
+  <h1>{{ .Site.Title }}</h1>
+  <head>
+    {{- partial "header.html" . -}}
+  </head>
+  <main id="main">
+    <div>
+      <h1 id="title">Error</h1>
+      <p style="centered">404 page not found, <a href="{{ "" | relURL }}">go home<a></p>
+    </div>
+  </main>
+{{ end }}
+

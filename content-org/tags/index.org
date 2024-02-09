@@ -1,0 +1,8 @@
+#+title: Tags
+#+author: Jordan Herzstein
+#+date: 2023-02-01
+#+hugo_base_dir: ../../
+#+hugo_section: tags
+#+HUGO_MENU: :menu "tags"
+#+HUGO_CODE_FENCE: nil
+#+EXPORT_FILE_NAME: _index.md

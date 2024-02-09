@@ -1,0 +1,12 @@
+#+TITLE: Blog Posts 
+#+AUTHOR: Jordan Herzstein
+#+DATE: 2023-02-01
+#+HUGO_BASE_DIR: ../../
+#+HUGO_SECTION: posts
+#+HUGO_MENU: :menu "posts"
+#+HUGO_CODE_FENCE: nil
+#+EXPORT_FILE_NAME: _index.md
+
+Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own" and "content of other sites do not reflect my own views". 
+
+* Posts @@html:<a href=/posts/index.xml><img src="/images/blog/rss.png" width=25></a>@@

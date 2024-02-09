@@ -1,0 +1,12 @@
++++
+title = "Hugo and other site changes"
+summary = "Hugo is a very good static site generator."
+date = 2024-02-07
+tags = ["hugo", "github", "updates"]
+draft = false
+[menu]
+  [menu.posts]
+    identifier = "hugo-and-other-site-changes"
++++
+
+I recreated my site using ox-hugo to generate tags and the site's rss feed much more easily as it was a pain before. Every time I've wanted to make a post it's been friction getting it to work with pure org mode + elisp and I don't want to fight this site just to post something or else I won't post anything at all. Embarrassingly, it seems that I was using a non-web-safe font for quite some time, meaning some browsers weren't supported, I appologize to any MacOS users viewing my site who had to deal with my terrible choice of typography. I'm also tired of the long url name so I've mirrored my site on github pages with custom domain [jordanherzstein.xyz](https://jordanherzstein.xyz) (I know microsoft is evil sue me). I've already been selfhosting stuff locally for a while though I'm not bothering with anything public if unless I proxy my site as to not reveal my ip address. Neocities will stay for now, I have no explicit plans to leave, though if I ever add javascript to this site I will be saying goodbye.

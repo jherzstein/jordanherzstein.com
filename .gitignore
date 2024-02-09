@@ -1,3 +1,4 @@
-draft/**
-*.org~
-*.org#
+website-old/draft/**
+website-old/**
+*~
+*#

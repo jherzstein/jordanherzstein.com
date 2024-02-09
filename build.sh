@@ -1,5 +1,5 @@
 #!/bin/bash
-emacs -Q --script ~/Website/build-site.el
+hugo 
 read -r -p "Do you want to sync changes to the server and update git? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then

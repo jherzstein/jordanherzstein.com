@@ -1,0 +1,9 @@
+theme = 'strm'
+title = 'Jordan Herzstein'
+sectionPagesMenu = 'main'
+[markup.goldmark.renderer]
+   unsafe = true
+[taxonomies]
+  category = 'categories'
+  tags = 'tags'
+
