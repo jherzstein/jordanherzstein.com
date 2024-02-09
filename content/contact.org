@@ -1,8 +1,0 @@
-#+TITLE: Jordan Herzstein
-#+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
-#+OPTIONS: toc:nil
-
-* Contact Info
-+ email: [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.txt][PGP]] 
-
-#+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t

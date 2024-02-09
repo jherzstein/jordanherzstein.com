@@ -1,5 +1,0 @@
-#+TITLE: Jordan Herzstein
-#+OPTIONS: toc:nil
-#+INCLUDE: "~/Website/content/base.org::*Header" :only-contents t
-Page not found
-#+INCLUDE: "~/Website/content/base.org::*Footer" :only-contents t
