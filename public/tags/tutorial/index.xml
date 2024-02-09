@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on Jordan Herzstein</title>
+    <link>/tags/tutorial/</link>
+    <description>Recent content in tutorial on Jordan Herzstein</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 22 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
+      <link>/posts/caps2esc/</link>
+      <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/caps2esc/</guid>
+      <description>Guide on switching keymaps using xkb in Xorg</description>
+    </item>
+    
+  </channel>
+</rss>
