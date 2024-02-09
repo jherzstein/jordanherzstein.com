@@ -9,6 +9,8 @@ then
     git push origin master
     git checkout gh-pages
     git checkout master ~/Website/public/
+    mv public/* .
+    rm -r public/
     git commit -m "updating for hugo"
     git push origin gh-pages
 else
