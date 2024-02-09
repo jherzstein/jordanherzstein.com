@@ -1,7 +1,7 @@
 +++
 title = "Hugo and other site changes"
 summary = "Hugo is a very good static site generator."
-date = 2024-02-07
+date = 2024-02-09
 tags = ["hugo", "github", "updates"]
 draft = false
 [menu]

@@ -1,5 +1,5 @@
 #+TITLE: Hugo and other site changes
-#+date: 2024-02-07
+#+date: 2024-02-09
 #+hugo_base_dir: ../../
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
