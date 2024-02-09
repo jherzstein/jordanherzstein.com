@@ -7,6 +7,10 @@ then
     git add .
     git commit -m "auto updating site"
     git push origin master
+    git checkout gh-pages
+    git checkout master ~/Website/public/
+    git commit -m "updating for hugo"
+    git push origin gh-pages
 else
     exit 0
 fi
