@@ -7,7 +7,7 @@ html{
 body{
     display: block;
     max-width: 750px;
-    width: 85%;
+    width: 90%;
     margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
@@ -105,11 +105,11 @@ br {
 
 .menu{
     padding: 0.075em;
-    font-size-adjust: 0.6; 
+    font-size: 1.2em; 
 }
 
 .copyright{
-    font-size-adjust: 0.4;
+    font-size: 0.71em;
 }
 
 .post__summary{
