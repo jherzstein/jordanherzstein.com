@@ -16,7 +16,7 @@ jobs:
         run: sudo apt install hugo 
 
       - name: Build the site
-        run: hugo
+        run: hugo --config hugo.toml
 
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
