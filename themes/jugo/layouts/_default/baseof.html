@@ -2,21 +2,16 @@
 <html lang="{{- site.Language.Lang -}}">
     <link rel="stylesheet" href="{{ "/css/style.css" | absURL }}">
     {{ $currentPage := . }}
-    {{ if or .IsSection .IsHome }}
     <head>
         {{- partial "head.html" . -}}
     </head>
-    {{end}}
+    <head>
+        {{- partial "header.html" . -}}
+    </head>
 
     <body>
         <div class="page">
 
-	    {{ if or .IsSection .IsHome }}
-	    <head>
-              {{- partial "header.html" . -}}
-	    </head>
-	    {{end}}
-	    </header>
 
             <section class="page__body">
                 {{- block "main" . }}{{- end }}

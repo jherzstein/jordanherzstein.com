@@ -7,10 +7,10 @@ draft = false
     identifier = "contact"
 +++
 
-## <img src="/images/contact/simplex.png" width="34" /> Simplex [QR Code](/images/contact/simplex-qr.png) {#img-src-images-contact-simplex-dot-png-width-34-simplex-qr-code}
+## <img class="inline-header" src="/images/contact/simplex.png" /> SimpleX [QR Code](/images/contact/simplex-qr.png) {#img-class-inline-header-src-images-contact-simplex-dot-png-simplex-qr-code}
 
 
-## <img src="/images/contact/skiff.png" width="34" /> Email [website@jordanherzstein.xyz](mailto:website@jordanherzstein.xyz) [PGP](./pubkey.txt) {#img-src-images-contact-skiff-dot-png-width-34-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-txt}
+## <img class="inline-header" src="/images/contact/skiff.png" /> Email [website@jordanherzstein.xyz](mailto:website@jordanherzstein.xyz) [PGP](./pubkey.txt) {#img-class-inline-header-src-images-contact-skiff-dot-png-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-txt}
 
 -   I have PGP as an option here but I really don't care if you don't.
 -   [PGP isn't great](https://www.latacora.com/blog/2019/07/16/the-pgp-problem/) and statistically speaking you're probably using gmail or some other providor that definitely reads your emails, in which case I'm not sure what difference it makes anyways. If you still want to go through the hassle you can learn how to use PGP [here](https://emailselfdefense.fsf.org/en/).

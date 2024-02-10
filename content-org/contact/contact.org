@@ -8,8 +8,8 @@
 #+HUGO_CODE_FENCE: nil
 #+OPTIONS: num:nil toc:nil 
 
-** @@html:<img src="/images/contact/simplex.png" width="34" />@@ Simplex [[/images/contact/simplex-qr.png][QR Code]]
-** @@html:<img src="/images/contact/skiff.png" width="34" />@@ Email [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.txt][PGP]]
+** @@html:<img class="inline-header" src="/images/contact/simplex.png" />@@ SimpleX [[/images/contact/simplex-qr.png][QR Code]]
+** @@html:<img class="inline-header" src="/images/contact/skiff.png" />@@ Email [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.txt][PGP]]
 - I have PGP as an option here but I really don't care if you don't.
 - [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][PGP isn't great]] and statistically speaking you're probably using gmail or some other providor that definitely reads your emails, in which case I'm not sure what difference it makes anyways. If you still want to go through the hassle you can learn how to use PGP [[https://emailselfdefense.fsf.org/en/][here]].
 - Skiff mail users do not need to use PGP through this contact method, it is automatically encrypted.
