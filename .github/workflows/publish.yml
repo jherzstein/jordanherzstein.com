@@ -23,4 +23,3 @@ jobs:
         with:
           branch: gh-pages
           folder: public
-	  cname: jordanherzstein.xyz
