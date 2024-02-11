@@ -1,6 +1,6 @@
 {{ define "main" }}
     <header class="page-header">
-      <h1>Tag:{{ .Title }}</h1></h1>
+      <h1>Tag:{{ .Title }}<a href={{ $,Site.BaseUrl }}></a></h1></h1>
     </header>
     <header class="content__header">
         {{ .Content }}

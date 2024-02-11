@@ -3,21 +3,20 @@
 #+hugo_base_dir: ../../
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
-#+hugo_tags[]: technology, projects, anime, manga, new
 #+filetags: technology projects anime manga 
-#+HUGO_CODE_FENCE: nil
+#+HUGO_CODE_FENCE: 
 #+EXPORT_FILE_NAME: nyaa_menu.md 
 #+hugo_front_matter_key_replace: description>summary
-#+BEGIN_DESCRIPTION
+#+begin_description
 I made a lazy web scraping tool for collecting anime and manga while I was bored.
-#+END_DESCRIPTION
+#+end_description
 
 
 #+BEGIN_EXPORT html
 <figure>
     <center>
        <img src="/images/blog/nyaa_menu_screenshot.png" width="100%" />
-       <figcaption>nyaa_menu scraping nyaa.si for "Chainsaw Man" english translaged manga from most to least seeded.</figcaption>
+       <figcaption>nyaa_menu scraping nyaa.si for "Chainsaw Man" english translated manga from most to least seeded.</figcaption>
     </center>
 </figure>
 #+END_EXPORT

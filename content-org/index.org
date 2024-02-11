@@ -8,12 +8,15 @@
 #+HUGO_CODE_FENCE: nil
 #+OPTIONS: num:nil toc:nil 
 
-Hello, my name is Jordan, I'm a Computer Engineering student from Canada. My general interests fall into free and open source software, computer privacy, thinkpads, and more. This is my website, I sometimes write blogs when I'm not lazy about current things that I'm doing and some technical guides. Also yes, my website is minimal.
+Hello, my name is Jordan, I'm a Computer Engineering student from Canada. I like all things FOSS, cybersecurity, server administration, selfhosting, thinkpads, and more. These past few years I've been living and breathing Linux, from desktop, server, and embedded, with some knowledge of Windows (desktop and server) and Android. Most of my programming experience is in bash, Python, and C/C++. Familiar with Java, SQL, Go, and PHP.
+
+This is my website, I sometimes write blogs and technical guides. It is a very minimal static site with html and css, but this way my site is fast, responsive, and to the point. I can say that everything here is created and owned by me, not just as a creative outlet, but so every facet of my online existance is under my control. I engage very little with social media. I value understanding and being able to control my technology, which fuels my passion to learn new things all the time.
+
+When I'm not in front of glowing rectangles made of polarized sheets and crystals, I like to swim, I'm also taking part in my school's Brazillian Jiu Jitsu club. During COVID I stopped gaming entirely but more recently I've given a shot attending my local SSBU tournaments.
 
 * What am I up to?
 + I'm a full time student. 
-+ A guy kijiji.ca sold me a Thinkpad T430 for $100CAD. His loss for selling off such a golden device.
++ A guy kijiji.ca sold me a Thinkpad T430 for $100CAD this summer. I'm still using it for running Qubes OS for school and personal use. I love Kijiji.
 + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
-+ I like to swim and read books and manga in order to stay sane. 
 + I'm trying Brazilian Jiu Jitsu.
 + I like hobbies that I'm bad at.
