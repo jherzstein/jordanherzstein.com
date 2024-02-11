@@ -5,7 +5,7 @@
 #+HUGO_MENU: :menu "posts"
 #+filetags: technology email clown-moment skiff proton
 #+HUGO_CODE_FENCE: nil
-#+EXPORT_FILE_NAME: nyaa_menu.md 
+#+EXPORT_FILE_NAME: skiffdead.md 
 #+hugo_front_matter_key_replace: description>summary
 #+begin_description
 Lesson #1: Proton king. Lesson #2: Don't trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.
