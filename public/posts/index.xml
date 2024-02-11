@@ -8,15 +8,6 @@
     <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Skiff is Dead 🤡</title>
-      <link>/posts/nyaa_menu/</link>
-      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/nyaa_menu/</guid>
-      <description>Lesson #1: Proton king. Lesson #2: Don&amp;rsquo;t trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.</description>
-    </item>
-    
-    <item>
-      <title>Skiff is Dead 🤡</title>
       <link>/posts/skiffdead/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
       
@@ -31,6 +22,15 @@
       
       <guid>/posts/thingstocome/</guid>
       <description>Hugo is a very good static site generator.</description>
+    </item>
+    
+    <item>
+      <title>nyaa_menu</title>
+      <link>/posts/nyaa_menu/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/nyaa_menu/</guid>
+      <description>I made a lazy web scraping tool for collecting anime and manga while I was bored.</description>
     </item>
     
     <item>

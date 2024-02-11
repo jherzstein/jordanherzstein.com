@@ -79,6 +79,33 @@
     </item>
     
     <item>
+      <title>anime</title>
+      <link>/tags/anime/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/anime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>manga</title>
+      <link>/tags/manga/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/manga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>/tags/projects/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>openwrt</title>
       <link>/tags/openwrt/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
