@@ -1,5 +1,7 @@
 #+TITLE: My Little Techy Projects Summer 2023 
 #+date: 2023-09-20
+#+OPTIONS: toc:nil
+#+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ../../
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
@@ -28,7 +30,7 @@ Not gonna lie I had an extremely baller summer and I'm sad that the 21st is comi
 I hacked my day 1 Switch with a piece of literal tinfoil.
 
 ** Some boring skippable personal info
-For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, many well known members of the community having been outed for sexual misconduct around this time and the ensuing aftermath was a further deterrent from ever wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place. 
+For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, wider community controversy and its ensuing aftermath gave me a more negative view of the scene which deterred me from wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place. 
 
 ** @@html:<img src="/images/blog/reentry_racoon.png" width="10%" />@@Actual Switch hacks
 I know that the switch modding scene has had the past 6-7 years to mature but I did not expect it to be this easy. Of course, I reccommend following a written guide that's constantly updated (such as the [[https://rentry.co/SwitchHackingIsEasy][rentry]] guide) to avoid bricking your device, but it really wasn't that complicated [[cite:Reentry]]. The basics of the hack are to short two pins in the right joycon rail and presing the + and power button to put the device in recovery mode (RCM), which I did using a literal peice of tinfoil, though there are RCM jig devices on amazon that are easier to use. Burned onto the Tegra bootROM on all early Switches has a buffer overflow vulnerability that allows hackers to slip by the bootloader signature check, allowing unsigned payloads to be pushed to the device [[cite:Fusee]].

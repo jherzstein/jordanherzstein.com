@@ -9,8 +9,20 @@
       <a href="/mysetup">setup</a>
       -
       <a href="https://github.com/jherzstein">projects</a>
-    -
+      -
       <a href="/contact">contact</a>
   </div>
 </div> 
+<!-- <nav class="page__nav main-nav">
+    <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <li class="main-nav__item"><a class="nav-main-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+    {{ end }}
+
+    {{ range .Site.Menus.external }}
+    <li class="main-nav__item"><a class="nav-main-item" href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+    </ul>
+</nav> -->
 

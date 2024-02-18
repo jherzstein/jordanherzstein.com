@@ -2,6 +2,7 @@
 title = "My Little Techy Projects Summer 2023"
 summary = "I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching."
 date = 2023-09-20
+lastmod = 2024-02-18T14:37:19-05:00
 tags = ["technology", "personal", "qubes-os", "openwrt", "switch"]
 draft = false
 [menu]
@@ -26,7 +27,7 @@ I hacked my day 1 Switch with a piece of literal tinfoil.
 
 ### Some boring skippable personal info {#some-boring-skippable-personal-info}
 
-For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, many well known members of the community having been outed for sexual misconduct around this time and the ensuing aftermath was a further deterrent from ever wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place.
+For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, wider community controversy and its ensuing aftermath gave me a more negative view of the scene which deterred me from wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend's place.
 
 
 ### <img src="/images/blog/reentry_racoon.png" width="10%" />Actual Switch hacks {#img-src-images-blog-reentry-racoon-dot-png-width-10-actual-switch-hacks}

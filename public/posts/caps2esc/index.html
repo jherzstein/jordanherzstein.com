@@ -16,10 +16,11 @@
       <a href="/mysetup">setup</a>
       -
       <a href="https://github.com/jherzstein">projects</a>
-    -
+      -
       <a href="/contact">contact</a>
   </div>
 </div> 
+
 
 </head>
 
@@ -44,7 +45,33 @@
                       <a href="/tags/tutorial/">#tutorial</a>
 	          </span>
               </div>
-    <div class="content__body">
+    <br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#the-guide" aria-label="The Guide">The Guide</a><ul>
+                        
+                <li>
+                    <a href="#requirements" aria-label="Requirements">Requirements</a></li>
+                <li>
+                    <a href="#creating-user-defined-layout-in-xkb" aria-label="Creating user defined layout in xkb">Creating user defined layout in xkb</a></li>
+                <li>
+                    <a href="#updating-keyboard-layout" aria-label="Updating Keyboard layout">Updating Keyboard layout</a></li></ul>
+                </li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
          <p>The Emacs editor was designed in the 1980&rsquo;s in the era of old unix keyboards when the control key was next to the &ldquo;A&rdquo; key, a lot of functionality in Emacs was designed around CTRL keybindings. While there are hobbyist keyboards for that kind of layout, no real usable laptop these days would oblige without some serious changes. This has had the undesireable outcome of exasterbating repetitive strain injury (RSI) in some pretty famous programmers(<a href="#citeproc_bib_item_2">Lee 2022</a>).</p>
 <p>Now I&rsquo;m regularly using evil mode to edit files with Emacs so it shouldn&rsquo;t be as big of an issue for someone like myself, however, I&rsquo;m not interesting in running the risk having RSI on my pinky by the time I&rsquo;m 50 because I used <code>C-x C-f</code> too many times. One solution would be switching to Doom or Spacemacs or otherwise changing my <code>init.el</code> file in emacs to use the control key much less. Many people use xmonad to change keyboard layouts as well. However, I feel like those solutions are a bit overkill, and I found a decent solution for my case without having to change very much about my system using xkb, which is how keyboard codes are handled in Xorg(<a href="#citeproc_bib_item_3">Unknown 2024</a>).</p>
 <h2 id="the-guide">The Guide</h2>
