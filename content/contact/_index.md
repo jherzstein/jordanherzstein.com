@@ -7,9 +7,6 @@ draft = false
     identifier = "contact"
 +++
 
-There are a few ways to get in contact with me but Signal is the easiest.
-
-
 ## <img class="inline-header" src="/images/contact/simplex.png" /> SimpleX [QR Code](/images/contact/simplex-qr.png) {#img-class-inline-header-src-images-contact-simplex-dot-png-simplex-qr-code}
 
 
