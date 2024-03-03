@@ -12,7 +12,7 @@ draft = false
 
 ## <img class="inline-header" src="/images/contact/protonmail.png" /> Email [website@jordanherzstein.xyz](mailto:website@jordanherzstein.xyz) [PGP](./pubkey.gpg) {#img-class-inline-header-src-images-contact-protonmail-dot-png-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-gpg}
 
--   PGP is prefered though if you already know how to use it you're probably aware of [PGP's drawbacks](https://www.latacora.com/blog/2019/07/16/the-pgp-problem/); there are more secure (and easier) ways of getting in contact with me. If you must use email you can learn how to use PGP [here](https://emailselfdefense.fsf.org/en/).
+-   PGP would be prefered though if you already know how to use it you're probably aware of [PGP's drawbacks](https://www.latacora.com/blog/2019/07/16/the-pgp-problem/); there are more secure (and easier) ways of getting in contact with me. If you must use email you can learn how to use PGP [here](https://emailselfdefense.fsf.org/en/).
 -   Proton Mail users do not need to use PGP it is end to end encrypted by default amongst other Proton Mail users.
 -   PGP fingerprint `893C C031 0405 8C9E 9D40 831D 4FF0 A9CA 91DF A592`
 
