@@ -1,0 +1,14 @@
+<span class="tags-list">
+  {{- with .Params.tags -}}
+  <span class="meta-item">
+  {{- partial "icons.html" . -}}
+      {{- if ge (len .) 1 -}}
+          {{- range . -}}
+                  <span class="tags">
+                      <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
+                  </span>
+          {{ end -}}
+      {{- end -}}
+  </span>
+  {{- end -}}
+</span>

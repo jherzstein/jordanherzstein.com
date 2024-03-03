@@ -51,23 +51,5 @@
       <description>Guide on switching keymaps using xkb in Xorg</description>
     </item>
     
-    <item>
-      <title>Welcome</title>
-      <link>/404/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/404/</guid>
-      <description>not found</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>/_404/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/_404/</guid>
-      <description>not found</description>
-    </item>
-    
   </channel>
 </rss>

@@ -2,17 +2,7 @@
     <header class="content__header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
-    <div class="tags-list">
-      {{- with .Params.tags -}}
-          {{- if ge (len .) 1 -}}
-              {{- range . -}}
-	          <span class ="tags">
-                      <a href="/tags/{{ . | urlize }}/">#{{ . }}</a>
-	          </span>
-              {{ end -}}
-          {{- end -}}
-      {{- end -}}
-    </div>
+    {{- partial "tag-list.html" . -}}
     <br>
          {{- partial "toc.html" . -}}
     <div class="content__body">

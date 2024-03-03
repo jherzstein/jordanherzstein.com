@@ -7,9 +7,25 @@
 #+HUGO_CATEGORIES: 
 #+HUGO_CODE_FENCE: nil
 #+OPTIONS: num:nil toc:nil 
-
 ** @@html:<img class="inline-header" src="/images/contact/simplex.png" />@@ SimpleX [[/images/contact/simplex-qr.png][QR Code]]
-** @@html:<img class="inline-header" src="/images/contact/protonmail.png" />@@ Email [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.txt][PGP]]
-+ I have PGP as an option here but I really don't care if you don't.
-+ [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][PGP isn't great]] and statistically speaking you're probably using gmail or some other providor that definitely reads your emails, in which case I'm not sure what difference it makes anyways. If you still want to go through the hassle you can learn how to use PGP [[https://emailselfdefense.fsf.org/en/][here]].
+** @@html:<img class="inline-header" src="/images/contact/protonmail.png" />@@ Email [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.gpg][PGP]]
++ PGP is prefered though if you already know how to use it you're probably aware of [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][PGP's drawbacks]]; there are more secure (and easier) ways of getting in contact with me. If you must use email you can learn how to use PGP [[https://emailselfdefense.fsf.org/en/][here]].
 + Proton Mail users do not need to use PGP it is end to end encrypted by default amongst other Proton Mail users.
++ PGP fingerprint ~893C C031 0405 8C9E 9D40 831D 4FF0 A9CA 91DF A592~
+
+#+BEGIN_EXPORT html
+<details>
+  <summary>
+    <span class="details">PGP Public Key</span>
+  </summary>
+  <p>
+  </p>
+  <section class="post__summary pgp__dropdown">
+#+END_EXPORT
+#+INCLUDE: "../../public/contact/pubkey.txt" 
+#+BEGIN_EXPORT html
+  </section>
+  <div class="inner">
+  </div>
+</details>
+#+END_EXPORT

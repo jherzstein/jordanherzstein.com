@@ -1,5 +1,25 @@
 {{ define "main" }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <h2>Recent Posts</h2>
+    {{ range .Pages }}
+      {{ range first 3 (where .Pages "Section" "posts" ) }}
+    <article class="post">
+        <header class="post__header">
+          <h3>
+	    {{ .PublishDate | time.Format "02 Jan 2006" }} <a href="{{ .Permalink }}">{{ .Title | markdownify }} </a>
+	  </h3>
+        </header>
+
+        <section class="post__summary">
+            {{ .Summary }}
+        </section>
+	<br>
+	{{- partial "tag-list.html" . -}}
+   </article>
+
+      {{ end }}
+
+    {{ end }}
 {{ end }}
 

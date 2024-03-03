@@ -17,17 +17,7 @@
             {{ .Summary }}
         </section>
 	<br>
-        <div class="tags-list">
-          {{- with .Params.tags -}}
-              {{- if ge (len .) 1 -}}
-                  {{- range . -}}
-	                  <span class ="tags">
-                              <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
-	                  </span>
-                  {{ end -}}
-              {{- end -}}
-          {{- end -}}
-        </div>
+	{{- partial "tag-list.html" . -}}
    </article>
   {{ end }}
 </ul>

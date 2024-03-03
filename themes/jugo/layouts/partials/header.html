@@ -2,17 +2,42 @@
   <div class="menu-container">
       <a href="/">home</a>
       -
-      <a href="/posts">blog</a>
+      <a href="/about">about</a>
       -
-      <a href="/tags">tags</a>
+      <a href="/posts">posts</a>
       -
       <a href="/mysetup">setup</a>
       -
-      <a href="https://github.com/jherzstein">projects</a>
-      -
       <a href="/contact">contact</a>
+      <!--{{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" >{{ .Page.File.Dir }}</a>
+      -
+      {{ end }} -->
   </div>
-</div> 
+</div>
+<!--    <div class="container">
+        <div class="header-nav">
+          <header class="header-logo">
+            <div class="logo terminal-prompt">
+              {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+              {{ $.Scratch.Add "path" .Site.BaseURL }}
+          <nav class="header-menu">
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+              <h2><a href="{{ .Site.BaseURL }}" class="no-style {{ with .Site.Params.TitleCutting }}site-name{{ end }}">{{ .Site.Title }}</a>:~# 
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" >{{ .Page.File.Dir }}</a>
+                {{ end }}
+		</h2>
+            </ul>
+          </nav>
+	</div>
+
+
+<!--    <div class="flex flex-col sm:flex-row items-baseline sm:justify-between">
+        <div class="flex flex-col sm:flex-row grow items-baseline">
+
+            <!-- Center aligned hotlinks -->
+
 <!-- <nav class="page__nav main-nav">
     <ul>
     {{ $currentPage := . }}

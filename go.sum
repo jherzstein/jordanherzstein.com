@@ -1,0 +1,10 @@
+github.com/hugomods/icons v0.6.2 h1:uESGgdnZ0NW/IPNfbGuq1dYG/p5XiqZ9R9CNq0Snr4c=
+github.com/hugomods/icons v0.6.2/go.mod h1:cIkSvK6W0q6N4U6n9KGz+QfRWQXAW0INd+1P31gPNGg=
+github.com/hugomods/icons/vendors/bootstrap v0.5.5 h1:xXqHc6AeJGdc/HkV7sTyACIFu373i1BK3y6yr+lCQjU=
+github.com/hugomods/icons/vendors/bootstrap v0.5.5/go.mod h1:DtuYP+dG9Sttfsggd9k09h/hapZBsel6JJ1vNetkaCg=
+github.com/hugomods/icons/vendors/feather v0.2.2 h1:nPx711XM2tr3pA9+UYB2AnDS3OuvcHN1dsN7zjsXlc0=
+github.com/hugomods/icons/vendors/feather v0.2.2/go.mod h1:IcL/m3HC3N8IQFjCfDi+I8yFVgT4FH+PgaNAipzjM3I=
+github.com/hugomods/icons/vendors/font-awesome v0.6.3 h1:S0Vl11E8Ihn5vQZuvIOUuLXi1eOLALtK/auJLScSP+g=
+github.com/hugomods/icons/vendors/font-awesome v0.6.3/go.mod h1:S7BE6/wpDplzG9uTnZqG6Q7ruMFi8MN1R+DqE8gNc3Y=
+github.com/hugomods/icons/vendors/simple-icons v1.0.31 h1:CO95nIyR7MZPHrww0tev/eoj8Gn/lNDalfSBtaYQEZ4=
+github.com/hugomods/icons/vendors/simple-icons v1.0.31/go.mod h1:mXoItc29/obFr5EOEiDmrLMZQ+3juCch3YyQ8Jo6ElA=

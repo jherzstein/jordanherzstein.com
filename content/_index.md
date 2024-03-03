@@ -7,11 +7,46 @@ draft = false
     identifier = "welcome"
 +++
 
-Hello, my name is Jordan, I'm a Computer Engineering student from Canada. I like all things FOSS, cybersecurity, server administration, selfhosting, thinkpads, and more. These past few years I've been living and breathing Linux, from desktop, server, and embedded, with some knowledge of Windows (desktop and server) and Android. Most of my programming experience is in bash, Python, and C/C++. Familiar with Java, SQL, Go, and PHP.
+Hello, my name is Jordan, thank you for stopping by my website.
 
-This is my website, I sometimes write blogs and technical guides. It is a very minimal static site with html and css, but this way my site is fast, responsive, and to the point. I can say that everything here is created and owned by me, not just as a creative outlet, but so every facet of my online existance is under my control. I engage very little with social media. I value understanding and being able to control my technology, which fuels my passion to learn new things all the time.
+-   [home](/) - You are here right now
+-   [about](/about) - Learn all about me
+-   [posts](/posts) - Part personal blog part dev log, scroll down to see some recent posts
+-   [setup](/mysetup) - Software and computers that I use, how I host various services, etc
+-   [contact](/contact) - Get in touch with me
 
-When I'm not in front of glowing rectangles made of polarized sheets and crystals, I like to swim, I'm also taking part in my school's Brazillian Jiu Jitsu club. During COVID I stopped gaming entirely but more recently I've given a shot attending my local SSBU tournaments.
+<span class="social-icons">
+<a href="/index.xml">
+
+{{< icons/icon vendor=feather name=rss size=1.5em >}}
+
+</a>
+
+<a href="https://github.com/jherzstein">
+
+{{< icons/icon vendor=simple-icons name=github size=1.5em >}}
+
+</a>
+
+<a href="/contact/#img-class-inline-header-src-images-contact-protonmail-dot-png-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-gpg">
+
+{{< icons/icon vendor=simple-icons name=protonmail size=1.5em >}}
+
+</a>
+
+<a href="/contact/#img-class-inline-header-src-images-contact-signal-dot-png-signal-jherzstein-dot-01-qr-code">
+
+{{< icons/icon vendor=bootstrap name=signal size=1.5em >}}
+
+</a>
+
+<a href="https://ca.linkedin.com/in/jordan-herzstein-a99414204">
+
+{{< icons/icon vendor=bootstrap name=linkedin size=1.5em >}}
+
+</a>
+
+</span>
 
 
 ## What am I up to? {#what-am-i-up-to}

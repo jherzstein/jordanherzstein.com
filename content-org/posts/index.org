@@ -1,4 +1,4 @@
-#+TITLE: Blog Posts 
+#+TITLE: Posts 
 #+AUTHOR: Jordan Herzstein
 #+DATE: 2023-02-01
 #+HUGO_BASE_DIR: ../../
@@ -7,6 +7,26 @@
 #+HUGO_CODE_FENCE: nil
 #+EXPORT_FILE_NAME: _index.md
 
-Here is where I post my stupid thoughts, and some useful information. Obligatory "all opinions are my own" and "content of other sites do not reflect my own views". 
+Here is where I post my silly thoughts, and some useful information. Obligatory "all opinions are my own" and "content of other sites do not reflect my own views". 
 
-* Posts @@html:<a href=/posts/index.xml><img src="/images/blog/rss.png" width=25></a>@@
+# * @@html:<a class="inline-header" href=/posts/index.xml><img class="inline-header" src="/images/blog/rss.png" width=25></a>@@ Posts 
+* Posts 
+#+BEGIN_EXPORT html
+<span class="social-icons">
+<a href="/posts/index.xml">
+#+END_EXPORT 
+#+begin_export hugo
+{{< icons/icon vendor=feather name=rss size=1.5em >}}
+#+end_export
+#+BEGIN_EXPORT html
+</a>
+#+END_EXPORT 
+#+BEGIN_EXPORT html
+<a href="/tags/">
+#+END_EXPORT 
+#+begin_export hugo
+{{< icons/icon vendor=feather name=tag size=1.5em >}}
+#+END_EXPORT
+#+BEGIN_EXPORT html
+</a>
+#+END_EXPORT 
