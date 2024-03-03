@@ -8,7 +8,7 @@
 #+HUGO_CODE_FENCE: nil
 #+OPTIONS: num:nil toc:nil 
 There are a few ways to get in contact with me but Signal is the easiest.
-** @@html:<img class="inline-header" src="/images/contact/SignalGroupQr.png" />@@Signal ~jherzstein.01~ [[/images/contact/signal-qr.png][QR Code]]
+** @@html:<img class="inline-header" src="/images/contact/signal.png" />@@Signal ~jherzstein.01~ [[/images/contact/SignalGroupQr.png][QR Code]]
 ** @@html:<img class="inline-header" src="/images/contact/simplex.png" />@@ SimpleX [[/images/contact/simplex-qr.png][QR Code]]
 ** @@html:<img class="inline-header" src="/images/contact/protonmail.png" />@@ Email [[mailto:website@jordanherzstein.xyz][website@jordanherzstein.xyz]] [[./pubkey.gpg][PGP]]
 + PGP is prefered though if you already know how to use it you're probably aware of [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][PGP's drawbacks]]; there are more secure (and easier) ways of getting in contact with me. If you must use email you can learn how to use PGP [[https://emailselfdefense.fsf.org/en/][here]].

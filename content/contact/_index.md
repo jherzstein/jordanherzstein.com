@@ -10,7 +10,7 @@ draft = false
 There are a few ways to get in contact with me but Signal is the easiest.
 
 
-## <img class="inline-header" src="/images/contact/SignalGroupQr.png" />Signal `jherzstein.01` [QR Code](/images/contact/signal-qr.png) {#img-class-inline-header-src-images-contact-signalgroupqr-dot-png-signal-jherzstein-dot-01-qr-code}
+## <img class="inline-header" src="/images/contact/signal.png" />Signal `jherzstein.01` [QR Code](/images/contact/SignalGroupQr.png) {#img-class-inline-header-src-images-contact-signal-dot-png-signal-jherzstein-dot-01-qr-code}
 
 
 ## <img class="inline-header" src="/images/contact/simplex.png" /> SimpleX [QR Code](/images/contact/simplex-qr.png) {#img-class-inline-header-src-images-contact-simplex-dot-png-simplex-qr-code}
