@@ -121,7 +121,7 @@ h4 {
     text-decoration: underline;
 }
 
-pre {
+pre code {
     background-color: #21252B;
     border: 1px solid ; 
     border-radius: .35em;
