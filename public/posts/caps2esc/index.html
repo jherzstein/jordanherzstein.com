@@ -3,7 +3,10 @@
     <link rel="stylesheet" href="/css/style.css">
     
     <head><meta charset="UTF-8">
-<h1>Jordan Herzstein</h1><title>Jordan Herzstein</title>
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
 </head>
     <header><div class="menubar">
   <div class="menu-container">
@@ -16,6 +19,22 @@
       <a href="/mysetup">setup</a>
       -
       <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
       
   </div>
 </div>
@@ -98,7 +117,7 @@ xkb_symbols &#34;ctrl_esc&#34; {
 <pre tabindex="0"><code class="language-nil" data-lang="nil">custom:ctrl_esc  Make Caps Lock an additional ESC and CTRL
 </code></pre><h3 id="updating-keyboard-layout">Updating Keyboard layout</h3>
 <p>We can apply these changes from the command line using <code>setxkbmap</code>. <code>setxkbmap</code> specifies the keyboard layout to be used based on the specified based on the components in <code>/usr/share/X11/xkb/</code> that we were just changing. Run the command with the <code>-option</code> flag and the name of our custom layout rules:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ setxkbmap -option <span style="color:#e6db74">&#34;custom:ctrl_esc&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>setxkbmap -option <span style="color:#e6db74">&#34;custom:ctrl_esc&#34;</span>
 </span></span></code></pre></div><p>To run this automatically at the start of your xorg session, go into your <code>.xinitrc</code> file (either in your home directory or <code>/etc/X11/xinit/xinitrc</code>) and add the above command. Now when your Xorg session is restarted this keymapping will begin working.</p>
 <h2 id="references">References</h2>
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">

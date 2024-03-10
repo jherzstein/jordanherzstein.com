@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>updates on Jordan Herzstein</title>
-    <link>/tags/updates/</link>
-    <description>Recent content in updates on Jordan Herzstein</description>
+    <title>themes on Jordan Herzstein</title>
+    <link>/tags/themes/</link>
+    <description>Recent content in themes on Jordan Herzstein</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/updates/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/themes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New light theme on daylight savings plus I hate daylight savings</title>
       <link>/posts/light_theme_plus_i_hate_daylight_savings/</link>
@@ -13,15 +13,6 @@
       
       <guid>/posts/light_theme_plus_i_hate_daylight_savings/</guid>
       <description>I added a light theme so it&amp;rsquo;s easier for some users to read. Also I hate daylight savings.</description>
-    </item>
-    
-    <item>
-      <title>Hugo and other site changes</title>
-      <link>/posts/thingstocome/</link>
-      <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/thingstocome/</guid>
-      <description>Hugo is a very good static site generator.</description>
     </item>
     
   </channel>

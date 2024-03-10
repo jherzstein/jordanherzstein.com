@@ -6,16 +6,19 @@
     --dark-color-h2:#56b6c2;
     --dark-color-a: #e06c75;
     --dark-color-a-hover: #c678dd;
+    --dark-switch-icon: "hi";
+    --dark-switch-icon: ☀️;
 
     --light-color-bg: #f9f5d7;
     --light-color-fg:#f2e5bc;
     --light-color-txt: black;
-    --light-color-h1: #9e5010;
+    --light-color-txt: #23201b;
     --light-color-h1: #e04c75;
-    --light-color-h2: #a9493d;
     --light-color-h2: #e06c75;
     --light-color-a: #1f938a;
     --light-color-a-hover: #398722;
+    --light-switch-icon: 🌑️;
+
 
     --color-bg: var(--dark-color-bg);
     --color-fg: var(--dark-color-fg);
@@ -24,9 +27,11 @@
     --color-h2:var(--dark-color-h2);
     --color-a: var(--dark-color-a);
     --color-a-hover: var(--dark-color-a-hover);
+    --switch-icon: var(--dark-switch-icon);
 
     --monospace: 16px/1.5 "Lucida Console", Monaco, "Consolas", monospace;
 }
+
 .dark {
     --color-bg: var(--dark-color-bg);
     --color-fg: var(--dark-color-fg);
@@ -35,7 +40,7 @@
     --color-h2:var(--dark-color-h2);
     --color-a: var(--dark-color-a);
     --color-a-hover: var(--dark-color-a-hover);
-
+    --switch-icon: var(--dark-switch-icon);
 }
 .light {
     --color-bg: var(--light-color-bg);
@@ -45,25 +50,7 @@
     --color-h2:var(--light-color-h2);
     --color-a: var(--light-color-a);
     --color-a-hover: var(--light-color-a-hover);
-}
-
-.theme-switch:checked ~ :root {
-    height: 100px;
-    width: 100px;
-    --color-txt: var(--light-color-txt);
-    --color-bg: var(--light-color-bg);
-    --color-fg: var(--light-color-fg);
-    --color-h1: var(--light-color-h1);
-    --color-h2:var(--light-color-h2);
-    --color-a: var(--light-color-a);
-}
-
-.theme-switch {
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px, 1px, 1px, 1px);
+    --switch-icon: var(--light-switch-icon);
 }
 
 
@@ -180,17 +167,18 @@ h4 {
 }
 
 pre {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg) !important;
+    color: var(--color-txt) !important;
     border: 1px solid ; 
     border-radius: .35em;
     box-shadow: 4px 4px var(--color-txt); 
     word-wrap: break-word;
     padding: 1em;
     white-space: pre-wrap;
-    font-size: 80%;
-    font: "Lucida Console", Monaco, "Consolas", monospace
+    font: var(--monospace); 
 } 
 
+pre.src-sh:before { content: 'shell'; }
 
 code {
     background-color: var(--color-bg);
@@ -230,6 +218,7 @@ br {
     border: 1px solid ; 
     border-radius: .35em;
     box-shadow: 4px 4px var(--color-txt); 
+    background-color: var(--color-bg);
     padding: .575em;
     overflow: hidden;
     max-width: 730px;

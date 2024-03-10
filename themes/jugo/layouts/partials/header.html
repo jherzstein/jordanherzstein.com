@@ -9,6 +9,23 @@
       <a href="/mysetup">setup</a>
       -
       <a href="/contact">contact</a>
+      <!-- -
+      <a onclick="switchTheme()">theme</a> -->
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
       <!--{{ range .Site.Menus.main }}
       <a href="{{ .URL }}" >{{ .Page.File.Dir }}</a>
       -

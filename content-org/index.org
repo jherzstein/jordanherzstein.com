@@ -5,7 +5,6 @@
 #+EXPORT_FILE_NAME: _index.md
 #+HUGO_MENU: :menu "main"
 #+HUGO_CATEGORIES: 
-#+HUGO_CODE_FENCE: nil
 # #+HUGO_PAIRED_SHORTCODES: icons/icon
 #+OPTIONS: num:nil toc:nil 
 

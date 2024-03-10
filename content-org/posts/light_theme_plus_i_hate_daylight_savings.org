@@ -1,0 +1,19 @@
+#+TITLE: New light theme on daylight savings plus I hate daylight savings 
+#+date: 2024-03-10
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+filetags: updates themes daylight-savings
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: light_theme_plus_i_hate_daylight_savings.md 
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+I added a light theme so it's easier for some users to read. Also I hate daylight savings.
+#+end_description
+
+Currently my site theming is mainly based off of One Half dark theme / nord theme aesthetic, but the new light theme is going for a bit more solarized / light gruv-box vibe because I think a light nord theme looks a bit dilapidated. Get in touch with me and let me know how it looks. Couldn't find a way to get it done without at least a bit of javascript, so I adapted some from [[https://kernal.eu][kernal.eu]]. I suppose I was also misinformed that neocities allowed no javascript in my [[/posts/thingstocome/][last update]] for some reason so neocities will stay.
+
+In the theme of light, dark, and time; daylight savings needs to be abolished. at one point in the year I loose a whole hour of sunlight in my day, and another an hour of sleep. On a societal level, it messes with our circadian rhythms for no good reason in the modern era, higher levels of unipolar depression in the population, and results in unnecessary car fatalities [[cite:&opt-out-daylight-savings;&fatal-car-accidents-spike-after-daylight-savings]]. I would like to perhaps make an extended rant about it someday but this is already too long for a simple update. Not sure how to end this, so, have a nice day and remember to drink water, touch grass, and talk to another person.
+* References
+bibliographystyle:unsrt
+[[bibliography:../../references.bib]]

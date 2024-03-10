@@ -54,7 +54,7 @@ custom:ctrl_esc  Make Caps Lock an additional ESC and CTRL
 We can apply these changes from the command line using `setxkbmap`. `setxkbmap` specifies the keyboard layout to be used based on the specified based on the components in `/usr/share/X11/xkb/` that we were just changing. Run the command with the `-option` flag and the name of our custom layout rules:
 
 ```sh
-$ setxkbmap -option "custom:ctrl_esc"
+setxkbmap -option "custom:ctrl_esc"
 ```
 
 To run this automatically at the start of your xorg session, go into your `.xinitrc` file (either in your home directory or `/etc/X11/xinit/xinitrc`) and add the above command. Now when your Xorg session is restarted this keymapping will begin working.
