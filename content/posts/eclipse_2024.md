@@ -1,12 +1,13 @@
 +++
-title = "Do not look at the Sun"
+title = "My Eclipse PSA"
 summary = "Do not look directly at the sun today... or tomorrow... or ever... just don't do it."
 date = 2024-04-07
+lastmod = 2024-04-08T00:00:19-04:00
 tags = ["eclipse"]
 draft = false
 [menu]
   [menu.posts]
-    identifier = "do-not-look-at-the-sun"
+    identifier = "my-eclipse-psa"
 +++
 
 <figure>

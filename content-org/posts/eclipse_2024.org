@@ -1,6 +1,7 @@
-#+TITLE: Do not look at the Sun
+#+TITLE: My Eclipse PSA 
 #+date: 2024-04-07
 #+hugo_base_dir: ../../
+#+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
 #+filetags: eclipse 
