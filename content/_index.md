@@ -52,7 +52,5 @@ Hello, my name is Jordan, thank you for stopping by my website.
 ## What am I up to? {#what-am-i-up-to}
 
 -   I'm a full time student.
--   A guy kijiji.ca sold me a Thinkpad T430 for $100CAD this summer. I'm still using it for running Qubes OS for school and personal use. I love Kijiji.
 -   [I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!](../images/hatedaylightsavings.png)
--   I'm trying Brazilian Jiu Jitsu.
--   I like hobbies that I'm bad at.
+-   EXAMS AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH!

@@ -1,4 +1,5 @@
 :root {
+    transition: all 2s linear; 
     --dark-color-bg: #21252B;
     --dark-color-fg: #282c34;
     --dark-color-txt: #dcdfe4;
@@ -32,16 +33,6 @@
     --monospace: 16px/1.5 "Lucida Console", Monaco, "Consolas", monospace;
 }
 
-.dark {
-    --color-bg: var(--dark-color-bg);
-    --color-fg: var(--dark-color-fg);
-    --color-txt: var(--dark-color-txt);
-    --color-h1: var(--dark-color-h1);
-    --color-h2:var(--dark-color-h2);
-    --color-a: var(--dark-color-a);
-    --color-a-hover: var(--dark-color-a-hover);
-    --switch-icon: var(--dark-switch-icon);
-}
 .light {
     --color-bg: var(--light-color-bg);
     --color-fg: var(--light-color-fg);
@@ -68,6 +59,7 @@ body {
     margin-right: auto;
     border: 1px solid ; 
     background:var(--color-fg);
+    word-spacing: 10px;
 }
 
 .menu-nav ul {
@@ -76,7 +68,7 @@ body {
     list-style: none;
     flex-row: row wrap;
     justify-content: flex-start;
-    margin: auto var(--gap);
+    margin: auto;
 }
 
 .nav {
@@ -160,8 +152,6 @@ h4 {
   float: left;
 }
 
-
-
 .current-page {
     text-decoration: underline;
 }
@@ -221,7 +211,6 @@ br {
     background-color: var(--color-bg);
     padding: .575em;
     overflow: hidden;
-    max-width: 730px;
     width: auto;
     box-sizing:border-box;
 }

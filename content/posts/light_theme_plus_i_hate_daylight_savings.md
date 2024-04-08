@@ -19,6 +19,6 @@ In the theme of light, dark, and time; daylight savings needs to be abolished. a
 
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Chesak, Jennifer. 2024. “Places around the World That Opt out of Daylight Savings - and Why.” https://www.bbc.com/future/article/20240308-daylight-savings-reasons-history-health-hazards-countries-that-abolished.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Ries, Julia. 2020. “The Number of Fatal Car Accidents Spikes after Daylight Saving Time.” https://www.healthline.com/health-news/daylight-saving-can-make-driving-less-safe.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Chesak, Jennifer. 2024. “Places around the World That Opt out of Daylight Savings - and Why.” <a href="https://www.bbc.com/future/article/20240308-daylight-savings-reasons-history-health-hazards-countries-that-abolished">https://www.bbc.com/future/article/20240308-daylight-savings-reasons-history-health-hazards-countries-that-abolished</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Ries, Julia. 2020. “The Number of Fatal Car Accidents Spikes after Daylight Saving Time.” <a href="https://www.healthline.com/health-news/daylight-saving-can-make-driving-less-safe">https://www.healthline.com/health-news/daylight-saving-can-make-driving-less-safe</a>.</div>
 </div>
