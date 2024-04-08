@@ -2,7 +2,7 @@
 title = "My Eclipse PSA"
 summary = "Do not look directly at the sun today... or tomorrow... or ever... just don't do it."
 date = 2024-04-07
-lastmod = 2024-04-08T00:26:45-04:00
+lastmod = 2024-04-08T02:13:23-04:00
 tags = ["eclipse"]
 draft = false
 [menu]
@@ -24,7 +24,7 @@ The day that I have been looking forward to since mid February has almost arrive
 
 If you've known about the eclipse coming April 8th in North America for a while, you probably have some eclipse glasses lying aroung, or maybe you've gotten a new pair from Amazon or your school. Here's what you need to know to make sure you've gotten the right stuff:
 
-If you look at the side of your glasses or visor, they probably have a ISO symbol on the side of them and "Confirms to meet the Transmission Requirements of 12312-2", that means that they are legit and conform to the worldwide standard for solar filtering. See the image below to see exactly what that looks like. Also put your glasses on right now... Do you see anything? If you don't see anything other than pitch black, that means that they're not legit. You should not be able to look someone in the eyes and have a conversation with them with your eclipse glasses on.
+If you look at the side of your glasses or visor, they probably have a ISO symbol on the side of them and "Confirms to meet the Transmission Requirements of 12312-2", that means that they are legit and conform to the worldwide standard for solar filtering. See the image below to see exactly what that looks like. Also put your glasses on right now... Do you see anything? If you see anything other than pitch black, that means that they're not legit. You should not be able to look someone in the eyes and have a conversation with them with your eclipse glasses on.
 
 <figure>
     <center>
