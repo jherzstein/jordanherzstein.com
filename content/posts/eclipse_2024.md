@@ -2,7 +2,7 @@
 title = "My Eclipse PSA"
 summary = "Do not look directly at the sun today... or tomorrow... or ever... just don't do it."
 date = 2024-04-07
-lastmod = 2024-04-08T00:01:47-04:00
+lastmod = 2024-04-08T00:26:45-04:00
 tags = ["eclipse"]
 draft = false
 [menu]
@@ -17,7 +17,7 @@ draft = false
     </center>
 </figure>
 
-The day that I have been looking forward to since mid February has almost arrived, the solar eclipse! From where I'm at in Ontario is well within the path of totality so I'll get to see a full solar eclipse for an entire 3 minutes and 4 seconds! HAHAHAHA FOR ONCE IN MY LIFE I CAN STARE DIRECTLY AT THE SUN! Well, unless a cloud covers it, then I will be sad 😞. Now I know without any analytics on this website whatsoever that 100% of the people who visit my site have an IQ higher than the average Rick and Morty fan, and are also very perceptive, wise, and highly attractive individuals, so I do not need to tell you to not look at the sun at any time let alone an eclipse. However, it is an unfortunate reality that despite all the emergency warnings that have been put out, some fool will choose to look at the partially eclipsed sun anyway unless someone shakes some sense into them. Just to be clear, if anyone looks at the sun even for a few seconds **they will perminently damage their eyes from the UV rays**. It may not hurt initially because the sun is not bright enough to affect your pain receptors at the back of your eyes, the retinas will get a whole burnt into them from the UV rays. Humans may have evolved to look away from the sun due to its brightness, but due to the eclipse only occuring a few times within a single lifetime, we have no adaptations for the eclipse except for using reasoning to not be foolish.
+The day that I have been looking forward to since mid February has almost arrived, the solar eclipse! From where I'm at in Ontario is well within the path of totality so I'll get to see a full solar eclipse for an entire 3 minutes and 4 seconds! HAHAHAHA FOR ONCE IN MY LIFE I CAN STARE DIRECTLY AT THE SUN! Well, unless a cloud covers it, then I will be sad 😞. Now I know without any analytics on this website whatsoever that 100% of the people who visit my site have an IQ higher than the average Rick and Morty fan, and are also very perceptive, wise, and highly attractive individuals, so I do not need to tell you to not look at the sun at any time let alone an eclipse. However, it is an unfortunate reality that despite all the emergency warnings that have been put out, some fool will choose to look at the partially eclipsed sun anyway unless someone shakes some sense into them. Just to be clear, if anyone looks at the sun even for a few seconds **they will perminently damage their eyes from the UV rays**. It may not hurt initially because the sun is not bright enough to affect your pain receptors at the back of your eyes, but be assured the retinas will get a hole burnt into them from the UV rays. Humans may have evolved to look away from the sun due to its brightness, but due to the eclipse only occuring a few times within a single lifetime, we have no adaptations for the eclipse except for using reasoning to not be foolish.
 
 
 ## A note about eclipse glasses {#a-note-about-eclipse-glasses}
