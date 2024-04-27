@@ -1,4 +1,4 @@
-#+TITLE: Using ADB to Delete Vanadium on GrapheneOS
+#+TITLE: Using adb to Delete Vanadium on GrapheneOS
 #+date: 2024-04-27 00:01
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_base_dir: ../../

@@ -1,8 +1,8 @@
 +++
-title = "Using ADB to Delete Vanadium on GrapheneOS"
+title = "Using adb to Delete Vanadium on GrapheneOS"
 summary = "I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk."
 date = 2024-04-27T00:01:00-04:00
-lastmod = 2024-04-27T16:30:04-04:00
+lastmod = 2024-04-27T16:52:30-04:00
 tags = ["technology", "tutorial", "adb", "android", "grapheneos"]
 draft = false
 [menu]
@@ -141,7 +141,7 @@ That's it! Enjoy adb!
 ## References {#references}
 
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Android Developers. 2024a. “Android Debug Bridge (Adb).” <a href="https://developer.android.com/tools/adb">https://developer.android.com/tools/adb</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Android Developers. 2024a. “Androd Debug Bridge (Adb).” <a href="https://developer.android.com/tools/adb">https://developer.android.com/tools/adb</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>———. 2024b. “Configure on-Device Developer Options.” <a href="https://developer.android.com/studio/debug/dev-options#enable">https://developer.android.com/studio/debug/dev-options#enable</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_3"></a>GrapheneOS. 2024. “Features Overview | GrapheneOS.” <a href="https://grapheneos.org/features#vanadium">https://grapheneos.org/features#vanadium</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Mira, Oscar. 2024. “Molly.” <a href="https://molly.im/">https://molly.im/</a>.</div>
