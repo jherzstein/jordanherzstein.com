@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/eclipse/</loc>
-    <lastmod>2024-04-08T02:13:23-04:00</lastmod>
+    <loc>/tags/adb/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
   </url><url>
-    <loc>/posts/eclipse_2024/</loc>
-    <lastmod>2024-04-08T02:13:23-04:00</lastmod>
+    <loc>/tags/android/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/grapheneos/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/technology/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/posts/adb_vanadium/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2024-04-08T02:13:23-04:00</lastmod>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/eclipse/</loc>
+    <lastmod>2024-04-27T16:23:34-04:00</lastmod>
+  </url><url>
+    <loc>/posts/eclipse_2024_part2/</loc>
+    <lastmod>2024-04-27T16:23:34-04:00</lastmod>
+  </url><url>
+    <loc>/posts/eclipse_2024/</loc>
+    <lastmod>2024-04-26T16:21:50-04:00</lastmod>
   </url><url>
     <loc>/tags/daylight-savings/</loc>
     <lastmod>2024-03-10T00:00:00+00:00</lastmod>
@@ -37,9 +58,6 @@
   </url><url>
     <loc>/posts/skiffdead/</loc>
     <lastmod>2024-02-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/technology/</loc>
-    <lastmod>2024-02-22T21:48:08-05:00</lastmod>
   </url><url>
     <loc>/tags/github/</loc>
     <lastmod>2024-02-09T00:00:00+00:00</lastmod>
@@ -90,9 +108,6 @@
     <lastmod>2022-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/caps2esc/</loc>
-    <lastmod>2022-10-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/tutorial/</loc>
     <lastmod>2022-10-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/x11/</loc>

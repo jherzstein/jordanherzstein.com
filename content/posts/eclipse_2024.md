@@ -2,7 +2,7 @@
 title = "My Eclipse PSA"
 summary = "Do not look directly at the sun today... or tomorrow... or ever... just don't do it."
 date = 2024-04-07
-lastmod = 2024-04-08T02:13:23-04:00
+lastmod = 2024-04-26T16:21:50-04:00
 tags = ["eclipse"]
 draft = false
 [menu]

@@ -7,9 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>adb</title>
+      <link>/tags/adb/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/tags/adb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>android</title>
+      <link>/tags/android/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grapheneos</title>
+      <link>/tags/grapheneos/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/tags/grapheneos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>/tags/technology/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>eclipse</title>
       <link>/tags/eclipse/</link>
-      <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/eclipse/</guid>
       <description></description>
@@ -75,15 +120,6 @@
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/skiff/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>technology</title>
-      <link>/tags/technology/</link>
-      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/technology/</guid>
       <description></description>
     </item>
     
@@ -174,15 +210,6 @@
       <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>/tags/emacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     

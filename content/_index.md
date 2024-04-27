@@ -52,5 +52,6 @@ Hello, my name is Jordan, thank you for stopping by my website.
 ## What am I up to? {#what-am-i-up-to}
 
 -   I'm a full time student.
+-   No more exams, yay!
 -   [I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!](../images/hatedaylightsavings.png)
--   EXAMS AAAAAAAAAAAAAAAAAAAAAAAHHHHHHHHHHH!
+-   Doing fun stuff.

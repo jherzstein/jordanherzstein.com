@@ -5,7 +5,25 @@
     <link>/</link>
     <description>Recent content in Welcome on Jordan Herzstein</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Apr 2024 00:01:00 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using ADB to Delete Vanadium on GrapheneOS</title>
+      <link>/posts/adb_vanadium/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/posts/adb_vanadium/</guid>
+      <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Sun Worm</title>
+      <link>/posts/eclipse_2024_part2/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eclipse_2024_part2/</guid>
+      <description>My very bad photos of the eclipse brought us an accidental masterpiece.</description>
+    </item>
+    
     <item>
       <title>My Eclipse PSA</title>
       <link>/posts/eclipse_2024/</link>
