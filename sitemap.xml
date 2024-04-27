@@ -2,6 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/adb/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/android/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/grapheneos/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/technology/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/posts/adb_vanadium/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-04-27T16:30:04-04:00</lastmod>
+  </url><url>
+    <loc>/tags/eclipse/</loc>
+    <lastmod>2024-04-27T16:23:34-04:00</lastmod>
+  </url><url>
+    <loc>/posts/eclipse_2024_part2/</loc>
+    <lastmod>2024-04-27T16:23:34-04:00</lastmod>
+  </url><url>
+    <loc>/posts/eclipse_2024/</loc>
+    <lastmod>2024-04-26T16:21:50-04:00</lastmod>
+  </url><url>
+    <loc>/tags/daylight-savings/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/light_theme_plus_i_hate_daylight_savings/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/themes/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/updates/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/clown-moment/</loc>
+    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/email/</loc>
+    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/proton/</loc>
+    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/skiff/</loc>
+    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/skiffdead/</loc>
+    <lastmod>2024-02-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/github/</loc>
     <lastmod>2024-02-09T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,47 +68,35 @@
     <loc>/posts/thingstocome/</loc>
     <lastmod>2024-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/updates/</loc>
-    <lastmod>2024-02-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2024-02-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/mysetup/</loc>
     <lastmod>2024-02-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/setup/</loc>
-    <lastmod>2024-02-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/anime/</loc>
-    <lastmod>2023-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-22T21:48:08-05:00</lastmod>
   </url><url>
     <loc>/tags/manga/</loc>
-    <lastmod>2023-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-22T21:48:08-05:00</lastmod>
   </url><url>
     <loc>/posts/nyaa_menu/</loc>
-    <lastmod>2023-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-22T21:48:08-05:00</lastmod>
   </url><url>
     <loc>/tags/projects/</loc>
-    <lastmod>2023-10-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/technology/</loc>
-    <lastmod>2023-10-07T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-22T21:48:08-05:00</lastmod>
   </url><url>
     <loc>/posts/summer_2023_projects/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-18T14:37:19-05:00</lastmod>
   </url><url>
     <loc>/tags/openwrt/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-18T14:37:19-05:00</lastmod>
   </url><url>
     <loc>/tags/personal/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-18T14:37:19-05:00</lastmod>
   </url><url>
     <loc>/tags/qubes-os/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-18T14:37:19-05:00</lastmod>
   </url><url>
     <loc>/tags/switch/</loc>
-    <lastmod>2023-09-20T00:00:00+00:00</lastmod>
+    <lastmod>2024-02-18T14:37:19-05:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
     <lastmod>2023-02-01T00:00:00+00:00</lastmod>
@@ -65,22 +110,13 @@
     <loc>/posts/caps2esc/</loc>
     <lastmod>2022-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/tutorial/</loc>
-    <lastmod>2022-10-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/x11/</loc>
     <lastmod>2022-10-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
   </url><url>
     <loc>/categories/</loc>
   </url><url>
     <loc>/contact/</loc>
-  </url><url>
-    <loc>/main/contact/</loc>
-  </url><url>
-    <loc>/main/</loc>
-  </url><url>
-    <loc>/404/</loc>
-  </url><url>
-    <loc>/_404/</loc>
   </url>
 </urlset>

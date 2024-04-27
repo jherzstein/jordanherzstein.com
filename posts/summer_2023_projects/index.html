@@ -2,35 +2,130 @@
 <html lang="en">
     <link rel="stylesheet" href="/css/style.css">
     
-    
+    <head><meta charset="UTF-8">
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
 
     <body>
         <div class="page">
 
-	    
-	    </header>
 
             <section class="page__body">
     <header class="content__header">
         <h1>My Little Techy Projects Summer 2023</h1>
+<<<<<<< Updated upstream:public/posts/summer_2023_projects/index.html
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/personal/">#personal</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/qubes-os/">#qubes-os</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/openwrt/">#openwrt</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/switch/">#switch</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#img-src-images-blog-switch-logo-dot-png-width-10-switch-hacks" aria-label=" Switch hacks"><img src="/images/blog/Switch_Logo.png" width="10%" /> Switch hacks</a><ul>
+                        
+                <li>
+                    <a href="#some-boring-skippable-personal-info" aria-label="Some boring skippable personal info">Some boring skippable personal info</a></li>
+                <li>
+                    <a href="#img-src-images-blog-reentry-racoon-dot-png-width-10-actual-switch-hacks" aria-label="Actual Switch hacks"><img src="/images/blog/reentry_racoon.png" width="10%" />Actual Switch hacks</a></li></ul>
+                </li>
+                <li>
+                    <a href="#img-src-images-blog-qubes-os-logo-dot-png-width-10-now-daily-driving-qubes-on-thinkpad-t430" aria-label=" Now daily driving Qubes on Thinkpad T430"><img src="/images/blog/Qubes_OS_Logo.png" width="10%" /> Now daily driving Qubes on Thinkpad T430</a></li>
+                <li>
+                    <a href="#img-src-images-blog-openwrt-icon-dot-png-width-10-openwrt" aria-label=" Openwrt"><img src="/images/blog/openwrt_icon.png" width="10%" /> Openwrt</a></li>
+                <li>
+                    <a href="#do-i-do-anything-other-than-be-a-big-autistic-nerd" aria-label="Do I do anything other than be a big autistic nerd?">Do I do anything other than be a big autistic nerd?</a></li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+=======
     </header>
     <div class="tags-list"><span class ="tags">
-                      <a href="tags/technology/">#technology</a>
+                      <a href="/tags/technology/">#technology</a>
 	          </span>
               <span class ="tags">
-                      <a href="tags/personal/">#personal</a>
+                      <a href="/tags/personal/">#personal</a>
 	          </span>
               <span class ="tags">
-                      <a href="tags/qubes-os/">#qubes-os</a>
+                      <a href="/tags/qubes-os/">#qubes-os</a>
 	          </span>
               <span class ="tags">
-                      <a href="tags/openwrt/">#openwrt</a>
+                      <a href="/tags/openwrt/">#openwrt</a>
 	          </span>
               <span class ="tags">
-                      <a href="tags/switch/">#switch</a>
+                      <a href="/tags/switch/">#switch</a>
 	          </span>
               </div>
     <div class="content__body">
+>>>>>>> Stashed changes:posts/summer_2023_projects/index.html
          <p>Not gonna lie I had an extremely baller summer and I&rsquo;m sad that the 21st is coming soon to take it away from me. Regardless, here is a quick summary of what I was able to accomplish:</p>
 <figure>
     <center>
@@ -41,7 +136,7 @@
 <h2 id="img-src-images-blog-switch-logo-dot-png-width-10-switch-hacks"><img src="/images/blog/Switch_Logo.png" width="10%" /> Switch hacks</h2>
 <p>I hacked my day 1 Switch with a piece of literal tinfoil.</p>
 <h3 id="some-boring-skippable-personal-info">Some boring skippable personal info</h3>
-<p>For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, many well known members of the community having been outed for sexual misconduct around this time and the ensuing aftermath was a further deterrent from ever wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend&rsquo;s place.</p>
+<p>For some reason, while everyone doubled down on gaming extra during the COVID years, I stopped almost entirely. I used to play smash bros competitively as a kid, almost exclusively to any other game and when COVID happened I was no longer able to attend tournaments. This coupled with getting sick of the Nintendo Switch online service and I was no longer having fun playing. Additionally, wider community controversy and its ensuing aftermath gave me a more negative view of the scene which deterred me from wanting to return. Pretty much quit after that, and since I was not really into any other kinds of games I stopped gaming for a couple of years unless I was at a friend&rsquo;s place.</p>
 <h3 id="img-src-images-blog-reentry-racoon-dot-png-width-10-actual-switch-hacks"><img src="/images/blog/reentry_racoon.png" width="10%" />Actual Switch hacks</h3>
 <p>I know that the switch modding scene has had the past 6-7 years to mature but I did not expect it to be this easy. Of course, I reccommend following a written guide that&rsquo;s constantly updated (such as the <a href="https://rentry.co/SwitchHackingIsEasy">rentry</a> guide) to avoid bricking your device, but it really wasn&rsquo;t that complicated (<a href="#citeproc_bib_item_7">Unknown 2021</a>). The basics of the hack are to short two pins in the right joycon rail and presing the + and power button to put the device in recovery mode (RCM), which I did using a literal peice of tinfoil, though there are RCM jig devices on amazon that are easier to use. Burned onto the Tegra bootROM on all early Switches has a buffer overflow vulnerability that allows hackers to slip by the bootloader signature check, allowing unsigned payloads to be pushed to the device (<a href="#citeproc_bib_item_6">Qyriad 2018</a>).</p>
 <p>So far I&rsquo;ve installed Atmosphere and Android on the switch with the extra microSD storage that I added, and allowing some old nintendo DS emulation as well. As an aside, BW and B2W2 were the peak of the entire franchise, with HGSS being a close second, anyone who disagrees with me here is wrong by every objective measure. Also, by complete coincidence the new Zelda game leaked the next day. I also just so happened to beat the final boss day of launch which I also started to play day of launch. Hmmmm&hellip; curious.</p>
@@ -105,7 +200,7 @@
     </span>
   </div>
   <div class= "copyright">
-    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code GPLv3, Powered by <a href="https://gohugo.io">Hugo</a>, Org Mode, Emacs
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
   </div>
 </div>
 </footer>

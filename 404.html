@@ -2,49 +2,53 @@
 <html lang="en">
     <link rel="stylesheet" href="/css/style.css">
     
-    
+    <head><meta charset="UTF-8">
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
 
     <body>
         <div class="page">
 
-	    
-	    </header>
 
             <section class="page__body">
-  <style>
-    p {text-align: center;}
-  </style>
-  <h1>Jordan Herzstein</h1>
-  <head><div class="header">
-
-  <style>
-    .header{text-align: center;}
-  </style>
-
-  <div class="menu-container">
-    <span class="menu">
-      <a href="/">home</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="/posts">blog</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="/mysetup">setup</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="https://github.com/jherzstein">projects</a>
-    </span>
-    -
-    <span class="menu">
-      <a href="/contact">contact</a>
-    </span>
-  </div>
-</div> 
-
-</head>
   <main id="main">
     <div>
       <h1 id="title">Error</h1>
@@ -83,7 +87,7 @@
     </span>
   </div>
   <div class= "copyright">
-    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code GPLv3, Powered by <a href="https://gohugo.io">Hugo</a>, Org Mode, Emacs
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
   </div>
 </div>
 </footer>

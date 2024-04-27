@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <head><meta charset="UTF-8">
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <h1 id="about">About</h2>
+
+    <p>Hello, my name is Jordan, I&rsquo;m a Computer Engineering student from Canada. I like all things FOSS, cybersecurity, server administration, selfhosting, thinkpads, and more. These past few years I&rsquo;ve been living and breathing Linux, from desktop, server, and embedded, with some knowledge of Windows (desktop and server) and Android. Most of my programming experience is in bash, Python, and C/C++. Familiar with Java, SQL, Go, and PHP. I&rsquo;m currently learning rust.</p>
+<p>This is my website, I sometimes write blogs and technical guides. It is a very minimal static site with html and css (bare minimum js), but this way my site is fast, responsive, and to the point. I can say that everything here is created and owned by me, not just as a creative outlet, but so every facet of my online existance is under my control. I engage very little with social media. I value understanding and being able to control my technology, which fuels my passion to learn new things all the time.</p>
+<p>When I&rsquo;m not in front of glowing rectangles made of polarized sheets and crystals, I like to swim, I&rsquo;m also taking part in my school&rsquo;s Brazillian Jiu Jitsu club. During COVID I stopped gaming entirely but more recently I&rsquo;ve given a shot attending my local SSBU tournaments.</p>
+
+
+    <ul>
+    
+    </ul>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/images/link-buttons/libreboot.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://sadgrl.online">
+        <img src="/images/link-buttons/sadgrl.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+  </div>
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>

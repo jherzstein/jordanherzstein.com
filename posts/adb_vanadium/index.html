@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <head><meta charset="UTF-8">
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Using ADB to Delete Vanadium on GrapheneOS</h1>
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/tutorial/">#tutorial</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/adb/">#adb</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/android/">#android</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/grapheneos/">#grapheneos</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#preamble" aria-label="Preamble">Preamble</a></li>
+                <li>
+                    <a href="#the-guide" aria-label="The Guide">The Guide</a><ul>
+                        
+                <li>
+                    <a href="#phone-setup-with-developer-mode-and-usb-debugging" aria-label="Phone Setup with Developer Mode and USB-debugging">Phone Setup with Developer Mode and USB-debugging</a></li>
+                <li>
+                    <a href="#adb-commands-to-run-on-pc-to-uninstall-system-apps-from-user" aria-label="adb commands to run on PC to uninstall system apps from user">adb commands to run on PC to uninstall system apps from user</a></li>
+                <li>
+                    <a href="#adb-commands-to-run-on-pc-to-reinstall-system-apps-for-user" aria-label="adb commands to run on PC to reinstall system apps for user">adb commands to run on PC to reinstall system apps for user</a></li></ul>
+                </li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <h2 id="preamble">Preamble</h2>
+<p>Phone bad. You know it, I know it, everyone and their grandma knows that phone bad. It spys on you, it ruins your attention span, it&rsquo;s crumbling democracy before our very eyes. But I need the phone. I need to run android in order communicate with my closest circle of people through Signal, I need the offline maps, and I need it because my bank is run by dinosaurs and won&rsquo;t let you use otp without their proprietary phone app or SMS (Hmph!). I do not want to go through the hassle of researching the perfect &ldquo;dumb feature phone&rdquo; that will allow me to degoogle everything and also have a reasonably up-to-date OS and spend a few hundred bucks just to try it out when I already got a phone less than 2 years ago.</p>
+<p>My needs are very specific but also require some flexibility, with many clashing priorities between security, openness, modularity, and digital minimalism. The perfect combination of all of these priorities in a phone does not exist because smart phones are made for the general consumer and not hobbyists like me because then they wouldn&rsquo;t make any money. If you want to have the modularity of the FairPhone with the minimalism of a flip phone Motorolla and the modern security of a Pixel running degoogled GrapheneOS, it is a very tall order. If a phone can do one of these perfectly, it&rsquo;s a great phone; if it gets two priorities done decently it&rsquo;s an amazing acheivement; a phone with more than two of these done perfectly does not exist.</p>
+<p>All of this is to say that my current smart phone, a Pixel 7 running GrapheneOS, is one that I use somewhat begrudgingly, a necessary occupational hazard for most humans living in the 2020&rsquo;s, the kind of life that I&rsquo;m living at least. My current phone is pretty minimal: my phone launcher is the highly minimal <a href="https://github.com/tanujnotes/Olauncher">Olauncher</a>, no social media other than Discord for school, and I use <a href="https://molly.im/">Molly-FOSS</a> signal client for communcation (<a href="#citeproc_bib_item_5">Tanujnotes 2024</a>; <a href="#citeproc_bib_item_4">Mira 2024</a>). I have been running into one particular issue though which is why I&rsquo;m writing all of this out: the browser. I will enable the browser to troubleshoot some issue I have that someone has solved on stack overflow or Reddit (search engines be useless), and as soon as you know it I have 20 tabs open on my phone and I&rsquo;ve been on Youtube for 2 hours. &ldquo;How did this happen?&rdquo; I&rsquo;ll wonder as I disable Vanadium in the settings knowing full well I&rsquo;ll cave in again 2 days later and re-enable it. A few weeks ago I decided to take a bit of a more extreme measure by deleting the default browser system app entirely through the use of Android Debug Bridge (adb) via usb debugging, a command-line tool can be used to communicate with any android device directly (<a href="#citeproc_bib_item_1">Android Developers 2024a</a>). I did all of this without having to root my phone.</p>
+<p>So far it&rsquo;s actually been working pretty well, I have not reinstalled the browser besides doing it for the sake of the guide to see if I could, and I have been wasting less time. I&rsquo;ve outlined everything that I did here, and it will be transferable to removing whatever OEM/carrier bloatware is on your device that you wish to get rid of.</p>
+<h2 id="the-guide">The Guide</h2>
+<p><strong>Warning/Disclaimer</strong>: Using adb on your phone to remove system apps could ruin certain functionality on the device; most Android developers including the ones at GrapheneOS would not suggest removing system apps. While I have not yet had any issues removing the default system browser from my phone, this guide is not responsible for anything here going wrong, it was made with educational intent in mind.</p>
+<p>The following guide assumes you already have following:</p>
+<ul>
+<li>An android phone (this guide uses a Pixel 7 phone with GrapheneOs running android 14)</li>
+<li>A client computer running desktop OS as long as it has ADB installed (guide was tested in a QubesOS sys-usb qube based on the Fedora 39 Linux template)
+<ul>
+<li>Linux/BSD:
+<ul>
+<li>Debian based: <code>sudo apt install adb</code></li>
+<li>RHEL based: <code>sudo yum install adb</code> or <code>sudo dnf install adb</code></li>
+<li>Gentoo/portage: <code>sudo emerge -a dev-util/android</code></li>
+<li>Alpine: <code>sudo apk add adb</code></li>
+<li>Arch based: <code>sudo pacman -S android-tools</code></li>
+<li>OpenSUSE: <code>sudo zypper install adb</code></li>
+<li>OpenBSD: <code>doas pkg_add adb</code></li>
+<li>FreeBSD: <code>pkg install android-tools</code></li>
+</ul>
+</li>
+<li>MacOS
+<ul>
+<li><a href="https://dl.google.com/android/repository/platform-tools-latest-darwin.zip">Install Android SDK Platform Tools ZIP</a> or</li>
+<li>Use <a href="https://brew.sh/">homebrew</a>: <code>brew install android-platform-tools</code></li>
+</ul>
+</li>
+<li>Windows
+<ul>
+<li><a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip">Install Android SDK Platform Tools ZIP</a> or</li>
+<li>Use <a href="https://learn.microsoft.com/en-us/windows/package-manager/winget/">winget</a>: <code>winget install adb</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>A USB-C cable</li>
+</ul>
+<p>While this guide was done on Linux, most of the commands will still apply to other operating systems.</p>
+<h3 id="phone-setup-with-developer-mode-and-usb-debugging">Phone Setup with Developer Mode and USB-debugging</h3>
+<p>First we will want to enable developer mode on the phone. The steps to do this are assuming you&rsquo;re using a Google Pixel; other android OEMs do this slightly differently, but the idea is essentially the same (<a href="#citeproc_bib_item_2">Android Developers 2024b</a>). Open the Settings app on the Android phone and navigate to About Phone and find the Build number. Tap on the Build Number seven times to enable developer mode, you may be prompted to enter in your pin in order to enable it.</p>
+<figure>
+    <center>
+       <img src="/images/blog/android_developer_mode_1.png" width="50%" /><img src="/images/blog/android_developer_mode_2.png" width="50%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>Once Developer mode you will need to enable USB debugging by going into System &gt; Developer options, scroll down to USB debugging and toggle it (<a href="#citeproc_bib_item_2">Android Developers 2024b</a>).</p>
+<figure>
+    <center>
+       <img src="/images/blog/android_usb_debugging_1.png" width="30%" /><img src="/images/blog/android_usb_debugging_2.png" width="30%" /><img src="/images/blog/android_usb_debugging_3.png" width="30%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>Next we will want to start an adb server which will manage communications between the computer that will forward commands to the phone, and the daemon that runs on the phone to execute those commands (<a href="#citeproc_bib_item_1">Android Developers 2024a</a>). You may want to start your server in root in order to give it permissions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ adb start-server
+</span></span><span style="display:flex;"><span>*daemon not running; starting now at tcp:5037
+</span></span><span style="display:flex;"><span>*daemon started successfully</span></span></code></pre></div>
+<p>Next we will need to see if our device is available from completing the previous steps:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ adb devices</span></span></code></pre></div>
+<p>If the device is unauthorized, your phone should prompt to accept an RSA key that allows debbugging from the client computer, otherwise turn usb debugging off and back on again (<a href="#citeproc_bib_item_1">Android Developers 2024a</a>). If it says that there are no permissions it means you must run adb server in root.</p>
+<h3 id="adb-commands-to-run-on-pc-to-uninstall-system-apps-from-user">adb commands to run on PC to uninstall system apps from user</h3>
+<p>For the next few steps we will be using the adb shell with the <code>pm</code> package manager for android. First, we want to find the vanadium browser app:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell pm list packages | grep <span style="color:#e6db74">&#34;vanadium&#34;</span></span></span></code></pre></div>
+<p>There are three main Vanadium apps that GrapheneOS uses:
+<code>app.vanadium.browser</code>
+<code>app.vanadium.webview</code>
+<code>app.vanadium.config</code></p>
+<p>We will obviously want to remove <code>app.vanadium.browser</code>. Do not remove the other packages as many apps use the hardened WebView rendering to run their apps. <code>app.vanadium.config</code> is a dependency for <code>app.vanadium.webview</code> (<a href="#citeproc_bib_item_3">GrapheneOS 2024</a>).</p>
+<p>We may want to specify a user of the phone if for example, you are a parent lending your child your phone and have a secondary profile for them to do so. adb allows you to list current user profiles as follows:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell pm list users</span></span></code></pre></div>
+<p>Here are my users as an example:</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">Users:
+        UserInfo{0:Owner:4c13} running
+        UserInfo{10:Work:410}</code></pre>
+<p>The user that I want to delete Vanadium for, &ldquo;Owner&rdquo;, can be specified by the id 0.</p>
+<p>Finally we run the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>adb shell pm uninstall -k --user <span style="color:#ae81ff">0</span> app.vanadium.browser</span></span></code></pre></div>
+<p>We keep data and cache using the <code>-k</code> flag in case we want to reinstall the app with its data in tact, and specify user with the <code>--user</code> flag.</p>
+<h3 id="adb-commands-to-run-on-pc-to-reinstall-system-apps-for-user">adb commands to run on PC to reinstall system apps for user</h3>
+<p>Since we had previously only techincally removed the vandium browser for a user and did not fuly uninstall it, we can give the removed app back to the user. Execute the following:</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">$ adb shell pm install-existing app.vanadium.browser
+Package app.vanadium.browser installed for user: 0</code></pre>
+<p>That&rsquo;s it! Enjoy adb!</p>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Android Developers. 2024a. “Android Debug Bridge (Adb).” <a href="https://developer.android.com/tools/adb">https://developer.android.com/tools/adb</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>———. 2024b. “Configure on-Device Developer Options.” <a href="https://developer.android.com/studio/debug/dev-options#enable">https://developer.android.com/studio/debug/dev-options#enable</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>GrapheneOS. 2024. “Features Overview | GrapheneOS.” <a href="https://grapheneos.org/features#vanadium">https://grapheneos.org/features#vanadium</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Mira, Oscar. 2024. “Molly.” <a href="https://molly.im/">https://molly.im/</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>tanujnotes. 2024. “GitHub - Tanujnotes/Olauncher: Minimal AF Launcher for Android. Reduce Your Screen Time. Daily Wallpapers.” <a href="https://github.com/tanujnotes/Olauncher">https://github.com/tanujnotes/Olauncher</a>.</div>
+</div>
+
+    </div>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/images/link-buttons/libreboot.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://sadgrl.online">
+        <img src="/images/link-buttons/sadgrl.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+  </div>
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>

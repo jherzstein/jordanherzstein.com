@@ -2,61 +2,195 @@
 <html lang="en">
     <link rel="stylesheet" href="/css/style.css">
     
-    
     <head>
-	<meta name="generator" content="Hugo 0.111.3"><h1>Jordan Herzstein</h1>
+	<meta name="generator" content="Hugo 0.111.3"><meta charset="UTF-8">
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
 </head>
-    
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
 
     <body>
         <div class="page">
 
-	    
-	    <head><div class="header">
-
-  <style>
-    .header{text-align: center;}
-  </style>
-
-  <div class="menu-container">
-    <span class="menu">
-      <a href="/">home</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="/posts">blog</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="/mysetup">setup</a>
-    </span>
-      -
-    <span class="menu">
-      <a href="https://github.com/jherzstein">projects</a>
-    </span>
-    -
-    <span class="menu">
-      <a href="/contact">contact</a>
-    </span>
-  </div>
-</div> 
-
-</head>
-	    
-	    </header>
 
             <section class="page__body">
-    <p>Hello, my name is Jordan, I&rsquo;m a Computer Engineering student from Canada. My general interests fall into free and open source software, computer privacy, thinkpads, and more. This is my website, I sometimes write blogs when I&rsquo;m not lazy about current things that I&rsquo;m doing and some technical guides. Also yes, my website is minimal.</p>
+    <h1>Welcome</h1>
+    <p>Hello, my name is Jordan, thank you for stopping by my website.</p>
+<ul>
+<li><a href="/">home</a> - You are here right now</li>
+<li><a href="/about">about</a> - Learn all about me</li>
+<li><a href="/posts">posts</a> - Part personal blog part dev log, scroll down to see some recent posts</li>
+<li><a href="/mysetup">setup</a> - Software and computers that I use, how I host various services, etc</li>
+<li><a href="/contact">contact</a> - Get in touch with me</li>
+</ul>
+<span class="social-icons">
+<a href="/index.xml">
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.5em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 11a9 9 0 0 1 9 9" />
+  <path d="M4 4a16 16 0 0 1 16 16" />
+  <circle cx="5" cy="19" r="1" />
+</svg>
+
+</a>
+<a href="https://github.com/jherzstein">
+<svg aria-hidden="true" class="hi-svg-inline" fill="currentColor" height="1.5em" role="img" viewBox="0 0 24 24" width="1.5em" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+</a>
+<a href="/contact/#img-class-inline-header-src-images-contact-protonmail-dot-png-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-gpg">
+<svg aria-hidden="true" class="hi-svg-inline" fill="currentColor" height="1.5em" role="img" viewBox="0 0 24 24" width="1.5em" xmlns="http://www.w3.org/2000/svg"><title>Proton Mail</title><path d="m15.24 8.998 3.656-3.073v15.81H2.482C1.11 21.735 0 20.609 0 19.223V6.944l7.58 6.38a2.186 2.186 0 0 0 2.871-.042l4.792-4.284h-.003zm-5.456 3.538 1.809-1.616a2.438 2.438 0 0 1-1.178-.533L.905 2.395A.552.552 0 0 0 0 2.826v2.811l8.226 6.923a1.186 1.186 0 0 0 1.558-.024zM23.871 2.463a.551.551 0 0 0-.776-.068l-3.199 2.688v16.653h1.623c1.371 0 2.481-1.127 2.481-2.513V2.824a.551.551 0 0 0-.129-.36z"/></svg>
+</a>
+<a href="/contact/#img-class-inline-header-src-images-contact-signal-dot-png-signal-jherzstein-dot-01-qr-code">
+<svg aria-hidden="true" class="bi bi-signalbi bi-signal hi-svg-inline" fill="currentColor" height="1.5em" viewBox="0 0 16 16" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+  <path d="m6.08.234.179.727a7.3 7.3 0 0 0-2.01.832l-.383-.643A7.9 7.9 0 0 1 6.079.234zm3.84 0L9.742.96a7.3 7.3 0 0 1 2.01.832l.388-.643A8 8 0 0 0 9.92.234m-8.77 3.63a8 8 0 0 0-.916 2.215l.727.18a7.3 7.3 0 0 1 .832-2.01l-.643-.386zM.75 8a7 7 0 0 1 .081-1.086L.091 6.8a8 8 0 0 0 0 2.398l.74-.112A7 7 0 0 1 .75 8m11.384 6.848-.384-.64a7.2 7.2 0 0 1-2.007.831l.18.728a8 8 0 0 0 2.211-.919M15.251 8q0 .547-.082 1.086l.74.112a8 8 0 0 0 0-2.398l-.74.114q.082.54.082 1.086m.516 1.918-.728-.18a7.3 7.3 0 0 1-.832 2.012l.643.387a8 8 0 0 0 .917-2.219m-6.68 5.25c-.72.11-1.453.11-2.173 0l-.112.742a8 8 0 0 0 2.396 0l-.112-.741zm4.75-2.868a7.2 7.2 0 0 1-1.537 1.534l.446.605a8 8 0 0 0 1.695-1.689zM12.3 2.163c.587.432 1.105.95 1.537 1.537l.604-.45a8 8 0 0 0-1.69-1.691zM2.163 3.7A7.2 7.2 0 0 1 3.7 2.163l-.45-.604a8 8 0 0 0-1.691 1.69l.604.45zm12.688.163-.644.387c.377.623.658 1.3.832 2.007l.728-.18a8 8 0 0 0-.916-2.214M6.913.831a7.3 7.3 0 0 1 2.172 0l.112-.74a8 8 0 0 0-2.396 0zM2.547 14.64 1 15l.36-1.549-.729-.17-.361 1.548a.75.75 0 0 0 .9.902l1.548-.357zM.786 12.612l.732.168.25-1.073A7.2 7.2 0 0 1 .96 9.74l-.727.18a8 8 0 0 0 .736 1.902l-.184.79zm3.5 1.623-1.073.25.17.731.79-.184c.6.327 1.239.574 1.902.737l.18-.728a7.2 7.2 0 0 1-1.962-.811zM8 1.5a6.5 6.5 0 0 0-6.498 6.502 6.5 6.5 0 0 0 .998 3.455l-.625 2.668L4.54 13.5a6.502 6.502 0 0 0 6.93-11A6.5 6.5 0 0 0 8 1.5"/>
+</svg>
+</a>
+<a href="https://ca.linkedin.com/in/jordan-herzstein-a99414204">
+<svg aria-hidden="true" class="bi bi-linkedinbi bi-linkedin hi-svg-inline" fill="currentColor" height="1.5em" viewBox="0 0 16 16" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+</svg>
+</a>
+</span>
 <h2 id="what-am-i-up-to">What am I up to?</h2>
 <ul>
 <li>I&rsquo;m a full time student.</li>
-<li>A guy kijiji.ca sold me a Thinkpad T430 for $100CAD. His loss for selling off such a golden device.</li>
+<li>No more exams, yay!</li>
 <li><a href="../images/hatedaylightsavings.png">I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!</a></li>
-<li>I like to swim and read books and manga in order to stay sane.</li>
-<li>I&rsquo;m trying Brazilian Jiu Jitsu.</li>
-<li>I like hobbies that I&rsquo;m bad at.</li>
+<li>Doing fun stuff.</li>
 </ul>
 
+    <h2>Recent Posts</h2>
+    
+      
+
+    
+      
+    <article class="post">
+        <header class="post__header">
+          <h3>
+	    27 Apr 2024 <a href="/posts/adb_vanadium/">Using ADB to Delete Vanadium on GrapheneOS </a>
+	  </h3>
+        </header>
+
+        <section class="post__summary">
+            I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.
+        </section>
+	<br><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/tutorial/">#tutorial</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/adb/">#adb</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/android/">#android</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/grapheneos/">#grapheneos</a>
+                  </span>
+          </span></span>
+</article>
+
+      
+    <article class="post">
+        <header class="post__header">
+          <h3>
+	    27 Apr 2024 <a href="/posts/eclipse_2024_part2/">Eclipse Sun Worm </a>
+	  </h3>
+        </header>
+
+        <section class="post__summary">
+            My very bad photos of the eclipse brought us an accidental masterpiece.
+        </section>
+	<br><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/eclipse/">#eclipse</a>
+                  </span>
+          </span></span>
+</article>
+
+      
+    <article class="post">
+        <header class="post__header">
+          <h3>
+	    07 Apr 2024 <a href="/posts/eclipse_2024/">My Eclipse PSA </a>
+	  </h3>
+        </header>
+
+        <section class="post__summary">
+            Do not look directly at the sun today&hellip; or tomorrow&hellip; or ever&hellip; just don&rsquo;t do it.
+        </section>
+	<br><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/eclipse/">#eclipse</a>
+                  </span>
+          </span></span>
+</article>
+
+      
+
+    
+      
+
+    
+      
+
+    
 
             </section>
 
@@ -89,7 +223,7 @@
     </span>
   </div>
   <div class= "copyright">
-    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code GPLv3, Powered by <a href="https://gohugo.io">Hugo</a>, Org Mode, Emacs
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
   </div>
 </div>
 </footer>

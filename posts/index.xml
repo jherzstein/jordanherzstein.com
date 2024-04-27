@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog Posts on Jordan Herzstein</title>
+    <title>Posts on Jordan Herzstein</title>
     <link>/posts/</link>
-    <description>Recent content in Blog Posts on Jordan Herzstein</description>
+    <description>Recent content in Posts on Jordan Herzstein</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using ADB to Delete Vanadium on GrapheneOS</title>
+      <link>/posts/adb_vanadium/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/posts/adb_vanadium/</guid>
+      <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Sun Worm</title>
+      <link>/posts/eclipse_2024_part2/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eclipse_2024_part2/</guid>
+      <description>My very bad photos of the eclipse brought us an accidental masterpiece.</description>
+    </item>
+    
+    <item>
+      <title>My Eclipse PSA</title>
+      <link>/posts/eclipse_2024/</link>
+      <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eclipse_2024/</guid>
+      <description>Do not look directly at the sun today&amp;hellip; or tomorrow&amp;hellip; or ever&amp;hellip; just don&amp;rsquo;t do it.</description>
+    </item>
+    
+    <item>
+      <title>New light theme on daylight savings plus I hate daylight savings</title>
+      <link>/posts/light_theme_plus_i_hate_daylight_savings/</link>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/light_theme_plus_i_hate_daylight_savings/</guid>
+      <description>I added a light theme so it&amp;rsquo;s easier for some users to read. Also I hate daylight savings.</description>
+    </item>
+    
+    <item>
+      <title>Skiff is Dead 🤡</title>
+      <link>/posts/skiffdead/</link>
+      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/skiffdead/</guid>
+      <description>Lesson #1: Proton king. Lesson #2: Don&amp;rsquo;t trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.</description>
+    </item>
+    
     <item>
       <title>Hugo and other site changes</title>
       <link>/posts/thingstocome/</link>

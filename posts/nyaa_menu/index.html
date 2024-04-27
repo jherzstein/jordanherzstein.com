@@ -2,39 +2,84 @@
 <html lang="en">
     <link rel="stylesheet" href="/css/style.css">
     
-    
+    <head><meta charset="UTF-8">
+  
+<h1>Jordan Herzstein <a onclick="switchTheme()" title="toggle theme"> <svg aria-hidden="true" class="bi bi-circle-halfbi bi-circle-half hi-svg-inline" fill="currentColor" height="0.8em" viewBox="0 0 16 16" width="0.8em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+</svg></a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+      <script>
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	}
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
 
     <body>
         <div class="page">
 
-	    
-	    </header>
 
             <section class="page__body">
     <header class="content__header">
         <h1>nyaa_menu</h1>
-    </header>
-    <div class="tags-list"><span class ="tags">
-                      <a href="tags/technology/">#technology</a>
-	          </span>
-              <span class ="tags">
-                      <a href="tags/projects/">#projects</a>
-	          </span>
-              <span class ="tags">
-                      <a href="tags/anime/">#anime</a>
-	          </span>
-              <span class ="tags">
-                      <a href="tags/manga/">#manga</a>
-	          </span>
-              </div>
-    <div class="content__body">
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/projects/">#projects</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/anime/">#anime</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/manga/">#manga</a>
+                  </span>
+          </span></span>
+<br>
+<div class="content__body">
          <figure>
     <center>
        <img src="/images/blog/nyaa_menu_screenshot.png" width="100%" />
-       <figcaption>nyaa_menu scraping nyaa.si for "Chainsaw Man" english translaged manga from most to least seeded.</figcaption>
+       <figcaption>nyaa_menu scraping nyaa.si for "Chainsaw Man" english translated manga from most to least seeded.</figcaption>
     </center>
 </figure>
-<p>I got quite bored a few days ago, and instead of staring at my 24 inch lightbulb I channeled a bit of my creative juices into making something&hellip; while staring at my 24 inch lightbulb. So, I enjoy south east asian media from time to time, I also like <a href="https://tools.suckless.org/dmenu">dmenu</a>, and I don&rsquo;t like using my browser if I can avoid it; there often is an easier way of doing things if you&rsquo;re creative enough. Somewhat inspired by Bugswriter&rsquo;s <a href="https://github.com/Bugswriter/notflix">notflix</a> project, I whipped up a shell script that scrapes anime and manga magnet links from <a href="https://www.nyaa.si">nyaa.si</a> based on user search terms and flags. By default, the magnet link gets copied to your clipboard, or if you have your own transmission server you can also send the magnet link there automatically. If this utility sounds interesting to you go <a href="https://github.com/jherzstein/nyaa_menu">check it out</a>!</p>
+<p>I got quite bored a few days ago, and instead of staring at my 24 inch lightbulb I channeled a bit of my creative juices into making something&hellip; while staring at my 24 inch lightbulb. So, I sometimes watch anime and read manga from time to time, I also like <a href="https://tools.suckless.org/dmenu">dmenu</a>, and I don&rsquo;t like using my browser if I can avoid it; there often is an easier way of doing things if you&rsquo;re creative enough. Somewhat inspired by Bugswriter&rsquo;s <a href="https://github.com/Bugswriter/notflix">notflix</a> project, I whipped up a shell script that scrapes anime and manga magnet links from <a href="https://www.nyaa.si">nyaa.si</a> based on user search terms and flags. By default, the magnet link gets copied to your clipboard, or if you have your own transmission server you can also send the magnet link there automatically. If this utility sounds interesting to you go <a href="https://github.com/jherzstein/nyaa_menu">check it out</a>!</p>
 
     </div>
 
@@ -70,7 +115,7 @@
     </span>
   </div>
   <div class= "copyright">
-    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code GPLv3, Powered by <a href="https://gohugo.io">Hugo</a>, Org Mode, Emacs
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
   </div>
 </div>
 </footer>

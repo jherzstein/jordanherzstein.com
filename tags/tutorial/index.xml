@@ -5,7 +5,16 @@
     <link>/tags/tutorial/</link>
     <description>Recent content in tutorial on Jordan Herzstein</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 22 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Apr 2024 00:01:00 -0400</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using ADB to Delete Vanadium on GrapheneOS</title>
+      <link>/posts/adb_vanadium/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      
+      <guid>/posts/adb_vanadium/</guid>
+      <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
+    </item>
+    
     <item>
       <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
       <link>/posts/caps2esc/</link>
