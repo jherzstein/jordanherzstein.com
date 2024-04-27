@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 27 Apr 2024 00:01:00 -0400</lastBuildDate><atom:link href="/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Using ADB to Delete Vanadium on GrapheneOS</title>
+      <title>Using adb to Delete Vanadium on GrapheneOS</title>
       <link>/posts/adb_vanadium/</link>
       <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
       
