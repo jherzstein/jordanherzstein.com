@@ -224,6 +224,7 @@ br {
 }
 
 .tags-list {
+    line-height:3em;
     font-size: 0.9em;
     word-spacing: -2px;
 }

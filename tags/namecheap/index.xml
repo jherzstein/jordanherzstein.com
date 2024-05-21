@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>namecheap on Jordan Herzstein</title>
+    <link>/tags/namecheap/</link>
+    <description>Recent content in namecheap on Jordan Herzstein</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/namecheap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New email/website domain!</title>
+      <link>/posts/new_domain/</link>
+      <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/new_domain/</guid>
+      <description>Friendship with .xyz has ended, .com is my new best friend.
+Friendship with namecheap has ended, porkbun is my new best friend</description>
+    </item>
+    
+  </channel>
+</rss>
