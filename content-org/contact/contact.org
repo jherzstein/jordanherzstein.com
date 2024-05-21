@@ -12,7 +12,7 @@ There are a few ways to get in contact with me but Signal is the easiest.
 ** @@html:<img class="inline-header" src="/images/contact/simplex.png" />@@ SimpleX [[/images/contact/simplex-qr.png][QR Code]]
 ** @@html:<img class="inline-header" src="/images/contact/protonmail.png" />@@ Email [[mailto:contact@jordanherzstein.com][contact@jordanherzstein.com]]  [[./pubkey.gpg][PGP]]
 + Best for professional inquiries.
-+ PGP is prefered if you're able, but if secuirty is a top priority I would recommend other methods of contact [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][due to PGP's drawbacks]].
++ PGP is prefered if you're able, but if security is a top priority I would recommend other methods of contact [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][due to PGP's drawbacks]].
 + Proton Mail users do not need to use PGP as it is end to end encrypted by default amongst other Proton Mail users.
 + PGP fingerprint ~893C C031 0405 8C9E 9D40 831D 4FF0 A9CA 91DF A592~
 
