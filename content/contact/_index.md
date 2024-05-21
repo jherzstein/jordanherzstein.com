@@ -16,10 +16,11 @@ There are a few ways to get in contact with me but Signal is the easiest.
 ## <img class="inline-header" src="/images/contact/simplex.png" /> SimpleX [QR Code](/images/contact/simplex-qr.png) {#img-class-inline-header-src-images-contact-simplex-dot-png-simplex-qr-code}
 
 
-## <img class="inline-header" src="/images/contact/protonmail.png" /> Email [website@jordanherzstein.xyz](mailto:website@jordanherzstein.xyz) [PGP](./pubkey.gpg) {#img-class-inline-header-src-images-contact-protonmail-dot-png-email-website-jordanherzstein-dot-xyz-pgp--dot-pubkey-dot-gpg}
+## <img class="inline-header" src="/images/contact/protonmail.png" /> Email [contact@jordanherzstein.com](mailto:contact@jordanherzstein.com)  [PGP](./pubkey.gpg) {#img-class-inline-header-src-images-contact-protonmail-dot-png-email-contact-jordanherzstein-dot-com-pgp--dot-pubkey-dot-gpg}
 
--   PGP is prefered though if you already know how to use it you're probably aware of [PGP's drawbacks](https://www.latacora.com/blog/2019/07/16/the-pgp-problem/); there are more secure (and easier) ways of getting in contact with me. If you must use email you can learn how to use PGP [here](https://emailselfdefense.fsf.org/en/).
--   Proton Mail users do not need to use PGP it is end to end encrypted by default amongst other Proton Mail users.
+-   Best for professional inquiries.
+-   PGP is prefered if you're able, but if secuirty is a top priority I would recommend other methods of contact [due to PGP's drawbacks](https://www.latacora.com/blog/2019/07/16/the-pgp-problem/).
+-   Proton Mail users do not need to use PGP as it is end to end encrypted by default amongst other Proton Mail users.
 -   PGP fingerprint `893C C031 0405 8C9E 9D40 831D 4FF0 A9CA 91DF A592`
 
 <details>
