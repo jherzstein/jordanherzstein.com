@@ -10,7 +10,7 @@ draft = false
 
 ## This Site {#this-site}
 
-This is my personal website which I've been hosting on neocities since late 2022. Since January 2024, I now host at jordanherzstein.xyz on github pages, which is a temporary stopgap for hosting services publicly in the future, whenever I'm not, uhh.. busy, while still being able to have my custom domain without paying anything extra to those hosting me. The site itself is made with [Org Mode](https://orgmode.org/) using [Hugo](https://gohugo.io/) (static site generator) and [ox-hugo](https://ox-hugo.scripter.co/) (an Org exporter to Markdown for Hugo on Emacs).
+This is my personal website which I've been hosting on neocities since late 2022. Since ~~January 2024~~ May 2024, I now host at ~~jordanherzstein.xyz~~ [jordanherzstein.com](http://jordanherzstein.com) on github pages, which is a temporary stopgap for hosting services publicly in the future, whenever I'm not, uhh.. busy, while still being able to have my custom domain without paying anything extra to those hosting me. The site itself is made with [Org Mode](https://orgmode.org/) using [Hugo](https://gohugo.io/) (static site generator) and [ox-hugo](https://ox-hugo.scripter.co/) (an Org exporter to Markdown for Hugo on Emacs).
 
 
 ## VPC {#vpc}
