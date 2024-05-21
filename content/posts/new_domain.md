@@ -5,7 +5,7 @@ summary = """
   Friendship with namecheap has ended, porkbun is my new best friend
   """
 date = 2024-05-20
-lastmod = 2024-05-20T20:26:23-04:00
+lastmod = 2024-05-20T21:15:03-04:00
 tags = ["technology", "email", "dns", "namecheap", "porkbun"]
 draft = false
 [menu]
@@ -13,7 +13,7 @@ draft = false
     identifier = "new-email-website-domain"
 +++
 
-Hello dear reader, when this post gets uploaded I should have everything rolled out for my new tld and hopefully everything is working ok. For those visiting from the website mirror outside of neocities, [jordanherzstein.xyz](https://jordanherzstein.xyz) should now redirect to [jordanherzstein.com](https://jordanherzstein.com) but by the beginning of next year I will not be renewing the domain. If you cared about contacting me via email before, the contact email will now simply be contact@jordanherzstein.com. I have changed both my domain name as well as my domain registrar from Namecheap to Porkbun, which you may be wondering; why have I done this?
+Hello dear reader, when this post gets uploaded I should have everything rolled out for my new tld and hopefully everything is working ok. For those visiting from the website mirror outside of neocities, [jordanherzstein.xyz](http://jordanherzstein.xyz) should now redirect to [jordanherzstein.com](http://jordanherzstein.com) but by the beginning of next year I will not be renewing the domain. If you cared about contacting me via email before, the contact email will now simply be contact@jordanherzstein.com. I have changed both my domain name as well as my domain registrar from Namecheap to Porkbun, which you may be wondering; why have I done this?
 
 
 ## The story behind using .xyz for a year {#the-story-behind-using-dot-xyz-for-a-year}
