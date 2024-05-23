@@ -11,19 +11,38 @@
       <a href="/contact">contact</a>
       <!-- -
       <a onclick="switchTheme()">theme</a> -->
+<script>
+</script>
       <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+
 	var i = "theme"
 	var m = (localStorage.getItem(i) || "dark")
 	var d = document.documentElement.classList
 	if (m == "light") {
     	    d.remove("dark")
     	    d.add(m)
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+
 	}
+	 
 	function switchTheme() {
     	    d.remove(m)
     	    m = (m == "dark") ? "light" : "dark"
     	    d.add(m)
     	    localStorage.setItem(i, m)
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
 	}
       </script>
       <!--{{ range .Site.Menus.main }}
