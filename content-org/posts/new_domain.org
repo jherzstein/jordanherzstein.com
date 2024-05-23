@@ -4,8 +4,8 @@
 #+hugo_base_dir: ../../
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
-#+hugo_tags[]: technology, email, dns, namecheap, porkbun
-#+filetags: technology email dns namecheap porkbun 
+#+hugo_tags[]: technology, email, dns, namecheap, porkbun, updates
+#+filetags: technology email dns namecheap porkbun updates
 #+HUGO_CODE_FENCE: 
 #+EXPORT_FILE_NAME: new_domain.md 
 #+hugo_front_matter_key_replace: description>summary

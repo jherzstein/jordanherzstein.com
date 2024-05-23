@@ -5,8 +5,8 @@ summary = """
   Friendship with namecheap has ended, porkbun is my new best friend
   """
 date = 2024-05-20
-lastmod = 2024-05-20T21:15:03-04:00
-tags = ["technology", "email", "dns", "namecheap", "porkbun"]
+lastmod = 2024-05-22T21:56:59-04:00
+tags = ["technology", "email", "dns", "namecheap", "porkbun", "updates"]
 draft = false
 [menu]
   [menu.posts]
