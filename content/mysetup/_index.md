@@ -27,7 +27,7 @@ Right now I'm mosting using a Thinkpad T430 running Qubes OS with an i7-3840QM a
 
 ## Cell Phone {#cell-phone}
 
-I own an unlocked Pixel 7 running [GrapheneOS](https://grapheneos.org). Yes, I do enjoy the premium degoogled android experience on Google's very own hardware. Regardless, the stuff that the GrapheneOS team are doing is very impressive, if you're interested in using it make sure you purchase a compatable pixel device that is **unlocked**.
+I own an unlocked Pixel 7 running [GrapheneOS](https://grapheneos.org). The Pixel series of phones are probably the best to run either a default AOSP experience or custom ROMs to deliver the premium degoogled android experience, which is ironically on Google's very own hardware. The software experience is the best that I could ask for though the form factor and screen size are a little big for my liking. Regardless, the stuff that the GrapheneOS team are doing is very impressive, if you're interested in using it make sure you purchase a compatable pixel device that is **unlocked**. [I also removed the browser from my phone using adb](/posts/adb_vanadium/) so that it is less distracting, but if you wish to do the same proceed at your own risk.
 
 
 ## Software {#software}
