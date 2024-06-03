@@ -73,8 +73,8 @@ Hello, my name is Jordan, thank you for stopping by my website.
 # When I'm not in front of glowing rectangles made of polarized sheets and crystals, I like to swim, I'm also taking part in my school's Brazillian Jiu Jitsu club. During COVID I stopped gaming entirely but more recently I've given a shot attending my local SSBU tournaments.
 
 * What am I up to?
-+ I'm a full time student. 
-+ No more exams, yay!
++ I'm a full time student.
++ Getting into some [[https://www.home-assistant.io/][Home Assistant]] things.
++ Listening to [[https://www.connorgoldsmith.com/cerebro][CEREBRO]] podcast. Having recently watched X-Men '97 I watched their Magneto episode and now I think I love X-Men. This is coming from a hipster who hated 90% of superhero things since I was 15 being spoiled by [[https://parahumans.wordpress.com/][Worm]].
 + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
-+ Doing fun stuff.
 
