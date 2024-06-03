@@ -75,6 +75,6 @@ Hello, my name is Jordan, thank you for stopping by my website.
 * What am I up to?
 + I'm a full time student.
 + Getting into some [[https://www.home-assistant.io/][Home Assistant]] things.
-+ Listening to [[https://www.connorgoldsmith.com/cerebro][CEREBRO]] podcast. Having recently watched X-Men '97 I watched their Magneto episode and now I think I love X-Men. This is coming from a hipster who hated 90% of superhero things since I was 15 being spoiled by [[https://parahumans.wordpress.com/][Worm]].
++ Listening to [[https://www.connorgoldsmith.com/cerebro][CEREBRO]] podcast. Having recently watched X-Men '97 I +watched+ listened to their Magneto episode and now I think I love X-Men. This is coming from a hipster who hated 90% of superhero things since I was 15 being spoiled by [[https://parahumans.wordpress.com/][Worm]].
 + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
 
