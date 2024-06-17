@@ -53,5 +53,6 @@ Hello, my name is Jordan, thank you for stopping by my website.
 
 -   I'm a full time student.
 -   Getting into some [Home Assistant](https://www.home-assistant.io/) things.
--   Listening to [CEREBRO](https://www.connorgoldsmith.com/cerebro) podcast. Having recently watched X-Men '97 I ~~watched~~ listened to their Magneto episode and now I think I love X-Men. This is coming from a hipster who hated 90% of superhero things since I was 15 being spoiled by [Worm](https://parahumans.wordpress.com/).
+-   Messing with a [free oracle vps](https://rentry.co/oraclevps) for funzies. Started a minecraft server as I haven't played it in since 2020-ish... This is how I figured out that [Micrsoft stole my childhood](https://www.minecraft.net/en-us/article/account-migration-last-call).
+-   Listening to [CEREBRO](https://www.connorgoldsmith.com/cerebro) podcast. Having recently watched X-Men '97 I ~~watched~~ listened to their Magneto episode and now I think I love X-Men. This is coming from a hipster who hated 90% of superhero things since I was 15 being spoiled by [Worm](https://parahumans.wordpress.com/). UPDATE Jun 16: I literally listened to 20 hours of Madelyne Pryor discussion, a character I have hardly heard of prior (ha) to this calendar year.
 -   [I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!](../images/hatedaylightsavings.png)

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <head><meta charset="UTF-8">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+
+	}
+	 
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Booting DietPi on an SSD and installing Home Assistant in Docker</h1>
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/rpi/">#rpi</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/home-assistant/">#home-assistant</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/dietpi/">#dietpi</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/tutorial/">#tutorial</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#prerequisites" aria-label="Prerequisites">Prerequisites</a><ul>
+                        
+                <li>
+                    <a href="#flashing-dietpi-onto-an-ssd" aria-label="Flashing DietPi onto an SSD">Flashing DietPi onto an SSD</a></li>
+                <li>
+                    <a href="#after-booting-up-installing-docker-and-docker-compose-and-creating-a-home-assistant-container-dot" aria-label="After booting up, installing docker and docker compose and creating a Home Assistant Container.">After booting up, installing docker and docker compose and creating a Home Assistant Container.</a></li></ul>
+                </li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <p>I have been eyeing home assistant for quite a bit but haven&rsquo;t had the oppourtunity to do something with it until a family member wanted to set up some iot appliances and wanted all of them to be integrated into one interface, and I was more than happy to get involved. I first wanted to get a more advanced router set up to isolate everything iot from the main lan. I ended up copying my an openwrt archive from the linksys router I got <a href="/posts/summer_2023_projects/#img-src-images-blog-openwrt-icon-dot-png-width-10-openwrt">last year</a>. Unfortunately I got the wrong linksys router by accident at my first go at it which set me back by about a week. Alas, I was still able to boot up a Raspberry Pi 4 with Home Assistant to start tinkering with, which I spent a little time a couple of Saturdays ago doing. I since have moved over some lutron configurations which I may write about if I think it&rsquo;s interesting enough and doesn&rsquo;t divulge anything too private. This guide should get you to a simple starting place (most of which is just taken from DietPi and Home Assitant documentation) but I will document it here regardless.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This guide assumes that you already have the following:</p>
+<ul>
+<li>A Raspberry Pi 4</li>
+<li>An external SSD</li>
+<li>A usb to sata connector</li>
+<li>A separate computer or laptop with a usb port.</li>
+<li>Optional: Ethernet cable</li>
+</ul>
+<h3 id="flashing-dietpi-onto-an-ssd">Flashing DietPi onto an SSD</h3>
+<p>First it&rsquo;s important to mention that my choice to boot from an SSD was intentional, as Home Assistant will be doing a lot of writes, it&rsquo;s important to choose a storage device that is less prone to wearing out than a micro SD card. Additionally, despite needing to adapt from a USB 3.0 port, read/write speeds should also be faster than a micro SD card. Doing this from a Raspberry Pi 4 is fairly simple, it only required me to flash the operating system to the drive and then turn on the pi. You can download their Raspberry Pi 2/3/4/Zero 2 Dietpi image from their website and mostly follow documentation for the installation steps (<a href="#citeproc_bib_item_1">DietPi Team 2024a</a>). The installation steps on their site show you how to install the image via balenaEtcher or rufus, though in my case using linux I simply used <code>dd</code> to flash the image (<a href="#citeproc_bib_item_3">DietPi Team 2024c</a>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dd bs<span style="color:#f92672">=</span>4M <span style="color:#66d9ef">if</span><span style="color:#f92672">=</span>/path/to/DietPi_RPi-ARMv8-Bookworm.img of<span style="color:#f92672">=</span>/dev/xvdi oflag<span style="color:#f92672">=</span>sync status<span style="color:#f92672">=</span>progress</span></span></code></pre></div>
+<p>Here <code>bs</code> denotes the block size, <code>oflag=sync</code> syncs after each output block, and <code>status=progress</code> shows the progress of writing the image to the SSD (though the full write should take only about 30 seconds).</p>
+<p>Next you should have two new partitions on your SSD, one will be your root file system and the other will contain the <code>/boot</code> partition. In my case I needed to make some changes to my system before booting to make sure that I could headlessly access the device, so I mounted the <code>/boot</code> partition to my computer to change some settings. Since I don&rsquo;t have the proper router I wanted at the time of doing this I didn&rsquo;t make any changes to the static ip settings in <code>dietpi.txt</code>. You can change this later in a number of ways such as assigning the static ip on the router side or through <code>dietpi-config</code>. I did enable <code>AUTO_SETUP_NET_WIFI_ENABLED</code> just in case ethernet didn&rsquo;t work, and I added my wifi SSID and password in <code>dietpi-wifi.txt</code> as the documentation tells you how to do (<a href="#citeproc_bib_item_3">DietPi Team 2024c</a>). Keep in mind that <code>dietpi-wifi.txt</code> will remove itself after first boot so make sure you&rsquo;ve entered everything correctly.</p>
+<p>After unmounting the drive, I connected the SSD to the USB 3.0 port which will be one of the blue USB ports on the pi 4. I connected an ethernet cable directly from the pi to my router. Be patient during the first boot process as it might take a bit to boot up, the pi should start with a small red and green led turning on, then the green port will turn off, and the red led will start slightly flickering but it&rsquo;s very subtle. If you look at the ethernet port on the router, a solid green LED means that a connection has been established, and the orange or green led flickering means that data is being transmitted. From here the dietpi documentation tells you how to find the pi using <code>nmap</code>, though I was also able to find the pi through my router&rsquo;s web portal. If you haven&rsquo;t changed the DietPi&rsquo;s default hostname through <code>dietpi.txt</code>, you should be able to find the proper device and it&rsquo;s local ip address easily by finding its hostname &ldquo;DietPi&rdquo;. Then I simply used ssh to connect to the pi:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ssh root@&lt;local-ip-address-of-pi&gt;</span></span></code></pre></div>
+<h3 id="after-booting-up-installing-docker-and-docker-compose-and-creating-a-home-assistant-container-dot">After booting up, installing docker and docker compose and creating a Home Assistant Container.</h3>
+<p>I followed the DietPi TUI setup process which was pretty straight forward (<a href="#citeproc_bib_item_3">DietPi Team 2024c</a>). I installed the docker and docker compose packages through <code>dietpi-software</code> which should become available as the last step of the installation process (<a href="#citeproc_bib_item_2">DietPi Team 2024b</a>). I did this more or less because it was the laziest and most automatic way of doing it as DietPi has scripts to install everything needed which saved me 2 minutes. If you&rsquo;d rather avoid using <code>dietpi-software</code> you can also follow the official steps to install docker (<a href="#citeproc_bib_item_4">Docker Inc. 2024</a>).</p>
+<p>As an aside, after installation, I would suggest changing your ssh server to prevent root logins as this is generally good practice for preventing brute force ssh logins. Assuming you&rsquo;re using the default ssh server that DietPi uses, <code>dropbear</code>, you can disable root password logins by going into <code>/etc/default/dropbear</code> and changing a single line in the configuration (<a href="#citeproc_bib_item_7">Sarmisak 2015</a>).</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">DROPBEAR_EXTRA_ARGS=-g -w</code></pre>
+<p><code>-w</code> prevents root logins of any kind and <code>-g</code> prevents password root logins (<a href="#citeproc_bib_item_6">Johnson, n.d.</a>).</p>
+<p>Regardless, next I would switch to another user with sudo privilleges, such as <code>dietpi</code>, using <code>su - dietpi</code>. I created a new subdirectory in  to put my <code>compose.yml</code> to launch home assistant in docker, and I launched the container in this directory as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p ~/dockerapps/Home<span style="color:#ae81ff">\ </span>Assistant/
+</span></span><span style="display:flex;"><span>cd ~/dockerapps/Home<span style="color:#ae81ff">\ </span>Assistant/</span></span></code></pre></div>
+<p>Using the template provided by Home Assistant, I made one minor change to their yml file to change the config directory to be the one I just created (<a href="#citeproc_bib_item_5">Home Assistant 2024</a>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">homeassistant</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">homeassistant</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#e6db74">&#34;ghcr.io/home-assistant/home-assistant:stable&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./config:/config</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/etc/localtime:/etc/localtime:ro</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">/run/dbus:/run/dbus:ro</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">privileged</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">network_mode</span>: <span style="color:#ae81ff">host</span></span></span></code></pre></div>
+<p>Then start up docker compose.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo docker compose up -d</span></span></code></pre></div>
+<p>From here it should take a few minutes to pull all of the proper docker images and extract them. Once it has finished setting up, your home assistant onboarding portal should be at <code>http://&lt;local-ip-address-of-pi&gt;:8123</code>. You now have a starting place to use Home Assistant; happy home assisting!</p>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>DietPi Team. 2024a. “DietPi - Lightweight Justice for Your SBC!” <a href="https://dietpi.com/#download">https://dietpi.com/#download</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>———. 2024b. “Getting Started with DietPi - DietPi.Com Docs.” <a href="https://dietpi.com/docs/getting_started/#dietpi-software-choose-the-software-you-need">https://dietpi.com/docs/getting_started/#dietpi-software-choose-the-software-you-need</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>———. 2024c. “How to Install DietPi - DietPi.Com Docs.” <a href="https://dietpi.com/docs/install/">https://dietpi.com/docs/install/</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Docker Inc. 2024. “Install Docker Engine on Debian | Docker Docs.” <a href="https://docs.docker.com/engine/install/debian/#install-using-the-repository">https://docs.docker.com/engine/install/debian/#install-using-the-repository</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Home Assistant. 2024. “Linux - Home Assistant.” <a href="https://www.home-assistant.io/installation/linux#docker-compose">https://www.home-assistant.io/installation/linux#docker-compose</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Johnson, Matt. n.d. “Dropbear(8): Lightweight SSH2 Server - Linux Man Page.”</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>sarmisak. 2015. “Optional Security - Disable Root Login - General Discussion - DietPi Community Forum.” <a href="https://dietpi.com/forum/t/optional-security-disable-root-login/34">https://dietpi.com/forum/t/optional-security-disable-root-login/34</a>.</div>
+</div>
+
+    </div>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/images/link-buttons/libreboot.gif"></a>
+    </span>
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+  </div>
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>
