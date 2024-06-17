@@ -1,8 +1,8 @@
 +++
 title = "Booting DietPi on an SSD and installing Home Assistant in Docker"
 summary = "Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi."
-date = 2024-06-07
-lastmod = 2024-06-16T23:08:16-04:00
+date = 2024-06-16
+lastmod = 2024-06-16T23:33:01-04:00
 tags = ["rpi", "home-assistant", "dietpi", "technology", "tutorial"]
 draft = false
 [menu]
