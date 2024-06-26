@@ -1,0 +1,196 @@
+#+TITLE: Minecraft Java Edition Server For Free
+#+date: 2024-06-26
+#+hugo_base_dir: ../../
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+filetags: vps technology tutorial minecraft
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: oracle_mc_server.md
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.
+#+end_description
+
+* Preamble
+So I've been playing around recently with a free Oracle VPS, which if you want to play around with virtual private servers running Linux, don't care about the company, and don't have much cash to spare; Oracle has by far the most generous forever-free tier cloud offerings I've come across. For no cost whatsoever you too can run a 24GB of ram and 4 CPU cores VPS, and additionally you have to explicitly upgrade your account to access paid features, so you won't be getting any unexpected charges. Just be wary that if your server is not active Oracle can shut down your server, and from what I've heard their customer service isn't great. If you want to get into hosting your own VPS, I would go for a service that has a more consistant pricing structure, such as Hetzner.
+
+Anyway to get away from that tangent, I was having some analysis-paralysis as to what kind of project I should use it for and finally decided to spin up a minecraft server as it would be something I'd be able to share with friends and family. It makes it all the more tragic, however, that I have not used Mincraft in about 4 years, meaning that I missed the train on transitioning my Mojang account over to Microsoft, and I no longer have access to an account to install and play Minecraft. Given that +my parents+ I had already paid for a copy over a decade ago at this point for the game I should own, I think there is one word that can aptly describe what has been done here it's just leaving my mind at the moment... Oh yes, that's *stealing*. Forced arbitration is one thing, but even Youtube is still able to offer old Youtube accounts to upgrade to Google accounts [[cite:&how_to_claim_legac_youtub_accoun_youtub]].
+
+Anyway, it isn't the end of the world, I will find a way to play Minecraft one way or another, even if that means repaying for a game I should already have ownership over. However, if you own minecraft you shouldn't have to pay anything at all to play on a server with your friends, and it doesn't have to be difficult to deploy as well. This guide will outline how to deploy a minecraft server using docker compose on an Oracle VPS in the way that I have.
+
+* The Guide
+The following guide assumes you already have an Oracle VPS you can ssh into running an apt-based operating system such as Ubuntu 22.04, the operating system I will be using for this guide. I recommend following the guide that exists on FMHY to set one up [[cite:&fmhy_oracle]].
+
+** Installing docker for Ubuntu
+First update your packages list.
+#+BEGIN_SRC sh
+sudo apt update
+#+END_SRC
+
+Install the proper dependencies.
+#+BEGIN_SRC sh
+sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release
+#+END_SRC
+
+Download the GPG key for Docker to sign packages.
+#+BEGIN_SRC sh
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+#+END_SRC
+
+Add the Docker repository to your sources
+#+BEGIN_SRC sh
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+#+END_SRC
+
+Install Docker engine, docker compose, and their dependencies.
+#+BEGIN_SRC sh
+sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+#+END_SRC
+** Create a new docker user and group
+
+We will create a new user and group for this docker container called minecraft.
+#+BEGIN_SRC sh
+sudo useradd -r minecraft
+sudo groupadd -r minecraft
+#+END_SRC
+
+Next we will add the new docker user to the default group (in this case, ubuntu).
+#+BEGIN_SRC sh
+sudo usermod -a -G minecraft ubuntu
+#+END_SRC
+
+** Configuring yaml file for docker compose and deploy
+For the sake of this guide we will be deploying a minecraft java edition server using the minecraft server image from itzg. They also have a bedrock image available, however, some of the server management commands will be different. You can create a new directory to put your compose file in, you can call it ~compose.yml~, and it will contain something similar to the following [[cite:&mc-docker-insto]]:
+#+BEGIN_SRC yml
+version: "3"
+
+services:
+  minecraft-server:
+    image: itzg/minecraft-server
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    environment:
+      EULA: TRUE
+      SERVER_NAME: "server-name"
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./data:/data
+    user: minecraft:minecraft
+#+END_SRC
+
+Deploy the docker container as a daemon.
+#+BEGIN_SRC sh
+docker compose up -d
+#+END_SRC
+** Oracle Networking Firewall Rules
+We want to add a firewall rule in our server's subnet to port forward a TCP connection to our server. This will be the port specified in the compose file, in this case 25565.
+
+On your Oracle Cloud admin page, you want to navigate to your server instance through the dashboard.
+
+#+BEGIN_EXPORT html
+<figure>
+    <center>
+       <img src="/images/blog/oracle-dashboard-instances.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+#+END_EXPORT
+
+Inside of your instance, scroll down to resources and find ~Attached VNICs~. Under the attached VNICs you should find an attached subnet, click on it to navigate to the subnet page.
+
+#+BEGIN_EXPORT html
+<figure>
+    <center>
+       <img src="/images/blog/oracle-attached-vnics.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+#+END_EXPORT
+
+In the subnet page you should find security lists. Click on the default security list that was created.
+
+#+BEGIN_EXPORT html
+<figure>
+    <center>
+       <img src="/images/blog/oracle-security-lists.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+#+END_EXPORT
+
+In the security list there are ingress rules. Add an ingress rule with source type CIDR, Source CIDR as ~0.0.0.0/0~ if you want to allow all ip addresses. Of course the IP protocol type will be TCP. Keep source port range empty and specify a destination port range as the ip address in our compose file, 25565. You may add an optional description such as ~Minecraft Server TCP connection~.
+
+#+BEGIN_EXPORT html
+<figure>
+    <center>
+       <img src="/images/blog/oracle-ingress-rules.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+#+END_EXPORT
+
+Finally save all of your changes and your minecraft server to the world. All we need to do is test it.
+** Ping minecraft server
+There are many websites that can check your minecraft server status and check it's connection, such as [[https://mcsrvstat.us][mcsrvstat.us]]. You will need the IP address of the oracle instance, if you are in an ssh session on the server you can check the ip address using ~curl ipinfo.io~, or you can see the ip address of the server through the main instances webpage under ~Instance access~.
+
+** Whitelist users
+Generally it is a good idea to enable a whitelist on your server if it is just private between friends so random users don't join and grief your world. 
+*** Method 1: Using rcon
+You can access the rcon-cli on the server side through docker exec [[cite:&mc-docker-sending-commands]].
+#+BEGIN_SRC sh
+docker exec -it <name-of-server-container> rcon-cli
+#+END_SRC
+If you don't know the name of your container, list existing containers using ~docker ps~ and find the container name that is using the ~itzg/minecraft-server~ docker image.
+
+You should now be in a separate console that will start with ~>~. Input the following command into the console to enable the server's use of the whitelist [[cite:&mc-commands-whitelist]].
+#+BEGIN_SRC
+whitelist on
+#+END_SRC
+
+To add users using the ~whitelist add~ command, the syntax is as follows [[cite:&mc-commands-whitelist]].
+#+BEGIN_SRC 
+whitelist add <targets>
+#+END_SRC
+
+See your whitelisted users [[cite:&mc-commands-whitelist]].
+#+BEGIN_SRC 
+whitelist list
+#+END_SRC
+
+You can add users as operators so they can execute server commands whilte in the game [[cite:&mc-commands-ops]].
+#+BEGIN_SRC
+op <targets>
+#+END_SRC
+*** Method 2: Editing server.properties and whitelist.json
+You will want to find the configuration files that exist in the ~/data~ volume that you specified in your compose configuration file.
+
+First edit the server.properties file to enable the server white list.
+#+BEGIN_SRC
+white-list=true
+#+END_SRC
+
+Edit whitelist.json to add user names and UUIDs you wish to add. You can search for UUIDs for each username through [[https://minecraftuuid.com][minecraftuuid.com]]. The template should look as follows [[cite:&mc-whitelist]]:
+
+#+BEGIN_SRC
+[
+  {
+    "uuid": "f430dbb6-5d9a-444e-b542-e47329b2c5a0",
+    "name": "username"
+  },
+  {
+    "uuid": "e5aa0f99-2727-4a11-981f-dded8b1cd032",
+    "name": "username"
+  }
+]
+#+END_SRC
+
+Restart the server using the ~docker restart~ command. 
+#+BEGIN_SRC sh
+docker restart <name-of-server-container>
+#+END_SRC 
+* References
+[[bibliography:../../references.bib]]
+

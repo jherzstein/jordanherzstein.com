@@ -5,7 +5,16 @@
     <link>/tags/tutorial/</link>
     <description>Recent content in tutorial on Jordan Herzstein</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minecraft Java Edition Server For Free</title>
+      <link>/posts/oracle_mc_server/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oracle_mc_server/</guid>
+      <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
+    </item>
+    
     <item>
       <title>Booting DietPi on an SSD and installing Home Assistant in Docker</title>
       <link>/posts/home_assistant_setup/</link>

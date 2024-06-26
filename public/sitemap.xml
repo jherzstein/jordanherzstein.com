@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/minecraft/</loc>
+    <lastmod>2024-06-26T16:05:53-04:00</lastmod>
+  </url><url>
+    <loc>/posts/oracle_mc_server/</loc>
+    <lastmod>2024-06-26T16:05:53-04:00</lastmod>
+  </url><url>
+    <loc>/tags/technology/</loc>
+    <lastmod>2024-06-26T16:05:53-04:00</lastmod>
+  </url><url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2024-06-26T16:05:53-04:00</lastmod>
+  </url><url>
+    <loc>/tags/vps/</loc>
+    <lastmod>2024-06-26T16:05:53-04:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-06-26T16:05:53-04:00</lastmod>
+  </url><url>
     <loc>/posts/home_assistant_setup/</loc>
     <lastmod>2024-06-16T23:33:01-04:00</lastmod>
   </url><url>
@@ -12,15 +30,6 @@
     <lastmod>2024-06-16T23:33:01-04:00</lastmod>
   </url><url>
     <loc>/tags/rpi/</loc>
-    <lastmod>2024-06-16T23:33:01-04:00</lastmod>
-  </url><url>
-    <loc>/tags/technology/</loc>
-    <lastmod>2024-06-16T23:33:01-04:00</lastmod>
-  </url><url>
-    <loc>/tags/tutorial/</loc>
-    <lastmod>2024-06-16T23:33:01-04:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2024-06-16T23:33:01-04:00</lastmod>
   </url><url>
     <loc>/tags/dns/</loc>
