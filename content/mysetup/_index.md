@@ -19,6 +19,8 @@ I'm currently using a ROCKpro64 with it's respective NAS case and PCI-e SSD inte
 
 I also have a lynksys router at home that I use to run openwrt for it's security, performance, and customizability, especially compared to the default modems provided by ISPs.
 
+I'm currently using a free Oracle VPS using an Ampere quad core CPU and 24GB of RAM. Currently using it to [host a private Minecraft server for free](/posts/oracle_mc_server). I hope to do more with it in the future.
+
 
 ## Personal Computer / Hardware {#personal-computer-hardware}
 
