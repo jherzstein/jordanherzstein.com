@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <head><meta charset="UTF-8">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+
+	var i = "theme"
+	var m = (localStorage.getItem(i) || "dark")
+	var d = document.documentElement.classList
+	if (m == "light") {
+    	    d.remove("dark")
+    	    d.add(m)
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+
+	}
+	 
+	function switchTheme() {
+    	    d.remove(m)
+    	    m = (m == "dark") ? "light" : "dark"
+    	    d.add(m)
+    	    localStorage.setItem(i, m)
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Minecraft Java Edition Server For Free</h1>
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/vps/">#vps</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/tutorial/">#tutorial</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/minecraft/">#minecraft</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#preamble" aria-label="Preamble">Preamble</a></li>
+                <li>
+                    <a href="#the-guide" aria-label="The Guide">The Guide</a><ul>
+                        
+                <li>
+                    <a href="#installing-docker-for-ubuntu" aria-label="Installing docker for Ubuntu">Installing docker for Ubuntu</a></li>
+                <li>
+                    <a href="#create-a-new-docker-user-and-group" aria-label="Create a new docker user and group">Create a new docker user and group</a></li>
+                <li>
+                    <a href="#configuring-yaml-file-for-docker-compose-and-deploy" aria-label="Configuring yaml file for docker compose and deploy">Configuring yaml file for docker compose and deploy</a></li>
+                <li>
+                    <a href="#oracle-networking-firewall-rules" aria-label="Oracle Networking Firewall Rules">Oracle Networking Firewall Rules</a></li>
+                <li>
+                    <a href="#ping-minecraft-server" aria-label="Ping minecraft server">Ping minecraft server</a></li>
+                <li>
+                    <a href="#whitelist-users" aria-label="Whitelist users">Whitelist users</a><ul>
+                        
+                <li>
+                    <a href="#method-1-using-rcon" aria-label="Method 1: Using rcon">Method 1: Using rcon</a></li>
+                <li>
+                    <a href="#method-2-editing-server-dot-properties-and-whitelist-dot-json" aria-label="Method 2: Editing server.properties and whitelist.json">Method 2: Editing server.properties and whitelist.json</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <h2 id="preamble">Preamble</h2>
+<p>So I&rsquo;ve been playing around recently with a free Oracle VPS, which if you want to play around with virtual private servers running Linux, don&rsquo;t care about the company, and don&rsquo;t have much cash to spare; Oracle has by far the most generous forever-free tier cloud offerings I&rsquo;ve come across. For no cost whatsoever you too can run a 24GB of ram and 4 CPU cores VPS, and additionally you have to explicitly upgrade your account to access paid features, so you won&rsquo;t be getting any unexpected charges. Just be wary that if your server is not active Oracle can shut down your server, and from what I&rsquo;ve heard their customer service isn&rsquo;t great. If you want to get into hosting your own VPS, I would go for a service that has a more consistant pricing structure, such as Hetzner.</p>
+<p>Anyway to get away from that tangent, I was having some analysis-paralysis as to what kind of project I should use it for and finally decided to spin up a minecraft server as it would be something I&rsquo;d be able to share with friends and family. It makes it all the more tragic, however, that I have not used Mincraft in about 4 years, meaning that I missed the train on transitioning my Mojang account over to Microsoft, and I no longer have access to an account to install and play Minecraft. Given that <del>my parents</del> I had already paid for a copy over a decade ago at this point for the game I should own, I think there is one word that can aptly describe what has been done here it&rsquo;s just leaving my mind at the moment&hellip; Oh yes, that&rsquo;s <strong>stealing</strong>. Forced arbitration is one thing, but even Youtube is still able to offer old Youtube accounts to upgrade to Google accounts (<a href="#citeproc_bib_item_4">The Lady from UN 2021</a>).</p>
+<p>Anyway, it isn&rsquo;t the end of the world, I will find a way to play Minecraft one way or another, even if that means repaying for a game I should already have ownership over. However, if you own minecraft you shouldn&rsquo;t have to pay anything at all to play on a server with your friends, and it doesn&rsquo;t have to be difficult to deploy as well. This guide will outline how to deploy a minecraft server using docker compose on an Oracle VPS in the way that I have.</p>
+<h2 id="the-guide">The Guide</h2>
+<p>The following guide assumes you already have an Oracle VPS you can ssh into running an apt-based operating system such as Ubuntu 22.04, the operating system I will be using for this guide. I recommend following the guide that exists on FMHY to set one up (<a href="#citeproc_bib_item_5">Cevoj35548 2022</a>).</p>
+<h3 id="installing-docker-for-ubuntu">Installing docker for Ubuntu</h3>
+<p>First update your packages list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update</span></span></code></pre></div>
+<p>Install the proper dependencies.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release</span></span></code></pre></div>
+<p>Download the GPG key for Docker to sign packages.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span></span></code></pre></div>
+<p>Add the Docker repository to your sources</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span></span></code></pre></div>
+<p>Install Docker engine, docker compose, and their dependencies.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span></span></code></pre></div>
+<h3 id="create-a-new-docker-user-and-group">Create a new docker user and group</h3>
+<p>We will create a new user and group for this docker container called minecraft.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo useradd -r minecraft
+</span></span><span style="display:flex;"><span>sudo groupadd -r minecraft</span></span></code></pre></div>
+<p>Next we will add the new docker user to the default group (in this case, ubuntu).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo usermod -a -G minecraft ubuntu</span></span></code></pre></div>
+<h3 id="configuring-yaml-file-for-docker-compose-and-deploy">Configuring yaml file for docker compose and deploy</h3>
+<p>For the sake of this guide we will be deploying a minecraft java edition server using the minecraft server image from itzg. They also have a bedrock image available, however, some of the server management commands will be different. You can create a new directory to put your compose file in, you can call it <code>compose.yml</code>, and it will contain something similar to the following (<a href="#citeproc_bib_item_6">Iztg 2024a</a>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">minecraft-server</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>: <span style="color:#ae81ff">itzg/minecraft-server</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">restart</span>: <span style="color:#ae81ff">unless-stopped</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">tty</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">stdin_open</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">environment</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">EULA</span>: <span style="color:#66d9ef">TRUE</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">SERVER_NAME</span>: <span style="color:#e6db74">&#34;server-name&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">ports</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;25565:25565&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data:/data</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">user</span>: <span style="color:#ae81ff">minecraft:minecraft</span></span></span></code></pre></div>
+<p>Deploy the docker container as a daemon.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose up -d</span></span></code></pre></div>
+<h3 id="oracle-networking-firewall-rules">Oracle Networking Firewall Rules</h3>
+<p>We want to add a firewall rule in our server&rsquo;s subnet to port forward a TCP connection to our server. This will be the port specified in the compose file, in this case 25565.</p>
+<p>On your Oracle Cloud admin page, you want to navigate to your server instance through the dashboard.</p>
+<figure>
+    <center>
+       <img src="/images/blog/oracle-dashboard-instances.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>Inside of your instance, scroll down to resources and find <code>Attached VNICs</code>. Under the attached VNICs you should find an attached subnet, click on it to navigate to the subnet page.</p>
+<figure>
+    <center>
+       <img src="/images/blog/oracle-attached-vnics.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>In the subnet page you should find security lists. Click on the default security list that was created.</p>
+<figure>
+    <center>
+       <img src="/images/blog/oracle-security-lists.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>In the security list there are ingress rules. Add an ingress rule with source type CIDR, Source CIDR as <code>0.0.0.0/0</code> if you want to allow all ip addresses. Of course the IP protocol type will be TCP. Keep source port range empty and specify a destination port range as the ip address in our compose file, 25565. You may add an optional description such as <code>Minecraft Server TCP connection</code>.</p>
+<figure>
+    <center>
+       <img src="/images/blog/oracle-ingress-rules.png" width="100%" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>Finally save all of your changes and your minecraft server to the world. All we need to do is test it.</p>
+<h3 id="ping-minecraft-server">Ping minecraft server</h3>
+<p>There are many websites that can check your minecraft server status and check it&rsquo;s connection, such as <a href="https://mcsrvstat.us">mcsrvstat.us</a>. You will need the IP address of the oracle instance, if you are in an ssh session on the server you can check the ip address using <code>curl ipinfo.io</code>, or you can see the ip address of the server through the main instances webpage under <code>Instance access</code>.</p>
+<h3 id="whitelist-users">Whitelist users</h3>
+<p>Generally it is a good idea to enable a whitelist on your server if it is just private between friends so random users don&rsquo;t join and grief your world.</p>
+<h4 id="method-1-using-rcon">Method 1: Using rcon</h4>
+<p>You can access the rcon-cli on the server side through docker exec (<a href="#citeproc_bib_item_7">Iztg 2024b</a>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker exec -it &lt;name-of-server-container&gt; rcon-cli</span></span></code></pre></div>
+<p>If you don&rsquo;t know the name of your container, list existing containers using <code>docker ps</code> and find the container name that is using the <code>itzg/minecraft-server</code> docker image.</p>
+<p>You should now be in a separate console that will start with <code>&gt;</code>. Input the following command into the console to enable the server&rsquo;s use of the whitelist (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">whitelist on</code></pre>
+<p>To add users using the <code>whitelist add</code> command, the syntax is as follows (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">whitelist add &lt;targets&gt;</code></pre>
+<p>See your whitelisted users (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">whitelist list</code></pre>
+<p>You can add users as operators so they can execute server commands whilte in the game (<a href="#citeproc_bib_item_1">Minecraft Wiki 2024a</a>).</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">op &lt;targets&gt;</code></pre>
+<h4 id="method-2-editing-server-dot-properties-and-whitelist-dot-json">Method 2: Editing server.properties and whitelist.json</h4>
+<p>You will want to find the configuration files that exist in the <code>/data</code> volume that you specified in your compose configuration file.</p>
+<p>First edit the server.properties file to enable the server white list.</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">white-list=true</code></pre>
+<p>Edit whitelist.json to add user names and UUIDs you wish to add. You can search for UUIDs for each username through <a href="https://minecraftuuid.com">minecraftuuid.com</a>. The template should look as follows (<a href="#citeproc_bib_item_3">Minecraft Wiki 2024c</a>):</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">[
+  {
+    &#34;uuid&#34;: &#34;f430dbb6-5d9a-444e-b542-e47329b2c5a0&#34;,
+    &#34;name&#34;: &#34;username&#34;
+  },
+  {
+    &#34;uuid&#34;: &#34;e5aa0f99-2727-4a11-981f-dded8b1cd032&#34;,
+    &#34;name&#34;: &#34;username&#34;
+  }
+]</code></pre>
+<p>Restart the server using the <code>docker restart</code> command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker restart &lt;name-of-server-container&gt;</span></span></code></pre></div>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Minecraft Wiki. 2024a. “Commands/Op - Minecraft Wiki.” <a href="https://minecraft.fandom.com/wiki/Commands/op">https://minecraft.fandom.com/wiki/Commands/op</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>———. 2024b. “Commands/Whitelist - Minecraft Wiki.” <a href="https://minecraft.fandom.com/wiki/Commands/whitelist">https://minecraft.fandom.com/wiki/Commands/whitelist</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>———. 2024c. “Whitelist.Json - Minecraft Wiki.” <a href="https://minecraft.fandom.com/wiki/Whitelist.json">https://minecraft.fandom.com/wiki/Whitelist.json</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>The Lady from UN. 2021. “How to Claim a Legacy YouTube Account | 2021 - YouTube.” <a href="https://www.youtube.com/watch?v=WQejhyQZNr8&t=0s">https://www.youtube.com/watch?v=WQejhyQZNr8&#38;t=0s</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>cevoj35548. 2022. “🚀 Free Lifetime 200GB VPS, 4x CPU Cores, 24GB Memory 🚀.” <a href="https://rentry.co/oraclevps">https://rentry.co/oraclevps</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>iztg. 2024a. “Minecraft Server on Docker (Java Edition).” https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>———. 2024b. “Sending Commands - Minecraft Server on Docker (Java Edition).” <a href="https://docker-minecraft-server.readthedocs.io/en/latest/commands/">https://docker-minecraft-server.readthedocs.io/en/latest/commands/</a>.</div>
+</div>
+
+    </div>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/images/link-buttons/libreboot.gif"></a>
+    </span>
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+  </div>
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>

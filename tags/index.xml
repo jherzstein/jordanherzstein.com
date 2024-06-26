@@ -7,6 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>minecraft</title>
+      <link>/tags/minecraft/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/minecraft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>/tags/technology/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vps</title>
+      <link>/tags/vps/</link>
+      <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dietpi</title>
       <link>/tags/dietpi/</link>
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
@@ -30,24 +66,6 @@
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
       
       <guid>/tags/rpi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>technology</title>
-      <link>/tags/technology/</link>
-      <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/technology/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/tutorial/</guid>
       <description></description>
     </item>
     
