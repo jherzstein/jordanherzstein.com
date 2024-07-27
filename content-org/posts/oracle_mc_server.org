@@ -4,7 +4,7 @@
 #+HUGO_AUTO_SET_LASTMOD: t
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
-#+filetags: vps technology tutorial minecraft
+#+filetags: vps technology oracle tutorial minecraft
 #+HUGO_CODE_FENCE: 
 #+EXPORT_FILE_NAME: oracle_mc_server.md
 #+hugo_front_matter_key_replace: description>summary

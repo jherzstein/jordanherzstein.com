@@ -2,8 +2,8 @@
 title = "Minecraft Java Edition Server For Free"
 summary = "Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores."
 date = 2024-06-26
-lastmod = 2024-06-26T16:05:53-04:00
-tags = ["vps", "technology", "tutorial", "minecraft"]
+lastmod = 2024-07-27T00:17:52-04:00
+tags = ["vps", "technology", "oracle", "tutorial", "minecraft"]
 draft = false
 [menu]
   [menu.posts]

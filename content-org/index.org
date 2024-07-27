@@ -8,7 +8,7 @@
 # #+HUGO_PAIRED_SHORTCODES: icons/icon
 #+OPTIONS: num:nil toc:nil 
 
-Hello, my name is Jordan, thank you for stopping by my website. 
+Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[https://yortnet.com][yortnet.com]]. Thank you for stopping by my website. 
 
 + [[/][home]] - You are here right now
 + [[/about][about]] - Learn all about me
@@ -75,7 +75,6 @@ Hello, my name is Jordan, thank you for stopping by my website.
 * What am I up to?
 + I'm a full time student.
 + Getting into some [[https://www.home-assistant.io/][Home Assistant]] things.
-+ Messing with a [[https://rentry.co/oraclevps][free oracle vps]] for funzies. Started a minecraft server as I haven't played it in since 2020-ish... This is how I figured out that [[https://www.minecraft.net/en-us/article/account-migration-last-call][Micrsoft stole my childhood]].
-+ Listening to [[https://www.connorgoldsmith.com/cerebro][CEREBRO]] podcast. Having recently watched X-Men '97 I +watched+ listened to their Magneto episode and now I think I love X-Men. This is coming from a hipster who hated 90% of superhero things since I was 15 being spoiled by [[https://parahumans.wordpress.com/][Worm]]. UPDATE Jun 16: I literally listened to 20 hours of Madelyne Pryor discussion, a character I have hardly heard of prior (ha) to this calendar year.
++ Messing with a [[https://rentry.co/oraclevps][free oracle vps]] for funzies with the [[https://yortnet.com][yortnet.com]] domain. I started hosting a private minecraft server on it as well as a public search engine. 
 + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
 
