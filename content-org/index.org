@@ -76,5 +76,5 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[http
 + I'm a full time student.
 + Getting into some [[https://www.home-assistant.io/][Home Assistant]] things.
 + Messing with a [[https://rentry.co/oraclevps][free oracle vps]] for funzies with the [[https://yortnet.com][yortnet.com]] domain. I started hosting a private minecraft server on it as well as a public search engine. 
-+ [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
+# + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
 

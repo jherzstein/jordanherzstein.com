@@ -54,4 +54,3 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [yortn
 -   I'm a full time student.
 -   Getting into some [Home Assistant](https://www.home-assistant.io/) things.
 -   Messing with a [free oracle vps](https://rentry.co/oraclevps) for funzies with the [yortnet.com](https://yortnet.com) domain. I started hosting a private minecraft server on it as well as a public search engine.
--   [I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!](../images/hatedaylightsavings.png)
