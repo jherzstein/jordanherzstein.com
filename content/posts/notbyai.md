@@ -2,7 +2,7 @@
 title = "This Site Is Not Written By AI"
 summary = "It may be slop, but it's slop made by ME."
 date = 2024-10-18
-lastmod = 2024-10-18T20:37:03-04:00
+lastmod = 2024-10-19T00:08:00-04:00
 tags = ["updates", "notbyai", "linkbuttons"]
 draft = false
 [menu]
@@ -14,8 +14,8 @@ A new link button has been added to this website. As of the time writing this yo
 
 <figure>
     <center>
-       <img class="link-buttons" id="light-icon" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png" height="33px" />
-       <img class="link-buttons" id="dark-icon" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png" height="33px" />
+       <img class="link-buttons" id="light-icon" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png" height="31" />
+       <img class="link-buttons" id="dark-icon" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png" height="31" />
        <figcaption></figcaption>
     </center>
 </figure>
