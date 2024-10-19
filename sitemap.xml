@@ -2,19 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/tags/linkbuttons/</loc>
+    <lastmod>2024-10-18T20:37:03-04:00</lastmod>
+  </url><url>
+    <loc>/tags/notbyai/</loc>
+    <lastmod>2024-10-18T20:37:03-04:00</lastmod>
+  </url><url>
+    <loc>/posts/notbyai/</loc>
+    <lastmod>2024-10-18T20:37:03-04:00</lastmod>
+  </url><url>
+    <loc>/tags/updates/</loc>
+    <lastmod>2024-10-18T20:37:03-04:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-10-18T20:37:03-04:00</lastmod>
+  </url><url>
     <loc>/tags/oracle/</loc>
     <lastmod>2024-07-27T00:53:12-04:00</lastmod>
   </url><url>
     <loc>/tags/technology/</loc>
     <lastmod>2024-07-27T00:53:12-04:00</lastmod>
   </url><url>
-    <loc>/tags/updates/</loc>
-    <lastmod>2024-07-27T00:53:12-04:00</lastmod>
-  </url><url>
     <loc>/tags/vps/</loc>
-    <lastmod>2024-07-27T00:53:12-04:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2024-07-27T00:53:12-04:00</lastmod>
   </url><url>
     <loc>/posts/welcome_to_yortnet/</loc>

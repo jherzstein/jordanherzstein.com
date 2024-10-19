@@ -5,7 +5,7 @@
     <head><meta charset="UTF-8">
   
 <h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
-      <svg width="30" height="30" id="light-icon">
+      <svg width="30" height="30" class="light" id="light-icon">
         <circle cx="15" cy="15" r="6" fill="currentColor" />
 
         <line
@@ -27,7 +27,7 @@
         <use href="#ray" transform="rotate(270 15 15)" />
         <use href="#ray" transform="rotate(315 15 15)" />
       </svg>
-      <svg width="30" height="30" id="dark-icon">
+      <svg width="30" height="30" class="dark" id="dark-icon">
         <path
           fill="currentColor"
           d="
@@ -55,26 +55,28 @@
       <script>
 	const lightIcon = document.getElementById("light-icon");
 	const darkIcon = document.getElementById("dark-icon");
-
-	var i = "theme"
-	var m = (localStorage.getItem(i) || "dark")
-	var d = document.documentElement.classList
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
 	if (m == "light") {
-    	    d.remove("dark")
-    	    d.add(m)
+	    d.remove("dark");
+	    d.add(m);
 	    lightIcon.setAttribute("display", "none");
 	    darkIcon.setAttribute("display", "block");
 	} else {
+	    d.remove("light");
+	    d.add(m);
 	    lightIcon.setAttribute("display", "block");
 	    darkIcon.setAttribute("display", "none");
-
 	}
-	 
+	
 	function switchTheme() {
-    	    d.remove(m)
-    	    m = (m == "dark") ? "light" : "dark"
-    	    d.add(m)
-    	    localStorage.setItem(i, m)
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
 	    if (m == "light") {
 		lightIcon.setAttribute("display", "none");
 		darkIcon.setAttribute("display", "block");
@@ -83,6 +85,15 @@
 		darkIcon.setAttribute("display", "none");
 	    }
 	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
       </script>
       
   </div>
@@ -175,6 +186,12 @@
     <span class="link-buttons">
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
     </span>
   </div>
   <div class= "copyright">

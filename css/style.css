@@ -21,17 +21,12 @@
     --light-switch-icon: 🌑️;
 
 
-    --color-bg: var(--dark-color-bg);
-    --color-fg: var(--dark-color-fg);
-    --color-txt: var(--dark-color-txt);
-    --color-h1: var(--dark-color-h1);
-    --color-h2:var(--dark-color-h2);
-    --color-a: var(--dark-color-a);
-    --color-a-hover: var(--dark-color-a-hover);
-    --switch-icon: var(--dark-switch-icon);
-
     /*--monospace: 16px/1.5 "Lucida Console", Monaco, "Consolas", monospace;*/
     --monospace: 16px/1.5 'Roboto mono', monospace;
+}
+
+#dark-icon, #light-icon {
+    display: none;
 }
 
 .light {
@@ -43,7 +38,79 @@
     --color-a: var(--light-color-a);
     --color-a-hover: var(--light-color-a-hover);
     --switch-icon: var(--light-switch-icon);
+} 
+
+.light #dark-icon {
+    display: none;
 }
+
+.light #light-icon {
+    display: block;
+}
+
+.dark {
+    --color-bg: var(--dark-color-bg);
+    --color-fg: var(--dark-color-fg);
+    --color-txt: var(--dark-color-txt);
+    --color-h1: var(--dark-color-h1);
+    --color-h2:var(--dark-color-h2);
+    --color-a: var(--dark-color-a);
+    --color-a-hover: var(--dark-color-a-hover);
+    --switch-icon: var(--dark-switch-icon);
+} 
+
+.dark #light-icon {
+    display: none;
+}
+
+.dark #dark-icon {
+    display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --color-bg: var(--dark-color-bg);
+    --color-fg: var(--dark-color-fg);
+    --color-txt: var(--dark-color-txt);
+    --color-h1: var(--dark-color-h1);
+    --color-h2:var(--dark-color-h2);
+    --color-a: var(--dark-color-a);
+    --color-a-hover: var(--dark-color-a-hover);
+    --switch-icon: var(--dark-switch-icon);
+  }
+
+  :root:not(.light) #light-icon {
+      display: none;
+  }
+
+  :root:not(.light) #dark-icon {
+      display: block;
+  }
+
+} 
+
+@media (prefers-color-scheme: light) {
+  :root:not(.dark) {
+    --color-bg: var(--light-color-bg);
+    --color-fg: var(--light-color-fg);
+    --color-txt: var(--light-color-txt);
+    --color-h1: var(--light-color-h1);
+    --color-h2:var(--light-color-h2);
+    --color-a: var(--light-color-a);
+    --color-a-hover: var(--light-color-a-hover);
+    --switch-icon: var(--light-switch-icon);
+  }
+
+  :root:not(.dark) #light-icon {
+      display: block;
+  }
+
+  :root:not(.dark) #dark-icon {
+      display: none;
+  }
+
+
+} 
 
 /* roboto-regular - latin */
 @font-face {
@@ -77,7 +144,9 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: 1px solid ; 
+    box-shadow: 4px 4px var(--color-txt); 
     background:var(--color-fg);
+    border-radius: .75em;
     word-spacing: 10px;
 }
 
@@ -96,7 +165,7 @@ body {
 
 .page{
     max-width: 750px;
-    width: 90%;
+    width: 95%;
     display: block;
     align: center;
     margin-top: 2em;
@@ -105,6 +174,9 @@ body {
     margin-bottom: 2em;
     padding: 15px;
     border: 1px solid ; 
+    box-shadow: 4px 4px var(--color-txt); 
+    background-color: var(--color-bg);
+    border-radius: .75em;
     background:var(--color-fg);
 }
 /* #282c34, #e06c75, #98c379, #e5c07b,
@@ -173,6 +245,7 @@ h4 {
 {
   font-size: 3.0em;
   margin-right: 0.05em;
+  margin-top: 0.05em;
   font-weight: bold;
   float: left;
 }
@@ -220,6 +293,14 @@ br {
     margin: 3px 0;
 }
 
+.link-buttons {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.link-buttons:hover {
+    transform: scale(1.05);
+}
 
 .csl-bib-body{
     overflow: auto;

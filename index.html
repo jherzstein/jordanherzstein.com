@@ -6,7 +6,7 @@
 	<meta name="generator" content="Hugo 0.111.3"><meta charset="UTF-8">
   
 <h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
-      <svg width="30" height="30" id="light-icon">
+      <svg width="30" height="30" class="light" id="light-icon">
         <circle cx="15" cy="15" r="6" fill="currentColor" />
 
         <line
@@ -28,7 +28,7 @@
         <use href="#ray" transform="rotate(270 15 15)" />
         <use href="#ray" transform="rotate(315 15 15)" />
       </svg>
-      <svg width="30" height="30" id="dark-icon">
+      <svg width="30" height="30" class="dark" id="dark-icon">
         <path
           fill="currentColor"
           d="
@@ -56,26 +56,28 @@
       <script>
 	const lightIcon = document.getElementById("light-icon");
 	const darkIcon = document.getElementById("dark-icon");
-
-	var i = "theme"
-	var m = (localStorage.getItem(i) || "dark")
-	var d = document.documentElement.classList
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
 	if (m == "light") {
-    	    d.remove("dark")
-    	    d.add(m)
+	    d.remove("dark");
+	    d.add(m);
 	    lightIcon.setAttribute("display", "none");
 	    darkIcon.setAttribute("display", "block");
 	} else {
+	    d.remove("light");
+	    d.add(m);
 	    lightIcon.setAttribute("display", "block");
 	    darkIcon.setAttribute("display", "none");
-
 	}
-	 
+	
 	function switchTheme() {
-    	    d.remove(m)
-    	    m = (m == "dark") ? "light" : "dark"
-    	    d.add(m)
-    	    localStorage.setItem(i, m)
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
 	    if (m == "light") {
 		lightIcon.setAttribute("display", "none");
 		darkIcon.setAttribute("display", "block");
@@ -84,6 +86,15 @@
 		darkIcon.setAttribute("display", "none");
 	    }
 	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
       </script>
       
   </div>
@@ -146,6 +157,35 @@
       
 
     
+      
+    <article class="post">
+        <header class="post__header">
+          <h3>
+	    18 Oct 2024 <a href="/posts/notbyai/">This Site Is Not Written By AI </a>
+	  </h3>
+        </header>
+
+        <section class="post__summary">
+            It may be slop, but it&rsquo;s slop made by ME.
+        </section><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/updates/">#updates</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/notbyai/">#notbyai</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/linkbuttons/">#linkbuttons</a>
+                  </span>
+          </span></span>
+</article>
+
       
     <article class="post">
         <header class="post__header">
@@ -214,41 +254,6 @@
 </article>
 
       
-    <article class="post">
-        <header class="post__header">
-          <h3>
-	    16 Jun 2024 <a href="/posts/home_assistant_setup/">Booting DietPi on an SSD and installing Home Assistant in Docker </a>
-	  </h3>
-        </header>
-
-        <section class="post__summary">
-            Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi.
-        </section><span class="tags-list"><span class="meta-item">
-
-<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
-  <line x1="7" y1="7" x2="7.01" y2="7" />
-</svg>
-
-<span class="tags">
-                      <a href="/tags/rpi/">#rpi</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/home-assistant/">#home-assistant</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/dietpi/">#dietpi</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/technology/">#technology</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/tutorial/">#tutorial</a>
-                  </span>
-          </span></span>
-</article>
-
-      
 
     
       
@@ -291,6 +296,12 @@
     <span class="link-buttons">
       <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
         <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
     </span>
   </div>
   <div class= "copyright">
