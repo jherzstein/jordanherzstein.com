@@ -5,7 +5,7 @@
 "size" "0.8em"
 }}  
 <h1 id="title">{{ .Site.Title }} <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
-      <svg width="30" height="30" id="light-icon">
+      <svg width="30" height="30" class="light" id="light-icon">
         <circle cx="15" cy="15" r="6" fill="currentColor" />
 
         <line
@@ -27,7 +27,7 @@
         <use href="#ray" transform="rotate(270 15 15)" />
         <use href="#ray" transform="rotate(315 15 15)" />
       </svg>
-      <svg width="30" height="30" id="dark-icon">
+      <svg width="30" height="30" class="dark" id="dark-icon">
         <path
           fill="currentColor"
           d="

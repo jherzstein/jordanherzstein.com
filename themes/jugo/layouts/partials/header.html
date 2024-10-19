@@ -16,26 +16,28 @@
       <script>
 	const lightIcon = document.getElementById("light-icon");
 	const darkIcon = document.getElementById("dark-icon");
-
-	var i = "theme"
-	var m = (localStorage.getItem(i) || "dark")
-	var d = document.documentElement.classList
+	var i = "theme";
+	var d = document.documentElement.classList;
+	//var m = (localStorage.getItem(i) || "dark")
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
 	if (m == "light") {
-    	    d.remove("dark")
-    	    d.add(m)
+	    d.remove("dark");
+	    d.add(m);
 	    lightIcon.setAttribute("display", "none");
 	    darkIcon.setAttribute("display", "block");
 	} else {
+	    d.remove("light");
+	    d.add(m);
 	    lightIcon.setAttribute("display", "block");
 	    darkIcon.setAttribute("display", "none");
-
 	}
-	 
+	
 	function switchTheme() {
-    	    d.remove(m)
-    	    m = (m == "dark") ? "light" : "dark"
-    	    d.add(m)
-    	    localStorage.setItem(i, m)
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
 	    if (m == "light") {
 		lightIcon.setAttribute("display", "none");
 		darkIcon.setAttribute("display", "block");
@@ -44,6 +46,15 @@
 		darkIcon.setAttribute("display", "none");
 	    }
 	}
+	
+	// Listen for changes to the system color scheme preference
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
       </script>
       <!--{{ range .Site.Menus.main }}
       <a href="{{ .URL }}" >{{ .Page.File.Dir }}</a>

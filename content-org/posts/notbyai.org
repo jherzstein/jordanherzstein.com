@@ -1,0 +1,27 @@
+#+TITLE: This Site Is Not Written By AI
+#+date: 2024-10-18
+#+hugo_base_dir: ../../
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+filetags: updates notbyai linkbuttons
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: notbyai.md
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+It may be slop, but it's slop made by ME.
+#+end_description
+
+A new link button has been added to this website. As of the time writing this you may notice a badge at the site footer that looks like this:
+
+#+BEGIN_EXPORT html
+<figure>
+    <center>
+       <img class="link-buttons" id="light-icon" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png" height="33px" />
+       <img class="link-buttons" id="dark-icon" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png" height="33px" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+#+END_EXPORT
+
+This badge is provided by [[https://notbyai.fyi][Not by AI]], an organization focused on promoting content originality. I decided to add this after seeing it on [[https://sumnerevans.com/][this guy's site]]. This should indicate to you that, most likely, the content written for this site is *not* AI generated slop made for search engine optimization and maximum eyeball retention... it's only *human* generated slop. On a side note, and perhaps it is my fault for contributing to this, it is a bit dystopian that we've gotten to the point that people find it necessary to distinguish that their content is original, either as a point of pride or because in a lot of cases non-ai generated material has become impossible to recognize in a vacuum. /sigh/.
