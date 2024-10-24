@@ -7,6 +7,15 @@ draft = false
     identifier = "welcome"
 +++
 
+<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
+
+<div class="org-center">
+
+🎉🎉 **_Thanks for over 10,000 unique visitors on Neocities!_** 🎉🎉 <br />
+(That includes the web crawlers :) )
+
+</div>
+
 Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [yortnet.com](https://yortnet.com). Thank you for stopping by my website.
 
 -   [home](/) - You are here right now

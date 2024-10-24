@@ -8,6 +8,13 @@
 # #+HUGO_PAIRED_SHORTCODES: icons/icon
 #+OPTIONS: num:nil toc:nil 
 
+
+#+attr_html: :style display:flex;
+#+begin_center
+🎉🎉 */Thanks for over 10,000 unique visitors on Neocities!/* 🎉🎉 \\
+(That includes the web crawlers :) )
+#+end_center
+
 Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[https://yortnet.com][yortnet.com]]. Thank you for stopping by my website. 
 
 + [[/][home]] - You are here right now
@@ -15,6 +22,7 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[http
 + [[/posts][posts]] - Part personal blog part dev log, scroll down to see some recent posts
 + [[/mysetup][setup]] - Software and computers that I use, how I host various services, etc
 + [[/contact][contact]] - Get in touch with me
+
 
 #+BEGIN_EXPORT html
 <span class="social-icons">
