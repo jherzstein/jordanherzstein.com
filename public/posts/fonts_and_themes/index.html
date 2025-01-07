@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href="//localhost:1313/css/style.css">
+    
+    <head><meta charset="UTF-8">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" class="light" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" class="dark" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
+	if (m == "light") {
+	    d.remove("dark");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    d.remove("light");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+	}
+	
+	function switchTheme() {
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Hosting your own Fonts and Accessable Theme Preferences</h1>
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/webdev/">#webdev</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/google-webfonts-helper/">#google-webfonts-helper</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/themes/">#themes</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#self-hosting-fonts-using-google-webfonts-helper" aria-label="Self hosting fonts using google-webfonts-helper">Self hosting fonts using google-webfonts-helper</a></li>
+                <li>
+                    <a href="#respecting-theme-preferences-for-javascript-and-css" aria-label="Respecting theme preferences for Javascript and CSS">Respecting theme preferences for Javascript and CSS</a></li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <p>If you&rsquo;ve been visiting my site for a while you may have noticed that I&rsquo;ve revamped a few things here. For one, I&rsquo;ve changed my site font to Roboto, and I&rsquo;ve also made my site theme more robust for site visitors. I decided to host my own fonts since I no longer wanted to be restriced by the simple &ldquo;web-safe&rdquo; fonts, but also I didn&rsquo;t want to offload that onto a third party as, for example, Google Fonts collects user data (<a href="#citeproc_bib_item_1">CookeScript 2022</a>). Hosting your fonts is actually quite simple, here&rsquo;s how I did it:</p>
+<h2 id="self-hosting-fonts-using-google-webfonts-helper">Self hosting fonts using google-webfonts-helper</h2>
+<p>I installed webfonts using <a href="https://gwfh.mranftl.com/fonts">google-webfonts-helper</a>, it is both an easy way to search for the fonts that you want for your site, and it&rsquo;s also self hostable (<a href="#citeproc_bib_item_2">Ranftl, n.d.</a>). Once I decided on the fonts that I wanted, Roboto and Roboto Mono, I installed them into my <code>/fonts/</code> folder and unzipped the files to get the woff2 format font files. I simply defined these fonts by using the <code>@font-face</code> rule in my css style sheet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* roboto-regular - latin */</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">font-face</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-display</span><span style="color:#f92672">:</span> <span style="color:#f92672">swap</span><span style="color:#f92672">;</span> <span style="color:#75715e">/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-family</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Roboto&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-style</span><span style="color:#f92672">:</span> <span style="color:#f92672">normal</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-weight</span><span style="color:#f92672">:</span> <span style="color:#f92672">400</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">src</span><span style="color:#f92672">:</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;../fonts/roboto-v32-latin-regular.woff2&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;woff2&#39;</span><span style="color:#f92672">);</span> <span style="color:#75715e">/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* roboto-mono-regular - latin */</span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">font-face</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-display</span><span style="color:#f92672">:</span> <span style="color:#f92672">swap</span><span style="color:#f92672">;</span> <span style="color:#75715e">/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-family</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Roboto Mono&#39;</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-style</span><span style="color:#f92672">:</span> <span style="color:#f92672">normal</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">font-weight</span><span style="color:#f92672">:</span> <span style="color:#f92672">400</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">src</span><span style="color:#f92672">:</span> <span style="color:#f92672">url</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;../fonts/roboto-mono-v23-latin-regular.woff2&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">format</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;woff2&#39;</span><span style="color:#f92672">);</span> <span style="color:#75715e">/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Inside of <code>@font-face</code>, you can define how the font displays, in my case I use swap, which says that if the font is not loaded in time it will render a fallback font. The <code>font-family</code> defines a string to identify the font. <code>font-style</code> and <code>font-weight</code> define both the style and boldness of the font. Finally, in <code>src</code> you can define the url of where the font should be downloaded from, in my case this is simply the relative path of the font file hosted on my website.</p>
+<h2 id="respecting-theme-preferences-for-javascript-and-css">Respecting theme preferences for Javascript and CSS</h2>
+<p>For making my site&rsquo;s light and dark themes more robust there were two things that I wanted to accomplish:</p>
+<ol>
+<li>Immediately detect browser theme preferences and set that as the theme and,</li>
+<li>Detect any system preference changes.</li>
+</ol>
+<p>Site visitors can already override system preferences through the <a href="https://jordanherzstein.com/posts/light_theme_plus_i_hate_daylight_savings/">theme toggle I added a while back</a>, I just needed to make a couple of simple changes to respect requirement&rsquo;s 1 and 2 on the javascript side. For users that disable javascript on my site for whatever reason, I was able to get those requirements working for just css, the only thing that doesn&rsquo;t work is the theme toggle on the site website to override the browser preferences.</p>
+<p>First when the visitor opens the page we define variable <code>i</code> as a string <code>theme</code>, which will define the key of the theme type saved in the browser. Variable <code>m</code> will contain the current theme which will check for the theme in <code>localStorage</code> if it exists, otherwise it will detect user preference using <code>matchMedia</code> and assign it to either <code>&quot;light&quot;</code> or <code>&quot;dark&quot;</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;theme&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">m</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">localStorage</span>.<span style="color:#a6e22e">getItem</span>(<span style="color:#a6e22e">i</span>) <span style="color:#f92672">||</span> (window.<span style="color:#a6e22e">matchMedia</span> <span style="color:#f92672">&amp;&amp;</span> window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#39;(prefers-color-scheme: light)&#39;</span>).<span style="color:#a6e22e">matches</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;light&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;dark&#34;</span>);</span></span></code></pre></div>
+<p>This snippet also uses <code>matchMedia</code> to return the current colour theme preference as a <code>MediaQueryList</code>. Then there is an event listener which checks for changes in the <code>MediaQueryList</code>, when there is such a change the new colour scheme is set and if that is not the same as variable <code>m</code>, the <code>switchTheme()</code> function is called.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Listen for changes to the system color scheme preference
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>window.<span style="color:#a6e22e">matchMedia</span>(<span style="color:#e6db74">&#39;(prefers-color-scheme: light)&#39;</span>).<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;change&#39;</span>, <span style="color:#a6e22e">e</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">newColorScheme</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">matches</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;light&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;dark&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">newColorScheme</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">m</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">switchTheme</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
+<p>Using the <code>prefers-color-scheme</code> media feature can check if the browser requests a light theme or dark theme, and swap the light/dark theme icons based on the id selectors <code>#light-icon</code> and <code>#dark-icon</code>. This allows site visitors to still change colour themes without needing to run javascript on their browser.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-color-scheme</span><span style="color:#f92672">:</span> <span style="color:#f92672">dark</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>  :<span style="color:#a6e22e">root</span>:<span style="color:#a6e22e">not</span><span style="color:#f92672">(</span>.<span style="color:#a6e22e">light</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    --color-bg: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>bg);
+</span></span><span style="display:flex;"><span>    --color-fg: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>fg);
+</span></span><span style="display:flex;"><span>    --color-txt: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>txt);
+</span></span><span style="display:flex;"><span>    --color-h1: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>h1);
+</span></span><span style="display:flex;"><span>    --color-h2:<span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>h2);
+</span></span><span style="display:flex;"><span>    --color-a: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>a);
+</span></span><span style="display:flex;"><span>    --color-a-hover: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>a<span style="color:#f92672">-</span>hover);
+</span></span><span style="display:flex;"><span>    --switch-icon: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>dark<span style="color:#f92672">-</span>switch<span style="color:#f92672">-</span><span style="color:#66d9ef">icon</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  :<span style="color:#a6e22e">root</span>:<span style="color:#a6e22e">not</span><span style="color:#f92672">(</span>.<span style="color:#a6e22e">light</span><span style="color:#f92672">)</span> #light-icon {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  :<span style="color:#a6e22e">root</span>:<span style="color:#a6e22e">not</span><span style="color:#f92672">(</span>.<span style="color:#a6e22e">light</span><span style="color:#f92672">)</span> #dark-icon {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@<span style="color:#66d9ef">media</span> <span style="color:#f92672">(</span><span style="color:#f92672">prefers-color-scheme</span><span style="color:#f92672">:</span> <span style="color:#f92672">light</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>  :<span style="color:#a6e22e">root</span>:<span style="color:#a6e22e">not</span><span style="color:#f92672">(</span>.<span style="color:#a6e22e">dark</span><span style="color:#f92672">)</span> {
+</span></span><span style="display:flex;"><span>    --color-bg: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>bg);
+</span></span><span style="display:flex;"><span>    --color-fg: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>fg);
+</span></span><span style="display:flex;"><span>    --color-txt: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>txt);
+</span></span><span style="display:flex;"><span>    --color-h1: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>h1);
+</span></span><span style="display:flex;"><span>    --color-h2:<span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>h2);
+</span></span><span style="display:flex;"><span>    --color-a: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>a);
+</span></span><span style="display:flex;"><span>    --color-a-hover: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span><span style="color:#66d9ef">color</span><span style="color:#f92672">-</span>a<span style="color:#f92672">-</span>hover);
+</span></span><span style="display:flex;"><span>    --switch-icon: <span style="color:#a6e22e">var</span>(<span style="color:#f92672">--</span>light<span style="color:#f92672">-</span>switch<span style="color:#f92672">-</span><span style="color:#66d9ef">icon</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  :<span style="color:#a6e22e">root</span>:<span style="color:#a6e22e">not</span><span style="color:#f92672">(</span>.<span style="color:#a6e22e">dark</span><span style="color:#f92672">)</span> #light-icon {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">block</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  :<span style="color:#a6e22e">root</span>:<span style="color:#a6e22e">not</span><span style="color:#f92672">(</span>.<span style="color:#a6e22e">dark</span><span style="color:#f92672">)</span> #dark-icon {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">none</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>CookeScript. 2022. “Are Google Fonts GDPR Compliant?” <a href="https://cookie-script.com/blog/google-fonts-and-gdpr">https://cookie-script.com/blog/google-fonts-and-gdpr</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Ranftl, Mario. n.d. “Google Webfonts Helper.” <a href="https://gwfh.mranftl.com/fonts">https://gwfh.mranftl.com/fonts</a>.</div>
+</div>
+
+    </div>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/images/link-buttons/libreboot.gif"></a>
+    </span>
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2024 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://orgmode.org">Org Mode</a>, <a href="https://www.gnu.org/software/emacs/">Emacs</a>
+  </div>
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>

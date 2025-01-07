@@ -17,6 +17,16 @@ This is my personal website which I've been hosting on neocities since late 2022
 
 I'm currently using a ROCKpro64 with it's respective NAS case and PCI-e SSD interface card. It runs DietPi, which is a distrobution of Debian optimized for arm SBCs.
 
+I recently built a PC with [dasharo coreboot firmware](https://www.dasharo.com/) that I plan to use as a hypervisor server running [Proxmox](https://www.proxmox.com/en/) for local LLM inferencing and other intensive tasks. Here is the build:
+
+-   **Case:** Corsair 4000D Airflow
+-   **Motherboard:** MSI Pro Z790-P
+-   **CPU:** Intel i7 12700K
+-   **Cooler:** Thermalight Peerless Assasin 120 SE
+-   **GPU:** Radeon RX 7900 XTX
+-   **Power Supply:** Corsair RM860e
+-   **RAM:** 32 GB DDR5
+
 I also have a lynksys router at home that I use to run openwrt for it's security, performance, and customizability, especially compared to the default modems provided by ISPs.
 
 I'm currently using a free Oracle VPS using an Ampere quad core CPU and 24GB of RAM. Currently using it to host a searx instance through the [yortnet.com](https://yortnet.com) domain and [a private Minecraft server for free](/posts/oracle_mc_server). I hope to host more services with it in future.

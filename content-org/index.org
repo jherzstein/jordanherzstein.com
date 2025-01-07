@@ -81,7 +81,8 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[http
 # When I'm not in front of glowing rectangles made of polarized sheets and crystals, I like to swim, I'm also taking part in my school's Brazillian Jiu Jitsu club. During COVID I stopped gaming entirely but more recently I've given a shot attending my local SSBU tournaments.
 
 * What am I up to?
-+ I'm a full time student.
++ I'm +a full time student+ grinding, currently seeking gainful employment.
++ Built a new PC for using local AI and other intensive tasks.
 + Getting into some [[https://www.home-assistant.io/][Home Assistant]] things.
 + Messing with a [[https://rentry.co/oraclevps][free oracle vps]] for funzies with the [[https://yortnet.com][yortnet.com]] domain. I started hosting a private minecraft server on it as well as a public search engine. 
 # + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
