@@ -6,8 +6,15 @@
     <description>Recent content in Themes on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2025 15:47:05 -0500</lastBuildDate>
     <atom:link href="/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hosting your own Fonts and Accessable Theme Preferences</title>
+      <link>/posts/fonts_and_themes/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/fonts_and_themes/</guid>
+      <description>Hosting fonts on the website while cutting out the middle-man, and allowing site themes to work with and without javascript.</description>
+    </item>
     <item>
       <title>New light theme on daylight savings plus I hate daylight savings</title>
       <link>/posts/light_theme_plus_i_hate_daylight_savings/</link>
