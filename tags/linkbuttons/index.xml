@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linkbuttons on Jordan Herzstein</title>
+    <title>Linkbuttons on Jordan Herzstein</title>
     <link>/tags/linkbuttons/</link>
-    <description>Recent content in linkbuttons on Jordan Herzstein</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 18 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/linkbuttons/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Linkbuttons on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 19 Oct 2024 00:08:00 -0400</lastBuildDate>
+    <atom:link href="/tags/linkbuttons/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This Site Is Not Written By AI</title>
       <link>/posts/notbyai/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      
       <guid>/posts/notbyai/</guid>
       <description>It may be slop, but it&amp;rsquo;s slop made by ME.</description>
     </item>
-    
   </channel>
 </rss>

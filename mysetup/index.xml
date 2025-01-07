@@ -4,7 +4,9 @@
     <title>My Setup on Jordan Herzstein</title>
     <link>/mysetup/</link>
     <description>Recent content in My Setup on Jordan Herzstein</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="/mysetup/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="/mysetup/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
