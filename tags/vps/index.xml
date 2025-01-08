@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vps on Jordan Herzstein</title>
-    <link>/tags/vps/</link>
+    <link>//localhost:1313/tags/vps/</link>
     <description>Recent content in Vps on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jul 2024 00:54:29 -0400</lastBuildDate>
-    <atom:link href="/tags/vps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/vps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to YortNet</title>
-      <link>/posts/welcome_to_yortnet/</link>
+      <link>//localhost:1313/posts/welcome_to_yortnet/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/welcome_to_yortnet/</guid>
+      <guid>//localhost:1313/posts/welcome_to_yortnet/</guid>
       <description>I spun up a vps to host various services and privacy front ends</description>
     </item>
     <item>
       <title>Minecraft Java Edition Server For Free</title>
-      <link>/posts/oracle_mc_server/</link>
+      <link>//localhost:1313/posts/oracle_mc_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/oracle_mc_server/</guid>
+      <guid>//localhost:1313/posts/oracle_mc_server/</guid>
       <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
     </item>
   </channel>
