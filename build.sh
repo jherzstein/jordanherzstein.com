@@ -1,5 +1,6 @@
 #!/bin/bash
 export HUGOxPARAMSxGITxLAST_COMMITxHASH=$(git ^Cv-parse --short HEAD)
+export HUGOxPARAMSxGITxLAST_COMMITxDATE=$(git log -1 --format=%ci | cut -b 1-10)
 hugo 
 read -r -p "Do you want to sync changes to the server and update git? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
