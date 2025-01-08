@@ -4,9 +4,6 @@ sectionPagesMenu = 'main'
 enableGitInfo = true
 [markup.goldmark.renderer]
    unsafe = true
-[markup.goldmark.parser.attribute]
-   title = true
-   blogck = true
 [taxonomies]
   category = 'categories'
   tags = 'tags'

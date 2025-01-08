@@ -9,8 +9,10 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out
+      - name: Checkout
         uses: actions/checkout@v4
+	with:
+	  fetch-depth: 0
 
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4

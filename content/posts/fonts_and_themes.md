@@ -2,7 +2,7 @@
 title = "Hosting your own Fonts and Accessable Theme Preferences"
 summary = "Hosting fonts on the website while cutting out the middle-man, and allowing site themes to work with and without javascript."
 date = 2025-01-07
-lastmod = 2025-01-07T15:47:05-05:00
+lastmod = 2025-01-08T13:28:15-05:00
 tags = ["webdev", "google-webfonts-helper", "themes"]
 draft = false
 [menu]
