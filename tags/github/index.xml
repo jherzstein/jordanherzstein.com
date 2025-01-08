@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Github on Jordan Herzstein</title>
-    <link>/tags/github/</link>
+    <link>//localhost:1313/tags/github/</link>
     <description>Recent content in Github on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 09 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Feb 2024 14:40:19 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo and other site changes</title>
-      <link>/posts/thingstocome/</link>
+      <link>//localhost:1313/posts/thingstocome/</link>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/thingstocome/</guid>
+      <guid>//localhost:1313/posts/thingstocome/</guid>
       <description>Hugo is a very good static site generator.</description>
     </item>
   </channel>

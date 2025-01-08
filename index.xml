@@ -2,115 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on Jordan Herzstein</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content in Welcome on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jan 2025 15:47:05 -0500</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hosting your own Fonts and Accessable Theme Preferences</title>
-      <link>/posts/fonts_and_themes/</link>
+      <link>//localhost:1313/posts/fonts_and_themes/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/fonts_and_themes/</guid>
+      <guid>//localhost:1313/posts/fonts_and_themes/</guid>
       <description>Hosting fonts on the website while cutting out the middle-man, and allowing site themes to work with and without javascript.</description>
     </item>
     <item>
       <title>This Site Is Not Written By AI</title>
-      <link>/posts/notbyai/</link>
+      <link>//localhost:1313/posts/notbyai/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/notbyai/</guid>
+      <guid>//localhost:1313/posts/notbyai/</guid>
       <description>It may be slop, but it&amp;rsquo;s slop made by ME.</description>
     </item>
     <item>
       <title>Welcome to YortNet</title>
-      <link>/posts/welcome_to_yortnet/</link>
+      <link>//localhost:1313/posts/welcome_to_yortnet/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/welcome_to_yortnet/</guid>
+      <guid>//localhost:1313/posts/welcome_to_yortnet/</guid>
       <description>I spun up a vps to host various services and privacy front ends</description>
     </item>
     <item>
       <title>Minecraft Java Edition Server For Free</title>
-      <link>/posts/oracle_mc_server/</link>
+      <link>//localhost:1313/posts/oracle_mc_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/oracle_mc_server/</guid>
+      <guid>//localhost:1313/posts/oracle_mc_server/</guid>
       <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
     </item>
     <item>
       <title>Booting DietPi on an SSD and installing Home Assistant in Docker</title>
-      <link>/posts/home_assistant_setup/</link>
+      <link>//localhost:1313/posts/home_assistant_setup/</link>
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/home_assistant_setup/</guid>
+      <guid>//localhost:1313/posts/home_assistant_setup/</guid>
       <description>Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi.</description>
     </item>
     <item>
       <title>New email/website domain!</title>
-      <link>/posts/new_domain/</link>
+      <link>//localhost:1313/posts/new_domain/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/new_domain/</guid>
+      <guid>//localhost:1313/posts/new_domain/</guid>
       <description>Friendship with .xyz has ended, .com is my new best friend.&#xA;Friendship with namecheap has ended, porkbun is my new best friend</description>
     </item>
     <item>
       <title>Using adb to Delete Vanadium on GrapheneOS</title>
-      <link>/posts/adb_vanadium/</link>
+      <link>//localhost:1313/posts/adb_vanadium/</link>
       <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
-      <guid>/posts/adb_vanadium/</guid>
+      <guid>//localhost:1313/posts/adb_vanadium/</guid>
       <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
     </item>
     <item>
       <title>Eclipse Sun Worm</title>
-      <link>/posts/eclipse_2024_part2/</link>
+      <link>//localhost:1313/posts/eclipse_2024_part2/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/eclipse_2024_part2/</guid>
+      <guid>//localhost:1313/posts/eclipse_2024_part2/</guid>
       <description>My very bad photos of the eclipse brought us an accidental masterpiece.</description>
     </item>
     <item>
       <title>My Eclipse PSA</title>
-      <link>/posts/eclipse_2024/</link>
+      <link>//localhost:1313/posts/eclipse_2024/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/eclipse_2024/</guid>
+      <guid>//localhost:1313/posts/eclipse_2024/</guid>
       <description>Do not look directly at the sun today&amp;hellip; or tomorrow&amp;hellip; or ever&amp;hellip; just don&amp;rsquo;t do it.</description>
     </item>
     <item>
       <title>New light theme on daylight savings plus I hate daylight savings</title>
-      <link>/posts/light_theme_plus_i_hate_daylight_savings/</link>
+      <link>//localhost:1313/posts/light_theme_plus_i_hate_daylight_savings/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/light_theme_plus_i_hate_daylight_savings/</guid>
+      <guid>//localhost:1313/posts/light_theme_plus_i_hate_daylight_savings/</guid>
       <description>I added a light theme so it&amp;rsquo;s easier for some users to read. Also I hate daylight savings.</description>
     </item>
     <item>
       <title>Skiff is Dead 🤡</title>
-      <link>/posts/skiffdead/</link>
+      <link>//localhost:1313/posts/skiffdead/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/skiffdead/</guid>
+      <guid>//localhost:1313/posts/skiffdead/</guid>
       <description>Lesson #1: Proton king. Lesson #2: Don&amp;rsquo;t trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.</description>
     </item>
     <item>
       <title>Hugo and other site changes</title>
-      <link>/posts/thingstocome/</link>
+      <link>//localhost:1313/posts/thingstocome/</link>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/thingstocome/</guid>
+      <guid>//localhost:1313/posts/thingstocome/</guid>
       <description>Hugo is a very good static site generator.</description>
     </item>
     <item>
       <title>nyaa_menu</title>
-      <link>/posts/nyaa_menu/</link>
+      <link>//localhost:1313/posts/nyaa_menu/</link>
       <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>/posts/nyaa_menu/</guid>
+      <guid>//localhost:1313/posts/nyaa_menu/</guid>
       <description>I made a lazy web scraping tool for collecting anime and manga while I was bored.</description>
     </item>
     <item>
       <title>My Little Techy Projects Summer 2023</title>
-      <link>/posts/summer_2023_projects/</link>
+      <link>//localhost:1313/posts/summer_2023_projects/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>/posts/summer_2023_projects/</guid>
+      <guid>//localhost:1313/posts/summer_2023_projects/</guid>
       <description>I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.</description>
     </item>
     <item>
       <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
-      <link>/posts/caps2esc/</link>
+      <link>//localhost:1313/posts/caps2esc/</link>
       <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>/posts/caps2esc/</guid>
+      <guid>//localhost:1313/posts/caps2esc/</guid>
       <description>Guide on switching keymaps using xkb in Xorg</description>
     </item>
   </channel>

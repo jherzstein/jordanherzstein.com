@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clown-Moment on Jordan Herzstein</title>
-    <link>/tags/clown-moment/</link>
+    <link>//localhost:1313/tags/clown-moment/</link>
     <description>Recent content in Clown-Moment on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/clown-moment/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Feb 2024 09:26:21 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/clown-moment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Skiff is Dead 🤡</title>
-      <link>/posts/skiffdead/</link>
+      <link>//localhost:1313/posts/skiffdead/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/skiffdead/</guid>
+      <guid>//localhost:1313/posts/skiffdead/</guid>
       <description>Lesson #1: Proton king. Lesson #2: Don&amp;rsquo;t trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.</description>
     </item>
   </channel>
