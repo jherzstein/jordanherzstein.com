@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webdev on Jordan Herzstein</title>
-    <link>/tags/webdev/</link>
+    <link>//localhost:1313/tags/webdev/</link>
     <description>Recent content in Webdev on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jan 2025 15:47:05 -0500</lastBuildDate>
-    <atom:link href="/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2025 15:47:15 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/webdev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hosting your own Fonts and Accessable Theme Preferences</title>
-      <link>/posts/fonts_and_themes/</link>
+      <link>//localhost:1313/posts/fonts_and_themes/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/fonts_and_themes/</guid>
+      <guid>//localhost:1313/posts/fonts_and_themes/</guid>
       <description>Hosting fonts on the website while cutting out the middle-man, and allowing site themes to work with and without javascript.</description>
     </item>
   </channel>
