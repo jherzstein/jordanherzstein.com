@@ -109,24 +109,9 @@
 
 
             <section class="page__body">
-    <header class="page-header">
-      <h1>Tag:Manga</h1></h1>
-    </header>
     <header class="content__header">
-        
-    </header>
-  
-    <article class="post">
-        <header class="post__header">
-          <h4>
-	    07 Oct 2023 <a href="/posts/nyaa_menu/">nyaa_menu </a>
-	  </h4>
-        </header>
-
-        <section class="post__summary">
-            I made a lazy web scraping tool for collecting anime and manga while I was bored.
-        </section>
-	<br><span class="tags-list"><span class="meta-item">
+        <h1>Git Resume Cheat Sheet</h1>
+    </header><span class="tags-list"><span class="meta-item">
 
 <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
   <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
@@ -134,21 +119,43 @@
 </svg>
 
 <span class="tags">
-                      <a href="/tags/technology/">#technology</a>
+                      <a href="/tags/git/">#git</a>
                   </span>
           <span class="tags">
-                      <a href="/tags/projects/">#projects</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/anime/">#anime</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/manga/">#manga</a>
+                      <a href="/tags/resume/">#resume</a>
                   </span>
           </span></span>
-</article>
-  
+<br>
+<div class="content__body">
+         <p>Since I&rsquo;ve started my job hunt, I&rsquo;ve been tracking all versions of my resume on git similar to <a href="https://github.com/rothgar/track-your-resume-in-git">this guy</a>. Personally, I don&rsquo;t feel comfortable recording all of my resumes with sensitive information on a non-local git repository, so I&rsquo;ve been running forgejo at home for this. In case you are curious about how I generate my resume, I use <a href="https://titan-c.gitlab.io/org-cv/">org-cv</a> on the backend, using the awesomecv template similar to <a href="https://github.com/zzamboni/vita/">this guy</a>. I do use a bit of an odd combindation of git commands and <a href="https://magit.vc">magit</a> keybindings to get stuff done, but for me it&rsquo;s comfy. I thought it&rsquo;d be a good idea to document some of my common git commands that I use to organize my resume on the repo here. I got the idea after seeing another <a href="https://kishvanchee.com/git-cheat-sheet/">blog post</a> in a similar vein. If you&rsquo;re in a similar position as me this may give you some workflow ideas.</p>
+<ul>
+<li>Create a new company branch with all files from current branch, then switches to the new branch</li>
 </ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b &lt;branch&gt;</span></span></code></pre></div>
+<ul>
+<li>See names of all files on current branch</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git ls-tree -r &lt;branch&gt; --name-only</span></span></code></pre></div>
+<ul>
+<li>Restore file from another branch</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git restore --source &lt;branch&gt; &lt;file&gt;</span></span></code></pre></div>
+<ul>
+<li>See current branches, doubly verbose to highlight relationship between local and remotes</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -vv</span></span></code></pre></div>
+<ul>
+<li>Set or get remote repo urls for origin for ssh</li>
+</ul>
+<!--listend-->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote set-url origin &lt;user&gt;@&lt;host_domain_or_ip&gt;:&lt;ssh-port&gt;/&lt;username&gt;/&lt;repository&gt;.git
+</span></span><span style="display:flex;"><span>git remote get-url origin</span></span></code></pre></div>
+
+    </div>
 
 
             </section>
