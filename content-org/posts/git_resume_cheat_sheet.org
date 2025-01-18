@@ -1,0 +1,42 @@
+#+TITLE: Git Resume Cheat Sheet
+#+date: 2025-01-18
+#+hugo_base_dir: ../../
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+filetags: git resume
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: git_resume_cheat_sheet.md
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+I've been using a local git server to organize and keep track of all versions of my resume. I keep track of some common commands that I use.
+#+end_description
+
+Since I've started my job hunt, I've been tracking all versions of my resume on git similar to [[https://github.com/rothgar/track-your-resume-in-git][this guy]]. Personally, I don't feel comfortable recording all of my resumes with sensitive information on a non-local git repository, so I've been running forgejo at home for this. In case you are curious about how I generate my resume, I use [[https://titan-c.gitlab.io/org-cv/][org-cv]] on the backend, using the awesomecv template similar to [[https://github.com/zzamboni/vita/][this guy]]. I do use a bit of an odd combindation of git commands and [[https://magit.vc][magit]] keybindings to get stuff done, but for me it's comfy. I thought it'd be a good idea to document some of my common git commands that I use to organize my resume on the repo here. I got the idea after seeing another [[https://kishvanchee.com/git-cheat-sheet/][blog post]] in a similar vein. If you're in a similar position as me this may give you some workflow ideas.
+
+- Create a new company branch with all files from current branch, then switches to the new branch
+#+BEGIN_SRC bash
+git checkout -b <branch>
+#+END_SRC 
+
+- See names of all files on current branch
+#+BEGIN_SRC bash
+git ls-tree -r <branch> --name-only
+#+END_SRC
+
+- Restore file from another branch
+#+BEGIN_SRC bash
+git restore --source <branch> <file>
+#+END_SRC
+
+- See current branches, doubly verbose to highlight relationship between local and remotes
+#+BEGIN_SRC bash
+git branch -vv
+#+END_SRC
+
+- Set or get remote repo urls for origin for ssh
+#+BEGIN_SRC bash
+git remote set-url origin <user>@<host_domain_or_ip>:<ssh-port>/<username>/<repository>.git
+git remote get-url origin
+#+END_SRC

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Jordan Herzstein</title>
+    <link>/tags/git/</link>
+    <description>Recent content in Git on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 18 Jan 2025 14:37:38 -0500</lastBuildDate>
+    <atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Resume Cheat Sheet</title>
+      <link>/posts/git_resume_cheat_sheet/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/git_resume_cheat_sheet/</guid>
+      <description>I&amp;rsquo;ve been using a local git server to organize and keep track of all versions of my resume. I keep track of some common commands that I use.</description>
+    </item>
+  </channel>
+</rss>

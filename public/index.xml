@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Git Resume Cheat Sheet</title>
+      <link>/posts/git_resume_cheat_sheet/</link>
+      <pubDate>Sat, 18 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/git_resume_cheat_sheet/</guid>
+      <description>I&amp;rsquo;ve been using a local git server to organize and keep track of all versions of my resume. I keep track of some common commands that I use.</description>
+    </item>
+    <item>
       <title>Hosting your own Fonts and Accessable Theme Preferences</title>
       <link>/posts/fonts_and_themes/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
