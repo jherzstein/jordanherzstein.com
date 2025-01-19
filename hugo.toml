@@ -2,6 +2,8 @@ theme = 'jugo'
 title = 'Jordan Herzstein'
 sectionPagesMenu = 'main'
 enableGitInfo = true
+[author]
+   name = "Jordan Herzstein"
 [markup.goldmark.renderer]
    unsafe = true
 [taxonomies]
