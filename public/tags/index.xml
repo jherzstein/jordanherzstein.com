@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jan 2025 14:38:32 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jan 2025 22:45:53 -0500</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai</title>
+      <link>/tags/ai/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deepseek-R1</title>
+      <link>/tags/deepseek-r1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/deepseek-r1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llama</title>
+      <link>/tags/llama/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/llama/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ollama</title>
+      <link>/tags/ollama/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/ollama/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Webui</title>
+      <link>/tags/open-webui/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/tags/open-webui/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Git</title>
       <link>/tags/git/</link>
