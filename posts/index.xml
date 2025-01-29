@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Jan 2025 14:38:32 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jan 2025 22:52:54 -0500</lastBuildDate>
     <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting with Ollama and Open WebUI in my Proxmox VM</title>
+      <link>/posts/ollama_quickstart/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/ollama_quickstart/</guid>
+      <description>Simply starting off with an ollama binary, running a local llm in the cli, and deploying a nice user interface for it with Open WebUI.</description>
+    </item>
     <item>
       <title>Git Resume Cheat Sheet</title>
       <link>/posts/git_resume_cheat_sheet/</link>

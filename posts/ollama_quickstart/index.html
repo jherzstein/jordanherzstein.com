@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href= "/css/style.css" | absURL }}>
+    
+    <head><meta charset="UTF-8">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" class="light" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" class="dark" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
+	if (m == "light") {
+	    d.remove("dark");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    d.remove("light");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+	}
+	
+	function switchTheme() {
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>Starting with Ollama and Open WebUI in my Proxmox VM</h1>
+    </header><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/ai/">#ai</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/ollama/">#ollama</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/open-webui/">#open-webui</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/llama/">#llama</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/deepseek-r1/">#deepseek-r1</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#guide" aria-label="Guide">Guide</a><ul>
+                        
+                <li>
+                    <a href="#installing-ollama-binary-and-running-a-model" aria-label="Installing Ollama Binary and running a model">Installing Ollama Binary and running a model</a></li>
+                <li>
+                    <a href="#access-ollama-outside-of-localhost--optional" aria-label="Access Ollama outside of localhost (optional)">Access Ollama outside of localhost (optional)</a></li>
+                <li>
+                    <a href="#implementing-a-user-interface" aria-label="Implementing a user interface">Implementing a user interface</a><ul>
+                        
+                <li>
+                    <a href="#open-webui-deploying-through-docker" aria-label="Open WebUI deploying through docker">Open WebUI deploying through docker</a></li>
+                <li>
+                    <a href="#adding-a-user-group-in-open-webui-and-giving-it-access-to-models" aria-label="Adding a user group in Open WebUI and giving it access to models">Adding a user group in Open WebUI and giving it access to models</a></li></ul>
+                </li></ul>
+                </li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <p>Quite recently I built a PC specifically for local and private LLM inferencing. Here are the specs in case you are curious:</p>
+<ul>
+<li>Case: Corsair 4000D Airflow</li>
+<li>Motherboard: MSI Pro Z790-P</li>
+<li>CPU: Intel i7 12700K</li>
+<li>Cooler: Thermalight Peerless Assasin 120 SE</li>
+<li>GPU: Radeon RX 7900 XTX</li>
+<li>Power Supply: Corsair RM860e</li>
+<li>RAM: 32 GB DDR5</li>
+</ul>
+<p>In case you are not aware of what Ollama is or what it does, it is essentially a platform to access and run large language models locally on your own hardware (<a href="#citeproc_bib_item_2">Ollama, n.d.</a>). This includes models such as llama3 from Meta and Deepseek&rsquo;s R1 model which I&rsquo;m sure you&rsquo;ve been hearing a lot about as it&rsquo;s been causing all of the massive tech giants in the U.S. to panic right now. Looking at current benchmarks, deepseek-r1 is performing just as well or better than OpenAI&rsquo;s o1 counterpart, that and it was just a side project, alledgedly needing less than <strong>$6 million</strong> to develop (<a href="#citeproc_bib_item_1">Deepseek AI 2025</a>). These developments are great for me because, while I would love to utilize AI for analyzing documents and brainstorming ideas, I obviously have issues with providing that information to an outside source I have no control over, especially for privacy reasons. Additionally, if the area that you live in gets electricity from renewable sources, you&rsquo;re probably doing better by the environment by running AI locally than in a datacentre.</p>
+<h2 id="guide">Guide</h2>
+<p>I installed Proxmox on the host and did full gpu passthrough for the one VM I wanted to utilize for these tasks. This guide already assumes you have a linux machine set up with proper gpu firmware and drivers installed, this is a simple Ollama setup that is (mostly) Linux distro and GPU agnostic. One thing to note, however, I did have issues with my proxmox VM crashing (Ubuntu and Fedora) with <code>error: kvm run failed Bad address</code>. Looking into the error, I assume it was an <code>fwupdmgr</code> issue causing the kernel to crash when the service would run in the background (<a href="#citeproc_bib_item_3">Unknown 2024</a>). I spun up a fresh VM and uninstalled <code>fwupd</code> and I haven&rsquo;t come across that issue since. This is the only workaround I know of as of now, so if you&rsquo;ve come across this issue and figured out a way to have <code>fwupd</code> working again do not hesitate to contact me and I will update this section.</p>
+<h3 id="installing-ollama-binary-and-running-a-model">Installing Ollama Binary and running a model</h3>
+<p>Installing the binary is extremely simple, go to <a href="https://ollama.com/download">https://ollama.com/download</a> you will be presented with the following command to install the binary.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh</span></span></code></pre></div>
+<p>After setup, check if ollama is running, either <code>curl localhost:11434</code> on the local machine or enter in its browser <code>localhost:11434</code>, you should get <code>Ollama is running</code> in response. If ollama is not running yet:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ollama serve</span></span></code></pre></div>
+<p>Next, installing a model is very simple, you may search through <a href="https://ollama.com/search%20">ollama&rsquo;s various models</a> and select one that you like that is within storage and hardware requirements for your build. For now I will select llama3 as ane example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ollama pull llama3</span></span></code></pre></div>
+<p>We can list our models after installing them by using <code>ollama list</code>.</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">NAME               ID              SIZE      MODIFIED
+llama3:latest      365c0bd3c000    4.7 GB    2 days ago</code></pre>
+<p>Afer installing llama3, simply run llama3 by running <code>ollama run llama3</code>, and then you can prompt away. You can also check if it&rsquo;s utilizing your gpu properly through <code>nvidia-smi</code> or <code>rocm-smi</code> depending on if you&rsquo;re using Nvidia or AMD respectively.</p>
+<h3 id="access-ollama-outside-of-localhost--optional">Access Ollama outside of localhost (optional)</h3>
+<p>Right now you can access and use ollama inside of the host that you&rsquo;re using to run it, but if you want to use the ollama API from any machine on your LAN, you will have to change the <code>OLLAMA_HOST</code> path variable. In the case of most Linux distros, you can change the path variable through ollama&rsquo;s systemd service.</p>
+<p>Simply add <code>Environment=&quot;OLLAMA_HOST=0.0.0.0:11434&quot;</code> in <code>/etc/systemd/system/ollama.service</code> under <code>[Service]</code>:</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">[Unit]
+Description=Ollama Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/ollama serve
+User=ollama
+Group=ollama
+Restart=always
+RestartSec=3
+Environment=&#34;PATH=/home/jordanh/.local/bin:/home/jordanh/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin&#34;
+Environment=&#34;OLLAMA_HOST=0.0.0.0:11434&#34;
+
+[Install]
+WantedBy=default.target</code></pre>
+<p>Then reload the systemd daemon and restart ollama:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl daemon-reload
+</span></span><span style="display:flex;"><span>sudo systemctl restart ollama</span></span></code></pre></div>
+<p>Now try to enter <code>&lt;ip-of-ollama-host&gt;:11434</code> from a separate machine into your browser or <code>curl &lt;ip-of-ollama-host&gt;:11434</code>. If you get <code>Ollama is running</code> all is working.</p>
+<h3 id="implementing-a-user-interface">Implementing a user interface</h3>
+<p>Now you should be able to run LLMs through the command line, but you probably want something a bit more user friendly and ads extra features. Enter Open WebUI: a self hostable user interface for interacting with AI that can be run entirelly locally.</p>
+<h4 id="open-webui-deploying-through-docker">Open WebUI deploying through docker</h4>
+<p>Open WebUI&rsquo;s documentation makes it really easy to get started by deploying it through docker (<a href="#citeproc_bib_item_4">Unknown, n.d.</a>). This is what worked for me using an AMD GPU:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker run -d -p 3000:8080 --add-host<span style="color:#f92672">=</span>host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main</span></span></code></pre></div>
+<p>For Nvidia GPUs you may need to add <code>--gpus all</code> to the command.</p>
+<p>From there, going to <code>&lt;ip-of-webui-host&gt;:3000</code> in your browser should prompt you to set up an admin account, and from there your ollama models should show up on the home page:</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 100%;">
+      <img src="/images/blog/Open_WebUI_Screenshot.png"  />
+    </figure>
+  </div>
+</center>
+<h4 id="adding-a-user-group-in-open-webui-and-giving-it-access-to-models">Adding a user group in Open WebUI and giving it access to models</h4>
+<p>Now, I&rsquo;m not going to copy-paste the entire Open WebUI documentation as I don&rsquo;t think that would be tedious and not very useful, there&rsquo;s definitely enough there to get you on your way from here. However, there&rsquo;s one more thing I&rsquo;d like to share which is giving other users on my LAN access to local models. You can do this very simply through the the Open WebUI admin panel.</p>
+<p>First, simply click on your user profile on the top right and then go to <strong>Admin Panel</strong>. Once you&rsquo;re there, you can see an overview of all of your users and their roles, add a user by clicking on the top right <strong>+</strong> sign.</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 100%;">
+      <img src="/images/blog/Admin_Panel_Open_WebUI.png"  />
+    </figure>
+  </div>
+</center>
+<p>From here you specify user role (Admin or User), name, email, and password for that user.</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 350px;">
+      <img src="/images/blog/Admin_Panel_Add_User_Open_WebUI.png"  />
+    </figure>
+  </div>
+</center>
+<p>Next, still in the <strong>Admin Panel</strong> go to <strong>Groups</strong> and add a group for our user.</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 100%;">
+      <img src="/images/blog/Admin_Panel_Groups_Open_WebUI.png"  />
+    </figure>
+  </div>
+</center>
+<p>Add a name and optional description for a new group and save.</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 100%;">
+      <img src="/images/blog/Admin_Panel_Add_Group_Open_WebUI.png"  />
+    </figure>
+  </div>
+</center>
+<p>Next we want to change permissions to allow the group access to models, and finally add users to our newly created group:</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame-grid" style="max-width: 700px;">
+      <img src="/images/blog/Admin_Panel_Edit_Group_Open_WebUI.png"/>
+      <img src="/images/blog/Admin_Panel_Add_User_To_Group_Open_WebUI.png"/>
+    </figure>
+  </div>
+</center>
+<p>From here, to give our users access to <code>llama3:latest</code> we still need to edit the model itself to give it access to the new group we created. From the <strong>Admin Panel</strong> we can nagigate to <strong>Settings&gt;Models&gt;llama3:latest</strong>. Otherwise, if you&rsquo;re on the home page navigate to your profile on the top right, then <strong>Settings&gt;Admin Settings&gt;Models&gt;llama3:latest</strong>.</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 900px;">
+      <img src="/images/blog/Admin_Panel_Edit_Model_Open_WebUI.png"  />
+    </figure>
+  </div>
+</center>
+<p>From here select the group you just made to add to the model and save.</p>
+<p>That&rsquo;s it, enjoy AI inferencing on your own hardware under your control!</p>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Deepseek AI. 2025. “GitHub - Deepseek-Ai/DeepSeek-R1.” <a href="https://github.com/deepseek-ai/DeepSeek-R1">https://github.com/deepseek-ai/DeepSeek-R1</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Ollama. n.d. “Ollama.” <a href="https://ollama.com/">https://ollama.com/</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Unknown. 2024. “[SOLVED] - PCIe Passthrough Failing on Proxmox 8.1 | Proxmox Support Forum.” <a href="https://forum.proxmox.com/threads/pcie-passthrough-failing-on-proxmox-8-1.139627/">https://forum.proxmox.com/threads/pcie-passthrough-failing-on-proxmox-8-1.139627/</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>———. n.d. “🏡 Home | Open WebUI.” <a href="https://docs.openwebui.com/">https://docs.openwebui.com/</a>.</div>
+</div>
+
+    </div>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://libreboot.org">
+        <img src="/images/link-buttons/libreboot.gif"></a>
+    </span>
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2025 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, Exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
+    <br>
+    
+       Site version 8df8700 released on 2025-01-28
+    
+  </div>
+       
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>
