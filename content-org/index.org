@@ -11,12 +11,13 @@
 
 #+attr_html: :style display:flex;
 #+begin_center
-🎉🎉 */Thanks for over 10,000 unique visitors on Neocities!/* 🎉🎉 \\
+🎉🎉 */Thanks for over 12,000 unique visitors on Neocities!/* 🎉🎉 \\
 (That includes the web crawlers :) )
 #+end_center
 
 Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[https://yortnet.com][yortnet.com]]. Thank you for stopping by my website. 
 
++ Site mirrors - [[https://jordanherzstein.com][github]], [[https://jordanherzstein.neocities.org][neocities]]
 + [[/][home]] - You are here right now
 + [[/about][about]] - Learn all about me
 + [[/posts][posts]] - Part personal blog part dev log, scroll down to see some recent posts

@@ -11,13 +11,14 @@ draft = false
 
 <div class="org-center">
 
-🎉🎉 **_Thanks for over 10,000 unique visitors on Neocities!_** 🎉🎉 <br />
+🎉🎉 **_Thanks for over 12,000 unique visitors on Neocities!_** 🎉🎉 <br />
 (That includes the web crawlers :) )
 
 </div>
 
 Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [yortnet.com](https://yortnet.com). Thank you for stopping by my website.
 
+-   Site mirrors - [github](https://jordanherzstein.com), [neocities](https://jordanherzstein.neocities.org)
 -   [home](/) - You are here right now
 -   [about](/about) - Learn all about me
 -   [posts](/posts) - Part personal blog part dev log, scroll down to see some recent posts

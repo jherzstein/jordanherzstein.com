@@ -2,7 +2,69 @@
     <header class="content__header">
         <h1>{{ .Title | markdownify }}</h1>
     </header>
+
+    {{ $context := dict
+    
+    "vendor" "feather"
+    
+    "name" "calendar"
+    
+    "size" "1.0em"
+    
+    }}
+    
+    {{ partial "icons/icon" $context }}
+
+    <!-- <b>Published:</b> -->  {{ .PublishDate | time.Format "2006-01-02" }} |
+    
+    {{ $context := dict
+    
+    "vendor" "feather"
+    
+    "name" "edit"
+    
+    "size" "1.0em"
+    
+    }}
+    
+    {{ partial "icons/icon" $context }}
+    {{ with .GitInfo }}
+       <!-- <b>Last Edited:</b> --> {{ .CommitDate.Format "2006-01-02" }}
+    {{ end }} |
+    
+    {{ $context := dict
+    
+    "vendor" "feather"
+    
+    "name" "file-text"
+    
+    "size" "1.0em"
+    
+    }}
+
+    {{ partial "icons/icon" $context }}
+
+    <!-- <b>Word Cound</b> --> {{ .WordCount }} words |
+
+    {{ $context := dict
+    
+    "vendor" "feather"
+    
+    "name" "clock"
+    
+    "size" "1.0em"
+    
+    }}
+
+
+    {{ partial "icons/icon" $context }}
+    <!-- <b>Reading Time:</b> --> {{ .ReadingTime }} min 
+
+
+    <br>
+
     {{- partial "tag-list.html" . -}}
+
     <br>
          {{- partial "toc.html" . -}}
     <div class="content__body">
