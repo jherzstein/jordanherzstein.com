@@ -36,6 +36,15 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [[http
 </a>
 #+END_EXPORT 
 #+BEGIN_EXPORT html
+<a href="https://git.yortnet.com/jherzstein">
+#+END_EXPORT 
+#+begin_export hugo
+{{< icons/icon vendor=simple-icons name=forgejo size=1.5em >}}
+#+END_EXPORT
+#+BEGIN_EXPORT html
+</a>
+#+END_EXPORT 
+#+BEGIN_EXPORT html
 <a href="https://github.com/jherzstein">
 #+END_EXPORT 
 #+begin_export hugo

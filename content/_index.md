@@ -32,6 +32,12 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [yortn
 
 </a>
 
+<a href="https://git.yortnet.com/jherzstein">
+
+{{< icons/icon vendor=simple-icons name=forgejo size=1.5em >}}
+
+</a>
+
 <a href="https://github.com/jherzstein">
 
 {{< icons/icon vendor=simple-icons name=github size=1.5em >}}
