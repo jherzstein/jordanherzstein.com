@@ -8,9 +8,9 @@
   {{ range .Data.Pages }}
     <article class="post">
         <header class="post__header">
-          <h4>
+          <h3>
 	    {{ .PublishDate | time.Format "02 Jan 2006" }} <a href="{{ .Permalink }}">{{ .Title | markdownify }} </a>
-	  </h4>
+	  </h3>
         </header>
 
         <section class="post__summary">

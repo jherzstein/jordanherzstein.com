@@ -10,7 +10,7 @@ draft = false
 
 ## This Site {#this-site}
 
-This is my personal website which I've been hosting on neocities since late 2022. Since ~~January 2024~~ May 2024, I now host at ~~jordanherzstein.xyz~~ [jordanherzstein.com](http://jordanherzstein.com) on github pages, which is a temporary stopgap for hosting services publicly in the future, whenever I'm not, uhh.. busy, while still being able to have my custom domain without paying anything extra to those hosting me. The site itself is made with [Org Mode](https://orgmode.org/) using [Hugo](https://gohugo.io/) (static site generator) and [ox-hugo](https://ox-hugo.scripter.co/) (an Org exporter to Markdown for Hugo on Emacs).
+This is my personal website which I've been hosting on neocities since late 2022. I also started hosting my website on github pages in early 2024, initially through jordanherzstein.xyz but then changed my domain to [jordanherzstein.com](http://jordanherzstein.com). I might eventually migrate my website to a machine that I own such as a VPS and built through some Forgejo runner while keeping it on github as an additional mirror. The site itself is made with [Org Mode](https://orgmode.org/) using [Hugo](https://gohugo.io/) (static site generator) and [ox-hugo](https://ox-hugo.scripter.co/) (an Org exporter to Markdown for Hugo on Emacs).
 
 
 ## VPC {#vpc}
@@ -29,7 +29,7 @@ I recently built a PC with [dasharo coreboot firmware](https://www.dasharo.com/)
 
 I also have a lynksys router at home that I use to run openwrt for it's security, performance, and customizability, especially compared to the default modems provided by ISPs.
 
-I'm currently using a free Oracle VPS using an Ampere quad core CPU and 24GB of RAM. Currently using it to host a searx instance through the [yortnet.com](https://yortnet.com) domain and [a private Minecraft server for free](/posts/oracle_mc_server). I hope to host more services with it in future.
+I'm currently using a free Oracle VPS using an Ampere quad core CPU and 24GB of RAM to host my other website [yortnet.com](https://yortnet.com). Right now I'm using it to host various internet services including my forgejo instance, a SearXNG instance, and [a private Minecraft server for free](/posts/oracle_mc_server). I hope to host more services with it in future.
 
 
 ## Personal Computer / Hardware {#personal-computer-hardware}
