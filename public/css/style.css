@@ -293,6 +293,14 @@ br {
     margin: 3px 0;
 }
 
+blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    -- border-left: 3px solid var(--color-txt);
+    border-left: 3px solid #777;
+}
+
 .frame {
     background-color:var(--color-bg);
     display: inline-block;

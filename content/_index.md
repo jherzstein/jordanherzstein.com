@@ -67,7 +67,8 @@ Hello, my name is Jordan, I'm a soon to be computer engineer and owner of [yortn
 
 ## What am I up to? {#what-am-i-up-to}
 
--   I'm ~~a full time student~~ grinding, currently seeking gainful employment.
+-   I'm ~~a full time student~~ grinding.
+-   Iron Ring incoming.
 -   Built a new PC for using local AI and other intensive tasks.
 -   Getting into some [Home Assistant](https://www.home-assistant.io/) things.
 -   Messing with a [free oracle vps](https://rentry.co/oraclevps) for funzies with the [yortnet.com](https://yortnet.com) domain. I started hosting a private minecraft server on it as well as a public search engine.
