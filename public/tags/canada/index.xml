@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Canada on Jordan Herzstein</title>
+    <link>/tags/canada/</link>
+    <description>Recent content in Canada on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Mar 2025 00:29:41 -0400</lastBuildDate>
+    <atom:link href="/tags/canada/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A very Canadian PSA on Online Disinformation and Electoral Interference</title>
+      <link>/posts/can_federal_election_2025/</link>
+      <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/posts/can_federal_election_2025/</guid>
+      <description>Sharing my fears of foreign entities employing mass disinformation campaigns to destabalize Canada, and the small things we can do to combat it.</description>
+    </item>
+  </channel>
+</rss>
