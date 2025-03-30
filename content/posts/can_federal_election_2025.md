@@ -2,9 +2,9 @@
 title = "A very Canadian PSA on Online Disinformation and Electoral Interference"
 summary = "Sharing my fears of foreign entities employing mass disinformation campaigns to destabalize Canada, and the small things we can do to combat it."
 date = 2025-03-30
-lastmod = 2025-03-30T00:02:45-04:00
+lastmod = 2025-03-30T00:38:10-04:00
 tags = ["opinion", "canada", "politics"]
-draft = true
+draft = false
 [menu]
   [menu.posts]
     identifier = "a-very-canadian-psa-on-online-disinformation-and-electoral-interference"

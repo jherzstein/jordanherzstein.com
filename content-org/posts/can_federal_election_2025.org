@@ -1,10 +1,8 @@
-# #+TITLE: The threat of Foreign Influence and Tech Oligarchs on my Country's Sovereign
 #+TITLE: A very Canadian PSA on Online Disinformation and Electoral Interference
-# #+TITLE: Online Disinformation and Electoral Interference: A Canadian Perspective
 #+date: 2025-03-30
 #+hugo_base_dir: ../../
 #+HUGO_AUTO_SET_LASTMOD: t
-#+HUGO_DRAFT: true
+#+HUGO_DRAFT: false
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
 #+filetags: opinion canada politics
@@ -72,13 +70,8 @@ I plan on voting this election in a way which keeps Pierre as far away from the 
 
 * Done
 
-# I'm sorry if this post made you mad, but I posted this on my birthday therefore you cannot hold me account for it because I am just a little birthday boy.
-
 I'm sorry if this post made you mad, but before you say anything keep this in mind: I posted this on my birthday. You know what that means? It means [[https://yewtu.be/watch?v=CI6tI_LL2k4][I'm just a little guy. I'm just a little guy and it's my birthday. C'mon I'm a little birthday boy. You're going to get mad at a little guy on his birthday?]]
-
-# hey hey hey I'm just a little guy. I'm just a little guy and it's my birthday. C'mon I'm a little birthday boy. You're going to punch a little guy on his birthday?
 
 Ok, I'm actually sorry about that, I'm admittedly usually pretty bad and cringe at ending these so that's enough yapping from me, happy voting!
 
-# And I'm sorry if this post made you mad!
 
