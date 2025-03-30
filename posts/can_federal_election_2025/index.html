@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href= "/css/style.css" | absURL }}>
+    
+    <head><meta charset="UTF-8">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" class="light" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" class="dark" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
+	if (m == "light") {
+	    d.remove("dark");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    d.remove("light");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+	}
+	
+	function switchTheme() {
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>A very Canadian PSA on Online Disinformation and Electoral Interference</h1>
+    </header>
+
+    
+    
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+  <line x1="16" y1="2" x2="16" y2="6" />
+  <line x1="8" y1="2" x2="8" y2="6" />
+  <line x1="3" y1="10" x2="21" y2="10" />
+</svg>
+
+
+      2025-03-30 |
+    
+    
+    
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+</svg>
+
+     |
+    
+    
+
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+  <polyline points="14 2 14 8 20 8" />
+  <line x1="16" y1="13" x2="8" y2="13" />
+  <line x1="16" y1="17" x2="8" y2="17" />
+  <polyline points="10 9 9 9 8 9" />
+</svg>
+
+
+     1464 words |
+
+    
+
+
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" />
+</svg>
+
+     7 min 
+
+
+    <br><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/opinion/">#opinion</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/canada/">#canada</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/politics/">#politics</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#a-brief-summary-of-the-past-few-months-of-canadian-politics-if-you-re-not-caught-up" aria-label="A Brief Summary of the past few months of Canadian Politics, if you&amp;rsquo;re not caught up">A Brief Summary of the past few months of Canadian Politics, if you&rsquo;re not caught up</a></li>
+                <li>
+                    <a href="#why-does-this-matter--to-me" aria-label="Why does this matter (to me)?">Why does this matter (to me)?</a></li>
+                <li>
+                    <a href="#what-should-i-do" aria-label="What should I do?">What should I do?</a><ul>
+                        
+                <li>
+                    <a href="#support-canadian-media" aria-label="Support Canadian Media">Support Canadian Media</a></li>
+                <li>
+                    <a href="#combat-information-manipulation-and-disinformation-online-and-in-your-communities" aria-label="Combat Information manipulation and disinformation online and in your communities">Combat Information manipulation and disinformation online and in your communities</a></li>
+                <li>
+                    <a href="#vote-strategically-against-maple-maga" aria-label="Vote strategically against Maple MAGA">Vote strategically against Maple MAGA</a></li></ul>
+                </li>
+                <li>
+                    <a href="#done" aria-label="Done">Done</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <p>I haven&rsquo;t posted anything here lately in part due to life stuff demanding my attention for the past couple of months. However, if I&rsquo;m being entirely honest, the myriad of threats to my country&rsquo;s sovereignty from the government of my neighbours down south have left me feeling disoriented and worried. Usually, I try not to delve too deeply into the contemporary politics of my country so publicly and permanently on the internet because I&rsquo;ve become exhausted by conflict and I don&rsquo;t want to get into fights with people that I&rsquo;ll have to think about for the next decade. With all that said, I feel as though times have become so extremely dire that I may regret my silence if things reach a tipping point and I hadn&rsquo;t done anything to at least draw attention to this issue.</p>
+<p>Of course, I should clarify that anything I say here is not a condemnation of American citizens broadly as most of them do not support the actions of the current administration on my country. I have many friends and family that are American, and I have worked with people from the US as well.</p>
+<h2 id="a-brief-summary-of-the-past-few-months-of-canadian-politics-if-you-re-not-caught-up">A Brief Summary of the past few months of Canadian Politics, if you&rsquo;re not caught up</h2>
+<p>If you&rsquo;ve been paying attention to Canadian politics, our former Prime Minister Justin Trudeau announced his resignation in January due to two years of declining popularity, mounting pressure in his Liberal Party, and a very public resignation from one of his most promninent cabinent members last December. Trudeau&rsquo;s resignation launched an internal party election leading to Mark Carney, former Govenor of the Bank of Canada, being chosen as the next Prime Minister and leader of the LPC. While Canada is a Westminster parliamentary system that elects party&rsquo;s rather than leaders, since Carney was elected without a seat in parliament or a federal election, to the surprise of almost no one he announced a snap federal election last Sunday, March 23rd, to take place on April 28th. All of this has been happening of course in the shadow of Trump&rsquo;s trade war to cripple economically and potentially anex Canada as the &ldquo;51st state&rdquo;, threats I and many Canadians take entirely seriously and which has lead to a sharp turnaround in the polls for the Liberals.</p>
+<h2 id="why-does-this-matter--to-me">Why does this matter (to me)?</h2>
+<p>I believe that it is the goal of American tech oligarchs and other foreign entities to install a leader that will destabalize Canada so we will be left at the whims of authoritarians. I&rsquo;m certain their prefered candidate is Pierre Poillieve who was previously endorsed by Elon Musk and is aligned with many far right MAGA-adjacent policies and rhetoric. I see this being done (in fact, I see it already happening) through covert means of mass disinformation campaigns, flooding social media algorithms with rage-fuel content, utilizing bot farms powered by large language models to manipulate public perception of reality, distort truth, sow division, and put their thumb on the scale for the upcoming federal election.</p>
+<h2 id="what-should-i-do">What should I do?</h2>
+<p>Most of these suggestions apply to Canadians, but may be helpful for others as well.</p>
+<h3 id="support-canadian-media">Support Canadian Media</h3>
+<p>A large reason I believe American politics have reached the lows that they have is due to their hostile media environment focused more on sensationalist reporting and the bottom line rather than good journalism that best serves public knowledge and fosters higher level critical thinking. This is a problem with old media, and further exasterbated by the new media which, with little human oversight, push algorithmicly generated recommendation feeds and targeted ads to hold your attention for as long as possible with little regard to how it poisons civil discourse.</p>
+<p>This is why I am highly supportive of our publicly funded media, especially our home-grown public journalism from the CBC. The CBC is not perfect, all media institutions have their biases and blindspots, and I want them to improve, but their funding comes from Canadian tax dollars and is thus mostly aligned with Canadian national interests as opposed to short-term profit. Not all Canadian media is funded by Canadian tax dollars or even Canadian companies. For example, Postmedia is a Canadian media conglomerate owned by American hedge funds consisting of several media properties including National Post, Toronto Sun, Financial Post, Ottawa Citizen, Edmonton Journal, The Province, The Vancouver Sun, and so many others. Keep in mind when you come across pieces from these publications that they may not be representative of Canadian viewpoints.</p>
+<p>I know I will certainly be looking into a CBC gem subscription if only to support publicly funded media and good journalism. There has also been a growing movement in wanting to preserve CBC as a vital public service and protect it from politicians that want to cut the CBC. There&rsquo;s one particular particular campaign which has gotten my attention, <a href="https://fundthecbc.ca">fundthecbc.ca</a>. I am not affiliated with them in any way though I would share this link button that I made from their website:</p>
+<figure>
+    <center>
+       <img class="link-buttons" src="/images/link-buttons/FUND_THE_CBC_linkbutton.png" height="31" />
+       <figcaption></figcaption>
+    </center>
+</figure>
+<p>I only made this through one of those <a href="https://websetsbylynn.neocities.org/88x31-button-maker/">neocities 88x31 linkbutton makers</a>, and this would probably work much better as a gif. Regardless, I do give you permission to make use of it if you like link buttons as well and would like to put it on your own website. If you do end up using it on your site or make something better than me definitely contact me to share.</p>
+<h3 id="combat-information-manipulation-and-disinformation-online-and-in-your-communities">Combat Information manipulation and disinformation online and in your communities</h3>
+<p>If you find online harmful or false content, or perhaps an online post with a lot of comments from different users with similar wording, you should go to <a href="https://electiontipline.ca">electiontipline.ca</a> to report it. The tipline is run by the Canadian Digital Media Research Network (CDMRN) which is led by the Media Ecosystem Observatory, and has members ranging from the Max Bell School of Public Policy at McGill to Munk School of Global Affairs and Public Policy at the University of Toronto.</p>
+<p>Also, earlier last month I sent an email to the Comissioner of Canada Elections, Caroline J. Simard (<a href="mailto:info@cef-cce.ca">info@cef-cce.ca</a>), regarding my concerns in how a poluted media environment and disinformation from foreign entities could manipulate the upcoming federal election this year, particularly from platforms such as Twitter and other social media sites. While I never received a response, I would hope that continuing to speak on this issue will pressure our representatives into seriously taking action in holding these platforms to account.</p>
+<h3 id="vote-strategically-against-maple-maga">Vote strategically against Maple MAGA</h3>
+<p>If you haven&rsquo;t already, make sure to <a href="https://www.elections.ca/content.aspx?section=med&amp;dir=guide&amp;document=fareg&amp;lang=e">check your voter registration to vote here</a>. You can also do this on election day at your polling station, but it takes less than 5 minutes to do online and is extremely easy to do. Also <a href="https://www.elections.ca/scripts/vis/finded?l=e&amp;pageid=20">check your where your riding as well</a> to figure out where your assigned polling station is. If you cannot go in person you can also <a href="https://www.elections.ca/Voting-by-mail">apply to vote by mail</a> before April 22nd.</p>
+<p>I plan on voting this election in a way which keeps Pierre as far away from the levers of power as possible. For me this means voting for the party which has the best chance of beating the Conservatives at the ballot box who is closer aligned to the policies I would want, i.e. &ldquo;voting strategically&rdquo;. Unfortunately Canada&rsquo;s first-past-the-post voting system encourages the viability of the two biggest players rather than having every vote have equal effectiveness. I would usually vote for the smaller party that closer aligns with politics in hopes that they get enough popularity to receive more federal funding in the next election, however, the possibility of splitting vote is too risky this election. My plan is roughly as follows:</p>
+<ol>
+<li>Donate to the party closest aligned with your politics. (they will likely spend the money wisely on the ridings they can either flip or keep)</li>
+<li>Make a plan for voting, not just with yourself but also your family and friends to encourage a larger turnout.</li>
+<li>Vote for the most strategic candidate in your riding to best combat MAGA-style politics. You can check <a href="https://338canada.com/">338canada.com</a> or <a href="https://smartvoting.ca">smartvoting.ca</a> to make the most informed decision on election day based on trends in your riding.</li>
+<li>Once the election is over, contact your newly elected MP to get proportional representation electoral reform back on the house floor.</li>
+</ol>
+<h2 id="done">Done</h2>
+<p>I&rsquo;m sorry if this post made you mad, but before you say anything keep this in mind: I posted this on my birthday. You know what that means? It means <a href="https://yewtu.be/watch?v=CI6tI_LL2k4">I&rsquo;m just a little guy. I&rsquo;m just a little guy and it&rsquo;s my birthday. C&rsquo;mon I&rsquo;m a little birthday boy. You&rsquo;re going to get mad at a little guy on his birthday?</a></p>
+<p>Ok, I&rsquo;m actually sorry about that, I&rsquo;m admittedly usually pretty bad and cringe at ending these so that&rsquo;s enough yapping from me, happy voting!</p>
+
+    </div>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://canada.ca">
+        <img src="/images/link-buttons/sherri_coutts_canadaonweb.gif"></a>
+        
+    </span>
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2025 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
+    <br>
+    
+  </div>
+       
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>
