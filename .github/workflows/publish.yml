@@ -22,6 +22,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Get pages url
+      	run: |
 	  url=$(curl https://api.github.com/repos/jherzstein/jordanherzstein.com | jq '.homepage')
 	  echo "url=$url" >> $GITHUB_ENV
       - name: Hugo build
