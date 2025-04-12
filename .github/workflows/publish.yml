@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.126.2
+      GH_TOKEN: ${{ github.token }}
     steps:
       - name: Install Hugo CLI
         run: |
@@ -20,11 +21,14 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Get pages url
+	  url=$(curl https://api.github.com/repos/jherzstein/jordanherzstein.com | jq '.homepage')
+	  echo "url=$url" >> $GITHUB_ENV
       - name: Hugo build
         run: |
           export HUGOxPARAMSxGITxLAST_COMMITxHASH=$(git rev-parse --short HEAD)
           export HUGOxPARAMSxGITxLAST_COMMITxDATE=$(git log -1 --format=%ci | cut -b 1-10)
-          hugo --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --baseUrl ${{ env.url }}
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
