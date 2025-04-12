@@ -25,7 +25,7 @@ jobs:
         run: |
           export HUGOxPARAMSxGITxLAST_COMMITxHASH=$(git rev-parse --short HEAD)
           export HUGOxPARAMSxGITxLAST_COMMITxDATE=$(git log -1 --format=%ci | cut -b 1-10)
-          url=$(curl https://api.github.com/repos/jherzstein/jordanherzstein.com | jq '.homepage')
+          url=$(gh api "repos/jherzstein/jordanherzstein.com" --jq '.homepage')
           hugo --baseURL '$url'
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
