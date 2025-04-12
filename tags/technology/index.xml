@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Jordan Herzstein</title>
-    <link>$url/tags/technology/</link>
+    <link>http://jordanherzstein.com/tags/technology/</link>
     <description>Recent content in Technology on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jul 2024 00:54:29 -0400</lastBuildDate>
-    <atom:link href="$url/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to YortNet</title>
-      <link>$url/posts/welcome_to_yortnet/</link>
+      <link>http://jordanherzstein.com/posts/welcome_to_yortnet/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/welcome_to_yortnet/</guid>
+      <guid>http://jordanherzstein.com/posts/welcome_to_yortnet/</guid>
       <description>I spun up a vps to host various services and privacy front ends</description>
     </item>
     <item>
       <title>Minecraft Java Edition Server For Free</title>
-      <link>$url/posts/oracle_mc_server/</link>
+      <link>http://jordanherzstein.com/posts/oracle_mc_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/oracle_mc_server/</guid>
+      <guid>http://jordanherzstein.com/posts/oracle_mc_server/</guid>
       <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
     </item>
     <item>
       <title>Booting DietPi on an SSD and installing Home Assistant in Docker</title>
-      <link>$url/posts/home_assistant_setup/</link>
+      <link>http://jordanherzstein.com/posts/home_assistant_setup/</link>
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/home_assistant_setup/</guid>
+      <guid>http://jordanherzstein.com/posts/home_assistant_setup/</guid>
       <description>Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi.</description>
     </item>
     <item>
       <title>New email/website domain!</title>
-      <link>$url/posts/new_domain/</link>
+      <link>http://jordanherzstein.com/posts/new_domain/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/new_domain/</guid>
+      <guid>http://jordanherzstein.com/posts/new_domain/</guid>
       <description>Friendship with .xyz has ended, .com is my new best friend.&#xA;Friendship with namecheap has ended, porkbun is my new best friend</description>
     </item>
     <item>
       <title>Using adb to Delete Vanadium on GrapheneOS</title>
-      <link>$url/posts/adb_vanadium/</link>
+      <link>http://jordanherzstein.com/posts/adb_vanadium/</link>
       <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
-      <guid>$url/posts/adb_vanadium/</guid>
+      <guid>http://jordanherzstein.com/posts/adb_vanadium/</guid>
       <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
     </item>
     <item>
       <title>Skiff is Dead 🤡</title>
-      <link>$url/posts/skiffdead/</link>
+      <link>http://jordanherzstein.com/posts/skiffdead/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/skiffdead/</guid>
+      <guid>http://jordanherzstein.com/posts/skiffdead/</guid>
       <description>Lesson #1: Proton king. Lesson #2: Don&amp;rsquo;t trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.</description>
     </item>
     <item>
       <title>nyaa_menu</title>
-      <link>$url/posts/nyaa_menu/</link>
+      <link>http://jordanherzstein.com/posts/nyaa_menu/</link>
       <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>$url/posts/nyaa_menu/</guid>
+      <guid>http://jordanherzstein.com/posts/nyaa_menu/</guid>
       <description>I made a lazy web scraping tool for collecting anime and manga while I was bored.</description>
     </item>
     <item>
       <title>My Little Techy Projects Summer 2023</title>
-      <link>$url/posts/summer_2023_projects/</link>
+      <link>http://jordanherzstein.com/posts/summer_2023_projects/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>$url/posts/summer_2023_projects/</guid>
+      <guid>http://jordanherzstein.com/posts/summer_2023_projects/</guid>
       <description>I did some fun stuff this summer, including hacking my switch, switching to Qubes OS, and switching to OpenWRT on my router. Overall, a lot of switching.</description>
     </item>
     <item>
       <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
-      <link>$url/posts/caps2esc/</link>
+      <link>http://jordanherzstein.com/posts/caps2esc/</link>
       <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>$url/posts/caps2esc/</guid>
+      <guid>http://jordanherzstein.com/posts/caps2esc/</guid>
       <description>Guide on switching keymaps using xkb in Xorg</description>
     </item>
   </channel>

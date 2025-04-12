@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oracle on Jordan Herzstein</title>
-    <link>$url/tags/oracle/</link>
+    <link>http://jordanherzstein.com/tags/oracle/</link>
     <description>Recent content in Oracle on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jul 2024 00:54:29 -0400</lastBuildDate>
-    <atom:link href="$url/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/oracle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome to YortNet</title>
-      <link>$url/posts/welcome_to_yortnet/</link>
+      <link>http://jordanherzstein.com/posts/welcome_to_yortnet/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/welcome_to_yortnet/</guid>
+      <guid>http://jordanherzstein.com/posts/welcome_to_yortnet/</guid>
       <description>I spun up a vps to host various services and privacy front ends</description>
     </item>
     <item>
       <title>Minecraft Java Edition Server For Free</title>
-      <link>$url/posts/oracle_mc_server/</link>
+      <link>http://jordanherzstein.com/posts/oracle_mc_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/oracle_mc_server/</guid>
+      <guid>http://jordanherzstein.com/posts/oracle_mc_server/</guid>
       <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
     </item>
   </channel>

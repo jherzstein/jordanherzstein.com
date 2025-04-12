@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eclipse on Jordan Herzstein</title>
-    <link>$url/tags/eclipse/</link>
+    <link>http://jordanherzstein.com/tags/eclipse/</link>
     <description>Recent content in Eclipse on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Apr 2024 16:47:56 -0400</lastBuildDate>
-    <atom:link href="$url/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/eclipse/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eclipse Sun Worm</title>
-      <link>$url/posts/eclipse_2024_part2/</link>
+      <link>http://jordanherzstein.com/posts/eclipse_2024_part2/</link>
       <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/eclipse_2024_part2/</guid>
+      <guid>http://jordanherzstein.com/posts/eclipse_2024_part2/</guid>
       <description>My very bad photos of the eclipse brought us an accidental masterpiece.</description>
     </item>
     <item>
       <title>My Eclipse PSA</title>
-      <link>$url/posts/eclipse_2024/</link>
+      <link>http://jordanherzstein.com/posts/eclipse_2024/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/eclipse_2024/</guid>
+      <guid>http://jordanherzstein.com/posts/eclipse_2024/</guid>
       <description>Do not look directly at the sun today&amp;hellip; or tomorrow&amp;hellip; or ever&amp;hellip; just don&amp;rsquo;t do it.</description>
     </item>
   </channel>

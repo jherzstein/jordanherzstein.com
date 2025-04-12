@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Themes on Jordan Herzstein</title>
-    <link>$url/tags/themes/</link>
+    <link>http://jordanherzstein.com/tags/themes/</link>
     <description>Recent content in Themes on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 08 Jan 2025 13:52:29 -0500</lastBuildDate>
-    <atom:link href="$url/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/themes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hosting your own Fonts and Accessable Theme Preferences</title>
-      <link>$url/posts/fonts_and_themes/</link>
+      <link>http://jordanherzstein.com/posts/fonts_and_themes/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>$url/posts/fonts_and_themes/</guid>
+      <guid>http://jordanherzstein.com/posts/fonts_and_themes/</guid>
       <description>Hosting fonts on the website while cutting out the middle-man, and allowing site themes to work with and without javascript.</description>
     </item>
     <item>
       <title>New light theme on daylight savings plus I hate daylight savings</title>
-      <link>$url/posts/light_theme_plus_i_hate_daylight_savings/</link>
+      <link>http://jordanherzstein.com/posts/light_theme_plus_i_hate_daylight_savings/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/light_theme_plus_i_hate_daylight_savings/</guid>
+      <guid>http://jordanherzstein.com/posts/light_theme_plus_i_hate_daylight_savings/</guid>
       <description>I added a light theme so it&amp;rsquo;s easier for some users to read. Also I hate daylight savings.</description>
     </item>
   </channel>

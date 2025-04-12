@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rpi on Jordan Herzstein</title>
-    <link>$url/tags/rpi/</link>
+    <link>http://jordanherzstein.com/tags/rpi/</link>
     <description>Recent content in Rpi on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 16 Jun 2024 23:33:18 -0400</lastBuildDate>
-    <atom:link href="$url/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/rpi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Booting DietPi on an SSD and installing Home Assistant in Docker</title>
-      <link>$url/posts/home_assistant_setup/</link>
+      <link>http://jordanherzstein.com/posts/home_assistant_setup/</link>
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/home_assistant_setup/</guid>
+      <guid>http://jordanherzstein.com/posts/home_assistant_setup/</guid>
       <description>Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi.</description>
     </item>
   </channel>

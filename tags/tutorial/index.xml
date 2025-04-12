@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Jordan Herzstein</title>
-    <link>$url/tags/tutorial/</link>
+    <link>http://jordanherzstein.com/tags/tutorial/</link>
     <description>Recent content in Tutorial on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 27 Jul 2024 00:54:29 -0400</lastBuildDate>
-    <atom:link href="$url/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Minecraft Java Edition Server For Free</title>
-      <link>$url/posts/oracle_mc_server/</link>
+      <link>http://jordanherzstein.com/posts/oracle_mc_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/oracle_mc_server/</guid>
+      <guid>http://jordanherzstein.com/posts/oracle_mc_server/</guid>
       <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
     </item>
     <item>
       <title>Booting DietPi on an SSD and installing Home Assistant in Docker</title>
-      <link>$url/posts/home_assistant_setup/</link>
+      <link>http://jordanherzstein.com/posts/home_assistant_setup/</link>
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/home_assistant_setup/</guid>
+      <guid>http://jordanherzstein.com/posts/home_assistant_setup/</guid>
       <description>Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi.</description>
     </item>
     <item>
       <title>Using adb to Delete Vanadium on GrapheneOS</title>
-      <link>$url/posts/adb_vanadium/</link>
+      <link>http://jordanherzstein.com/posts/adb_vanadium/</link>
       <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
-      <guid>$url/posts/adb_vanadium/</guid>
+      <guid>http://jordanherzstein.com/posts/adb_vanadium/</guid>
       <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
     </item>
     <item>
       <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
-      <link>$url/posts/caps2esc/</link>
+      <link>http://jordanherzstein.com/posts/caps2esc/</link>
       <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>$url/posts/caps2esc/</guid>
+      <guid>http://jordanherzstein.com/posts/caps2esc/</guid>
       <description>Guide on switching keymaps using xkb in Xorg</description>
     </item>
   </channel>

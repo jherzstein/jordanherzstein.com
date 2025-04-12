@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Email on Jordan Herzstein</title>
-    <link>$url/tags/email/</link>
+    <link>http://jordanherzstein.com/tags/email/</link>
     <description>Recent content in Email on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 May 2024 21:57:29 -0400</lastBuildDate>
-    <atom:link href="$url/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/email/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New email/website domain!</title>
-      <link>$url/posts/new_domain/</link>
+      <link>http://jordanherzstein.com/posts/new_domain/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/new_domain/</guid>
+      <guid>http://jordanherzstein.com/posts/new_domain/</guid>
       <description>Friendship with .xyz has ended, .com is my new best friend.&#xA;Friendship with namecheap has ended, porkbun is my new best friend</description>
     </item>
     <item>
       <title>Skiff is Dead 🤡</title>
-      <link>$url/posts/skiffdead/</link>
+      <link>http://jordanherzstein.com/posts/skiffdead/</link>
       <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>$url/posts/skiffdead/</guid>
+      <guid>http://jordanherzstein.com/posts/skiffdead/</guid>
       <description>Lesson #1: Proton king. Lesson #2: Don&amp;rsquo;t trust American Silicon Valley Crypto Bros. Lesson #3: Switching seems to be the primary throughline of my website.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Jordan Herzstein</title>
-    <link>$url/tags/projects/</link>
+    <link>http://jordanherzstein.com/tags/projects/</link>
     <description>Recent content in Projects on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 03 Mar 2024 17:03:07 -0500</lastBuildDate>
-    <atom:link href="$url/tags/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jordanherzstein.com/tags/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nyaa_menu</title>
-      <link>$url/posts/nyaa_menu/</link>
+      <link>http://jordanherzstein.com/posts/nyaa_menu/</link>
       <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>$url/posts/nyaa_menu/</guid>
+      <guid>http://jordanherzstein.com/posts/nyaa_menu/</guid>
       <description>I made a lazy web scraping tool for collecting anime and manga while I was bored.</description>
     </item>
   </channel>
