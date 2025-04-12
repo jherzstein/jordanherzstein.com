@@ -21,15 +21,12 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Get pages url
-      	run: |
-	  url=$(curl https://api.github.com/repos/jherzstein/jordanherzstein.com | jq '.homepage')
-	  echo "url=$url" >> $GITHUB_ENV
       - name: Hugo build
         run: |
           export HUGOxPARAMSxGITxLAST_COMMITxHASH=$(git rev-parse --short HEAD)
           export HUGOxPARAMSxGITxLAST_COMMITxDATE=$(git log -1 --format=%ci | cut -b 1-10)
-          hugo --baseUrl ${{ env.url }}
+	  url=$(curl https://api.github.com/repos/jherzstein/jordanherzstein.com | jq '.homepage')
+          hugo --baseUrl $url
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
