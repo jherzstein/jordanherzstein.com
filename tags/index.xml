@@ -2,339 +2,339 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jordan Herzstein</title>
-    <link>/tags/</link>
+    <link>$url/tags/</link>
     <description>Recent content in Tags on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 30 Mar 2025 00:40:20 -0400</lastBuildDate>
-    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="$url/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Canada</title>
-      <link>/tags/canada/</link>
+      <link>$url/tags/canada/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/canada/</guid>
+      <guid>$url/tags/canada/</guid>
       <description></description>
     </item>
     <item>
       <title>Opinion</title>
-      <link>/tags/opinion/</link>
+      <link>$url/tags/opinion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/opinion/</guid>
+      <guid>$url/tags/opinion/</guid>
       <description></description>
     </item>
     <item>
       <title>Politics</title>
-      <link>/tags/politics/</link>
+      <link>$url/tags/politics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/politics/</guid>
+      <guid>$url/tags/politics/</guid>
       <description></description>
     </item>
     <item>
       <title>Ai</title>
-      <link>/tags/ai/</link>
+      <link>$url/tags/ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/ai/</guid>
+      <guid>$url/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Deepseek-R1</title>
-      <link>/tags/deepseek-r1/</link>
+      <link>$url/tags/deepseek-r1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/deepseek-r1/</guid>
+      <guid>$url/tags/deepseek-r1/</guid>
       <description></description>
     </item>
     <item>
       <title>Llama</title>
-      <link>/tags/llama/</link>
+      <link>$url/tags/llama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/llama/</guid>
+      <guid>$url/tags/llama/</guid>
       <description></description>
     </item>
     <item>
       <title>Ollama</title>
-      <link>/tags/ollama/</link>
+      <link>$url/tags/ollama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/ollama/</guid>
+      <guid>$url/tags/ollama/</guid>
       <description></description>
     </item>
     <item>
       <title>Open-Webui</title>
-      <link>/tags/open-webui/</link>
+      <link>$url/tags/open-webui/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/open-webui/</guid>
+      <guid>$url/tags/open-webui/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>/tags/git/</link>
+      <link>$url/tags/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/git/</guid>
+      <guid>$url/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Resume</title>
-      <link>/tags/resume/</link>
+      <link>$url/tags/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/resume/</guid>
+      <guid>$url/tags/resume/</guid>
       <description></description>
     </item>
     <item>
       <title>Google-Webfonts-Helper</title>
-      <link>/tags/google-webfonts-helper/</link>
+      <link>$url/tags/google-webfonts-helper/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/google-webfonts-helper/</guid>
+      <guid>$url/tags/google-webfonts-helper/</guid>
       <description></description>
     </item>
     <item>
       <title>Themes</title>
-      <link>/tags/themes/</link>
+      <link>$url/tags/themes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/themes/</guid>
+      <guid>$url/tags/themes/</guid>
       <description></description>
     </item>
     <item>
       <title>Webdev</title>
-      <link>/tags/webdev/</link>
+      <link>$url/tags/webdev/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/webdev/</guid>
+      <guid>$url/tags/webdev/</guid>
       <description></description>
     </item>
     <item>
       <title>Linkbuttons</title>
-      <link>/tags/linkbuttons/</link>
+      <link>$url/tags/linkbuttons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/linkbuttons/</guid>
+      <guid>$url/tags/linkbuttons/</guid>
       <description></description>
     </item>
     <item>
       <title>Notbyai</title>
-      <link>/tags/notbyai/</link>
+      <link>$url/tags/notbyai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/notbyai/</guid>
+      <guid>$url/tags/notbyai/</guid>
       <description></description>
     </item>
     <item>
       <title>Updates</title>
-      <link>/tags/updates/</link>
+      <link>$url/tags/updates/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/updates/</guid>
+      <guid>$url/tags/updates/</guid>
       <description></description>
     </item>
     <item>
       <title>Oracle</title>
-      <link>/tags/oracle/</link>
+      <link>$url/tags/oracle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/oracle/</guid>
+      <guid>$url/tags/oracle/</guid>
       <description></description>
     </item>
     <item>
       <title>Technology</title>
-      <link>/tags/technology/</link>
+      <link>$url/tags/technology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/technology/</guid>
+      <guid>$url/tags/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Vps</title>
-      <link>/tags/vps/</link>
+      <link>$url/tags/vps/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/vps/</guid>
+      <guid>$url/tags/vps/</guid>
       <description></description>
     </item>
     <item>
       <title>Minecraft</title>
-      <link>/tags/minecraft/</link>
+      <link>$url/tags/minecraft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/minecraft/</guid>
+      <guid>$url/tags/minecraft/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
-      <link>/tags/tutorial/</link>
+      <link>$url/tags/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/tutorial/</guid>
+      <guid>$url/tags/tutorial/</guid>
       <description></description>
     </item>
     <item>
       <title>Dietpi</title>
-      <link>/tags/dietpi/</link>
+      <link>$url/tags/dietpi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/dietpi/</guid>
+      <guid>$url/tags/dietpi/</guid>
       <description></description>
     </item>
     <item>
       <title>Home-Assistant</title>
-      <link>/tags/home-assistant/</link>
+      <link>$url/tags/home-assistant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/home-assistant/</guid>
+      <guid>$url/tags/home-assistant/</guid>
       <description></description>
     </item>
     <item>
       <title>Rpi</title>
-      <link>/tags/rpi/</link>
+      <link>$url/tags/rpi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/rpi/</guid>
+      <guid>$url/tags/rpi/</guid>
       <description></description>
     </item>
     <item>
       <title>Dns</title>
-      <link>/tags/dns/</link>
+      <link>$url/tags/dns/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/dns/</guid>
+      <guid>$url/tags/dns/</guid>
       <description></description>
     </item>
     <item>
       <title>Email</title>
-      <link>/tags/email/</link>
+      <link>$url/tags/email/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/email/</guid>
+      <guid>$url/tags/email/</guid>
       <description></description>
     </item>
     <item>
       <title>Namecheap</title>
-      <link>/tags/namecheap/</link>
+      <link>$url/tags/namecheap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/namecheap/</guid>
+      <guid>$url/tags/namecheap/</guid>
       <description></description>
     </item>
     <item>
       <title>Porkbun</title>
-      <link>/tags/porkbun/</link>
+      <link>$url/tags/porkbun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/porkbun/</guid>
+      <guid>$url/tags/porkbun/</guid>
       <description></description>
     </item>
     <item>
       <title>Adb</title>
-      <link>/tags/adb/</link>
+      <link>$url/tags/adb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/adb/</guid>
+      <guid>$url/tags/adb/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>/tags/android/</link>
+      <link>$url/tags/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/android/</guid>
+      <guid>$url/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Grapheneos</title>
-      <link>/tags/grapheneos/</link>
+      <link>$url/tags/grapheneos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/grapheneos/</guid>
+      <guid>$url/tags/grapheneos/</guid>
       <description></description>
     </item>
     <item>
       <title>Eclipse</title>
-      <link>/tags/eclipse/</link>
+      <link>$url/tags/eclipse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/eclipse/</guid>
+      <guid>$url/tags/eclipse/</guid>
       <description></description>
     </item>
     <item>
       <title>Daylight-Savings</title>
-      <link>/tags/daylight-savings/</link>
+      <link>$url/tags/daylight-savings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/daylight-savings/</guid>
+      <guid>$url/tags/daylight-savings/</guid>
       <description></description>
     </item>
     <item>
       <title>Clown-Moment</title>
-      <link>/tags/clown-moment/</link>
+      <link>$url/tags/clown-moment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/clown-moment/</guid>
+      <guid>$url/tags/clown-moment/</guid>
       <description></description>
     </item>
     <item>
       <title>Proton</title>
-      <link>/tags/proton/</link>
+      <link>$url/tags/proton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/proton/</guid>
+      <guid>$url/tags/proton/</guid>
       <description></description>
     </item>
     <item>
       <title>Skiff</title>
-      <link>/tags/skiff/</link>
+      <link>$url/tags/skiff/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/skiff/</guid>
+      <guid>$url/tags/skiff/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
-      <link>/tags/github/</link>
+      <link>$url/tags/github/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/github/</guid>
+      <guid>$url/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>/tags/hugo/</link>
+      <link>$url/tags/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/hugo/</guid>
+      <guid>$url/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Anime</title>
-      <link>/tags/anime/</link>
+      <link>$url/tags/anime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/anime/</guid>
+      <guid>$url/tags/anime/</guid>
       <description></description>
     </item>
     <item>
       <title>Manga</title>
-      <link>/tags/manga/</link>
+      <link>$url/tags/manga/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/manga/</guid>
+      <guid>$url/tags/manga/</guid>
       <description></description>
     </item>
     <item>
       <title>Projects</title>
-      <link>/tags/projects/</link>
+      <link>$url/tags/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/projects/</guid>
+      <guid>$url/tags/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>Openwrt</title>
-      <link>/tags/openwrt/</link>
+      <link>$url/tags/openwrt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/openwrt/</guid>
+      <guid>$url/tags/openwrt/</guid>
       <description></description>
     </item>
     <item>
       <title>Personal</title>
-      <link>/tags/personal/</link>
+      <link>$url/tags/personal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/personal/</guid>
+      <guid>$url/tags/personal/</guid>
       <description></description>
     </item>
     <item>
       <title>Qubes-Os</title>
-      <link>/tags/qubes-os/</link>
+      <link>$url/tags/qubes-os/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/qubes-os/</guid>
+      <guid>$url/tags/qubes-os/</guid>
       <description></description>
     </item>
     <item>
       <title>Switch</title>
-      <link>/tags/switch/</link>
+      <link>$url/tags/switch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/switch/</guid>
+      <guid>$url/tags/switch/</guid>
       <description></description>
     </item>
     <item>
       <title>Emacs</title>
-      <link>/tags/emacs/</link>
+      <link>$url/tags/emacs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/emacs/</guid>
+      <guid>$url/tags/emacs/</guid>
       <description></description>
     </item>
     <item>
       <title>X11</title>
-      <link>/tags/x11/</link>
+      <link>$url/tags/x11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/tags/x11/</guid>
+      <guid>$url/tags/x11/</guid>
       <description></description>
     </item>
   </channel>

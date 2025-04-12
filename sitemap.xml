@@ -2,219 +2,219 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/can_federal_election_2025/</loc>
+    <loc>$url/posts/can_federal_election_2025/</loc>
     <lastmod>2025-03-30T00:40:20-04:00</lastmod>
   </url><url>
-    <loc>/tags/canada/</loc>
+    <loc>$url/tags/canada/</loc>
     <lastmod>2025-03-30T00:40:20-04:00</lastmod>
   </url><url>
-    <loc>/tags/opinion/</loc>
+    <loc>$url/tags/opinion/</loc>
     <lastmod>2025-03-30T00:40:20-04:00</lastmod>
   </url><url>
-    <loc>/tags/politics/</loc>
+    <loc>$url/tags/politics/</loc>
     <lastmod>2025-03-30T00:40:20-04:00</lastmod>
   </url><url>
-    <loc>/tags/ai/</loc>
+    <loc>$url/tags/ai/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
   </url><url>
-    <loc>/tags/deepseek-r1/</loc>
+    <loc>$url/tags/deepseek-r1/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
   </url><url>
-    <loc>/tags/llama/</loc>
+    <loc>$url/tags/llama/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
   </url><url>
-    <loc>/tags/ollama/</loc>
+    <loc>$url/tags/ollama/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
   </url><url>
-    <loc>/tags/open-webui/</loc>
+    <loc>$url/tags/open-webui/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
   </url><url>
-    <loc>/posts/ollama_quickstart/</loc>
+    <loc>$url/posts/ollama_quickstart/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
   </url><url>
-    <loc>/tags/git/</loc>
+    <loc>$url/tags/git/</loc>
     <lastmod>2025-01-18T14:38:32-05:00</lastmod>
   </url><url>
-    <loc>/posts/git_resume_cheat_sheet/</loc>
+    <loc>$url/posts/git_resume_cheat_sheet/</loc>
     <lastmod>2025-01-18T14:38:32-05:00</lastmod>
   </url><url>
-    <loc>/tags/resume/</loc>
+    <loc>$url/tags/resume/</loc>
     <lastmod>2025-01-18T14:38:32-05:00</lastmod>
   </url><url>
-    <loc>/tags/google-webfonts-helper/</loc>
+    <loc>$url/tags/google-webfonts-helper/</loc>
     <lastmod>2025-01-08T13:52:29-05:00</lastmod>
   </url><url>
-    <loc>/posts/fonts_and_themes/</loc>
+    <loc>$url/posts/fonts_and_themes/</loc>
     <lastmod>2025-01-08T13:52:29-05:00</lastmod>
   </url><url>
-    <loc>/tags/themes/</loc>
+    <loc>$url/tags/themes/</loc>
     <lastmod>2025-01-08T13:52:29-05:00</lastmod>
   </url><url>
-    <loc>/tags/webdev/</loc>
+    <loc>$url/tags/webdev/</loc>
     <lastmod>2025-01-08T13:52:29-05:00</lastmod>
   </url><url>
-    <loc>/tags/linkbuttons/</loc>
+    <loc>$url/tags/linkbuttons/</loc>
     <lastmod>2024-10-19T00:09:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/notbyai/</loc>
+    <loc>$url/tags/notbyai/</loc>
     <lastmod>2024-10-19T00:09:03-04:00</lastmod>
   </url><url>
-    <loc>/posts/notbyai/</loc>
+    <loc>$url/posts/notbyai/</loc>
     <lastmod>2024-10-19T00:09:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/updates/</loc>
+    <loc>$url/tags/updates/</loc>
     <lastmod>2024-10-19T00:09:03-04:00</lastmod>
   </url><url>
-    <loc>/tags/oracle/</loc>
+    <loc>$url/tags/oracle/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/technology/</loc>
+    <loc>$url/tags/technology/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/vps/</loc>
+    <loc>$url/tags/vps/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/posts/welcome_to_yortnet/</loc>
+    <loc>$url/posts/welcome_to_yortnet/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/minecraft/</loc>
+    <loc>$url/tags/minecraft/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/posts/oracle_mc_server/</loc>
+    <loc>$url/posts/oracle_mc_server/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/tutorial/</loc>
+    <loc>$url/tags/tutorial/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>/posts/home_assistant_setup/</loc>
+    <loc>$url/posts/home_assistant_setup/</loc>
     <lastmod>2024-06-16T23:33:18-04:00</lastmod>
   </url><url>
-    <loc>/tags/dietpi/</loc>
+    <loc>$url/tags/dietpi/</loc>
     <lastmod>2024-06-16T23:33:18-04:00</lastmod>
   </url><url>
-    <loc>/tags/home-assistant/</loc>
+    <loc>$url/tags/home-assistant/</loc>
     <lastmod>2024-06-16T23:33:18-04:00</lastmod>
   </url><url>
-    <loc>/tags/rpi/</loc>
+    <loc>$url/tags/rpi/</loc>
     <lastmod>2024-06-16T23:33:18-04:00</lastmod>
   </url><url>
-    <loc>/tags/dns/</loc>
+    <loc>$url/tags/dns/</loc>
     <lastmod>2024-05-22T21:57:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/email/</loc>
+    <loc>$url/tags/email/</loc>
     <lastmod>2024-05-22T21:57:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/namecheap/</loc>
+    <loc>$url/tags/namecheap/</loc>
     <lastmod>2024-05-22T21:57:29-04:00</lastmod>
   </url><url>
-    <loc>/posts/new_domain/</loc>
+    <loc>$url/posts/new_domain/</loc>
     <lastmod>2024-05-22T21:57:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/porkbun/</loc>
+    <loc>$url/tags/porkbun/</loc>
     <lastmod>2024-05-22T21:57:29-04:00</lastmod>
   </url><url>
-    <loc>/tags/adb/</loc>
+    <loc>$url/tags/adb/</loc>
     <lastmod>2024-04-27T16:52:52-04:00</lastmod>
   </url><url>
-    <loc>/tags/android/</loc>
+    <loc>$url/tags/android/</loc>
     <lastmod>2024-04-27T16:52:52-04:00</lastmod>
   </url><url>
-    <loc>/tags/grapheneos/</loc>
+    <loc>$url/tags/grapheneos/</loc>
     <lastmod>2024-04-27T16:52:52-04:00</lastmod>
   </url><url>
-    <loc>/posts/adb_vanadium/</loc>
+    <loc>$url/posts/adb_vanadium/</loc>
     <lastmod>2024-04-27T16:52:52-04:00</lastmod>
   </url><url>
-    <loc>/tags/eclipse/</loc>
+    <loc>$url/tags/eclipse/</loc>
     <lastmod>2024-04-27T16:47:56-04:00</lastmod>
   </url><url>
-    <loc>/posts/eclipse_2024_part2/</loc>
+    <loc>$url/posts/eclipse_2024_part2/</loc>
     <lastmod>2024-04-27T16:47:56-04:00</lastmod>
   </url><url>
-    <loc>/posts/eclipse_2024/</loc>
+    <loc>$url/posts/eclipse_2024/</loc>
     <lastmod>2024-04-27T16:47:56-04:00</lastmod>
   </url><url>
-    <loc>/tags/daylight-savings/</loc>
+    <loc>$url/tags/daylight-savings/</loc>
     <lastmod>2024-04-07T23:53:01-04:00</lastmod>
   </url><url>
-    <loc>/posts/light_theme_plus_i_hate_daylight_savings/</loc>
+    <loc>$url/posts/light_theme_plus_i_hate_daylight_savings/</loc>
     <lastmod>2024-04-07T23:53:01-04:00</lastmod>
   </url><url>
-    <loc>/tags/clown-moment/</loc>
+    <loc>$url/tags/clown-moment/</loc>
     <lastmod>2024-02-11T09:26:21-05:00</lastmod>
   </url><url>
-    <loc>/tags/proton/</loc>
+    <loc>$url/tags/proton/</loc>
     <lastmod>2024-02-11T09:26:21-05:00</lastmod>
   </url><url>
-    <loc>/tags/skiff/</loc>
+    <loc>$url/tags/skiff/</loc>
     <lastmod>2024-02-11T09:26:21-05:00</lastmod>
   </url><url>
-    <loc>/posts/skiffdead/</loc>
+    <loc>$url/posts/skiffdead/</loc>
     <lastmod>2024-02-11T09:26:21-05:00</lastmod>
   </url><url>
-    <loc>/tags/github/</loc>
+    <loc>$url/tags/github/</loc>
     <lastmod>2024-02-09T14:40:19-05:00</lastmod>
   </url><url>
-    <loc>/tags/hugo/</loc>
+    <loc>$url/tags/hugo/</loc>
     <lastmod>2024-02-09T14:40:19-05:00</lastmod>
   </url><url>
-    <loc>/posts/thingstocome/</loc>
+    <loc>$url/posts/thingstocome/</loc>
     <lastmod>2024-02-09T14:40:19-05:00</lastmod>
   </url><url>
-    <loc>/mysetup/</loc>
+    <loc>$url/mysetup/</loc>
     <lastmod>2025-02-08T23:22:32-05:00</lastmod>
   </url><url>
-    <loc>/tags/anime/</loc>
+    <loc>$url/tags/anime/</loc>
     <lastmod>2024-03-03T17:03:07-05:00</lastmod>
   </url><url>
-    <loc>/tags/manga/</loc>
+    <loc>$url/tags/manga/</loc>
     <lastmod>2024-03-03T17:03:07-05:00</lastmod>
   </url><url>
-    <loc>/posts/nyaa_menu/</loc>
+    <loc>$url/posts/nyaa_menu/</loc>
     <lastmod>2024-03-03T17:03:07-05:00</lastmod>
   </url><url>
-    <loc>/tags/projects/</loc>
+    <loc>$url/tags/projects/</loc>
     <lastmod>2024-03-03T17:03:07-05:00</lastmod>
   </url><url>
-    <loc>/posts/summer_2023_projects/</loc>
+    <loc>$url/posts/summer_2023_projects/</loc>
     <lastmod>2024-02-18T14:37:49-05:00</lastmod>
   </url><url>
-    <loc>/tags/openwrt/</loc>
+    <loc>$url/tags/openwrt/</loc>
     <lastmod>2024-02-18T14:37:49-05:00</lastmod>
   </url><url>
-    <loc>/tags/personal/</loc>
+    <loc>$url/tags/personal/</loc>
     <lastmod>2024-02-18T14:37:49-05:00</lastmod>
   </url><url>
-    <loc>/tags/qubes-os/</loc>
+    <loc>$url/tags/qubes-os/</loc>
     <lastmod>2024-02-18T14:37:49-05:00</lastmod>
   </url><url>
-    <loc>/tags/switch/</loc>
+    <loc>$url/tags/switch/</loc>
     <lastmod>2024-02-18T14:37:49-05:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>$url/posts/</loc>
     <lastmod>2024-03-03T17:03:07-05:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>$url/tags/</loc>
     <lastmod>2024-02-09T13:31:02-05:00</lastmod>
   </url><url>
-    <loc>/tags/emacs/</loc>
+    <loc>$url/tags/emacs/</loc>
     <lastmod>2024-03-10T14:11:36-04:00</lastmod>
   </url><url>
-    <loc>/posts/caps2esc/</loc>
+    <loc>$url/posts/caps2esc/</loc>
     <lastmod>2024-03-10T14:11:36-04:00</lastmod>
   </url><url>
-    <loc>/tags/x11/</loc>
+    <loc>$url/tags/x11/</loc>
     <lastmod>2024-03-10T14:11:36-04:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>$url/about/</loc>
     <lastmod>2025-03-22T20:44:43-04:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>$url/categories/</loc>
   </url><url>
-    <loc>/contact/</loc>
+    <loc>$url/contact/</loc>
     <lastmod>2024-05-20T21:09:16-04:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>$url/</loc>
     <lastmod>2025-03-30T00:29:41-04:00</lastmod>
   </url>
 </urlset>
