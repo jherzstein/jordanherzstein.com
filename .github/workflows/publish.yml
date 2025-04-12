@@ -24,7 +24,8 @@ jobs:
         run: |
           export HUGOxPARAMSxGITxLAST_COMMITxHASH=$(git rev-parse --short HEAD)
           export HUGOxPARAMSxGITxLAST_COMMITxDATE=$(git log -1 --format=%ci | cut -b 1-10)
-          hugo
+          hugo \
+	    --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
