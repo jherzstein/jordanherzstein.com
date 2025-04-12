@@ -137,19 +137,6 @@ body {
     color:var(--color-txt);
 }
 
-
-.menu-container{
-    text-align: center;
-    font-size: 1.3em; 
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid ; 
-    box-shadow: 4px 4px var(--color-txt); 
-    background:var(--color-fg);
-    border-radius: .75em;
-    word-spacing: 10px;
-}
-
 .menu-nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -163,21 +150,66 @@ body {
     line-height: var(--header-height);
 }
 
-.page{
-    max-width: 750px;
-    width: 95%;
-    display: block;
-    align: center;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    padding: 15px;
-    border: 1px solid ; 
-    box-shadow: 4px 4px var(--color-txt); 
-    background-color: var(--color-bg);
-    border-radius: .75em;
-    background:var(--color-fg);
+@media only screen and (max-width: 641px)
+{
+    .page{
+	max-width: 750px;
+	width: 93.1%;
+	display: block;
+	align: center;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	padding: 15px;
+	border: 1px solid ; 
+	box-shadow: 4px 4px var(--color-txt); 
+	background-color: var(--color-bg);
+	border-radius: .75em;
+	background:var(--color-fg);
+    }
+    .menu-container{
+	text-align: center;
+	font-size: 1.1em; 
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid; 
+	box-shadow: 4px 4px var(--color-txt); 
+	background:var(--color-fg);
+	border-radius: .75em;
+	word-spacing: 10px;
+    }
+}
+
+@media only screen and (min-width: 641px)
+{
+    .page{
+	max-width: 750px;
+	width: 95%;
+	display: block;
+	align: center;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2em;
+	padding: 15px;
+	border: 1px solid ; 
+	box-shadow: 4px 4px var(--color-txt); 
+	background-color: var(--color-bg);
+	border-radius: .75em;
+	background:var(--color-fg);
+    }
+    .menu-container{
+	text-align: center;
+	font-size: 1.3em; 
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid ; 
+	box-shadow: 4px 4px var(--color-txt); 
+	background:var(--color-fg);
+	border-radius: .75em;
+	word-spacing: 10px;
+    }
 }
 /* #282c34, #e06c75, #98c379, #e5c07b,
 #61afef, #c678dd, #56b6c2, #dcdfe4,
