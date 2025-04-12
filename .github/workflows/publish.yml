@@ -22,7 +22,8 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - name: Hugo build
-        run: |
+        run:
+	  |
           export HUGOxPARAMSxGITxLAST_COMMITxHASH=$(git rev-parse --short HEAD)
           export HUGOxPARAMSxGITxLAST_COMMITxDATE=$(git log -1 --format=%ci | cut -b 1-10)
 	  url=$(curl https://api.github.com/repos/jherzstein/jordanherzstein.com | jq '.homepage')
