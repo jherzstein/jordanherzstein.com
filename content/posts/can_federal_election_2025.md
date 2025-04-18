@@ -2,7 +2,7 @@
 title = "A very Canadian PSA on Online Disinformation and Electoral Interference"
 summary = "Sharing my fears of foreign entities employing mass disinformation campaigns to destabalize Canada, and the small things we can do to combat it."
 date = 2025-03-30
-lastmod = 2025-04-18T11:59:41-04:00
+lastmod = 2025-04-18T12:06:23-04:00
 tags = ["opinion", "canada", "politics"]
 draft = false
 [menu]
@@ -10,7 +10,7 @@ draft = false
     identifier = "a-very-canadian-psa-on-online-disinformation-and-electoral-interference"
 +++
 
-`EDIT: I added some comments clarifying the reliability of riding level polling and to take them with a grain of salt.`
+> _EDIT: I added some comments clarifying the reliability of riding level polling and to take them with a grain of salt._
 
 I haven't posted anything here lately in part due to life stuff demanding my attention for the past couple of months. However, if I'm being entirely honest, the myriad of threats to my country's sovereignty from the government of my neighbours down south have left me feeling disoriented and worried. Usually, I try not to delve too deeply into the contemporary politics of my country so publicly and permanently on the internet because I've become exhausted by conflict and I don't want to get into fights with people that I'll have to think about for the next decade. With all that said, I feel as though times have become so extremely dire that I may regret my silence if things reach a tipping point and I hadn't done anything to at least draw attention to this issue.
 
@@ -65,7 +65,7 @@ I plan on voting this election in a way which keeps Pierre as far away from the 
 
 1.  Donate to the party closest aligned with your politics. (they will likely spend the money wisely on the ridings they can either flip or keep)
 2.  Make a plan for voting, not just with yourself but also your family and friends to encourage a larger turnout.
-3.  Vote for the most strategic candidate in your riding to best combat MAGA-style politics. ~~You can check [338canada.com](https://338canada.com/) or [smartvoting.ca](https://smartvoting.ca) to make the most informed decision on election day based on trends in your riding.~~ Do keep in mind that riding level polls usually make projections based on national level polling + previous election results and may not take into account fully the nuances of your local politics, so take them with a grain of salt. The best party to vote for is not always the one that's leading nationally from a purely strategic lense. Depending on your riding you may not have to vote strategically at all, make note of your own local situation and local politics to make an informed decision on your vote.
+3.  Vote for the most strategic candidate in your riding to best combat MAGA-style politics. ~~You can check [338canada.com](https://338canada.com/) or [smartvoting.ca](https://smartvoting.ca) to make the most informed decision on election day based on trends in your riding.~~ Do keep in mind that riding level polls usually make projections based on national level polling + previous election results and may not take into account fully the nuances of your local politics, so take them with a grain of salt. The best party to vote for is not always the one that's leading nationally from a purely strategic lense. Depending on your riding you may not have to vote strategically at all. Keeping all of this in mind, make note of your own local situation and politics to make an informed decision on your vote.
 4.  Once the election is over, contact your newly elected MP to get proportional representation electoral reform back on the house floor.
 
 
