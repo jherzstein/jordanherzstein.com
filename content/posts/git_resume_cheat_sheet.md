@@ -2,7 +2,7 @@
 title = "Git Resume Cheat Sheet"
 summary = "I've been using a local git server to organize and keep track of all versions of my resume. I keep track of some common commands that I use."
 date = 2025-01-18
-lastmod = 2025-01-18T14:37:38-05:00
+lastmod = 2025-04-18T11:51:26-04:00
 tags = ["git", "resume"]
 draft = false
 [menu]

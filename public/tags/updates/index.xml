@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Updates on Jordan Herzstein</title>
-    <link>/tags/updates/</link>
+    <link>//localhost:1313/tags/updates/</link>
     <description>Recent content in Updates on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 19 Oct 2024 00:09:03 -0400</lastBuildDate>
-    <atom:link href="/tags/updates/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/updates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This Site Is Not Written By AI</title>
-      <link>/posts/notbyai/</link>
+      <link>//localhost:1313/posts/notbyai/</link>
       <pubDate>Fri, 18 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/notbyai/</guid>
+      <guid>//localhost:1313/posts/notbyai/</guid>
       <description>It may be slop, but it&amp;rsquo;s slop made by ME.</description>
     </item>
     <item>
       <title>Welcome to YortNet</title>
-      <link>/posts/welcome_to_yortnet/</link>
+      <link>//localhost:1313/posts/welcome_to_yortnet/</link>
       <pubDate>Fri, 26 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/welcome_to_yortnet/</guid>
+      <guid>//localhost:1313/posts/welcome_to_yortnet/</guid>
       <description>I spun up a vps to host various services and privacy front ends</description>
     </item>
     <item>
       <title>New email/website domain!</title>
-      <link>/posts/new_domain/</link>
+      <link>//localhost:1313/posts/new_domain/</link>
       <pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/new_domain/</guid>
+      <guid>//localhost:1313/posts/new_domain/</guid>
       <description>Friendship with .xyz has ended, .com is my new best friend.&#xA;Friendship with namecheap has ended, porkbun is my new best friend</description>
     </item>
     <item>
       <title>New light theme on daylight savings plus I hate daylight savings</title>
-      <link>/posts/light_theme_plus_i_hate_daylight_savings/</link>
+      <link>//localhost:1313/posts/light_theme_plus_i_hate_daylight_savings/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/light_theme_plus_i_hate_daylight_savings/</guid>
+      <guid>//localhost:1313/posts/light_theme_plus_i_hate_daylight_savings/</guid>
       <description>I added a light theme so it&amp;rsquo;s easier for some users to read. Also I hate daylight savings.</description>
     </item>
     <item>
       <title>Hugo and other site changes</title>
-      <link>/posts/thingstocome/</link>
+      <link>//localhost:1313/posts/thingstocome/</link>
       <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/thingstocome/</guid>
+      <guid>//localhost:1313/posts/thingstocome/</guid>
       <description>Hugo is a very good static site generator.</description>
     </item>
   </channel>

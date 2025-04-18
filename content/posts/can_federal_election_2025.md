@@ -2,13 +2,15 @@
 title = "A very Canadian PSA on Online Disinformation and Electoral Interference"
 summary = "Sharing my fears of foreign entities employing mass disinformation campaigns to destabalize Canada, and the small things we can do to combat it."
 date = 2025-03-30
-lastmod = 2025-03-30T00:38:10-04:00
+lastmod = 2025-04-18T11:59:41-04:00
 tags = ["opinion", "canada", "politics"]
 draft = false
 [menu]
   [menu.posts]
     identifier = "a-very-canadian-psa-on-online-disinformation-and-electoral-interference"
 +++
+
+`EDIT: I added some comments clarifying the reliability of riding level polling and to take them with a grain of salt.`
 
 I haven't posted anything here lately in part due to life stuff demanding my attention for the past couple of months. However, if I'm being entirely honest, the myriad of threats to my country's sovereignty from the government of my neighbours down south have left me feeling disoriented and worried. Usually, I try not to delve too deeply into the contemporary politics of my country so publicly and permanently on the internet because I've become exhausted by conflict and I don't want to get into fights with people that I'll have to think about for the next decade. With all that said, I feel as though times have become so extremely dire that I may regret my silence if things reach a tipping point and I hadn't done anything to at least draw attention to this issue.
 
@@ -55,7 +57,7 @@ If you find online harmful or false content, or perhaps an online post with a lo
 Also, earlier last month I sent an email to the Comissioner of Canada Elections, Caroline J. Simard ([info@cef-cce.ca](mailto:info@cef-cce.ca)), regarding my concerns in how a poluted media environment and disinformation from foreign entities could manipulate the upcoming federal election this year, particularly from platforms such as Twitter and other social media sites. While I never received a response, I would hope that continuing to speak on this issue will pressure our representatives into seriously taking action in holding these platforms to account.
 
 
-### Vote strategically against Maple MAGA {#vote-strategically-against-maple-maga}
+### Vote strategically against Maple MAGA (depending on your riding) {#vote-strategically-against-maple-maga--depending-on-your-riding}
 
 If you haven't already, make sure to [check your voter registration to vote here](https://www.elections.ca/content.aspx?section=med&dir=guide&document=fareg&lang=e). You can also do this on election day at your polling station, but it takes less than 5 minutes to do online and is extremely easy to do. Also [check your where your riding as well](https://www.elections.ca/scripts/vis/finded?l=e&pageid=20) to figure out where your assigned polling station is. If you cannot go in person you can also [apply to vote by mail](https://www.elections.ca/Voting-by-mail) before April 22nd.
 
@@ -63,7 +65,7 @@ I plan on voting this election in a way which keeps Pierre as far away from the 
 
 1.  Donate to the party closest aligned with your politics. (they will likely spend the money wisely on the ridings they can either flip or keep)
 2.  Make a plan for voting, not just with yourself but also your family and friends to encourage a larger turnout.
-3.  Vote for the most strategic candidate in your riding to best combat MAGA-style politics. You can check [338canada.com](https://338canada.com/) or [smartvoting.ca](https://smartvoting.ca) to make the most informed decision on election day based on trends in your riding.
+3.  Vote for the most strategic candidate in your riding to best combat MAGA-style politics. ~~You can check [338canada.com](https://338canada.com/) or [smartvoting.ca](https://smartvoting.ca) to make the most informed decision on election day based on trends in your riding.~~ Do keep in mind that riding level polls usually make projections based on national level polling + previous election results and may not take into account fully the nuances of your local politics, so take them with a grain of salt. The best party to vote for is not always the one that's leading nationally from a purely strategic lense. Depending on your riding you may not have to vote strategically at all, make note of your own local situation and local politics to make an informed decision on your vote.
 4.  Once the election is over, contact your newly elected MP to get proportional representation electoral reform back on the house floor.
 
 
