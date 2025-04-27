@@ -8,6 +8,13 @@
     <language>en</language>
     <atom:link href="http://jordanherzstein.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Git Cherry Pick Cheat Sheet</title>
+      <link>http://jordanherzstein.com/posts/git_cherry_pick_cheat_sheet/</link>
+      <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://jordanherzstein.com/posts/git_cherry_pick_cheat_sheet/</guid>
+      <description>More git things</description>
+    </item>
+    <item>
       <title>A very Canadian PSA on Online Disinformation and Electoral Interference</title>
       <link>http://jordanherzstein.com/posts/can_federal_election_2025/</link>
       <pubDate>Sun, 30 Mar 2025 00:00:00 +0000</pubDate>

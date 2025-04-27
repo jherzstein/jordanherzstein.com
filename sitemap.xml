@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://jordanherzstein.com/tags/git/</loc>
+    <lastmod>2025-04-27T10:47:10-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/posts/git_cherry_pick_cheat_sheet/</loc>
+    <lastmod>2025-04-27T10:47:10-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/tutorial/</loc>
+    <lastmod>2025-04-27T10:47:10-04:00</lastmod>
+  </url><url>
     <loc>http://jordanherzstein.com/posts/can_federal_election_2025/</loc>
     <lastmod>2025-04-18T12:06:41-04:00</lastmod>
   </url><url>
@@ -31,9 +40,6 @@
   </url><url>
     <loc>http://jordanherzstein.com/posts/ollama_quickstart/</loc>
     <lastmod>2025-01-28T22:52:54-05:00</lastmod>
-  </url><url>
-    <loc>http://jordanherzstein.com/tags/git/</loc>
-    <lastmod>2025-04-18T11:59:53-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/git_resume_cheat_sheet/</loc>
     <lastmod>2025-04-18T11:59:53-04:00</lastmod>
@@ -81,9 +87,6 @@
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/oracle_mc_server/</loc>
-    <lastmod>2024-07-27T00:54:29-04:00</lastmod>
-  </url><url>
-    <loc>http://jordanherzstein.com/tags/tutorial/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/home_assistant_setup/</loc>
@@ -215,6 +218,6 @@
     <lastmod>2024-05-20T21:09:16-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/</loc>
-    <lastmod>2025-03-30T00:29:41-04:00</lastmod>
+    <lastmod>2025-04-27T10:47:10-04:00</lastmod>
   </url>
 </urlset>

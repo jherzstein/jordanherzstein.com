@@ -114,7 +114,7 @@
 
             <section class="page__body">
     <header class="content__header">
-        <h1>nyaa_menu</h1>
+        <h1>Git Cherry Pick Cheat Sheet</h1>
     </header>
 
     
@@ -127,7 +127,7 @@
 </svg>
 
 
-      2023-10-07 |
+      2025-04-27 |
     
     
     
@@ -137,7 +137,7 @@
 </svg>
 
     
-        2024-03-03
+        2025-04-27
      |
     
     
@@ -151,7 +151,7 @@
 </svg>
 
 
-     156 words |
+     407 words |
 
     
 
@@ -161,7 +161,7 @@
   <polyline points="12 6 12 12 16 14" />
 </svg>
 
-     1 min 
+     2 min 
 
 
     <br><span class="tags-list"><span class="meta-item">
@@ -172,27 +172,85 @@
 </svg>
 
 <span class="tags">
-                      <a href="/tags/technology/">#technology</a>
+                      <a href="/tags/git/">#git</a>
                   </span>
           <span class="tags">
-                      <a href="/tags/projects/">#projects</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/anime/">#anime</a>
-                  </span>
-          <span class="tags">
-                      <a href="/tags/manga/">#manga</a>
+                      <a href="/tags/tutorial/">#tutorial</a>
                   </span>
           </span></span>
-<br>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
 <div class="content__body">
-         <figure>
-    <center>
-       <img src="/images/blog/nyaa_menu_screenshot.png" width="100%" />
-       <figcaption>nyaa_menu scraping nyaa.si for "Chainsaw Man" english translated manga from most to least seeded.</figcaption>
-    </center>
-</figure>
-<p>I got quite bored a few days ago, and instead of staring at my 24 inch lightbulb I channeled a bit of my creative juices into making something&hellip; while staring at my 24 inch lightbulb. So, I sometimes watch anime and read manga from time to time, I also like <a href="https://tools.suckless.org/dmenu">dmenu</a>, and I don&rsquo;t like using my browser if I can avoid it; there often is an easier way of doing things if you&rsquo;re creative enough. Somewhat inspired by Bugswriter&rsquo;s <a href="https://github.com/Bugswriter/notflix">notflix</a> project, I whipped up a shell script that scrapes anime and manga magnet links from <a href="https://www.nyaa.si">nyaa.si</a> based on user search terms and flags. By default, the magnet link gets copied to your clipboard, or if you have your own transmission server you can also send the magnet link there automatically. If this utility sounds interesting to you go <a href="https://github.com/jherzstein/nyaa_menu">check it out</a>!</p>
+         <p>More recently I&rsquo;ve been wanting to include single commit changes of one branch into the main branch without merging the entire branch or replace entire files. Git has a very useful tool for this called <code>git-cherry-pick</code>, allowing you to apply changes from hashes from existing commits in any branch you wish to apply them (<a href="#citeproc_bib_item_1">Git, n.d.</a>).</p>
+<p>I am too lazy to draw so I will try to illustrate how this would work visually with mediocre ascii art.</p>
+<p>Before cherry pick:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  (cherry-pick branch)
+</span></span><span style="display:flex;"><span>     B -&gt; D -&gt; E
+</span></span><span style="display:flex;"><span>     ^
+</span></span><span style="display:flex;"><span>     |
+</span></span><span style="display:flex;"><span>A -&gt; B -&gt; C
+</span></span><span style="display:flex;"><span>  (main branch)</span></span></code></pre></div>
+<p>After cherry pick:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  (cherry-pick branch)
+</span></span><span style="display:flex;"><span>     B -&gt; D - &gt; E
+</span></span><span style="display:flex;"><span>     ^     \
+</span></span><span style="display:flex;"><span>     |       \
+</span></span><span style="display:flex;"><span>A -&gt; B -&gt; C -&gt; D
+</span></span><span style="display:flex;"><span>  (main branch)</span></span></code></pre></div>
+<p>First make you necessary changes in the <code>cherry-pick</code> branch, make the commit you want to cherrypick, and retrieve the commit hash to save for later.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add &lt;files-and-folders-to-stage-for-commit&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;commit D message in cherry-pick branch&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git rev-parse HEAD <span style="color:#75715e"># get the hash</span>
+</span></span><span style="display:flex;"><span>&lt;commit-D-hash&gt;</span></span></code></pre></div>
+<p>The simplest way to then apply the cherrypick to main is to switch to the main branch and do the cherry-pick, optionally <code>git pull</code> if your main branch is not up to date with the remote.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git pull <span style="color:#75715e"># In case you are not up to date on main branch, important for managing merge conflicts.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-D-hash&gt;</span></span></code></pre></div>
+<p>Alternatively, I will sometimes checkout main to another branch to cherry pick a commit first and merge after in order to make sure my changes work how I want and I can manage merge conflicts if they come up. This is also necessary if you are sharing a repo with multiple people and need to create a PR for review before it can be merged into main.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git pull
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git checkout -b test-cherry-pick
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-D-hash&gt;</span></span></code></pre></div>
+<p>If you do have merge conflicts, deal with them manually, stage and commit changes, and then continue the cherry-pick.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># First deal with merge conflicts</span>
+</span></span><span style="display:flex;"><span>git add &lt;files-with-merge-conflicts&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Final changes after merge conflicts.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git cherry-pick --continue</span></span></code></pre></div>
+<p>Alternatively, if you would like to abort the process you can use <code>git cherry-pick --abort</code>.</p>
+<p>Now either <code>git push</code> and create a new pull request into main or merge into main locally before push.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git merge test-cherry-pick
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git push</span></span></code></pre></div>
+<p>Ok those were the basics of applying individual changes using <code>git-cherry-pick</code>. Happy cherry-picking!</p>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Git. n.d. “Git - Git-Cherry-Pick Documentation.” <a href="https://git-scm.com/docs/git-cherry-pick">https://git-scm.com/docs/git-cherry-pick</a>.</div>
+</div>
 
     </div>
 
