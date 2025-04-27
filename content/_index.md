@@ -11,8 +11,8 @@ draft = false
 
 <div class="org-center">
 
-🎉🎉 **_Thanks for over 12,000 unique visitors on Neocities!_** 🎉🎉 <br />
-(That includes the web crawlers :) )
+🇨🇦 Vote on April 28th if you are a Canadian over 18! 🇨🇦 <br />
+(Find your nearest polling station [here](https://www.elections.ca/content2.aspx?section=vote&dir=locate&document=index&lang=e&cid). No, you do not need your voter card in order to vote)
 
 </div>
 
@@ -72,3 +72,9 @@ Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [yort
 -   Built a new PC for using local AI and other intensive tasks.
 -   Getting into some [Home Assistant](https://www.home-assistant.io/) things.
 -   Messing with a [free oracle vps](https://rentry.co/oraclevps) for funzies with the [yortnet.com](https://yortnet.com) domain. I started hosting a private minecraft server on it as well as a public search engine.
+
+
+## References {#references}
+
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+</div>

@@ -11,9 +11,13 @@
 
 #+attr_html: :style display:flex;
 #+begin_center
-🎉🎉 */Thanks for over 12,000 unique visitors on Neocities!/* 🎉🎉 \\
-(That includes the web crawlers :) )
+🇨🇦 Vote on April 28th if you are a Canadian over 18! 🇨🇦 \\
+(Find your nearest polling station [[https://www.elections.ca/content2.aspx?section=vote&dir=locate&document=index&lang=e&cid][here]]. No, you do not need your voter card in order to vote)
 #+end_center
+# #+begin_center
+# 🎉🎉 */Thanks for over 12,000 unique visitors on Neocities!/* 🎉🎉 \\
+# (That includes the web crawlers :) )
+# #+end_center
 
 Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [[https://yortnet.com][yortnet.com]]. Thank you for stopping by my website. 
 
@@ -91,3 +95,5 @@ Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [[htt
 + Messing with a [[https://rentry.co/oraclevps][free oracle vps]] for funzies with the [[https://yortnet.com][yortnet.com]] domain. I started hosting a private minecraft server on it as well as a public search engine. 
 # + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
 
+* References
+[[bibliography:../../references.bib]]

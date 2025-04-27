@@ -1,0 +1,100 @@
+#+TITLE: Git Cherry Pick Cheat Sheet
+#+date: 2025-04-27
+#+hugo_base_dir: ../../
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_DRAFT: false
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+filetags: git tutorial
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: git_cherry_pick_cheat_sheet.md
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+More git things
+#+end_description
+
+More recently I've been wanting to include single commit changes of one branch into the main branch without merging the entire branch or replace entire files. Git has a very useful tool for this called ~git-cherry-pick~, allowing you to apply changes from hashes from existing commits in any branch you wish to apply them [[cite:&git-cherry-pick-docs]].
+
+I am too lazy to draw so I will try to illustrate how this would work visually with mediocre ascii art.
+
+Before cherry pick:
+#+BEGIN_SRC text 
+  (cherry-pick branch)
+     B -> D -> E
+     ^       
+     |        
+A -> B -> C
+  (main branch)
+#+END_SRC
+
+
+After cherry pick:
+#+BEGIN_SRC text
+  (cherry-pick branch)
+     B -> D - > E
+     ^     \
+     |       \ 
+A -> B -> C -> D       
+  (main branch)
+#+END_SRC
+
+First make you necessary changes in the ~cherry-pick~ branch, make the commit you want to cherrypick, and retrieve the commit hash to save for later.
+#+BEGIN_SRC bash
+git add <files-and-folders-to-stage-for-commit>
+
+git commit -m "commit D message in cherry-pick branch"
+
+git rev-parse HEAD # get the hash
+<commit-D-hash>
+#+END_SRC
+
+The simplest way to then apply the cherrypick to main is to switch to the main branch and do the cherry-pick, optionally ~git pull~ if your main branch is not up to date with the remote.
+
+#+BEGIN_SRC bash
+git switch main
+
+git pull # In case you are not up to date on main branch, important for managing merge conflicts.
+
+git cherry-pick <commit-D-hash>
+#+END_SRC
+
+Alternatively, I will sometimes checkout main to another branch to cherry pick a commit first and merge after in order to make sure my changes work how I want and I can manage merge conflicts if they come up. This is also necessary if you are sharing a repo with multiple people and need to create a PR for review before it can be merged into main.
+
+#+BEGIN_SRC bash
+git switch main
+
+git pull
+
+git checkout -b test-cherry-pick
+
+git cherry-pick <commit-D-hash>
+
+#+END_SRC
+
+If you do have merge conflicts, deal with them manually, stage and commit changes, and then continue the cherry-pick.
+
+#+BEGIN_SRC bash
+# First deal with merge conflicts
+git add <files-with-merge-conflicts>
+
+git commit -m "Final changes after merge conflicts."
+
+git cherry-pick --continue
+#+END_SRC
+
+Alternatively, if you would like to abort the process you can use ~git cherry-pick --abort~.
+
+Now either ~git push~ and create a new pull request into main or merge into main locally before push.
+
+#+BEGIN_SRC bash
+git switch main
+
+git merge test-cherry-pick
+
+git push
+#+END_SRC
+
+Ok those were the basics of applying individual changes using ~git-cherry-pick~. Happy cherry-picking!
+
+* References
+[[bibliography:../../references.bib]]
