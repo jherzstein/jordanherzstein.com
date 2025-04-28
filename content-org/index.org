@@ -94,6 +94,3 @@ Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [[htt
 + Getting into some [[https://www.home-assistant.io/][Home Assistant]] things.
 + Messing with a [[https://rentry.co/oraclevps][free oracle vps]] for funzies with the [[https://yortnet.com][yortnet.com]] domain. I started hosting a private minecraft server on it as well as a public search engine. 
 # + [[../images/hatedaylightsavings.png][I (STILL) HATE DAYLIGHT SAVINGS! I (STILL) HATE DAYLIGHT SAVINGS!]]
-
-* References
-[[bibliography:../../references.bib]]
