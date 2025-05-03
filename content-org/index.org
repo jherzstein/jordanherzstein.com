@@ -8,11 +8,10 @@
 # #+HUGO_PAIRED_SHORTCODES: icons/icon
 #+OPTIONS: num:nil toc:nil 
 
-
 #+attr_html: :style display:flex;
 #+begin_center
-# 🎉🎉 */Thanks for over 15,000 unique visitors on Neocities!/* 🎉🎉 \\
-# (That includes the web crawlers :) )
+🎉🎉 */Thanks for over 15,000 unique visitors on Neocities!/* 🎉🎉 \\
+(That includes the web crawlers :) )
 #+end_center
 
 Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [[https://yortnet.com][yortnet.com]]. Thank you for stopping by my website. 

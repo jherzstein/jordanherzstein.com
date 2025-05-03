@@ -11,7 +11,9 @@ draft = false
 
 <div class="org-center">
 
-nil
+🎉🎉 **_Thanks for over 15,000 unique visitors on Neocities!_** 🎉🎉 <br />
+(That includes the web crawlers :) )
+
 </div>
 
 Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [yortnet.com](https://yortnet.com). Thank you for stopping by my website.
