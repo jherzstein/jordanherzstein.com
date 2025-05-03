@@ -11,9 +11,7 @@ draft = false
 
 <div class="org-center">
 
-🇨🇦 Vote on April 28th if you are a Canadian over 18! 🇨🇦 <br />
-(Find your nearest polling station [here](https://www.elections.ca/content2.aspx?section=vote&dir=locate&document=index&lang=e&cid). No, you do not need your voter card in order to vote)
-
+nil
 </div>
 
 Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [yortnet.com](https://yortnet.com). Thank you for stopping by my website.
