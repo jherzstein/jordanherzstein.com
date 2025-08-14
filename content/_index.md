@@ -16,7 +16,7 @@ draft = false
 
 </div>
 
-Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [yortnet.com](https://yortnet.com). Thank you for stopping by my website.
+Hello, my name is Jordan, I'm a computer engineer from Canada. Thank you for stopping by my website.
 
 -   Site mirrors - [github](https://jordanherzstein.com), [neocities](https://jordanherzstein.neocities.org)
 -   [home](/) - You are here right now
@@ -67,8 +67,7 @@ Hello, my name is Jordan, I'm a computer engineer from Canada and owner of [yort
 
 ## What am I up to? {#what-am-i-up-to}
 
--   I'm ~~a full time student~~ grinding.
--   Iron Ring ~~incoming~~: I have it.
--   Built a new PC for using local AI and other intensive tasks.
--   Getting into some [Home Assistant](https://www.home-assistant.io/) things.
--   Messing with a [free oracle vps](https://rentry.co/oraclevps) for funzies with the [yortnet.com](https://yortnet.com) domain. I started hosting a private minecraft server on it as well as a public search engine.
+-   I'm ~~a full time student~~ \*still grinding.
+-   Immich is pretty awesome.
+-   PiHole is pretty great and I have no idea why I didn't start using it years ago.
+-   Homelabbing hobby is slowly spiraling out of control, I have 2 node proxmox cluster (+qdevice don't worry I know what quorum is) which means I'm 80% of the way to deciding to make a k8s cluster.

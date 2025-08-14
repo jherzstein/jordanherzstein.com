@@ -2,7 +2,7 @@
 title = "Using adb to Delete Vanadium on GrapheneOS"
 summary = "I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk."
 date = 2024-04-27T00:01:00-04:00
-lastmod = 2024-04-27T16:52:30-04:00
+lastmod = 2025-06-09T23:42:35-04:00
 tags = ["technology", "tutorial", "adb", "android", "grapheneos"]
 draft = false
 [menu]

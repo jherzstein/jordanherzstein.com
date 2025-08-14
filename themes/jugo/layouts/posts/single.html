@@ -70,6 +70,16 @@
     <div class="content__body">
          {{ .Content }}
     </div>
-
+    <div class="next-post">
+      {{ if .NextPage }}
+      <a class="link-reverse" href="{{ .NextPage.Permalink }}">« Next Post: {{ .NextPage.Title | truncate 30 "..." }}</a>
+      {{ end }}
+    </div>
+    
+    <div class="previous-post">
+      {{ if .PrevPage }}
+      <a class="link-reverse" href="{{ .PrevPage.Permalink }}">Previous Post: {{ .PrevPage.Title | truncate 30 "..." }} »</a>
+      {{ end }}
+    </div>
 {{ end }}
 
