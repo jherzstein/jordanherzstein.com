@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homeassistant on Jordan Herzstein</title>
+    <link>//localhost:1313/tags/homeassistant/</link>
+    <description>Recent content in Homeassistant on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 09 Jun 2025 21:09:20 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/homeassistant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Overengineering Waking Up: ESPHome RGB Lightbulb in home assistant</title>
+      <link>//localhost:1313/posts/ha_sunrise_alarm_part1/</link>
+      <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
+      <guid>//localhost:1313/posts/ha_sunrise_alarm_part1/</guid>
+      <description># Your Wi-Fi SSID and password wifi_ssid: &amp;#34;IOT-WiFi-SSID&amp;#34; wifi_password: &amp;#34;Password&amp;#34; ... wifi: networks: - hidden: True ssid: !secret wifi_ssid password: !secret wifi_password domain: &amp;#34;${dns_domain}&amp;#34; ... </description>
+    </item>
+  </channel>
+</rss>

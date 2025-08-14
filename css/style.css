@@ -450,3 +450,11 @@ blockquote {
     margin-left: .3em;
 }
 
+.next-post{
+    display: inline;
+}
+
+.previous-post{
+    display: inline;
+    float: right;
+}
