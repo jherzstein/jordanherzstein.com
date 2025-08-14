@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://jordanherzstein.com/tags/home-assistant/</loc>
+    <lastmod>2025-08-13T21:49:42-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/posts/ha_sunrise_alarm/</loc>
+    <lastmod>2025-08-13T21:49:42-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/technology/</loc>
+    <lastmod>2025-08-13T21:49:42-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/tutorial/</loc>
+    <lastmod>2025-08-13T21:49:42-04:00</lastmod>
+  </url><url>
     <loc>http://jordanherzstein.com/tags/git/</loc>
     <lastmod>2025-04-27T10:47:10-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/git_cherry_pick_cheat_sheet/</loc>
     <lastmod>2025-04-27T10:47:10-04:00</lastmod>
-  </url><url>
-    <loc>http://jordanherzstein.com/tags/tutorial/</loc>
-    <lastmod>2025-08-13T21:46:39-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/can_federal_election_2025/</loc>
     <lastmod>2025-04-18T12:06:41-04:00</lastmod>
@@ -74,9 +83,6 @@
     <loc>http://jordanherzstein.com/tags/oracle/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
-    <loc>http://jordanherzstein.com/tags/technology/</loc>
-    <lastmod>2025-08-13T21:46:39-04:00</lastmod>
-  </url><url>
     <loc>http://jordanherzstein.com/tags/vps/</loc>
     <lastmod>2024-07-27T00:54:29-04:00</lastmod>
   </url><url>
@@ -93,9 +99,6 @@
     <lastmod>2024-06-16T23:33:18-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/dietpi/</loc>
-    <lastmod>2024-06-16T23:33:18-04:00</lastmod>
-  </url><url>
-    <loc>http://jordanherzstein.com/tags/home-assistant/</loc>
     <lastmod>2024-06-16T23:33:18-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/rpi/</loc>
