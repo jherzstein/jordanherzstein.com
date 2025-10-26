@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ollama on Jordan Herzstein</title>
-    <link>/tags/ollama/</link>
+    <link>//localhost:1313/tags/ollama/</link>
     <description>Recent content in Ollama on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 28 Jan 2025 22:52:54 -0500</lastBuildDate>
-    <atom:link href="/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Starting with Ollama and Open WebUI in my Proxmox VM</title>
-      <link>/posts/ollama_quickstart/</link>
+      <link>//localhost:1313/posts/ollama_quickstart/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/ollama_quickstart/</guid>
+      <guid>//localhost:1313/posts/ollama_quickstart/</guid>
       <description>Simply starting off with an ollama binary, running a local llm in the cli, and deploying a nice user interface for it with Open WebUI.</description>
     </item>
   </channel>

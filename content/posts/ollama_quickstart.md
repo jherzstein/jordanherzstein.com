@@ -2,13 +2,15 @@
 title = "Starting with Ollama and Open WebUI in my Proxmox VM"
 summary = "Simply starting off with an ollama binary, running a local llm in the cli, and deploying a nice user interface for it with Open WebUI."
 date = 2025-01-28
-lastmod = 2025-01-28T22:49:32-05:00
+lastmod = 2025-10-21T21:55:45-04:00
 tags = ["ai", "ollama", "open-webui", "llama", "deepseek-r1"]
 draft = false
 [menu]
   [menu.posts]
     identifier = "starting-with-ollama-and-open-webui-in-my-proxmox-vm"
 +++
+
+> **NOTE**:
 
 Quite recently I built a PC specifically for local and private LLM inferencing. Here are the specs in case you are curious:
 

@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tutorial on Jordan Herzstein</title>
-    <link>/tags/tutorial/</link>
+    <link>//localhost:1313/tags/tutorial/</link>
     <description>Recent content in Tutorial on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 13 Aug 2025 21:46:39 -0400</lastBuildDate>
-    <atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Aug 2025 21:49:42 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overengineering Waking Up: ESPHome RGB Lightbulb in Home Assistant</title>
-      <link>/posts/ha_sunrise_alarm/</link>
+      <link>//localhost:1313/posts/ha_sunrise_alarm/</link>
       <pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/ha_sunrise_alarm/</guid>
+      <guid>//localhost:1313/posts/ha_sunrise_alarm/</guid>
       <description>I got bored, so I&amp;rsquo;ve decided to overcomplicated my morning routine</description>
     </item>
     <item>
       <title>Git Cherry Pick Cheat Sheet</title>
-      <link>/posts/git_cherry_pick_cheat_sheet/</link>
+      <link>//localhost:1313/posts/git_cherry_pick_cheat_sheet/</link>
       <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/git_cherry_pick_cheat_sheet/</guid>
+      <guid>//localhost:1313/posts/git_cherry_pick_cheat_sheet/</guid>
       <description>More git things</description>
     </item>
     <item>
       <title>Minecraft Java Edition Server For Free</title>
-      <link>/posts/oracle_mc_server/</link>
+      <link>//localhost:1313/posts/oracle_mc_server/</link>
       <pubDate>Wed, 26 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/oracle_mc_server/</guid>
+      <guid>//localhost:1313/posts/oracle_mc_server/</guid>
       <description>Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores.</description>
     </item>
     <item>
       <title>Booting DietPi on an SSD and installing Home Assistant in Docker</title>
-      <link>/posts/home_assistant_setup/</link>
+      <link>//localhost:1313/posts/home_assistant_setup/</link>
       <pubDate>Sun, 16 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/home_assistant_setup/</guid>
+      <guid>//localhost:1313/posts/home_assistant_setup/</guid>
       <description>Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi.</description>
     </item>
     <item>
       <title>Using adb to Delete Vanadium on GrapheneOS</title>
-      <link>/posts/adb_vanadium/</link>
+      <link>//localhost:1313/posts/adb_vanadium/</link>
       <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
-      <guid>/posts/adb_vanadium/</guid>
+      <guid>//localhost:1313/posts/adb_vanadium/</guid>
       <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
     </item>
     <item>
       <title>Mapping Caps Lock to Esc and CTRL in Xorg</title>
-      <link>/posts/caps2esc/</link>
+      <link>//localhost:1313/posts/caps2esc/</link>
       <pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>/posts/caps2esc/</guid>
+      <guid>//localhost:1313/posts/caps2esc/</guid>
       <description>Guide on switching keymaps using xkb in Xorg</description>
     </item>
   </channel>

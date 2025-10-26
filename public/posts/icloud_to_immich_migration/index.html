@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><link rel="stylesheet" href= "/css/style.css" | absURL }}>
+    
+    <head><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" class="light" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" class="dark" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+
+<head>
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/mysetup">setup</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
+	if (m == "light") {
+	    d.remove("dark");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    d.remove("light");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+	}
+	
+	function switchTheme() {
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            <section class="page__body">
+    <header class="content__header">
+        <h1>iCloud to Immich Migration with cli tools</h1>
+    </header>
+
+    
+    
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+  <line x1="16" y1="2" x2="16" y2="6" />
+  <line x1="8" y1="2" x2="8" y2="6" />
+  <line x1="3" y1="10" x2="21" y2="10" />
+</svg>
+
+
+      2025-10-21 |
+    
+    
+    
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+</svg>
+
+     |
+    
+    
+
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+  <polyline points="14 2 14 8 20 8" />
+  <line x1="16" y1="13" x2="8" y2="13" />
+  <line x1="16" y1="17" x2="8" y2="17" />
+  <polyline points="10 9 9 9 8 9" />
+</svg>
+
+
+     952 words |
+
+    
+
+
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" />
+</svg>
+
+     5 min 
+
+
+    <br><span class="tags-list"><span class="meta-item">
+
+<svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+  <line x1="7" y1="7" x2="7.01" y2="7" />
+</svg>
+
+<span class="tags">
+                      <a href="/tags/technology/">#technology</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/immich/">#immich</a>
+                  </span>
+          <span class="tags">
+                      <a href="/tags/self-hosting/">#self-hosting</a>
+                  </span>
+          </span></span>
+<br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#icloudpd" aria-label="icloudpd">icloudpd</a></li>
+                <li>
+                    <a href="#immich-go" aria-label="immich-go">immich-go</a><ul>
+                        
+                <li>
+                    <a href="#troubleshooting" aria-label="Troubleshooting">Troubleshooting</a></li></ul>
+                </li>
+                <li>
+                    <a href="#putting-it-all-together" aria-label="Putting it all together">Putting it all together</a></li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<div class="content__body">
+         <p>A couple of months ago I was tasked with migrating my family&rsquo;s photos from iCloud to a home Immich instance, which has so far turned out to be the most well-polished self-hosted app I&rsquo;ve ever used. I wanted to make this process as easy as possible, ideally I&rsquo;d be able to set up a quick shell script without having to think about it too hard and then just wait in the background until the process was done. I could&rsquo;ve had my family do a background upload from their iOS devices, I personally did so with my Android device (I&rsquo;m the black sheep of the family when it comes to mobile OSes), but I decided against this for two major reasons:</p>
+<ol>
+<li>Background processes are tightly controlled by iOS in comparison to Android and may run for only a minutes or seconds at a time depending on app usage, which makes it pretty dodgy for an initial upload of 100GB+ of media to say the least.</li>
+<li>Uploading would need to happen under ideal conditions, only while using WiFi, while family members need to rely on their mobile devices throughout the day and away from home WiFi.</li>
+</ol>
+<p>I also decided against getting iCloud archives directly from Apple as those requests can take anywhere from a few days to a week just to be able to get those archives for download.</p>
+<p>I landed on using <code>icloudpd</code> and <code>immich-go</code> for downloading images and video from iCloud and uploading them to my Immich instance respecively.</p>
+<h2 id="icloudpd">icloudpd</h2>
+<p><code>icloudpd</code> is a 3rd party script that downloads your iCloud collection to a local folder (<a href="#citeproc_bib_item_2">Unknown, n.d.</a>).</p>
+<p>I decided to install icloud through their python package <code>pip install icloudpd --user</code>.</p>
+<p>Simple <code>icloudpd</code> usage requires supplying a destination download directory and your primary user email for your iCloud account, then a prompt requiring a password and a MFA code.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>icloudpd --directory /path/to/icloud/download username email@example.com</span></span></code></pre></div>
+<p>You can also list and then download specific albums, in case you don&rsquo;t want to upload your entire collection. I did not find out how to select multiple albums at once so I had to include each album as a separate command.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>icloudpd --list-libraries --username email@example.com
+</span></span><span style="display:flex;"><span>icloudpd --directory $UPLOAD_PATH --username email@example.com --album <span style="color:#e6db74">&#34;Videos&#34;</span></span></span></code></pre></div>
+<h2 id="immich-go">immich-go</h2>
+<p>Immich has their own official cli tool you can use for the client, but I decided to use <code>immich-go</code> which I find to be a bit more robust for my use case. Immich even officially acknowledges them in their release notes (<a href="#citeproc_bib_item_1">Immich 2025</a>). You can also use immich-go to upload from google photos and iCloud archives.</p>
+<p>The easiest way to download immich-go is to get a binary for your OS and system architecture from their github releases page at <a href="https://github.com/simulot/immich-go/releases/latest">https://github.com/simulot/immich-go/releases/latest</a>. In my case I downloaded the x86 linux tarball.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget https://github.com/simulot/immich-go/releases/latest/download/immich-go_Linux_x86_64.tar.gz
+</span></span><span style="display:flex;"><span>tar -xzf immich-go_Linux_x86_64.tar.gz</span></span></code></pre></div>
+<p>Simple usage of immich-go needs an Immich API key with the minimum permissions required as specified in their README (<a href="#citeproc_bib_item_3">Simulot, n.d.</a>). Log into your Immich instance with the user that you want to upload photos to, navigate to your user profile then go to <strong>Account Settings &gt; API Keys &gt; New API Key</strong>, and finally you can finally fine tune your permissions or simply &ldquo;Select all&rdquo;.</p>
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 100%;">
+      <img src="/images/blog/Screenshot_Immich_API_Settings.png"  />
+    </figure>
+  </div>
+</center>
+<p>In our script, we&rsquo;ll specify our API key and Immich server as variables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>API_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;key&#39;</span>
+</span></span><span style="display:flex;"><span>IMMICH_SERVER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://immich.yourdomain.tld&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assuming your Immich server has no domain</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># IMMICH_SERVER=&#39;http://your-ip:2283&#39;</span></span></span></code></pre></div>
+<p>Next is supplying the immich-go command with our server and API key. I also added a few other options for my specific setup. <code>--skip-verify-ssl=true</code> is mainly for domain names with self-signed certificates (as a side note, I&rsquo;ve since realized that self-signed certificates are a bit of a pain for all of the issues they bring up, just buy a domain or use duckdns for free). I also added <code>--on-server-errors=continue</code> so I can upload as much as possible and deal with errors manually later rather than hitting a snag once and having to restart. You may also want to use <code>--pause-immich-jobs=FALSE</code> if you don&rsquo;t want to shut down jobs or manually restart them after immich-go finishes uploading, though since Immich version 1.142.0 it&rsquo;s easier to restart these processes (<a href="#citeproc_bib_item_1">Immich 2025</a>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>immich-go upload from-folder --server<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>IMMICH_SERVER<span style="color:#e6db74">}</span> --api-key<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>API_KEY<span style="color:#e6db74">}</span> --skip-verify-ssl<span style="color:#f92672">=</span>true --on-server-errors<span style="color:#f92672">=</span><span style="color:#66d9ef">continue</span> --pause-immich-jobs<span style="color:#f92672">=</span>FALSE /path/to/icloud/download/</span></span></code></pre></div>
+<p>It&rsquo;s also important to note that if you have extremely large videos files those uploads might fail because your reverse proxy has a file upload limit by default for DoS and resource management reasons. If you use something like NGINX as I do, either make sure to change <code>client_max_body_size</code> in your configurations, or if you don&rsquo;t want to mess around with that bypass the reverse proxy entirely by using the raw IP address and port to upload the media instead.</p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>If you run into any issues, immich-go stores logs on Linux in <code>~/.cache/immich-go</code> by default. <code>grep &quot;ERR&quot; *.log</code> to find missing files and you can retry uploading those files manually.</p>
+<h2 id="putting-it-all-together">Putting it all together</h2>
+<p>If you want to make a script to execute for each of your Immich users, it may look something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Our API key from our immich instance, read API key requirements for immich-go at https://github.com/simulot/immich-go</span>
+</span></span><span style="display:flex;"><span>API_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;key&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Immich server domain</span>
+</span></span><span style="display:flex;"><span>IMMICH_SERVER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;https://immich.yourdomain.tld&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Upload/Download Path</span>
+</span></span><span style="display:flex;"><span>UPLOAD_PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/path/to/icloud/download&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># iCloud user email</span>
+</span></span><span style="display:flex;"><span>ICLOUD_USER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;email@example.com&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assuming your Immich server has no domain</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># IMMICH_SERVER=&#39;http://your-ip:2283&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Download iCloud collection from icloudpd https://github.com/icloud-photos-downloader/icloud_photos_downloader</span>
+</span></span><span style="display:flex;"><span>icloudpd --directory <span style="color:#e6db74">${</span>UPLOAD_PATH<span style="color:#e6db74">}</span> username <span style="color:#e6db74">${</span>ICLOUD_USER<span style="color:#e6db74">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sleep 5s
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Upload using immich-go with API key and server specified.</span>
+</span></span><span style="display:flex;"><span>immich-go upload from-folder --server<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>IMMICH_SERVER<span style="color:#e6db74">}</span> --api-key<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>API_KEY<span style="color:#e6db74">}</span> --skip-verify-ssl<span style="color:#f92672">=</span>true --on-server-errors<span style="color:#f92672">=</span><span style="color:#66d9ef">continue</span> --pause-immich-jobs<span style="color:#f92672">=</span>FALSE <span style="color:#e6db74">${</span>UPLOAD_PATH<span style="color:#e6db74">}</span></span></span></code></pre></div>
+<p>Ok that should have you set, happy photo/video managing!</p>
+<h2 id="references">References</h2>
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Immich. 2025. “Release V1.142.0 · Immich-App/Immich · GitHub.” <a href="https://github.com/immich-app/immich/releases/tag/v1.142.0">https://github.com/immich-app/immich/releases/tag/v1.142.0</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Unknown. n.d. “Icloudpd 1.32.2.” <a href="https://icloud-photos-downloader.github.io/icloud_photos_downloader/index.html">https://icloud-photos-downloader.github.io/icloud_photos_downloader/index.html</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>simulot. n.d. “GitHub - Simulot/Immich-Go: An Alternative to the Immich-CLI Command That Doesn&#38;#39;T Depend on Nodejs Installation. It Tries Its Best for Importing Google Photos Takeout Archives.” <a href="https://github.com/simulot/immich-go">https://github.com/simulot/immich-go</a>.</div>
+</div>
+
+    </div>
+    <div class="next-post">
+      
+    </div>
+    
+    <div class="previous-post">
+      
+      <a class="link-reverse" href="//localhost:1313/posts/ha_sunrise_alarm/">Previous Post: Overengineering Waking Up:... »</a>
+      
+    </div>
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+    <span class="link-buttons">
+      <a href="https://neocities.org">
+        <img src="/images/link-buttons/neocitiesorg.gif"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://canada.ca">
+        <img src="/images/link-buttons/sherri_coutts_canadaonweb.gif"></a>
+        
+    </span>
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2025 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
+    <br>
+    
+  </div>
+       
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>

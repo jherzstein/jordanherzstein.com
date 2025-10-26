@@ -1,0 +1,110 @@
+#+TITLE: iCloud to Immich Migration with cli tools
+#+date: 2025-10-21
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+hugo_tags[]: 
+#+filetags: technology immich self-hosting 
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: icloud_to_immich_migration.md 
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+Apple hates this one simple trick to migrate all your iCloud albums to Immich!
+#+end_description
+
+A couple of months ago I was tasked with migrating my family's photos from iCloud to a home Immich instance, which has so far turned out to be the most well-polished self-hosted app I've ever used. I wanted to make this process as easy as possible, ideally I'd be able to set up a quick shell script without having to think about it too hard and then just wait in the background until the process was done. I could've had my family do a background upload from their iOS devices, I personally did so with my Android device (I'm the black sheep of the family when it comes to mobile OSes), but I decided against this for two major reasons:
+
+1) Background processes are tightly controlled by iOS in comparison to Android and may run for only a minutes or seconds at a time depending on app usage, which makes it pretty dodgy for an initial upload of 100GB+ of media to say the least.
+2) Uploading would need to happen under ideal conditions, only while using WiFi, while family members need to rely on their mobile devices throughout the day and away from home WiFi.
+
+I also decided against getting iCloud archives directly from Apple as those requests can take anywhere from a few days to a week just to be able to get those archives for download.
+
+I landed on using ~icloudpd~ and ~immich-go~ for downloading images and video from iCloud and uploading them to my Immich instance respecively.
+
+* icloudpd
+~icloudpd~ is a 3rd party script that downloads your iCloud collection to a local folder [[cite:&icloudpd_docs]].
+
+I decided to install icloud through their python package ~pip install icloudpd --user~.
+
+Simple ~icloudpd~ usage requires supplying a destination download directory and your primary user email for your iCloud account, then a prompt requiring a password and a MFA code.
+#+BEGIN_SRC sh
+icloudpd --directory /path/to/icloud/download username email@example.com
+#+END_SRC
+
+You can also list and then download specific albums, in case you don't want to upload your entire collection. I did not find out how to select multiple albums at once so I had to include each album as a separate command.
+#+BEGIN_SRC sh
+icloudpd --list-libraries --username email@example.com
+icloudpd --directory $UPLOAD_PATH --username email@example.com --album "Videos"
+#+END_SRC
+
+* immich-go
+Immich has their own official cli tool you can use for the client, but I decided to use ~immich-go~ which I find to be a bit more robust for my use case. Immich even officially acknowledges them in their release notes [[cite:&immich_rel_1.142.0]]. You can also use immich-go to upload from google photos and iCloud archives.
+
+The easiest way to download immich-go is to get a binary for your OS and system architecture from their github releases page at https://github.com/simulot/immich-go/releases/latest. In my case I downloaded the x86 linux tarball.
+#+BEGIN_SRC sh
+wget https://github.com/simulot/immich-go/releases/latest/download/immich-go_Linux_x86_64.tar.gz
+tar -xzf immich-go_Linux_x86_64.tar.gz
+#+END_SRC
+
+Simple usage of immich-go needs an Immich API key with the minimum permissions required as specified in their README [[cite:&immich_go]]. Log into your Immich instance with the user that you want to upload photos to, navigate to your user profile then go to *Account Settings > API Keys > New API Key*, and finally you can finally fine tune your permissions or simply "Select all". 
+
+#+BEGIN_EXPORT html
+<center>
+  <div style="max-width: 100%;" >
+    <figure class="frame" style="max-width: 100%;">
+      <img src="/images/blog/Screenshot_Immich_API_Settings.png"  />
+    </figure>
+  </div>
+</center>
+
+#+END_EXPORT
+In our script, we'll specify our API key and Immich server as variables.
+#+BEGIN_SRC sh
+API_KEY='key'
+IMMICH_SERVER='https://immich.yourdomain.tld'
+# Assuming your Immich server has no domain
+# IMMICH_SERVER='http://your-ip:2283'
+#+END_SRC
+
+Next is supplying the immich-go command with our server and API key. I also added a few other options for my specific setup. ~--skip-verify-ssl=true~ is mainly for domain names with self-signed certificates (as a side note, I've since realized that self-signed certificates are a bit of a pain for all of the issues they bring up, just buy a domain or use duckdns for free). I also added ~--on-server-errors=continue~ so I can upload as much as possible and deal with errors manually later rather than hitting a snag once and having to restart. You may also want to use ~--pause-immich-jobs=FALSE~ if you don't want to shut down jobs or manually restart them after immich-go finishes uploading, though since Immich version 1.142.0 it's easier to restart these processes [[cite:&immich_rel_1.142.0]].
+
+#+BEGIN_SRC sh
+immich-go upload from-folder --server=${IMMICH_SERVER} --api-key=${API_KEY} --skip-verify-ssl=true --on-server-errors=continue --pause-immich-jobs=FALSE /path/to/icloud/download/
+#+END_SRC
+
+It's also important to note that if you have extremely large videos files those uploads might fail because your reverse proxy has a file upload limit by default for DoS and resource management reasons. If you use something like NGINX as I do, either make sure to change ~client_max_body_size~ in your configurations, or if you don't want to mess around with that bypass the reverse proxy entirely by using the raw IP address and port to upload the media instead.
+
+** Troubleshooting
+If you run into any issues, immich-go stores logs on Linux in ~~/.cache/immich-go~ by default. ~grep "ERR" *.log~ to find missing files and you can retry uploading those files manually.
+
+* Putting it all together
+
+If you want to make a script to execute for each of your Immich users, it may look something like this:
+
+#+BEGIN_SRC sh
+# Our API key from our immich instance, read API key requirements for immich-go at https://github.com/simulot/immich-go
+API_KEY='key'
+# Immich server domain
+IMMICH_SERVER='https://immich.yourdomain.tld'
+# Upload/Download Path
+UPLOAD_PATH='/path/to/icloud/download'
+# iCloud user email
+ICLOUD_USER='email@example.com'
+
+# Assuming your Immich server has no domain
+# IMMICH_SERVER='http://your-ip:2283'
+
+# Download iCloud collection from icloudpd https://github.com/icloud-photos-downloader/icloud_photos_downloader
+icloudpd --directory ${UPLOAD_PATH} username ${ICLOUD_USER}
+
+sleep 5s
+
+# Upload using immich-go with API key and server specified.
+immich-go upload from-folder --server=${IMMICH_SERVER} --api-key=${API_KEY} --skip-verify-ssl=true --on-server-errors=continue --pause-immich-jobs=FALSE ${UPLOAD_PATH}
+#+END_SRC
+
+Ok that should have you set, happy photo/video managing!
+
+* References
+[[bibliography:../../references.bib]]
