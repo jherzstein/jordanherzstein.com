@@ -2,13 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://jordanherzstein.com/posts/icloud_to_immich_migration/</loc>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/immich/</loc>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/self-hosting/</loc>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/technology/</loc>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
+  </url><url>
     <loc>http://jordanherzstein.com/tags/home-assistant/</loc>
     <lastmod>2025-08-13T21:49:42-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/ha_sunrise_alarm/</loc>
-    <lastmod>2025-08-13T21:49:42-04:00</lastmod>
-  </url><url>
-    <loc>http://jordanherzstein.com/tags/technology/</loc>
     <lastmod>2025-08-13T21:49:42-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/tutorial/</loc>
@@ -33,22 +42,22 @@
     <lastmod>2025-04-18T12:06:41-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/ai/</loc>
-    <lastmod>2025-01-28T22:52:54-05:00</lastmod>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/deepseek-r1/</loc>
-    <lastmod>2025-01-28T22:52:54-05:00</lastmod>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/llama/</loc>
-    <lastmod>2025-01-28T22:52:54-05:00</lastmod>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/ollama/</loc>
-    <lastmod>2025-01-28T22:52:54-05:00</lastmod>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/open-webui/</loc>
-    <lastmod>2025-01-28T22:52:54-05:00</lastmod>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/ollama_quickstart/</loc>
-    <lastmod>2025-01-28T22:52:54-05:00</lastmod>
+    <lastmod>2025-10-26T09:41:09-04:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/posts/git_resume_cheat_sheet/</loc>
     <lastmod>2025-04-18T11:59:53-04:00</lastmod>
