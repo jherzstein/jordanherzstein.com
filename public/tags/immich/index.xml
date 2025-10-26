@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Self-Hosting on Jordan Herzstein</title>
-    <link>/tags/self-hosting/</link>
-    <description>Recent content in Self-Hosting on Jordan Herzstein</description>
+    <title>Immich on Jordan Herzstein</title>
+    <link>/tags/immich/</link>
+    <description>Recent content in Immich on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Oct 2025 09:41:09 -0400</lastBuildDate>
-    <atom:link href="/tags/self-hosting/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/immich/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>iCloud to Immich Migration with cli tools</title>
       <link>/posts/icloud_to_immich_migration/</link>

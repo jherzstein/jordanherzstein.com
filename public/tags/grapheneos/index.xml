@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grapheneos on Jordan Herzstein</title>
-    <link>//localhost:1313/tags/grapheneos/</link>
+    <link>/tags/grapheneos/</link>
     <description>Recent content in Grapheneos on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 13 Aug 2025 21:46:39 -0400</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/grapheneos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/grapheneos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using adb to Delete Vanadium on GrapheneOS</title>
-      <link>//localhost:1313/posts/adb_vanadium/</link>
+      <link>/posts/adb_vanadium/</link>
       <pubDate>Sat, 27 Apr 2024 00:01:00 -0400</pubDate>
-      <guid>//localhost:1313/posts/adb_vanadium/</guid>
+      <guid>/posts/adb_vanadium/</guid>
       <description>I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk.</description>
     </item>
   </channel>

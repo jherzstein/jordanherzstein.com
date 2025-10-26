@@ -1,8 +1,8 @@
 +++
 title = "iCloud to Immich Migration with cli tools"
 summary = "Apple hates this one simple trick to migrate all your iCloud albums to Immich!"
-date = 2025-10-21
-lastmod = 2025-10-26T09:35:50-04:00
+date = 2025-10-26
+lastmod = 2025-10-26T09:53:17-04:00
 tags = ["technology", "immich", "self-hosting"]
 draft = false
 [menu]

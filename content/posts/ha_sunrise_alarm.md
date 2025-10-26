@@ -2,7 +2,7 @@
 title = "Overengineering Waking Up: ESPHome RGB Lightbulb in Home Assistant"
 summary = "I got bored, so I've decided to overcomplicated my morning routine"
 date = 2025-08-13
-lastmod = 2025-08-13T21:45:27-04:00
+lastmod = 2025-08-13T22:06:11-04:00
 tags = ["technology", "tutorial", "home-assistant"]
 draft = false
 [menu]
