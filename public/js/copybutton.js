@@ -1,3 +1,5 @@
+// Modified from https://pauliusuk.github.io/posts/2024/how-to-add-copy-button-to-hugo-site/
+
 (function() {
   'use strict';
 
