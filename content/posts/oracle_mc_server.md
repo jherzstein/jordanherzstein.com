@@ -2,7 +2,7 @@
 title = "Minecraft Java Edition Server For Free"
 summary = "Minecraft free forever in a docker container with 24 GB of ram and 4 CPU cores."
 date = 2024-06-26
-lastmod = 2024-07-27T00:17:52-04:00
+lastmod = 2025-11-08T19:56:37-05:00
 tags = ["vps", "technology", "oracle", "tutorial", "minecraft"]
 draft = false
 [menu]
@@ -168,25 +168,25 @@ If you don't know the name of your container, list existing containers using `do
 
 You should now be in a separate console that will start with `>`. Input the following command into the console to enable the server's use of the whitelist (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).
 
-{{< highlight nil >}}
+{{< highlight text >}}
 whitelist on
 {{< /highlight >}}
 
 To add users using the `whitelist add` command, the syntax is as follows (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).
 
-{{< highlight nil >}}
+{{< highlight text >}}
 whitelist add <targets>
 {{< /highlight >}}
 
 See your whitelisted users (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).
 
-{{< highlight nil >}}
+{{< highlight text >}}
 whitelist list
 {{< /highlight >}}
 
 You can add users as operators so they can execute server commands whilte in the game (<a href="#citeproc_bib_item_1">Minecraft Wiki 2024a</a>).
 
-{{< highlight nil >}}
+{{< highlight text >}}
 op <targets>
 {{< /highlight >}}
 
@@ -197,13 +197,13 @@ You will want to find the configuration files that exist in the `/data` volume t
 
 First edit the server.properties file to enable the server white list.
 
-{{< highlight nil >}}
+{{< highlight text >}}
 white-list=true
 {{< /highlight >}}
 
 Edit whitelist.json to add user names and UUIDs you wish to add. You can search for UUIDs for each username through [minecraftuuid.com](https://minecraftuuid.com). The template should look as follows (<a href="#citeproc_bib_item_3">Minecraft Wiki 2024c</a>):
 
-{{< highlight nil >}}
+{{< highlight json >}}
 [
   {
     "uuid": "f430dbb6-5d9a-444e-b542-e47329b2c5a0",

@@ -45,7 +45,7 @@ I followed the DietPi TUI setup process which was pretty straight forward [[cite
 
 As an aside, after installation, I would suggest changing your ssh server to prevent root logins as this is generally good practice for preventing brute force ssh logins. Assuming you're using the default ssh server that DietPi uses, ~dropbear~, you can disable root password logins by going into ~/etc/default/dropbear~ and changing a single line in the configuration [[cite:&dietpi_dropbear]]. 
 
-#+BEGIN_SRC
+#+BEGIN_SRC text
 DROPBEAR_EXTRA_ARGS=-g -w
 #+END_SRC
 

@@ -136,7 +136,7 @@ We keep data and cache using the ~-k~ flag in case we want to reinstall the app 
 ** adb commands to run on PC to reinstall system apps for user
 Since we had previously only techincally removed the vandium browser for a user and did not fuly uninstall it, we can give the removed app back to the user. Execute the following:
 
-#+BEGIN_SRC
+#+BEGIN_SRC sh
 $ adb shell pm install-existing app.vanadium.browser
 Package app.vanadium.browser installed for user: 0
 #+END_SRC

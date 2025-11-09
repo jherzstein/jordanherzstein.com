@@ -112,6 +112,9 @@
         <div class="page">
 
 
+            
+                <script src="/js/copybutton.js" defer></script>
+            
             <section class="page__body">
     <header class="content__header">
         <h1>Booting DietPi on an SSD and installing Home Assistant in Docker</h1>
@@ -232,7 +235,7 @@
 <h3 id="after-booting-up-installing-docker-and-docker-compose-and-creating-a-home-assistant-container-dot">After booting up, installing docker and docker compose and creating a Home Assistant Container.</h3>
 <p>I followed the DietPi TUI setup process which was pretty straight forward (<a href="#citeproc_bib_item_3">DietPi Team 2024c</a>). I installed the docker and docker compose packages through <code>dietpi-software</code> which should become available as the last step of the installation process (<a href="#citeproc_bib_item_2">DietPi Team 2024b</a>). I did this more or less because it was the laziest and most automatic way of doing it as DietPi has scripts to install everything needed which saved me 2 minutes. If you&rsquo;d rather avoid using <code>dietpi-software</code> you can also follow the official steps to install docker (<a href="#citeproc_bib_item_4">Docker Inc. 2024</a>).</p>
 <p>As an aside, after installation, I would suggest changing your ssh server to prevent root logins as this is generally good practice for preventing brute force ssh logins. Assuming you&rsquo;re using the default ssh server that DietPi uses, <code>dropbear</code>, you can disable root password logins by going into <code>/etc/default/dropbear</code> and changing a single line in the configuration (<a href="#citeproc_bib_item_7">Sarmisak 2015</a>).</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">DROPBEAR_EXTRA_ARGS=-g -w</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>DROPBEAR_EXTRA_ARGS=-g -w</span></span></code></pre></div>
 <p><code>-w</code> prevents root logins of any kind and <code>-g</code> prevents password root logins (<a href="#citeproc_bib_item_6">Johnson, n.d.</a>).</p>
 <p>Regardless, next I would switch to another user with sudo privilleges, such as <code>dietpi</code>, using <code>su - dietpi</code>. I created a new subdirectory in  to put my <code>compose.yml</code> to launch home assistant in docker, and I launched the container in this directory as follows.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p ~/dockerapps/Home<span style="color:#ae81ff">\ </span>Assistant/

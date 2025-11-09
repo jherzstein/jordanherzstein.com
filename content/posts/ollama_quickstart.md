@@ -2,7 +2,7 @@
 title = "Starting with Ollama and Open WebUI in my Proxmox VM"
 summary = "Simply starting off with an ollama binary, running a local llm in the cli, and deploying a nice user interface for it with Open WebUI."
 date = 2025-01-28
-lastmod = 2025-10-21T21:55:45-04:00
+lastmod = 2025-11-08T20:08:39-05:00
 tags = ["ai", "ollama", "open-webui", "llama", "deepseek-r1"]
 draft = false
 [menu]
@@ -10,7 +10,7 @@ draft = false
     identifier = "starting-with-ollama-and-open-webui-in-my-proxmox-vm"
 +++
 
-> **NOTE**:
+> **EDIT**: The GPU passthrough problems I was having with proxmox was a result of only blocking radeon drivers on the host for passing thorugh and not amdgpu as well. Stupid lol.
 
 Quite recently I built a PC specifically for local and private LLM inferencing. Here are the specs in case you are curious:
 
@@ -27,7 +27,7 @@ In case you are not aware of what Ollama is or what it does, it is essentially a
 
 ## Guide {#guide}
 
-I installed Proxmox on the host and did full gpu passthrough for the one VM I wanted to utilize for these tasks. This guide already assumes you have a linux machine set up with proper gpu firmware and drivers installed, this is a simple Ollama setup that is (mostly) Linux distro and GPU agnostic. One thing to note, however, I did have issues with my proxmox VM crashing (Ubuntu and Fedora) with `error: kvm run failed Bad address`. Looking into the error, I assume it was an `fwupdmgr` issue causing the kernel to crash when the service would run in the background (<a href="#citeproc_bib_item_3">Unknown 2024</a>). I spun up a fresh VM and uninstalled `fwupd` and I haven't come across that issue since. This is the only workaround I know of as of now, so if you've come across this issue and figured out a way to have `fwupd` working again do not hesitate to contact me and I will update this section.
+I installed Proxmox on the host and did full gpu passthrough for the one VM I wanted to utilize for these tasks. This guide already assumes you have a linux machine set up with proper gpu firmware and drivers installed, this is a simple Ollama setup that is (mostly) Linux distro and GPU agnostic. One thing to note, however, I did have issues with my proxmox VM crashing (Ubuntu and Fedora) with `error: kvm run failed Bad address`. ~~Looking into the error, I assume it was an `fwupdmgr` issue causing the kernel to crash when the service would run in the background (<a href="#citeproc_bib_item_3">Unknown 2024</a>). I spun up a fresh VM and uninstalled `fwupd` and I haven't come across that issue since. This is the only workaround I know of as of now, so if you've come across this issue and figured out a way to have `fwupd` working again do not hesitate to contact me and I will update this section.~~ This is because I am silly and forgot to block amdgpu drivers on the host.
 
 
 ### Installing Ollama Binary and running a model {#installing-ollama-binary-and-running-a-model}
@@ -66,7 +66,7 @@ Right now you can access and use ollama inside of the host that you're using to 
 
 Simply add `Environment="OLLAMA_HOST=0.0.0.0:11434"` in `/etc/systemd/system/ollama.service` under `[Service]`:
 
-{{< highlight nil >}}
+{{< highlight text >}}
 [Unit]
 Description=Ollama Service
 After=network-online.target

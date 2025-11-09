@@ -2,7 +2,7 @@
 title = "Booting DietPi on an SSD and installing Home Assistant in Docker"
 summary = "Setting up home assistant with docker compose on a Raspberry Pi 4 running DietPi."
 date = 2024-06-16
-lastmod = 2024-06-16T23:33:01-04:00
+lastmod = 2025-11-08T19:55:12-05:00
 tags = ["rpi", "home-assistant", "dietpi", "technology", "tutorial"]
 draft = false
 [menu]
@@ -49,7 +49,7 @@ I followed the DietPi TUI setup process which was pretty straight forward (<a hr
 
 As an aside, after installation, I would suggest changing your ssh server to prevent root logins as this is generally good practice for preventing brute force ssh logins. Assuming you're using the default ssh server that DietPi uses, `dropbear`, you can disable root password logins by going into `/etc/default/dropbear` and changing a single line in the configuration (<a href="#citeproc_bib_item_7">Sarmisak 2015</a>).
 
-{{< highlight nil >}}
+{{< highlight text >}}
 DROPBEAR_EXTRA_ARGS=-g -w
 {{< /highlight >}}
 

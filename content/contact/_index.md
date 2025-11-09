@@ -29,7 +29,8 @@ There are a few ways to get in contact with me but Signal is the easiest.
   </summary>
   <p>
   </p>
-  <section class="post__summary pgp__dropdown">
+  <div class="highlight" style="max-width:650px;">
+  <pre class="post__summary pgp__dropdown">
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -98,7 +99,6 @@ g3nw9Hq22VGSM8JI7LVvzg22903Q8n/ytndo
 =RZrm
 -----END PGP PUBLIC KEY BLOCK-----
 
-  </section>
-  <div class="inner">
+  </pre>
   </div>
 </details>

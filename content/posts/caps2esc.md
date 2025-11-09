@@ -28,7 +28,7 @@ This guide assumes you're using GNU/Linux or a BSD distrobution that uses xkb fo
 
 First we define our custom layout by creating the file `/usr/share/X11/xkb/symbols/custom_opts`. We put in the following to map Capslock to escape, and make it act as a control key when in combination with other keys.
 
-```nil
+```text
 // Make Caps another escape key when pressed once while simultaneously having functionality of control.
 xkb_symbols "ctrl_esc" {
     key <CAPS> { [ Escape ] };
@@ -38,13 +38,13 @@ xkb_symbols "ctrl_esc" {
 
 Now edit `/usr/share/X11/xkb/rules/evdev` and add a new line in the `! option = symbols` section:
 
-```nil
+```text
 custom:ctrl_esc = +custom_opts(ctrl_esc)
 ```
 
 Edit `/usr/share/X11/xkb/rules/evdev.lst` and add a new line the `! option` section:
 
-```nil
+```text
 custom:ctrl_esc  Make Caps Lock an additional ESC and CTRL
 ```
 

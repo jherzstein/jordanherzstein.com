@@ -2,7 +2,7 @@
 title = "Using adb to Delete Vanadium on GrapheneOS"
 summary = "I wanted to delete the system browser app Vanadium on my phone running Grapheneos for productivity and mental health reasons. Do this at your own risk."
 date = 2024-04-27T00:01:00-04:00
-lastmod = 2025-06-09T23:42:35-04:00
+lastmod = 2025-11-08T19:54:32-05:00
 tags = ["technology", "tutorial", "adb", "android", "grapheneos"]
 draft = false
 [menu]
@@ -130,7 +130,7 @@ We keep data and cache using the `-k` flag in case we want to reinstall the app 
 
 Since we had previously only techincally removed the vandium browser for a user and did not fuly uninstall it, we can give the removed app back to the user. Execute the following:
 
-{{< highlight nil >}}
+{{< highlight sh >}}
 $ adb shell pm install-existing app.vanadium.browser
 Package app.vanadium.browser installed for user: 0
 {{< /highlight >}}

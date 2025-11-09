@@ -23,12 +23,12 @@ There are a few ways to get in contact with me but Signal is the easiest.
   </summary>
   <p>
   </p>
-  <section class="post__summary pgp__dropdown">
+  <div class="highlight" style="max-width:650px;">
+  <pre class="post__summary pgp__dropdown">
 #+END_EXPORT
 #+INCLUDE: "../../public/contact/pubkey.txt" 
 #+BEGIN_EXPORT html
-  </section>
-  <div class="inner">
+  </pre>
   </div>
 </details>
 #+END_EXPORT
