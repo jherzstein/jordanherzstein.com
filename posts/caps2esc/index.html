@@ -112,6 +112,9 @@
         <div class="page">
 
 
+            
+                <script src="/js/copybutton.js" defer></script>
+            
             <section class="page__body">
     <header class="content__header">
         <h1>Mapping Caps Lock to Esc and CTRL in Xorg</h1>
@@ -137,7 +140,7 @@
 </svg>
 
     
-        2024-03-10
+        2025-11-08
      |
     
     
@@ -219,16 +222,16 @@
 <p>This guide assumes you&rsquo;re using GNU/Linux or a BSD distrobution that uses xkb for the keyboard layout. You will also need <code>setxkbmap</code> installed, though that should come with Xorg by default. I&rsquo;m using dwm as my window manager though everything outlined here should work on any desktop environment (I hope, please correct me if I&rsquo;m wrong), even if other DE&rsquo;s have different ways of updating keyboard layout options as is outlined in Ben Davis&rsquo;s guide(<a href="#citeproc_bib_item_1">Davis 2018</a>).</p>
 <h3 id="creating-user-defined-layout-in-xkb">Creating user defined layout in xkb</h3>
 <p>First we define our custom layout by creating the file <code>/usr/share/X11/xkb/symbols/custom_opts</code>. We put in the following to map Capslock to escape, and make it act as a control key when in combination with other keys.</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">// Make Caps another escape key when pressed once while simultaneously having functionality of control.
-xkb_symbols &#34;ctrl_esc&#34; {
-    key &lt;CAPS&gt; { [ Escape ] };
-    modifier_map Control { &lt;CAPS&gt;};
-};
-</code></pre><p>Now edit <code>/usr/share/X11/xkb/rules/evdev</code> and add a new line in the <code>! option = symbols</code> section:</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">custom:ctrl_esc = +custom_opts(ctrl_esc)
-</code></pre><p>Edit <code>/usr/share/X11/xkb/rules/evdev.lst</code> and add a new line the <code>! option</code> section:</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">custom:ctrl_esc  Make Caps Lock an additional ESC and CTRL
-</code></pre><h3 id="updating-keyboard-layout">Updating Keyboard layout</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>// Make Caps another escape key when pressed once while simultaneously having functionality of control.
+</span></span><span style="display:flex;"><span>xkb_symbols &#34;ctrl_esc&#34; {
+</span></span><span style="display:flex;"><span>    key &lt;CAPS&gt; { [ Escape ] };
+</span></span><span style="display:flex;"><span>    modifier_map Control { &lt;CAPS&gt;};
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><p>Now edit <code>/usr/share/X11/xkb/rules/evdev</code> and add a new line in the <code>! option = symbols</code> section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>custom:ctrl_esc = +custom_opts(ctrl_esc)
+</span></span></code></pre></div><p>Edit <code>/usr/share/X11/xkb/rules/evdev.lst</code> and add a new line the <code>! option</code> section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>custom:ctrl_esc  Make Caps Lock an additional ESC and CTRL
+</span></span></code></pre></div><h3 id="updating-keyboard-layout">Updating Keyboard layout</h3>
 <p>We can apply these changes from the command line using <code>setxkbmap</code>. <code>setxkbmap</code> specifies the keyboard layout to be used based on the specified based on the components in <code>/usr/share/X11/xkb/</code> that we were just changing. Run the command with the <code>-option</code> flag and the name of our custom layout rules:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>setxkbmap -option <span style="color:#e6db74">&#34;custom:ctrl_esc&#34;</span>
 </span></span></code></pre></div><p>To run this automatically at the start of your xorg session, go into your <code>.xinitrc</code> file (either in your home directory or <code>/etc/X11/xinit/xinitrc</code>) and add the above command. Now when your Xorg session is restarted this keymapping will begin working.</p>
@@ -297,7 +300,7 @@ xkb_symbols &#34;ctrl_esc&#34; {
     © 2025 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
     <br>
     
-       Site version 2d63ac5 released on 2025-10-26
+       Site version 5548688 released on 2025-11-08
     
   </div>
        

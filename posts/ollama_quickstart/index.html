@@ -112,6 +112,9 @@
         <div class="page">
 
 
+            
+                <script src="/js/copybutton.js" defer></script>
+            
             <section class="page__body">
     <header class="content__header">
         <h1>Starting with Ollama and Open WebUI in my Proxmox VM</h1>
@@ -137,7 +140,7 @@
 </svg>
 
     
-        2025-10-26
+        2025-11-08
      |
     
     
@@ -151,7 +154,7 @@
 </svg>
 
 
-     1135 words |
+     1180 words |
 
     
 
@@ -221,7 +224,7 @@
 </div>
 <div class="content__body">
          <blockquote>
-<p><strong>NOTE</strong>:</p>
+<p><strong>EDIT</strong>: The GPU passthrough problems I was having with proxmox was a result of only blocking radeon drivers on the host for passing thorugh and not amdgpu as well. Stupid lol.</p>
 </blockquote>
 <p>Quite recently I built a PC specifically for local and private LLM inferencing. Here are the specs in case you are curious:</p>
 <ul>
@@ -235,7 +238,7 @@
 </ul>
 <p>In case you are not aware of what Ollama is or what it does, it is essentially a platform to access and run large language models locally on your own hardware (<a href="#citeproc_bib_item_2">Ollama, n.d.</a>). This includes models such as llama3 from Meta and Deepseek&rsquo;s R1 model which I&rsquo;m sure you&rsquo;ve been hearing a lot about as it&rsquo;s been causing all of the massive tech giants in the U.S. to panic right now. Looking at current benchmarks, deepseek-r1 is performing just as well or better than OpenAI&rsquo;s o1 counterpart, that and it was just a side project, alledgedly needing less than <strong>$6 million</strong> to develop (<a href="#citeproc_bib_item_1">Deepseek AI 2025</a>). These developments are great for me because, while I would love to utilize AI for analyzing documents and brainstorming ideas, I obviously have issues with providing that information to an outside source I have no control over, especially for privacy reasons. Additionally, if the area that you live in gets electricity from renewable sources, you&rsquo;re probably doing better by the environment by running AI locally than in a datacentre.</p>
 <h2 id="guide">Guide</h2>
-<p>I installed Proxmox on the host and did full gpu passthrough for the one VM I wanted to utilize for these tasks. This guide already assumes you have a linux machine set up with proper gpu firmware and drivers installed, this is a simple Ollama setup that is (mostly) Linux distro and GPU agnostic. One thing to note, however, I did have issues with my proxmox VM crashing (Ubuntu and Fedora) with <code>error: kvm run failed Bad address</code>. Looking into the error, I assume it was an <code>fwupdmgr</code> issue causing the kernel to crash when the service would run in the background (<a href="#citeproc_bib_item_3">Unknown 2024</a>). I spun up a fresh VM and uninstalled <code>fwupd</code> and I haven&rsquo;t come across that issue since. This is the only workaround I know of as of now, so if you&rsquo;ve come across this issue and figured out a way to have <code>fwupd</code> working again do not hesitate to contact me and I will update this section.</p>
+<p>I installed Proxmox on the host and did full gpu passthrough for the one VM I wanted to utilize for these tasks. This guide already assumes you have a linux machine set up with proper gpu firmware and drivers installed, this is a simple Ollama setup that is (mostly) Linux distro and GPU agnostic. One thing to note, however, I did have issues with my proxmox VM crashing (Ubuntu and Fedora) with <code>error: kvm run failed Bad address</code>. <del>Looking into the error, I assume it was an <code>fwupdmgr</code> issue causing the kernel to crash when the service would run in the background (<a href="#citeproc_bib_item_3">Unknown 2024</a>). I spun up a fresh VM and uninstalled <code>fwupd</code> and I haven&rsquo;t come across that issue since. This is the only workaround I know of as of now, so if you&rsquo;ve come across this issue and figured out a way to have <code>fwupd</code> working again do not hesitate to contact me and I will update this section.</del> This is because I am silly and forgot to block amdgpu drivers on the host.</p>
 <h3 id="installing-ollama-binary-and-running-a-model">Installing Ollama Binary and running a model</h3>
 <p>Installing the binary is extremely simple, go to <a href="https://ollama.com/download">https://ollama.com/download</a> you will be presented with the following command to install the binary.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -fsSL https://ollama.com/install.sh | sh</span></span></code></pre></div>
@@ -250,21 +253,21 @@ llama3:latest      365c0bd3c000    4.7 GB    2 days ago</code></pre>
 <h3 id="access-ollama-outside-of-localhost--optional">Access Ollama outside of localhost (optional)</h3>
 <p>Right now you can access and use ollama inside of the host that you&rsquo;re using to run it, but if you want to use the ollama API from any machine on your LAN, you will have to change the <code>OLLAMA_HOST</code> path variable. In the case of most Linux distros, you can change the path variable through ollama&rsquo;s systemd service.</p>
 <p>Simply add <code>Environment=&quot;OLLAMA_HOST=0.0.0.0:11434&quot;</code> in <code>/etc/systemd/system/ollama.service</code> under <code>[Service]</code>:</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">[Unit]
-Description=Ollama Service
-After=network-online.target
-
-[Service]
-ExecStart=/usr/local/bin/ollama serve
-User=ollama
-Group=ollama
-Restart=always
-RestartSec=3
-Environment=&#34;PATH=/home/jordanh/.local/bin:/home/jordanh/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin&#34;
-Environment=&#34;OLLAMA_HOST=0.0.0.0:11434&#34;
-
-[Install]
-WantedBy=default.target</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>[Unit]
+</span></span><span style="display:flex;"><span>Description=Ollama Service
+</span></span><span style="display:flex;"><span>After=network-online.target
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Service]
+</span></span><span style="display:flex;"><span>ExecStart=/usr/local/bin/ollama serve
+</span></span><span style="display:flex;"><span>User=ollama
+</span></span><span style="display:flex;"><span>Group=ollama
+</span></span><span style="display:flex;"><span>Restart=always
+</span></span><span style="display:flex;"><span>RestartSec=3
+</span></span><span style="display:flex;"><span>Environment=&#34;PATH=/home/jordanh/.local/bin:/home/jordanh/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin&#34;
+</span></span><span style="display:flex;"><span>Environment=&#34;OLLAMA_HOST=0.0.0.0:11434&#34;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Install]
+</span></span><span style="display:flex;"><span>WantedBy=default.target</span></span></code></pre></div>
 <p>Then reload the systemd daemon and restart ollama:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo systemctl daemon-reload
 </span></span><span style="display:flex;"><span>sudo systemctl restart ollama</span></span></code></pre></div>
@@ -404,7 +407,7 @@ WantedBy=default.target</code></pre>
     © 2025 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
     <br>
     
-       Site version 2d63ac5 released on 2025-10-26
+       Site version 5548688 released on 2025-11-08
     
   </div>
        

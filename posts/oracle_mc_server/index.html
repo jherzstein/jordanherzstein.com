@@ -112,6 +112,9 @@
         <div class="page">
 
 
+            
+                <script src="/js/copybutton.js" defer></script>
+            
             <section class="page__body">
     <header class="content__header">
         <h1>Minecraft Java Edition Server For Free</h1>
@@ -137,7 +140,7 @@
 </svg>
 
     
-        2024-07-27
+        2025-11-08
      |
     
     
@@ -311,28 +314,28 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker exec -it &lt;name-of-server-container&gt; rcon-cli</span></span></code></pre></div>
 <p>If you don&rsquo;t know the name of your container, list existing containers using <code>docker ps</code> and find the container name that is using the <code>itzg/minecraft-server</code> docker image.</p>
 <p>You should now be in a separate console that will start with <code>&gt;</code>. Input the following command into the console to enable the server&rsquo;s use of the whitelist (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">whitelist on</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist on</span></span></code></pre></div>
 <p>To add users using the <code>whitelist add</code> command, the syntax is as follows (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">whitelist add &lt;targets&gt;</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist add &lt;targets&gt;</span></span></code></pre></div>
 <p>See your whitelisted users (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">whitelist list</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist list</span></span></code></pre></div>
 <p>You can add users as operators so they can execute server commands whilte in the game (<a href="#citeproc_bib_item_1">Minecraft Wiki 2024a</a>).</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">op &lt;targets&gt;</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>op &lt;targets&gt;</span></span></code></pre></div>
 <h4 id="method-2-editing-server-dot-properties-and-whitelist-dot-json">Method 2: Editing server.properties and whitelist.json</h4>
 <p>You will want to find the configuration files that exist in the <code>/data</code> volume that you specified in your compose configuration file.</p>
 <p>First edit the server.properties file to enable the server white list.</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">white-list=true</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>white-list=true</span></span></code></pre></div>
 <p>Edit whitelist.json to add user names and UUIDs you wish to add. You can search for UUIDs for each username through <a href="https://minecraftuuid.com">minecraftuuid.com</a>. The template should look as follows (<a href="#citeproc_bib_item_3">Minecraft Wiki 2024c</a>):</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">[
-  {
-    &#34;uuid&#34;: &#34;f430dbb6-5d9a-444e-b542-e47329b2c5a0&#34;,
-    &#34;name&#34;: &#34;username&#34;
-  },
-  {
-    &#34;uuid&#34;: &#34;e5aa0f99-2727-4a11-981f-dded8b1cd032&#34;,
-    &#34;name&#34;: &#34;username&#34;
-  }
-]</code></pre>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;f430dbb6-5d9a-444e-b542-e47329b2c5a0&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;username&#34;</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;e5aa0f99-2727-4a11-981f-dded8b1cd032&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;username&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
 <p>Restart the server using the <code>docker restart</code> command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker restart &lt;name-of-server-container&gt;</span></span></code></pre></div>
 <h2 id="references">References</h2>
@@ -406,7 +409,7 @@
     © 2025 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
     <br>
     
-       Site version 2d63ac5 released on 2025-10-26
+       Site version 5548688 released on 2025-11-08
     
   </div>
        
