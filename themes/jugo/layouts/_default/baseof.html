@@ -13,6 +13,9 @@
         <div class="page">
 
 
+            {{ if (findRE `<pre` .Content 1) }}
+                <script src="/js/copybutton.js" defer></script>
+            {{ end }}
             <section class="page__body">
                 {{- block "main" . }}{{- end }}
             </section>

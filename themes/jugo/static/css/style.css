@@ -458,3 +458,173 @@ blockquote {
     display: inline;
     float: right;
 }
+
+.highlight-wrapper {
+  display: block;
+}
+
+/*.highlight {
+  position: relative;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.highlight > .chroma {
+  color: #d0d0d0;
+  background-color: #212121;
+  position: static;
+  z-index: 1;
+  border-radius: 4px;
+  padding: 10px;
+}*/
+
+.chroma .lntd:first-child {
+  /*padding: 7px 7px 7px 10px;*/
+  margin: 0;
+}
+
+.chroma .lntd:last-child {
+  /*padding: 7px 10px 7px 7px;*/
+  margin: 0;
+}
+
+.copy-code-button {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  border-color: transparent;
+  background-color: transparent;
+  color: var(--color-txt);
+  /*font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  width: 65px;
+  background-color: #7f7f7f;
+  border: 1.25px solid #232326;
+  border-top-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  white-space: nowrap;
+  padding: 4px 4px 5px 4px;
+  margin: 0 0 0 1px;
+  cursor: pointer;
+  opacity: 0.6*/;
+}
+
+.copy-code-button:hover /*,
+.copy-code-button:focus,
+.copy-code-button:active,
+.copy-code-button:active:hover*/ {
+  transition: opacity .15s ease-in; 
+  color: var(--color-txt);
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.copyable-text-area {
+  position: absolute;
+  height: 0;
+  z-index: -1;
+  opacity: .01;
+}
+.highlight-wrapper {
+  display: block;
+}
+
+.highlight-wrapper .lntd pre {
+  padding: 0;
+}
+
+.chroma .lntd pre {
+  border: 0px solid #ccc;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+
+.highlight {
+  position: relative;
+  z-index: 0;
+  padding: 0;
+  margin: 25px 0px 40px 0px;
+  border-radius: 4px;
+}
+
+.highlight>.chroma {
+  font-size: 85%;
+  line-height: 25px;
+  /* padding-left: 40px; */
+  margin-bottom: 30px;
+  position: static;
+  z-index: 1;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  overflow: auto;
+}
+
+/*.copy-code-button:hover {
+  cursor: pointer;
+  background-color: #999999;
+}
+
+.copy-code-button:active {
+  background-color: green;
+}*/
+
+.highlight pre {
+  margin: 0;
+}
+
+.copyable-text-area {
+  position: absolute;
+  height: 0;
+  z-index: -1;
+  opacity: .01;
+}
+
+/* .chroma [data-lang]:before {
+  position: absolute;
+  z-index: 0;
+  line-height: 17px;
+  top:-17px;
+  left: 0;
+  content: attr(data-lang);
+  font-size: 12px;
+  color: #999999;
+  background-color: #0F0F0F;
+  padding: 0px 3px 0px 3px;
+  border-radius: 2px 2px 0px 0px;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.copy-code-button {
+  border-radius: .35em;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+  line-height: 10px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  width: 68px;
+  color: white;
+  background-color: #515151;
+  border: 1.25px solid #232326;
+  border-radius: 0px 0px 0px 0px;
+  white-space: nowrap;
+  padding: 5px 6px 7px 6px;
+  cursor: pointer;
+} */
+
+.light .copy-code-button {
+  border-color: transparent;
+}
