@@ -3,7 +3,7 @@ title = "Getting my Wii U Gamecube Controller to work on Bazzite"
 author = ["Jordan Herzstein"]
 summary = "Getting my antiquated Gamecube controller adapter to work on the modern Image-based Linux distro Bazzite (and gushing about it)"
 date = 2026-01-17
-lastmod = 2026-01-17T20:31:09-05:00
+lastmod = 2026-01-17T21:25:29-05:00
 tags = ["technology", "bazzite", "unversal-blue", "gaming"]
 draft = false
 [menu]
@@ -128,7 +128,7 @@ Ok that's it, happy gaming on Bazzite with your decade+ old gamecube controller 
   <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Distrobox. 2024. “Distrobox.” <a href="https://distrobox.it/">https://distrobox.it/</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_7"></a>nicknamenick. 2025. “Updating Guide - Bazzite Docs.” <a href="https://docs.bazzite.gg/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide/">https://docs.bazzite.gg/Installing_and_Managing_Software/Updates_Rollbacks_and_Rebasing/updating_guide/</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_8"></a>ranfdev. n.d. “DistroShelf.” <a href="https://github.com/ranfdev/DistroShelf">https://github.com/ranfdev/DistroShelf</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Red Hat, Inc. n.d. “OSTree Overview.” <a href="https://github.com/bootc-dev/bootc">https://github.com/bootc-dev/bootc</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Red Hat, Inc. n.d. “OSTree Overview.” <a href="https://ostreedev.github.io/ostree/introduction/">https://ostreedev.github.io/ostree/introduction/</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_10"></a>ToadKing. n.d. “Wii-U-Gc-Adapter: Tool for Using the Wii U GameCube Adapter on Linux.” <a href="https://github.com/ToadKing/wii-u-gc-adapter">https://github.com/ToadKing/wii-u-gc-adapter</a>.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_11"></a>Universal Blue. n.d. “Universal Blue - Powered by the Future, Delivered Today.” <a href="https://universal-blue.org/">https://universal-blue.org/</a>.</div>
 </div>
