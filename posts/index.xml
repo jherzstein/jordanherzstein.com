@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Nov 2025 20:29:33 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jan 2026 20:31:28 -0500</lastBuildDate>
     <atom:link href="http://jordanherzstein.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting my Wii U Gamecube Controller to work on Bazzite</title>
+      <link>http://jordanherzstein.com/posts/wii_u_gc_adapter_bazzite/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://jordanherzstein.com/posts/wii_u_gc_adapter_bazzite/</guid>
+      <description>Getting my antiquated Gamecube controller adapter to work on the modern Image-based Linux distro Bazzite (and gushing about it)</description>
+    </item>
     <item>
       <title>iCloud to Immich Migration with cli tools</title>
       <link>http://jordanherzstein.com/posts/icloud_to_immich_migration/</link>

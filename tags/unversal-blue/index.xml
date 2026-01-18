@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unversal-Blue on Jordan Herzstein</title>
+    <link>http://jordanherzstein.com/tags/unversal-blue/</link>
+    <description>Recent content in Unversal-Blue on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Jan 2026 20:31:28 -0500</lastBuildDate>
+    <atom:link href="http://jordanherzstein.com/tags/unversal-blue/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting my Wii U Gamecube Controller to work on Bazzite</title>
+      <link>http://jordanherzstein.com/posts/wii_u_gc_adapter_bazzite/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://jordanherzstein.com/posts/wii_u_gc_adapter_bazzite/</guid>
+      <description>Getting my antiquated Gamecube controller adapter to work on the modern Image-based Linux distro Bazzite (and gushing about it)</description>
+    </item>
+  </channel>
+</rss>

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://jordanherzstein.com/author/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/bazzite/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/gaming/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/posts/wii_u_gc_adapter_bazzite/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/author/jordan-herzstein/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/technology/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
+    <loc>http://jordanherzstein.com/tags/unversal-blue/</loc>
+    <lastmod>2026-01-17T20:31:28-05:00</lastmod>
+  </url><url>
     <loc>http://jordanherzstein.com/posts/icloud_to_immich_migration/</loc>
     <lastmod>2025-10-26T09:53:52-04:00</lastmod>
   </url><url>
@@ -10,9 +31,6 @@
   </url><url>
     <loc>http://jordanherzstein.com/tags/self-hosting/</loc>
     <lastmod>2025-10-26T09:53:52-04:00</lastmod>
-  </url><url>
-    <loc>http://jordanherzstein.com/tags/technology/</loc>
-    <lastmod>2025-11-08T20:29:33-05:00</lastmod>
   </url><url>
     <loc>http://jordanherzstein.com/tags/home-assistant/</loc>
     <lastmod>2025-11-08T20:29:33-05:00</lastmod>

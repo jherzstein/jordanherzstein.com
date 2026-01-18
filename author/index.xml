@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Author on Jordan Herzstein</title>
+    <link>http://jordanherzstein.com/author/</link>
+    <description>Recent content in Author on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 17 Jan 2026 20:31:28 -0500</lastBuildDate>
+    <atom:link href="http://jordanherzstein.com/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jordan Herzstein</title>
+      <link>http://jordanherzstein.com/author/jordan-herzstein/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://jordanherzstein.com/author/jordan-herzstein/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
