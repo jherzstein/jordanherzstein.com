@@ -373,10 +373,6 @@ blockquote {
     opacity: 1;
 }*/
 
-.link-buttons-group {
-    display: inline-block;
-}
-
 .link-buttons {
     transition: transform 0.3s ease;
     display: inline-block;

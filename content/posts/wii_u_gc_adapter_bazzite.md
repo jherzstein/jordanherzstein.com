@@ -3,8 +3,8 @@ title = "Getting my Wii U Gamecube Controller to work on Bazzite"
 author = ["Jordan Herzstein"]
 summary = "Getting my antiquated Gamecube controller adapter to work on the modern Image-based Linux distro Bazzite (and gushing about it)"
 date = 2026-01-17
-lastmod = 2026-01-17T19:40:57-05:00
-tags = ["technology", "bazzite", "containers", "gaming"]
+lastmod = 2026-01-17T20:31:09-05:00
+tags = ["technology", "bazzite", "unversal-blue", "gaming"]
 draft = false
 [menu]
   [menu.posts]

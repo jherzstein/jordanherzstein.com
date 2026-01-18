@@ -5,7 +5,7 @@
 #+hugo_section: posts
 #+HUGO_MENU: :menu "posts"
 #+hugo_tags[]: 
-#+filetags: technology bazzite containers gaming 
+#+filetags: technology bazzite unversal-blue gaming 
 #+HUGO_CODE_FENCE: 
 #+EXPORT_FILE_NAME: wii_u_gc_adapter_bazzite.md 
 #+hugo_front_matter_key_replace: description>summary
