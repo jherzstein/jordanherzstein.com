@@ -71,14 +71,14 @@
          {{ .Content }}
     </div>
     <div class="next-post">
-      {{ if .NextPage }}
-      <a class="link-reverse" href="{{ .NextPage.Permalink }}">« Next Post: {{ .NextPage.Title | truncate 30 "..." }}</a>
+      {{ if .Next }}
+      <a class="link-reverse" href="{{ .Next.Permalink }}">« Next Post: {{ .Next.Title | truncate 30 "..." }}</a>
       {{ end }}
     </div>
     
     <div class="previous-post">
-      {{ if .PrevPage }}
-      <a class="link-reverse" href="{{ .PrevPage.Permalink }}">Previous Post: {{ .PrevPage.Title | truncate 30 "..." }} »</a>
+      {{ if .Prev }}
+      <a class="link-reverse" href="{{ .Prev.Permalink }}">Previous Post: {{ .Prev.Title | truncate 30 "..." }} »</a>
       {{ end }}
     </div>
 {{ end }}
