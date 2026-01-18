@@ -362,11 +362,6 @@ blockquote {
     opacity: 1;
 }
 
-.link-buttons {
-    transition: transform 0.3s ease;
-    display: inline-block;
-}
-
 /* .blog-images {
     transition: transform 0.3s ease;
     display: inline-block;
@@ -377,6 +372,11 @@ blockquote {
     transform: scale(1.02);
     opacity: 1;
 }*/
+
+.link-buttons {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
 
 .link-buttons:hover {
     transform: scale(1.05);
