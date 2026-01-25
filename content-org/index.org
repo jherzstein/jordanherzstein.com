@@ -8,19 +8,13 @@
 # #+HUGO_PAIRED_SHORTCODES: icons/icon
 #+OPTIONS: num:nil toc:nil 
 
-#+attr_html: :style display:flex;
-#+begin_center
-🎉🎉 */Thanks for over 15,000 unique visitors on Neocities!/* 🎉🎉 \\
-(That includes the web crawlers :) )
-#+end_center
-
 Hello, my name is Jordan, I'm a computer engineer from Canada. Thank you for stopping by my website. 
 
 + Site mirrors - [[https://jordanherzstein.com][github]], [[https://jordanherzstein.neocities.org][neocities]]
 + [[/][home]] - You are here right now
 + [[/about][about]] - Learn all about me
 + [[/posts][posts]] - Part personal blog part dev log, scroll down to see some recent posts
-+ [[/mysetup][setup]] - Software and computers that I use, how I host various services, etc
++ [[/uses][/uses]] - Software and computers that I use, how I host various services, etc
 + [[/contact][contact]] - Get in touch with me
 
 #+BEGIN_EXPORT html

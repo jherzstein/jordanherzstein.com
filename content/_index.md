@@ -7,22 +7,13 @@ draft = false
     identifier = "welcome"
 +++
 
-<style>.org-center { margin-left: auto; margin-right: auto; text-align: center; }</style>
-
-<div class="org-center">
-
-🎉🎉 **_Thanks for over 15,000 unique visitors on Neocities!_** 🎉🎉 <br />
-(That includes the web crawlers :) )
-
-</div>
-
 Hello, my name is Jordan, I'm a computer engineer from Canada. Thank you for stopping by my website.
 
 -   Site mirrors - [github](https://jordanherzstein.com), [neocities](https://jordanherzstein.neocities.org)
 -   [home](/) - You are here right now
 -   [about](/about) - Learn all about me
 -   [posts](/posts) - Part personal blog part dev log, scroll down to see some recent posts
--   [setup](/mysetup) - Software and computers that I use, how I host various services, etc
+-   [/uses](/uses) - Software and computers that I use, how I host various services, etc
 -   [contact](/contact) - Get in touch with me
 
 <span class="social-icons">
