@@ -2,7 +2,6 @@
 title = "/uses"
 author = ["Jordan Herzstein"]
 date = 2026-01-25
-lastmod = 2026-01-25T16:06:00-05:00
 draft = false
 [menu]
   [menu.uses]
