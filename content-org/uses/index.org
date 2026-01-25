@@ -67,7 +67,7 @@ Software that I use for practical purposes, mostly on my laptop.
     - [[https://antennapod.org/][Antennapod]] - Podcasts
     - [[https://brave.com/][Brave Browser]] (previously [[/posts/adb_vanadium/][none]]) - Internet
     - Google Messages - Because not everyone uses Signal (SMS, MMS, and RCS)
-    - [[https://logseq.com/][Logseq]] - Able to see my Org Roam files on the go
+    - [[https://logseq.com/][Logseq]] - Able to see my Org-roam files on the go
     - [[https://www.magicearth.com/][Magic Earth]] - GPS navigation, offline maps
     - [[https://molly.im][Molly]] - A Signal fork for Android with security enhancements
     - [[https://github.com/ReadYouApp/ReadYou][ReadYou]] - A material you style Android RSS reader
