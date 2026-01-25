@@ -1,0 +1,111 @@
+#+TITLE: /uses
+#+AUTHOR: Jordan Herzstein 
+#+DATE: 2026-01-25
+#+HUGO_AUTO_SET_LASTMOD: t
+#+HUGO_BASE_DIR: ../../
+#+HUGO_SECTION: uses
+#+HUGO_MENU: :menu "uses"
+#+HUGO_CODE_FENCE: nil
+#+EXPORT_FILE_NAME: _index.md
+Technology stuff that I am using, inspired by [[https://uses.tech][uses.tech]]. 
+* Site Mirrors and Tools
+Right now I deploy this website via github pages and then mirror all of it on neocities.
+- [[https://docs.github.com/en/pages][Github]] ([[https://jordanherzstein.com][Mirror]])
+- [[https://neocities.org][Neocities]] ([[https://jordanherzstein.neocities.org][Mirror]])
+- [[https://gohugo.io/][Hugo]] - Static site generator
+- [[https://ox-hugo.scripter.co/][ox-hugo]] - Org exporter to Markdown for Hugo on Emacs
+* My Machines
+This includes computers for my personal use as well as homelab/server things.
+** My Laptop
+My current laptop is a Thinkpad T430 that got me through my last 1^{1/2} years of undergrad. I bought it for $100 off of Kijiji in Summer 2023, and have spent more money on a few upgrades and repairs since then. I started with Qubes-OS to compartmentalize my workflows, and now I'm using Secureblue Sericea (Sway). I always love using window managers for efficiency on my laptops, I used AwesomeWM on Qubes and I now use Sway with Secureblue. 
+- *Thinkpad T430*
+- *CPU:* Intel(R) Core(TM) i7-3840QM (4) @ 3.80 GHz
+- *RAM:* 16GB DDR3
+- *OS:* Secureblue (previously Qubes-OS)
+- *Storage:* 500GB
+- *[[/images/fastfetch.png][fastfetch output]]*
+I previously used a Thinkpad T400 that I librebooted but it died like a year ago. 🙁
+** PC (Destkop+Homelab)
+I built a PC that I use as a hypervisor server running Proxmox for local LLM inferencing, gaming on Bazzite, Jellyfin LXC for hardware transcoding, and backup PiHole+Unbound DNS.
+Here is the build:
+- *Case:* Corsair 4000D Airflow
+- *Motherboard:* MSI Pro Z790-P
+- *CPU:* Intel i7 12700K
+- *Cooler:* Thermalight Peerless Assasin 120 SE
+- *GPU:* Radeon RX 7900 XTX
+- *Power Supply:* Corsair RM860e
+- *RAM:* 32 GB DDR5
+- *OS:* Proxmox VE 9
+** PC (Homelab+NAS)
+I got a somewhat ancient hand-me-down of a PC which I've repurposed as a NAS for the family and use for my homelab stuff. Nothing to super write home about but it gets the job done.
+- *CPU:* Intel i5-4570 (4) @ 3.600GHz
+- *RAM:* 32GB DDR3
+- *OS:* Proxmox VE 9
+- *Storage:* 500GB SSD (OS), 2x4TB ZFS Mirror Pool (Storage, managed by TrueNAS VM)
+** SBC (Homelab)
+I first started homelabbing with my RockPro64 running DietPi, still mess around with it but it's not running anything too mission critical currently.
+** Firewall/Router
+I have a custom router at home for better customizability and security compared to the default modems provided by ISPs. I use this for setting firewall rules, VLANs, Wi-Fi Networks, and VPN access.
+- *Linksys E8450*
+- *OS:* OpenWrt
+* General Software Tools
+Software that I use for practical purposes, mostly on my laptop.
+- *Browser:* [[https://github.com/secureblue/Trivalent][Trivalent]] (previously [[https://librewolf.net/][LibreWolf]])
+- *Documents:* [[https://www.libreoffice.org/][LibreOffice]]
+- *Editors:*
+  - [[https://www.gnu.org/software/emacs/][GNU Emacs]] 
+  - [[https://www.vim.org/][Vim]]
+- *Notes:* [[https://www.orgroam.com/][Org-roam]]
+- *Password Manager:* [[https://keepassxc.org/][KeePassXC]]
+- *Shell:* bash
+- *Terminal:* [[https://codeberg.org/dnkl/foot][foot]] 
+- *Terminal Multiplexer:* [[https://github.com/tmux/tmux][tmux]]
+* Mobile Phone
+- *Phone*: Google Pixel 7 (unlocked) 
+- *Android OS*: [[https://grapheneos.org/][GrapheneOS]]
+- *App Stores*: [[https://store.auroraoss.com/][Aurora Store]], [[https://f-droid.org/][F-Droid]]
+  - Notable Apps
+    - [[https://antennapod.org/][Antennapod]] - Podcasts
+    - [[https://brave.com/][Brave Browser]] (previously [[/posts/adb_vanadium/][none]]) - Internet
+    - Google Messages - Because not everyone uses Signal (SMS, MMS, and RCS)
+    - [[https://logseq.com/][Logseq]] - Able to see my Org Roam files on the go
+    - [[https://www.magicearth.com/][Magic Earth]] - GPS navigation, offline maps
+    - [[https://molly.im][Molly]] - A Signal fork for Android with security enhancements
+    - [[https://github.com/ReadYouApp/ReadYou][ReadYou]] - A material you style Android RSS reader
+    - [[https://gitea.angry.im/PeterCxy/Shelter][Sheltr]] - Separate my Work Profile apps
+    - [[https://termux.dev/en/][Termux]] - A Linux-like terminal on my phone
+    - [[https://syncthing.net/][Syncthing]] - syncs files shared with Org Roam on laptop
+    - [[https://github.com/wormhole-app/wormhole][Wormhole]] - transfer some files via magic-wormhole to my other machines
+* Self-Hosted Services
+- [[https://www.authelia.com/][*Authelia:*]] For SSO authentication with OIDC
+- *Arr Stack* (media request and management)
+  - [[https://www.bazarr.media/][*Bazarr:*]] Manages Subtitles for TV/Movie collection
+  - [[https://github.com/pennydreadful/bookshelf][*BookShelf:*]] Book Collection Manager (Readarr's /successarr/)
+  - [[https://github.com/FlareSolverr/FlareSolverr][*Flaresolverr:*]] Solves CAPTCHA
+  - [[https://seerr.dev/][*Jellyseerr*:]] Open-source media request and discovery manager
+  - [[https://lidarr.audio/][*Lidarr:*]] Music Collection Manager
+  - [[https://prowlarr.com/][*Prowlarr:*]] The Ultimate Indexer Manager
+  - [[https://radarr.video/][*Radarr:*]] Movie Collection Manager
+  - [[https://sonarr.tv/][*Sonarr:*]] TV Collection Manager
+- *Downloaders:*
+  - [[https://sabnzbd.org/][*SABnzbd:*]] Usenet Downloader
+  - [[https://transmissionbt.com/][*Transmission:*]] Torrenting Client
+- [[https://www.freshrss.org/][*FreshRSS:*]] For all my RSS feeds
+- [[https://immich.app/][*Immich:*]] Photo backup solution
+- [[https://github.com/home-assistant/operating-system][*Home Assistant OS:*]] Home Automation
+- [[https://jellyfin.org/][*Jellyfin:*]] Media server of choice
+- [[https://github.com/nextcloud/all-in-one][*Nextcloud All-in-One:*]] For files
+- [[https://nginxproxymanager.com/][*Nginx Proxy Manager:*]] Reverse Proxy+SSL certificates
+- [[https://docs.pi-hole.net/guides/dns/unbound/][*PiHole+Unbound:*]] For local DNS and adblocking
+- [[https://www.truenas.com/][*TrueNAS:*]] For managing ZFS storage, network shares, backups
+* Other Services
+- Code Hosting: Github
+- Domains: [[https://porkbun.com][Porkbun]] (previously [[https://namecheap.com][Namecheap]]) and [[https://www.duckdns.org/][Duck DNS]]
+- Email: [[https://mail.proton.me/][Proton Mail]]+[[https://simplelogin.io/][SimpleLogin]]
+- Search: [[https://duckduckgo.com/][DuckDuckGo]]
+- SSL: [[https://letsencrypt.org][Let's Encrypt]] and [[https://www.duckdns.org/][Duck DNS]]
+- VPN:
+  - [[https://tailscale.com/][Tailscale]]
+  - [[https://mullvad.net][Mullvad]]
+  - [[https://www.wireguard.com/][Wireguard]]
+- VPS: [[https://www.oracle.com/cloud/free/][Oracle Cloud Free Tier]]

@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <header class="content__header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+{{ with .GitInfo }}
+    {{ .AuthorDate.Format "2006-01-02" }}
+{{ end }}
+    {{- partial "toc.html" . -}}
+    {{ .Content }}
+{{ end }}
