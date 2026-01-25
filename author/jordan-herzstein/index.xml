@@ -6,8 +6,15 @@
     <description>Recent content on Jordan Herzstein</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 17 Jan 2026 21:26:27 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 16:23:03 -0500</lastBuildDate>
     <atom:link href="http://jordanherzstein.com/author/jordan-herzstein/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>/uses</title>
+      <link>http://jordanherzstein.com/uses/</link>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://jordanherzstein.com/uses/</guid>
+      <description>&lt;p&gt;Computer hardware and software stuff that I am using, inspired by &lt;a href=&#34;https://uses.tech&#34;&gt;uses.tech&lt;/a&gt;. Since this is &lt;code&gt;/uses&lt;/code&gt;, not &lt;code&gt;/recommendations&lt;/code&gt;, do not take everything here as a direct endorsement.&lt;/p&gt;&#xA;&lt;h2 id=&#34;site-mirrors-and-tools&#34;&gt;Site Mirrors and Tools&lt;/h2&gt;&#xA;&lt;p&gt;Right now I deploy this website via github pages and then mirror all of it on neocities.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://docs.github.com/en/pages&#34;&gt;GitHub Pages&lt;/a&gt; (&lt;a href=&#34;https://jordanherzstein.com&#34;&gt;Mirror&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://neocities.org&#34;&gt;Neocities&lt;/a&gt; (&lt;a href=&#34;https://jordanherzstein.neocities.org&#34;&gt;Mirror&lt;/a&gt;)&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; - Static site generator&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://ox-hugo.scripter.co/&#34;&gt;ox-hugo&lt;/a&gt; - Org exporter to Markdown for Hugo on Emacs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;my-machines&#34;&gt;My Machines&lt;/h2&gt;&#xA;&lt;p&gt;This includes computers for my personal use as well as homelab/server things.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Getting my Wii U Gamecube Controller to work on Bazzite</title>
       <link>http://jordanherzstein.com/posts/wii_u_gc_adapter_bazzite/</link>

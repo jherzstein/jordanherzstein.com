@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href= "/css/style.css" | absURL }}>
+    
+    <head><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+<h1 id="title">Jordan Herzstein <a onclick="switchTheme()" title="toggle theme" id="toggle-theme">
+      <svg width="30" height="30" class="light" id="light-icon">
+        <circle cx="15" cy="15" r="6" fill="currentColor" />
+
+        <line
+          id="ray"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          x1="15"
+          y1="1"
+          x2="15"
+          y2="4"
+        ></line>
+
+        <use href="#ray" transform="rotate(45 15 15)" />
+        <use href="#ray" transform="rotate(90 15 15)" />
+        <use href="#ray" transform="rotate(135 15 15)" />
+        <use href="#ray" transform="rotate(180 15 15)" />
+        <use href="#ray" transform="rotate(225 15 15)" />
+        <use href="#ray" transform="rotate(270 15 15)" />
+        <use href="#ray" transform="rotate(315 15 15)" />
+      </svg>
+      <svg width="30" height="30" class="dark" id="dark-icon">
+        <path
+          fill="currentColor"
+          d="
+          M 23, 5
+          A 12 12 0 1 0 23, 25
+          A 12 12 0 0 1 23, 5"
+        />
+      </svg>
+ </a></h1><title>Jordan Herzstein</title> 
+
+<head>
+</head>
+    <header><div class="menubar">
+  <div class="menu-container">
+      <a href="/">home</a>
+      -
+      <a href="/about">about</a>
+      -
+      <a href="/posts">posts</a>
+      -
+      <a href="/uses">/uses</a>
+      -
+      <a href="/contact">contact</a>
+      
+<script>
+</script>
+      <script>
+	const lightIcon = document.getElementById("light-icon");
+	const darkIcon = document.getElementById("dark-icon");
+	var i = "theme";
+	var d = document.documentElement.classList;
+	
+	var m = localStorage.getItem(i) || (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? "light" : "dark");
+	
+	if (m == "light") {
+	    d.remove("dark");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "none");
+	    darkIcon.setAttribute("display", "block");
+	} else {
+	    d.remove("light");
+	    d.add(m);
+	    lightIcon.setAttribute("display", "block");
+	    darkIcon.setAttribute("display", "none");
+	}
+	
+	function switchTheme() {
+	    d.remove(m);
+	    m = (m == "dark") ? "light" : "dark";
+	    d.add(m);
+	    localStorage.setItem(i, m);
+	    if (m == "light") {
+		lightIcon.setAttribute("display", "none");
+		darkIcon.setAttribute("display", "block");
+	    } else {
+		lightIcon.setAttribute("display", "block");
+		darkIcon.setAttribute("display", "none");
+	    }
+	}
+	
+	
+	window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+	    const newColorScheme = e.matches ? "light" : "dark";
+	    if (newColorScheme !== m) {
+		switchTheme();
+	    }
+	});
+
+      </script>
+      
+  </div>
+</div>
+
+
+
+
+</header>
+
+    <body>
+        <div class="page">
+
+
+            
+            <section class="page__body">
+    <header class="content__header">
+        <h1>/uses</h1>
+    </header>
+
+    
+    
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+  <line x1="16" y1="2" x2="16" y2="6" />
+  <line x1="8" y1="2" x2="8" y2="6" />
+  <line x1="3" y1="10" x2="21" y2="10" />
+</svg>
+
+
+      2026-01-25 |
+    
+    
+    
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
+  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
+</svg>
+
+    
+        2026-01-25
+     |
+    
+    
+
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+  <polyline points="14 2 14 8 20 8" />
+  <line x1="16" y1="13" x2="8" y2="13" />
+  <line x1="16" y1="17" x2="8" y2="17" />
+  <polyline points="10 9 9 9 8 9" />
+</svg>
+
+
+     681 words |
+
+    
+
+
+    <svg aria-hidden="true" class="hi-svg-inline" fill="none" height="1.0em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1.0em" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="10" />
+  <polyline points="12 6 12 12 16 14" />
+</svg>
+
+     4 min 
+
+    <br><div class="ox-hugo-toc toc">
+<div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#site-mirrors-and-tools" aria-label="Site Mirrors and Tools">Site Mirrors and Tools</a></li>
+                <li>
+                    <a href="#my-machines" aria-label="My Machines">My Machines</a><ul>
+                        
+                <li>
+                    <a href="#my-laptop" aria-label="My Laptop">My Laptop</a></li>
+                <li>
+                    <a href="#pc--destkop-plus-homelab" aria-label="PC (Destkop&#43;Homelab)">PC (Destkop+Homelab)</a></li>
+                <li>
+                    <a href="#pc--homelab-plus-nas" aria-label="PC (Homelab&#43;NAS)">PC (Homelab+NAS)</a></li>
+                <li>
+                    <a href="#sbc--homelab" aria-label="SBC (Homelab)">SBC (Homelab)</a></li>
+                <li>
+                    <a href="#firewall-router" aria-label="Firewall/Router">Firewall/Router</a></li></ul>
+                </li>
+                <li>
+                    <a href="#general-software-tools" aria-label="General Software Tools">General Software Tools</a></li>
+                <li>
+                    <a href="#mobile-phone" aria-label="Mobile Phone">Mobile Phone</a></li>
+                <li>
+                    <a href="#self-hosted-services" aria-label="Self-Hosted Services">Self-Hosted Services</a></li>
+                <li>
+                    <a href="#other-services" aria-label="Other Services">Other Services</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+</div>
+<p>Computer hardware and software stuff that I am using, inspired by <a href="https://uses.tech">uses.tech</a>. Since this is <code>/uses</code>, not <code>/recommendations</code>, do not take everything here as a direct endorsement.</p>
+<h2 id="site-mirrors-and-tools">Site Mirrors and Tools</h2>
+<p>Right now I deploy this website via github pages and then mirror all of it on neocities.</p>
+<ul>
+<li><a href="https://docs.github.com/en/pages">GitHub Pages</a> (<a href="https://jordanherzstein.com">Mirror</a>)</li>
+<li><a href="https://neocities.org">Neocities</a> (<a href="https://jordanherzstein.neocities.org">Mirror</a>)</li>
+<li><a href="https://gohugo.io/">Hugo</a> - Static site generator</li>
+<li><a href="https://ox-hugo.scripter.co/">ox-hugo</a> - Org exporter to Markdown for Hugo on Emacs</li>
+</ul>
+<h2 id="my-machines">My Machines</h2>
+<p>This includes computers for my personal use as well as homelab/server things.</p>
+<h3 id="my-laptop">My Laptop</h3>
+<p>My current laptop is a Thinkpad T430 that got me through my last 1<sup>1/2</sup>-ish years of undergrad. I bought it for $100 off of Kijiji in Summer 2023, and have spent more money on a few upgrades and repairs since then. I started with Qubes-OS to compartmentalize my workflows, and now I&rsquo;m using Secureblue Sericea (Sway). I always love using window managers for efficiency on my laptops, I used AwesomeWM on Qubes and I now use Sway with Secureblue.</p>
+<ul>
+<li><strong>Thinkpad T430</strong></li>
+<li><strong>CPU:</strong> Intel(R) Core(TM) i7-3840QM (4) @ 3.80 GHz</li>
+<li><strong>RAM:</strong> 16GB DDR3</li>
+<li><strong>OS:</strong> Secureblue (previously Qubes-OS)</li>
+<li><strong>Storage:</strong> 500GB</li>
+<li><strong><a href="/images/fastfetch.png">fastfetch output</a></strong></li>
+</ul>
+<p>I previously used a Thinkpad T400 that I librebooted but it died like a year ago. 🙁</p>
+<h3 id="pc--destkop-plus-homelab">PC (Destkop+Homelab)</h3>
+<p>I built a PC that I use as a hypervisor server running Proxmox for local LLM inferencing, gaming on Bazzite, Jellyfin LXC for hardware transcoding, and backup PiHole+Unbound DNS.
+Here is the build:</p>
+<ul>
+<li><strong>Case:</strong> Corsair 4000D Airflow</li>
+<li><strong>Motherboard:</strong> MSI Pro Z790-P</li>
+<li><strong>CPU:</strong> Intel i7 12700K</li>
+<li><strong>Cooler:</strong> Thermalight Peerless Assasin 120 SE</li>
+<li><strong>GPU:</strong> Radeon RX 7900 XTX</li>
+<li><strong>Power Supply:</strong> Corsair RM860e</li>
+<li><strong>RAM:</strong> 32 GB DDR5</li>
+<li><strong>OS:</strong> Proxmox VE 9</li>
+</ul>
+<h3 id="pc--homelab-plus-nas">PC (Homelab+NAS)</h3>
+<p>I got a somewhat ancient hand-me-down of a PC which I&rsquo;ve repurposed as a NAS for the family and use for my homelab stuff. Nothing to super write home about but it gets the job done.</p>
+<ul>
+<li><strong>CPU:</strong> Intel i5-4570 (4) @ 3.600GHz</li>
+<li><strong>RAM:</strong> 32GB DDR3</li>
+<li><strong>OS:</strong> Proxmox VE 9</li>
+<li><strong>Storage:</strong> 500GB SSD (OS), 2x4TB ZFS Mirror Pool (Storage, managed by TrueNAS VM)</li>
+</ul>
+<h3 id="sbc--homelab">SBC (Homelab)</h3>
+<p>I first started homelabbing with my RockPro64 running DietPi, still mess around with it but it&rsquo;s not running anything too mission critical currently.</p>
+<h3 id="firewall-router">Firewall/Router</h3>
+<p>I have a custom router at home for better customizability and security compared to the default modems provided by ISPs. I use this for setting firewall rules, VLANs, Wi-Fi Networks, and VPN access.</p>
+<ul>
+<li><strong>Linksys E8450</strong></li>
+<li><strong>OS:</strong> OpenWrt</li>
+</ul>
+<h2 id="general-software-tools">General Software Tools</h2>
+<p>Software that I use for practical purposes, mostly on my laptop.</p>
+<ul>
+<li><strong>Browser:</strong> <a href="https://github.com/secureblue/Trivalent">Trivalent</a> (previously <a href="https://librewolf.net/">LibreWolf</a>)</li>
+<li><strong>Documents:</strong> <a href="https://www.libreoffice.org/">LibreOffice</a></li>
+<li><strong>Editors:</strong>
+<ul>
+<li><a href="https://www.gnu.org/software/emacs/">GNU Emacs</a></li>
+<li><a href="https://www.vim.org/">Vim</a></li>
+</ul>
+</li>
+<li><strong>Notes:</strong> <a href="https://www.orgroam.com/">Org-roam</a></li>
+<li><strong>Password Manager:</strong> <a href="https://keepassxc.org/">KeePassXC</a></li>
+<li><strong>Shell:</strong> bash</li>
+<li><strong>Terminal:</strong> <a href="https://codeberg.org/dnkl/foot">foot</a></li>
+<li><strong>Terminal Multiplexer:</strong> <a href="https://github.com/tmux/tmux">tmux</a></li>
+</ul>
+<h2 id="mobile-phone">Mobile Phone</h2>
+<ul>
+<li><strong>Phone</strong>: Google Pixel 7 (unlocked)</li>
+<li><strong>Android OS</strong>: <a href="https://grapheneos.org/">GrapheneOS</a></li>
+<li><strong>App Stores</strong>: <a href="https://store.auroraoss.com/">Aurora Store</a>, <a href="https://f-droid.org/">F-Droid</a>
+<ul>
+<li>Notable Apps
+<ul>
+<li><a href="https://antennapod.org/">Antennapod</a> - Podcasts</li>
+<li><a href="https://brave.com/">Brave Browser</a> (previously <a href="/posts/adb_vanadium/">none</a>) - Internet</li>
+<li>Google Messages - Because not everyone uses Signal (SMS, MMS, and RCS)</li>
+<li><a href="https://logseq.com/">Logseq</a> - Able to see my Org-roam files on the go</li>
+<li><a href="https://www.magicearth.com/">Magic Earth</a> - GPS navigation, offline maps</li>
+<li><a href="https://molly.im">Molly</a> - A Signal fork for Android with security enhancements</li>
+<li><a href="https://github.com/ReadYouApp/ReadYou">ReadYou</a> - A material you style Android RSS reader</li>
+<li><a href="https://gitea.angry.im/PeterCxy/Shelter">Sheltr</a> - Separate my Work Profile apps</li>
+<li><a href="https://termux.dev/en/">Termux</a> - A Linux-like terminal on my phone</li>
+<li><a href="https://syncthing.net/">Syncthing</a> - syncs files shared with Org Roam on laptop</li>
+<li><a href="https://github.com/wormhole-app/wormhole">Wormhole</a> - transfer some files via magic-wormhole to my other machines</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="self-hosted-services">Self-Hosted Services</h2>
+<ul>
+<li><a href="https://www.authelia.com/"><strong>Authelia:</strong></a> For SSO authentication with OIDC</li>
+<li><strong>Arr Stack</strong> (media request and management)
+<ul>
+<li><a href="https://www.bazarr.media/"><strong>Bazarr:</strong></a> Manages Subtitles for TV/Movie collection</li>
+<li><a href="https://github.com/pennydreadful/bookshelf"><strong>BookShelf:</strong></a> Book Collection Manager (Readarr&rsquo;s <em>successarr</em>)</li>
+<li><a href="https://github.com/FlareSolverr/FlareSolverr"><strong>Flaresolverr:</strong></a> Solves CAPTCHA</li>
+<li><a href="https://seerr.dev/"><strong>Jellyseerr</strong>:</a> Open-source media request and discovery manager</li>
+<li><a href="https://lidarr.audio/"><strong>Lidarr:</strong></a> Music Collection Manager</li>
+<li><a href="https://prowlarr.com/"><strong>Prowlarr:</strong></a> The Ultimate Indexer Manager</li>
+<li><a href="https://radarr.video/"><strong>Radarr:</strong></a> Movie Collection Manager</li>
+<li><a href="https://sonarr.tv/"><strong>Sonarr:</strong></a> TV Collection Manager</li>
+</ul>
+</li>
+<li><strong>Downloaders:</strong>
+<ul>
+<li><a href="https://sabnzbd.org/"><strong>SABnzbd:</strong></a> Usenet Downloader</li>
+<li><a href="https://transmissionbt.com/"><strong>Transmission:</strong></a> Torrenting Client</li>
+</ul>
+</li>
+<li><a href="https://www.freshrss.org/"><strong>FreshRSS:</strong></a> For all my RSS feeds</li>
+<li><a href="https://immich.app/"><strong>Immich:</strong></a> Photo backup solution</li>
+<li><a href="https://github.com/home-assistant/operating-system"><strong>Home Assistant OS:</strong></a> Home Automation</li>
+<li><a href="https://jellyfin.org/"><strong>Jellyfin:</strong></a> Media server of choice</li>
+<li><a href="https://github.com/nextcloud/all-in-one"><strong>Nextcloud All-in-One:</strong></a> For files</li>
+<li><a href="https://nginxproxymanager.com/"><strong>Nginx Proxy Manager:</strong></a> Reverse Proxy+SSL certificates</li>
+<li><a href="https://docs.pi-hole.net/guides/dns/unbound/"><strong>PiHole+Unbound:</strong></a> For local DNS and adblocking</li>
+<li><a href="https://www.truenas.com/"><strong>TrueNAS:</strong></a> For managing ZFS storage, network shares, backups</li>
+</ul>
+<h2 id="other-services">Other Services</h2>
+<ul>
+<li>Code Hosting: <a href="https://github.com">GitHub</a></li>
+<li>Domains: <a href="https://porkbun.com">Porkbun</a> (previously <a href="https://namecheap.com">Namecheap</a>) and <a href="https://www.duckdns.org/">Duck DNS</a></li>
+<li>Email: <a href="https://mail.proton.me/">Proton Mail</a>+<a href="https://simplelogin.io/">SimpleLogin</a></li>
+<li>Search: <a href="https://duckduckgo.com/">DuckDuckGo</a></li>
+<li>SSL: <a href="https://letsencrypt.org">Let&rsquo;s Encrypt</a> and <a href="https://www.duckdns.org/">Duck DNS</a></li>
+<li>VPN:
+<ul>
+<li><a href="https://tailscale.com/">Tailscale</a></li>
+<li><a href="https://mullvad.net">Mullvad</a></li>
+<li><a href="https://www.wireguard.com/">Wireguard</a></li>
+</ul>
+</li>
+<li>VPS: <a href="https://www.oracle.com/cloud/free/">Oracle Cloud Free Tier</a></li>
+</ul>
+
+
+            </section>
+
+
+            <footer class="page__footer"><div class="footer">
+<hr style="width:100%;height:1px;border-width:0;color:gray;background-color:gray">
+  <style>
+    .footer{text-align: center;}
+  </style>
+  <div class="link-buttons-group">
+      <a href="https://neocities.org">
+        <img class="link-buttons" src="/images/link-buttons/neocitiesorg.gif"></a>
+    <span class="link-buttons">
+      <a href="https://wiby.org">
+        <img src="/images/link-buttons/wiby.org.gif"></a>
+    </span>
+
+
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/software/emacs/">
+        <img src="/images/link-buttons/gnu-emacs.gif"></a>
+    </span> 
+    <span class="link-buttons">
+      <a href="https://canada.ca">
+        <img src="/images/link-buttons/sherri_coutts_canadaonweb.gif"></a>
+        
+    </span>
+    <span class="link-buttons">
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+        <img src="/images/link-buttons/by-sa.png"></a>
+    </span>
+    <span class="link-buttons">
+      <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
+        <img src="/images/link-buttons/gplv3-88x31.png"></a>
+    </span>
+    <span class="link-buttons" >
+	<a href="https://notbyai.fyi">
+          <img id="light-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-white.png"></a>
+	<a href="https://notbyai.fyi">
+          <img id="dark-icon" height="31" src="/images/link-buttons/Written-By-Human-Not-By-AI-Badge-black.png"></a>
+    </span>
+  </div>
+  <div class= "copyright">
+    © 2026 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
+    <br>
+    
+       Site version 1adb3db released on 2026-01-25
+    
+  </div>
+       
+</div>
+</footer>
+
+        </div>
+    </body>
+
+</html>
