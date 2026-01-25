@@ -2,21 +2,21 @@
 title = "/uses"
 author = ["Jordan Herzstein"]
 date = 2026-01-25
-lastmod = 2026-01-25T15:29:51-05:00
+lastmod = 2026-01-25T16:06:00-05:00
 draft = false
 [menu]
   [menu.uses]
     identifier = "uses"
 +++
 
-Technology stuff that I am using, inspired by [uses.tech](https://uses.tech).
+Computer hardware and software stuff that I am using, inspired by [uses.tech](https://uses.tech). Since this is `/uses`, not `/recommendations`, do not take everything here as a direct endorsement.
 
 
 ## Site Mirrors and Tools {#site-mirrors-and-tools}
 
 Right now I deploy this website via github pages and then mirror all of it on neocities.
 
--   [Github](https://docs.github.com/en/pages) ([Mirror](https://jordanherzstein.com))
+-   [GitHub Pages](https://docs.github.com/en/pages) ([Mirror](https://jordanherzstein.com))
 -   [Neocities](https://neocities.org) ([Mirror](https://jordanherzstein.neocities.org))
 -   [Hugo](https://gohugo.io/) - Static site generator
 -   [ox-hugo](https://ox-hugo.scripter.co/) - Org exporter to Markdown for Hugo on Emacs
@@ -29,7 +29,7 @@ This includes computers for my personal use as well as homelab/server things.
 
 ### My Laptop {#my-laptop}
 
-My current laptop is a Thinkpad T430 that got me through my last 1<sup>1/2</sup> years of undergrad. I bought it for $100 off of Kijiji in Summer 2023, and have spent more money on a few upgrades and repairs since then. I started with Qubes-OS to compartmentalize my workflows, and now I'm using Secureblue Sericea (Sway). I always love using window managers for efficiency on my laptops, I used AwesomeWM on Qubes and I now use Sway with Secureblue.
+My current laptop is a Thinkpad T430 that got me through my last 1<sup>1/2</sup>-ish years of undergrad. I bought it for $100 off of Kijiji in Summer 2023, and have spent more money on a few upgrades and repairs since then. I started with Qubes-OS to compartmentalize my workflows, and now I'm using Secureblue Sericea (Sway). I always love using window managers for efficiency on my laptops, I used AwesomeWM on Qubes and I now use Sway with Secureblue.
 
 -   **Thinkpad T430**
 -   **CPU:** Intel(R) Core(TM) i7-3840QM (4) @ 3.80 GHz
@@ -141,7 +141,7 @@ Software that I use for practical purposes, mostly on my laptop.
 
 ## Other Services {#other-services}
 
--   Code Hosting: Github
+-   Code Hosting: [GitHub](https://github.com)
 -   Domains: [Porkbun](https://porkbun.com) (previously [Namecheap](https://namecheap.com)) and [Duck DNS](https://www.duckdns.org/)
 -   Email: [Proton Mail](https://mail.proton.me/)+[SimpleLogin](https://simplelogin.io/)
 -   Search: [DuckDuckGo](https://duckduckgo.com/)

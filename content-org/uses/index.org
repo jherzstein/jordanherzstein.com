@@ -7,17 +7,17 @@
 #+HUGO_MENU: :menu "uses"
 #+HUGO_CODE_FENCE: nil
 #+EXPORT_FILE_NAME: _index.md
-Technology stuff that I am using, inspired by [[https://uses.tech][uses.tech]]. 
+Computer hardware and software stuff that I am using, inspired by [[https://uses.tech][uses.tech]]. Since this is ~/uses~, not ~/recommendations~, do not take everything here as a direct endorsement.
 * Site Mirrors and Tools
 Right now I deploy this website via github pages and then mirror all of it on neocities.
-- [[https://docs.github.com/en/pages][Github]] ([[https://jordanherzstein.com][Mirror]])
+- [[https://docs.github.com/en/pages][GitHub Pages]] ([[https://jordanherzstein.com][Mirror]])
 - [[https://neocities.org][Neocities]] ([[https://jordanherzstein.neocities.org][Mirror]])
 - [[https://gohugo.io/][Hugo]] - Static site generator
 - [[https://ox-hugo.scripter.co/][ox-hugo]] - Org exporter to Markdown for Hugo on Emacs
 * My Machines
 This includes computers for my personal use as well as homelab/server things.
 ** My Laptop
-My current laptop is a Thinkpad T430 that got me through my last 1^{1/2} years of undergrad. I bought it for $100 off of Kijiji in Summer 2023, and have spent more money on a few upgrades and repairs since then. I started with Qubes-OS to compartmentalize my workflows, and now I'm using Secureblue Sericea (Sway). I always love using window managers for efficiency on my laptops, I used AwesomeWM on Qubes and I now use Sway with Secureblue. 
+My current laptop is a Thinkpad T430 that got me through my last 1^{1/2}-ish years of undergrad. I bought it for $100 off of Kijiji in Summer 2023, and have spent more money on a few upgrades and repairs since then. I started with Qubes-OS to compartmentalize my workflows, and now I'm using Secureblue Sericea (Sway). I always love using window managers for efficiency on my laptops, I used AwesomeWM on Qubes and I now use Sway with Secureblue. 
 - *Thinkpad T430*
 - *CPU:* Intel(R) Core(TM) i7-3840QM (4) @ 3.80 GHz
 - *RAM:* 16GB DDR3
@@ -99,7 +99,7 @@ Software that I use for practical purposes, mostly on my laptop.
 - [[https://docs.pi-hole.net/guides/dns/unbound/][*PiHole+Unbound:*]] For local DNS and adblocking
 - [[https://www.truenas.com/][*TrueNAS:*]] For managing ZFS storage, network shares, backups
 * Other Services
-- Code Hosting: Github
+- Code Hosting: [[https://github.com][GitHub]]
 - Domains: [[https://porkbun.com][Porkbun]] (previously [[https://namecheap.com][Namecheap]]) and [[https://www.duckdns.org/][Duck DNS]]
 - Email: [[https://mail.proton.me/][Proton Mail]]+[[https://simplelogin.io/][SimpleLogin]]
 - Search: [[https://duckduckgo.com/][DuckDuckGo]]
