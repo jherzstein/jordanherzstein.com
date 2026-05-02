@@ -239,24 +239,24 @@
 <p>The following guide assumes you already have an Oracle VPS you can ssh into running an apt-based operating system such as Ubuntu 22.04, the operating system I will be using for this guide. I recommend following the guide that exists on FMHY to set one up (<a href="#citeproc_bib_item_5">Cevoj35548 2022</a>).</p>
 <h3 id="installing-docker-for-ubuntu">Installing docker for Ubuntu</h3>
 <p>First update your packages list.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update</span></span></code></pre></div>
 <p>Install the proper dependencies.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release</span></span></code></pre></div>
 <p>Download the GPG key for Docker to sign packages.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span></span></code></pre></div>
 <p>Add the Docker repository to your sources</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;deb [arch=</span><span style="color:#66d9ef">$(</span>dpkg --print-architecture<span style="color:#66d9ef">)</span><span style="color:#e6db74"> signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu </span><span style="color:#66d9ef">$(</span>lsb_release -cs<span style="color:#66d9ef">)</span><span style="color:#e6db74"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span></span></code></pre></div>
 <p>Install Docker engine, docker compose, and their dependencies.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span></span></code></pre></div>
 <h3 id="create-a-new-docker-user-and-group">Create a new docker user and group</h3>
 <p>We will create a new user and group for this docker container called minecraft.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo useradd -r minecraft
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo useradd -r minecraft
 </span></span><span style="display:flex;"><span>sudo groupadd -r minecraft</span></span></code></pre></div>
 <p>Next we will add the new docker user to the default group (in this case, ubuntu).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo usermod -a -G minecraft ubuntu</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo usermod -a -G minecraft ubuntu</span></span></code></pre></div>
 <h3 id="configuring-yaml-file-for-docker-compose-and-deploy">Configuring yaml file for docker compose and deploy</h3>
 <p>For the sake of this guide we will be deploying a minecraft java edition server using the minecraft server image from itzg. They also have a bedrock image available, however, some of the server management commands will be different. You can create a new directory to put your compose file in, you can call it <code>compose.yml</code>, and it will contain something similar to the following (<a href="#citeproc_bib_item_6">Iztg 2024a</a>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#34;3&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">minecraft-server</span>:
@@ -273,7 +273,7 @@
 </span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./data:/data</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">user</span>: <span style="color:#ae81ff">minecraft:minecraft</span></span></span></code></pre></div>
 <p>Deploy the docker container as a daemon.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose up -d</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker compose up -d</span></span></code></pre></div>
 <h3 id="oracle-networking-firewall-rules">Oracle Networking Firewall Rules</h3>
 <p>We want to add a firewall rule in our server&rsquo;s subnet to port forward a TCP connection to our server. This will be the port specified in the compose file, in this case 25565.</p>
 <p>On your Oracle Cloud admin page, you want to navigate to your server instance through the dashboard.</p>
@@ -311,22 +311,22 @@
 <p>Generally it is a good idea to enable a whitelist on your server if it is just private between friends so random users don&rsquo;t join and grief your world.</p>
 <h4 id="method-1-using-rcon">Method 1: Using rcon</h4>
 <p>You can access the rcon-cli on the server side through docker exec (<a href="#citeproc_bib_item_7">Iztg 2024b</a>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker exec -it &lt;name-of-server-container&gt; rcon-cli</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker exec -it &lt;name-of-server-container&gt; rcon-cli</span></span></code></pre></div>
 <p>If you don&rsquo;t know the name of your container, list existing containers using <code>docker ps</code> and find the container name that is using the <code>itzg/minecraft-server</code> docker image.</p>
 <p>You should now be in a separate console that will start with <code>&gt;</code>. Input the following command into the console to enable the server&rsquo;s use of the whitelist (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist on</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist on</span></span></code></pre></div>
 <p>To add users using the <code>whitelist add</code> command, the syntax is as follows (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist add &lt;targets&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist add &lt;targets&gt;</span></span></code></pre></div>
 <p>See your whitelisted users (<a href="#citeproc_bib_item_2">Minecraft Wiki 2024b</a>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist list</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>whitelist list</span></span></code></pre></div>
 <p>You can add users as operators so they can execute server commands whilte in the game (<a href="#citeproc_bib_item_1">Minecraft Wiki 2024a</a>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>op &lt;targets&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>op &lt;targets&gt;</span></span></code></pre></div>
 <h4 id="method-2-editing-server-dot-properties-and-whitelist-dot-json">Method 2: Editing server.properties and whitelist.json</h4>
 <p>You will want to find the configuration files that exist in the <code>/data</code> volume that you specified in your compose configuration file.</p>
 <p>First edit the server.properties file to enable the server white list.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>white-list=true</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>white-list=true</span></span></code></pre></div>
 <p>Edit whitelist.json to add user names and UUIDs you wish to add. You can search for UUIDs for each username through <a href="https://minecraftuuid.com">minecraftuuid.com</a>. The template should look as follows (<a href="#citeproc_bib_item_3">Minecraft Wiki 2024c</a>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;uuid&#34;</span>: <span style="color:#e6db74">&#34;f430dbb6-5d9a-444e-b542-e47329b2c5a0&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;username&#34;</span>
@@ -337,7 +337,7 @@
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
 <p>Restart the server using the <code>docker restart</code> command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker restart &lt;name-of-server-container&gt;</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>docker restart &lt;name-of-server-container&gt;</span></span></code></pre></div>
 <h2 id="references">References</h2>
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Minecraft Wiki. 2024a. “Commands/Op - Minecraft Wiki.” <a href="https://minecraft.fandom.com/wiki/Commands/op">https://minecraft.fandom.com/wiki/Commands/op</a>.</div>
@@ -407,7 +407,7 @@
     © 2026 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
     <br>
     
-       Site version 628da8c released on 2026-01-25
+       Site version e50106d released on 2026-05-02
     
   </div>
        

@@ -230,7 +230,7 @@
 </ul>
 <h3 id="setting-up-esphome-server">Setting up ESPHome Server</h3>
 <p>Put the following in <code>compose.yaml</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">version</span>: <span style="color:#e6db74">&#39;3&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">esphome</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">container_name</span>: <span style="color:#ae81ff">esphome</span>
@@ -251,16 +251,16 @@
 </center>
 <h3 id="athom-light-configuration">Athom Light Configuration</h3>
 <p>First, inside the folder you assigned for your <code>/config</code> docker volume for esphome server, fill out the following in <code>secrets.yaml</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Your Wi-Fi SSID and password</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Your Wi-Fi SSID and password</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">wifi_ssid</span>: <span style="color:#e6db74">&#34;IOT-WiFi-SSID&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">wifi_password</span>: <span style="color:#e6db74">&#34;Password&#34;</span></span></span></code></pre></div>
 <p>Next, you can find athom&rsquo;s RGBCT light configurations on their github under <a href="https://github.com/athom-tech/athom-configs/blob/main/athom-rgbct-light.yaml">athom-rgbct-light.yaml</a>. Place this file in the configuration folder.</p>
 <p>There are a few changes I&rsquo;ve made to the default configuration file for the athom light. Namely, I&rsquo;ve included my own 32-byte base64-encoded string as the api key which I define in the yaml file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">api</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">api</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">encryption</span>:
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">key</span>: <span style="color:#75715e"># Place 32-byte base64-encoded string for your api key</span></span></span></code></pre></div>
 <p>I also like to put my IOT devices on a separate hidden wifi network isolated from my other devices, so I put in the configuraiton to search for wifi networks with hidden SSIDs and put in our secrets from earlier as well.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>...
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>...
 </span></span><span style="display:flex;"><span><span style="color:#f92672">wifi</span>:
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">networks</span>:
 </span></span><span style="display:flex;"><span>    - <span style="color:#f92672">hidden</span>: <span style="color:#66d9ef">True</span>
@@ -369,7 +369,7 @@
     © 2026 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
     <br>
     
-       Site version 628da8c released on 2026-01-25
+       Site version e50106d released on 2026-05-02
     
   </div>
        

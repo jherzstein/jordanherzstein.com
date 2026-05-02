@@ -201,34 +201,34 @@
          <p>More recently I&rsquo;ve been wanting to include single commit changes of one branch into the main branch without merging the entire branch or replace entire files. Git has a very useful tool for this called <code>git-cherry-pick</code>, allowing you to apply changes from hashes from existing commits in any branch you wish to apply them (<a href="#citeproc_bib_item_1">Git, n.d.</a>).</p>
 <p>I am too lazy to draw so I will try to illustrate how this would work visually with mediocre ascii art.</p>
 <p>Before cherry pick:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  (cherry-pick branch)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  (cherry-pick branch)
 </span></span><span style="display:flex;"><span>     B -&gt; D -&gt; E
 </span></span><span style="display:flex;"><span>     ^
 </span></span><span style="display:flex;"><span>     |
 </span></span><span style="display:flex;"><span>A -&gt; B -&gt; C
 </span></span><span style="display:flex;"><span>  (main branch)</span></span></code></pre></div>
 <p>After cherry pick:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  (cherry-pick branch)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  (cherry-pick branch)
 </span></span><span style="display:flex;"><span>     B -&gt; D - &gt; E
 </span></span><span style="display:flex;"><span>     ^     \
 </span></span><span style="display:flex;"><span>     |       \
 </span></span><span style="display:flex;"><span>A -&gt; B -&gt; C -&gt; D
 </span></span><span style="display:flex;"><span>  (main branch)</span></span></code></pre></div>
 <p>First make you necessary changes in the <code>cherry-pick</code> branch, make the commit you want to cherrypick, and retrieve the commit hash to save for later.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add &lt;files-and-folders-to-stage-for-commit&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add &lt;files-and-folders-to-stage-for-commit&gt;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;commit D message in cherry-pick branch&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git rev-parse HEAD <span style="color:#75715e"># get the hash</span>
 </span></span><span style="display:flex;"><span>&lt;commit-D-hash&gt;</span></span></code></pre></div>
 <p>The simplest way to then apply the cherrypick to main is to switch to the main branch and do the cherry-pick, optionally <code>git pull</code> if your main branch is not up to date with the remote.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git pull <span style="color:#75715e"># In case you are not up to date on main branch, important for managing merge conflicts.</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-D-hash&gt;</span></span></code></pre></div>
 <p>Alternatively, I will sometimes checkout main to another branch to cherry pick a commit first and merge after in order to make sure my changes work how I want and I can manage merge conflicts if they come up. This is also necessary if you are sharing a repo with multiple people and need to create a PR for review before it can be merged into main.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git pull
 </span></span><span style="display:flex;"><span>
@@ -236,7 +236,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git cherry-pick &lt;commit-D-hash&gt;</span></span></code></pre></div>
 <p>If you do have merge conflicts, deal with them manually, stage and commit changes, and then continue the cherry-pick.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># First deal with merge conflicts</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># First deal with merge conflicts</span>
 </span></span><span style="display:flex;"><span>git add &lt;files-with-merge-conflicts&gt;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Final changes after merge conflicts.&#34;</span>
@@ -244,7 +244,7 @@
 </span></span><span style="display:flex;"><span>git cherry-pick --continue</span></span></code></pre></div>
 <p>Alternatively, if you would like to abort the process you can use <code>git cherry-pick --abort</code>.</p>
 <p>Now either <code>git push</code> and create a new pull request into main or merge into main locally before push.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git switch main
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git merge test-cherry-pick
 </span></span><span style="display:flex;"><span>
@@ -313,7 +313,7 @@
     © 2026 <a href="/">Jordan Herzstein</a>, content <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, code <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>, exported using <a href="https://www.gnu.org/software/emacs/">Emacs</a> + <a href="https://orgmode.org">Org Mode</a> + <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, published with <a href="https://gohugo.io">Hugo</a>
     <br>
     
-       Site version 628da8c released on 2026-01-25
+       Site version e50106d released on 2026-05-02
     
   </div>
        
