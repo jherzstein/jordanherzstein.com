@@ -23,10 +23,6 @@ Hello, my name is Jordan, I'm a computer engineer from Canada. Thank you for sto
 
 </a>
 
-<a href="https://git.yortnet.com/jherzstein">
-
-{{< icons/icon vendor=simple-icons name=forgejo size=1.5em >}}
-
 </a>
 
 <a href="https://github.com/jherzstein">
@@ -59,6 +55,6 @@ Hello, my name is Jordan, I'm a computer engineer from Canada. Thank you for sto
 ## What am I up to? {#what-am-i-up-to}
 
 -   I'm ~~a full time student~~ \*still grinding.
--   Immich is pretty awesome.
--   PiHole is pretty great and I have no idea why I didn't start using it years ago.
--   Homelabbing hobby is slowly spiraling out of control, I have 2 node proxmox cluster (+qdevice don't worry I know what quorum is) which means I'm 80% of the way to deciding to make a k8s cluster.
+-   [Komodo](https://komo.do) is pretty damn cool.
+-   [Secureblue](https://secureblue.dev) is pretty sick.
+-   GOVERNMENT OF ONTARIO! ADOPT ONE YEAR-ROUND TIME ZONE AND MY LIFE WILL BE YOURS!

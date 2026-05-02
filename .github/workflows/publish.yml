@@ -9,7 +9,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.154.2
+      HUGO_VERSION: 0.161.1
       GH_TOKEN: ${{ github.token }}
     steps:
       - name: Install Hugo CLI

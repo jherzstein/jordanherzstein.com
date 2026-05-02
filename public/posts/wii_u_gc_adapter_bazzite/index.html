@@ -236,25 +236,25 @@
 <h3 id="creating-a-distrobox-environment">Creating a DistroBox Environment</h3>
 <p>The first way we can get the tool working on our system is by building from source as suggested on the github repo, however, in order to get the proper build tool dependencies on Bazzite would be by installing packages with <code>rpm-ostree</code>, generally referred to as &ldquo;layering&rdquo; for fedora atomic OSes (<a href="#citeproc_bib_item_9">Red Hat, Inc., n.d.</a>). Layering is not recommended for Bazzite and should be used as a last resort for system level changes, otherwize sticking to containers, flatpaks, and user-space changes to get things to work on your system (<a href="#citeproc_bib_item_3">Bazzite project, n.d.-b</a>). Thus, in spirit of sticking to containerized workflows with ublue OSes I decided to do this with distrobox instead (<a href="#citeproc_bib_item_6">Distrobox 2024</a>). Distrobox allows you to deploy virtually any Linux distro in a container. We can compile the package from source inside the container or in my case use an Arch Linux container to install it through the AUR (<a href="#citeproc_bib_item_1">Aurweb Development Team, n.d.</a>).</p>
 <p>Bazzite comes with <a href="https://github.com/ranfdev/DistroShelf">DistroShelf</a>, a GUI frontend for distrobox, so you can install your container through there, or through the traditional cli method (<a href="#citeproc_bib_item_8">Ranfdev, n.d.</a>). We will call our container <code>Arch</code> based on the <code>ublue-os/arch-distrobox:latest</code> image.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>distrobox-create --name Arch --image ghcr.io/ublue-os/arch-distrobox:latest</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>distrobox-create --name Arch --image ghcr.io/ublue-os/arch-distrobox:latest</span></span></code></pre></div>
 <p>Wait for the container to set up, then we can enter our new container.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>distrobox enter Arch</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>distrobox enter Arch</span></span></code></pre></div>
 <h3 id="installing-wii-u-gc-adapter-with-the-aur">Installing wii-u-gc-adapter with the AUR</h3>
 <p>The tool we will be using to get our adapter to work is called <code>wii-u-gc-adapter</code>, the purpose of the tool is pretty self explainatory (<a href="#citeproc_bib_item_10">ToadKing, n.d.</a>). For this we need to first install the <code>yay</code> onto our system to access the AUR.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo pacman -S git base-devel
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo pacman -S git base-devel
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>git clone https://aur.archlinux.org/yay-bin.git
 </span></span><span style="display:flex;"><span>cd yay-bin
 </span></span><span style="display:flex;"><span>makepkg -si</span></span></code></pre></div>
 <p>Finally, we install the <code>wii-u-gc-adapter</code> tool.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>yay -S wii-u-gc-adapter</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>yay -S wii-u-gc-adapter</span></span></code></pre></div>
 <p>Try to run <code>wii-u-gc-adapter</code> still in the container with the adapter connected, and you should see the following</p>
 <pre tabindex="0"><code class="language-nil" data-lang="nil">adapter 0x55d493db4a70 connected
 connecting on port 0</code></pre>
 <p>You can verify everything is working by opening steam in big picture mode, it should be immediately recognized by Steam.</p>
 <h3 id="make-a-systemd-daemon">Make a Systemd Daemon</h3>
 <p>Since we don&rsquo;t want to manually enter a command each time we want to play a game with a gamecube controller, we can set it up as a user-level daemon to run in the background with systemd. Create a new file using the following <code>~/.config/systemd/user/wii-u-adapter.service</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-systemd" data-lang="systemd"><span style="display:flex;"><span><span style="color:#66d9ef">[Unit]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-systemd" data-lang="systemd"><span style="display:flex;"><span><span style="color:#66d9ef">[Unit]</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Runs</span><span style="color:#f92672">=</span><span style="color:#e6db74">Tool for using the Wii U GameCube Adapter on Linux.</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">[Service]</span>
@@ -268,10 +268,10 @@ connecting on port 0</code></pre>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">WantedBy</span><span style="color:#f92672">=</span><span style="color:#e6db74">default.target</span></span></span></code></pre></div>
 <p>Very simply, this systemd service will start to execute on the startup process, by entering the distrobox container and running <code>wii-u-gc-adapter</code>. When the daemon is stopped, it will force stop the container and any of it&rsquo;s processes.</p>
 <p>Now enable and start the service.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl --user enable wii-u-gc-adapter.service
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl --user enable wii-u-gc-adapter.service
 </span></span><span style="display:flex;"><span>systemctl --user start wii-u-gc-adapter.service</span></span></code></pre></div>
 <p>You can view the status of the service to see it active and running.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl status wii-u-gc-adapter.service</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>systemctl status wii-u-gc-adapter.service</span></span></code></pre></div>
 <p>Ok that&rsquo;s it, happy gaming on Bazzite with your decade+ old gamecube controller adapter!</p>
 <h2 id="references">References</h2>
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">

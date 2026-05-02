@@ -1,14 +1,15 @@
 +++
 title = "About"
 author = ["Jordan Herzstein"]
+date = 2024-03-03T00:01:00-05:00
 draft = false
 [menu]
   [menu.about]
     identifier = "about"
 +++
 
-Hello, my name is Jordan, I'm a regular guy from Canada, recently finished up undergrad for Computer Engineering and trying my best to figure it all out like anyone else. I like all nerdy tech things related FOSS, cybersecurity, DevOps, selfhosting, thinkpads, and more. These past few years I've been living and breathing Linux, from desktop, server, and embedded. Most of my programming experience is in C, C++, C#, Python, and bash. I am familiar with Java, Golang, and Rust. I've also engaged with a few more esoteric things like elisp and sieve.
+Hello, my name is Jordan, I am Computer Engineering from Canada trying my best to figure it all out like anyone else. I am enthusiast of most things related to FOSS, cybersecurity, DevOps, selfhosting, thinkpads, and hacking old/vintage tech. These past few years I've been living and breathing Linux, from desktop, server, and embedded. Most of my programming experience is in C, C++, C#, Python, and bash. I am familiar with Java, Golang, and Rust.
 
-This is my personal website, it started in 2022 as my blog and acts my main internet presence. You may have noticed that this site looks pretty simplistic, that's because I built the layout mostly from scratch (and copying from other sites that I like) with minimal JavaScript; this choice was intentional because my site both loads faster and feels more personal. I am somewhat prideful of having a space that represents my own self expression, that was in large part built by me, and is not wrapped up in addictive algorithmic feeds. Maybe it's a bit rough around the edges right now, but it's mine and it works. I also value understanding and being able to control my technology, which fuels my passion to learn new things all the time. I use this website in part to document my learning; I'm writing because I'm learning, and I'm learning because I'm writing.
+This is my personal website, it started in 2022 as my blog and acts my main internet presence. You may have noticed that this site looks pretty simplistic, that's because I built the layout mostly from scratch (and copying from other sites that I like) with minimal JavaScript; this choice was intentional because it keeps my site lightweight and fast and feels more personal. I am somewhat prideful of having a space that represents my own self expression, that was in large part built by me, and is not wrapped up in addictive algorithmic feeds. Maybe it's a bit rough around the edges right now, but it's mine and it works. I also value understanding and being able to control my technology, which fuels my passion to learn new things all the time. I use this website in part to document my learning; I'm writing because I'm learning, and I'm learning because I'm writing.
 
-When I'm not in front of glowing rectangles made of polarized sheets and crystals, I like swimming, running, boldering with my friends, and reading books and manga on my kobo.
+These days when I'm not in front of glowing rectangles made of polarized sheets and crystals, I like boldering with my friends, and reading books and manga on my kobo.

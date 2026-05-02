@@ -9,7 +9,6 @@
 #+OPTIONS: num:nil toc:nil 
 There are a few ways to get in contact with me but Signal is the easiest.
 ** @@html:<img class="inline-header" src="/images/contact/signal.png" />@@Signal ~jherzstein.01~ [[/images/contact/SignalGroupQr.png][QR Code]]
-** @@html:<img class="inline-header" src="/images/contact/simplex.png" />@@ SimpleX [[/images/contact/simplex-qr.png][QR Code]]
 ** @@html:<img class="inline-header" src="/images/contact/protonmail.png" />@@ Email [[mailto:contact@jordanherzstein.com][contact@jordanherzstein.com]]  [[./pubkey.gpg][PGP]]
 + Best for professional inquiries.
 + PGP is prefered if you're able, but if security is a top priority I would recommend other methods of contact [[https://www.latacora.com/blog/2019/07/16/the-pgp-problem/][due to PGP's drawbacks]].
