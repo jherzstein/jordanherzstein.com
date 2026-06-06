@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neocities on Jordan Herzstein</title>
+    <link>http://jordanherzstein.com/tags/neocities/</link>
+    <description>Recent content in Neocities on Jordan Herzstein</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 06 Jun 2026 09:28:32 -0400</lastBuildDate>
+    <atom:link href="http://jordanherzstein.com/tags/neocities/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick thoughts on the Neocities Outage</title>
+      <link>http://jordanherzstein.com/posts/neocities_outage_2026_06_05/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>http://jordanherzstein.com/posts/neocities_outage_2026_06_05/</guid>
+      <description>I was not expecting to be ahead of the curve on Namecheap.</description>
+    </item>
+  </channel>
+</rss>
