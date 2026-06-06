@@ -130,6 +130,8 @@ Software that I use for practical purposes, mostly on my laptop.
     -   [**Transmission:**](https://transmissionbt.com/) Torrenting Client
 -   [**FreshRSS:**](https://www.freshrss.org/) For all my RSS feeds
 -   [**Immich:**](https://immich.app/) Photo backup solution
+-   [**Forgejo:**](https://forgejo.org/) Version control, **my** control
+-   [**Komodo:**](https://komo.do/) Container management with built-in CI/CD
 -   [**Home Assistant OS:**](https://github.com/home-assistant/operating-system) Home Automation
 -   [**Jellyfin:**](https://jellyfin.org/) Media server of choice
 -   [**Nextcloud All-in-One:**](https://github.com/nextcloud/all-in-one) For files
