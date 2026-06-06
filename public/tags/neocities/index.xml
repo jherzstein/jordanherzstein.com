@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Dns on Jordan Herzstein</title>
-		<link>/tags/dns/</link>
-		<description>Recent content in Dns on Jordan Herzstein</description>
+		<title>Neocities on Jordan Herzstein</title>
+		<link>/tags/neocities/</link>
+		<description>Recent content in Neocities on Jordan Herzstein</description>
 		<generator>Hugo</generator>
 		<language>en</language>
 		
@@ -12,20 +12,13 @@
 		
 			<lastBuildDate>Sat, 06 Jun 2026 09:23:41 -0400</lastBuildDate>
 		
-			<atom:link href="/tags/dns/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="/tags/neocities/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Quick thoughts on the Neocities Outage</title>
 				<link>/posts/neocities_outage_2026_06_05/</link>
 				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
 				<guid>/posts/neocities_outage_2026_06_05/</guid>
 				<description>I was not expecting to be ahead of the curve on Namecheap.</description>
-			</item>
-			<item>
-				<title>New email/website domain!</title>
-				<link>/posts/new_domain/</link>
-				<pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-				<guid>/posts/new_domain/</guid>
-				<description>Friendship with .xyz has ended, .com is my new best friend.&#xA;Friendship with namecheap has ended, porkbun is my new best friend</description>
 			</item>
 	</channel>
 </rss>

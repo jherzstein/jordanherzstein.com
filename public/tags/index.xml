@@ -10,9 +10,44 @@
 		
 		
 		
-			<lastBuildDate>Sat, 17 Jan 2026 21:26:27 -0500</lastBuildDate>
+			<lastBuildDate>Sat, 06 Jun 2026 09:23:41 -0400</lastBuildDate>
 		
 			<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Dns</title>
+				<link>/tags/dns/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/dns/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Namecheap</title>
+				<link>/tags/namecheap/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/namecheap/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Neocities</title>
+				<link>/tags/neocities/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/neocities/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Porkbun</title>
+				<link>/tags/porkbun/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/porkbun/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Technology</title>
+				<link>/tags/technology/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>/tags/technology/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Bazzite</title>
 				<link>/tags/bazzite/</link>
@@ -25,13 +60,6 @@
 				<link>/tags/gaming/</link>
 				<pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
 				<guid>/tags/gaming/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Technology</title>
-				<link>/tags/technology/</link>
-				<pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-				<guid>/tags/technology/</guid>
 				<description></description>
 			</item>
 			<item>
@@ -217,31 +245,10 @@
 				<description></description>
 			</item>
 			<item>
-				<title>Dns</title>
-				<link>/tags/dns/</link>
-				<pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-				<guid>/tags/dns/</guid>
-				<description></description>
-			</item>
-			<item>
 				<title>Email</title>
 				<link>/tags/email/</link>
 				<pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
 				<guid>/tags/email/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Namecheap</title>
-				<link>/tags/namecheap/</link>
-				<pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-				<guid>/tags/namecheap/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Porkbun</title>
-				<link>/tags/porkbun/</link>
-				<pubDate>Mon, 20 May 2024 00:00:00 +0000</pubDate>
-				<guid>/tags/porkbun/</guid>
 				<description></description>
 			</item>
 			<item>

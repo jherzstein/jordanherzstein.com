@@ -12,7 +12,7 @@
         </header>
 
         <section class="post__summary">
-            {{ .Summary }}
+          {{ .Summary | strings.Truncate 160 }}
         </section>
 
 	{{- partial "tag-list.html" . -}}

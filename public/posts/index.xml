@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Sat, 17 Jan 2026 21:26:27 -0500</lastBuildDate>
+			<lastBuildDate>Sat, 06 Jun 2026 09:23:41 -0400</lastBuildDate>
 		
 			<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Quick thoughts on the Neocities Outage</title>
+				<link>/posts/neocities_outage_2026_06_05/</link>
+				<pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>/posts/neocities_outage_2026_06_05/</guid>
+				<description>I was not expecting to be ahead of the curve on Namecheap.</description>
+			</item>
 			<item>
 				<title>Getting my Wii U Gamecube Controller to work on Bazzite</title>
 				<link>/posts/wii_u_gc_adapter_bazzite/</link>

@@ -1,0 +1,26 @@
+#+TITLE: Quick thoughts on the Neocities Outage
+#+date: 2026-06-05
+#+HUGO_AUTO_SET_LASTMOD: t
+#+hugo_base_dir: ../../
+#+hugo_section: posts
+#+HUGO_MENU: :menu "posts"
+#+hugo_tags[]: 
+#+filetags: technology neocities namecheap porkbun dns
+#+HUGO_CODE_FENCE: 
+#+EXPORT_FILE_NAME: neocities_outage_2026_06_05.md 
+#+hugo_front_matter_key_replace: description>summary
+#+begin_description
+I was not expecting to be ahead of the curve on Namecheap.
+#+end_description
+
+In light of the recent [[https://bsky.app/profile/neocities.org/post/3mnkqgxostk2k][Neocities outage]], I would like to share a callback to this image used in an [[/posts/new_domain/][old post]] I made about leaving Namecheap for Porkbun 2 years ago.
+#+BEGIN_EXPORT html
+<figure>
+    <center>
+       <img src="/images/blog/friendship_with_porkbun.jpg" width="70%" />
+       <figcaption>I am <a href="https://www.youtube.com/watch?v=A94dmLthBHA">Vindicated</a></figcaption>
+    </center>
+</figure>
+#+END_EXPORT
+
+If Neocities decides to take a similar path I did and transfer [[https://neocities.org][neocities.org]] to a new domain registrar, I wish them happy domain switching!
