@@ -1,0 +1,37 @@
+{{ define "main" }}
+    <header class="content__header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+
+    {{ $context := dict
+    
+    "vendor" "feather"
+    
+    "name" "calendar"
+    
+    "size" "1.0em"
+    
+    }}
+    
+    {{ partial "icons/icon" $context }}
+
+    <!-- <b>Published:</b> -->  {{ .PublishDate | time.Format "2006-01-02" }} |
+    
+    {{ $context := dict
+    
+    "vendor" "feather"
+    
+    "name" "edit"
+    
+    "size" "1.0em"
+    
+    }}
+    
+    {{ partial "icons/icon" $context }}
+    {{ with .GitInfo }}
+       <!-- <b>Last Edited:</b> --> {{ .CommitDate.Format "2006-01-02" }}
+    {{ end }}
+    
+    <br>
+    {{ .Content }}
+{{ end }}
