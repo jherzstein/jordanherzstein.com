@@ -14,4 +14,6 @@ WORKDIR /
 
 COPY push.sh ./
 
+RUN chmod +x ./push.sh
+
 CMD ["./push.sh"]
