@@ -2,3 +2,4 @@ website-old/draft/**
 website-old/**
 *~
 *#
+.env
